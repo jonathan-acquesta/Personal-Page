@@ -1,12 +1,13 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ msg }}</h1>5
     <v-timeline>
         <v-timeline-item
           v-for="(history, i) in histories"
           :key="i"
           :color="history.category.color"
-          small
+          :icon="history.category.icon"
+          fill-dot
         >
           <template v-slot:opposite>
             <span
@@ -15,7 +16,8 @@
             ></span>
           </template>
           <div class="py-4">
-            <h2 :class="`headline font-weight-light mb-4 ${history.category.color}--text`">{{ history.category.name }} {{ history.title }}</h2>
+            <h2 :class="`headline font-weight-light mb-4 ${history.category.color}--text`">
+              {{ history.category.name }} {{ history.title }}</h2>
             <div>
               {{ history.description }}
             </div>
@@ -39,18 +41,18 @@ export default {
       keyWord: [],
       categoryType: {},
       months: [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec"
+        "Janeiro",
+        "Fevereiro",
+        "Março",
+        "Abril",
+        "Maio",
+        "Junho",
+        "Julho",
+        "Agosto",
+        "Setembro",
+        "Outubro",
+        "Novembro",
+        "Dezembro"
         ]
     };
   },
@@ -59,47 +61,52 @@ export default {
       professionalExperience: {
         color: "red",
         name: "ProfessionalExperience",
-        icon: "code"
+        icon: "mdi-briefcase-outline"
       },
       academicLife: { 
         color: "orange",
          name: "AcademicLife",
-          icon: "code" 
+          icon: "mdi-school" 
       },
       courses: {
-        color: "turquoise",
+        color: "deep-purple",
         name: "ExtracurricularCourse",
-        icon: "code"
+        icon: "mdi-seal-variant"
       },
       certifications: { 
         color: "green", 
         name: "Certification", 
-        icon: "code" 
+        icon: "mdi-book-variant" 
       },
       books: { 
-        color: "black", 
+        color: "teal", 
         name: "Book", 
-        icon: "code" 
+        icon: "mdi-book-open-page-variant" 
       },
       thoughts: { 
         color: "pink", 
         name: "Thoughts", 
-        icon: "code" 
+        icon: "mdi-head-snowflake-outline" 
       },
       managementKnowledge: {
         color: "cyan",
         name: "ManagementKnowledge",
-        icon: "code"
+        icon: "mdi-account-group"
       },
       technologies: { 
         color: "purple", 
         name: "Technologies", 
-        icon: "code" 
+        icon: "mdi-laptop" 
       },
       languages: { 
-        color: "amber", 
+        color: "indigo", 
         name: "Languages", 
-        icon: "code" 
+        icon: "mdi-account-voice" 
+      },
+      milestones: { 
+        color: "light-blue", 
+        name: "Milestones", 
+        icon: "mdi-flag-checkered" 
       }
     };
 
@@ -114,6 +121,70 @@ export default {
     this.histories.push({
       date: new Date("2020-05-10 00:33:00"),
       category: this.categoryType.academicLife,
+      title: "Title test",
+      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
+      image: "./assets/thoughts.ico"
+    });
+
+    this.histories.push({
+      date: new Date("2020-05-10 00:33:00"),
+      category: this.categoryType.certifications,
+      title: "Title test",
+      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
+      image: "./assets/thoughts.ico"
+    });
+
+     this.histories.push({
+      date: new Date("2020-05-10 00:33:00"),
+      category: this.categoryType.technologies,
+      title: "Title test",
+      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
+      image: "./assets/thoughts.ico"
+    });
+
+     this.histories.push({
+      date: new Date("2020-05-10 00:33:00"),
+      category: this.categoryType.courses,
+      title: "Title test",
+      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
+      image: "./assets/thoughts.ico"
+    });
+
+     this.histories.push({
+      date: new Date("2020-05-10 00:33:00"),
+      category: this.categoryType.books,
+      title: "Title test",
+      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
+      image: "./assets/thoughts.ico"
+    });
+
+    this.histories.push({
+      date: new Date("2020-05-10 00:33:00"),
+      category: this.categoryType.thoughts,
+      title: "Title test",
+      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
+      image: "./assets/thoughts.ico"
+    });
+
+ this.histories.push({
+      date: new Date("2019-01-10 00:33:00"),
+      category: this.categoryType.managementKnowledge,
+      title: "Title test",
+      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
+      image: "./assets/thoughts.ico"
+    });
+
+     this.histories.push({
+      date: new Date("2018-05-10 00:33:00"),
+      category: this.categoryType.languages,
+      title: "Title test",
+      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
+      image: "./assets/thoughts.ico"
+    });
+
+    this.histories.push({
+      date: new Date("2018-04-10 00:33:00"),
+      category: this.categoryType.milestones,
       title: "Title test",
       description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
       image: "./assets/thoughts.ico"
