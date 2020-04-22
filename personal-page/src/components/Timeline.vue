@@ -1,11 +1,7 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
 
-<div class="filter" v-for="(category, index) in this.$store.state.categoryType" :key="index">
-  <span v-if="category.enable" :class="`headline enableTitle font-weight-bold ${category.color}--text`" v-text="category.name[culture]" v-on:click="InvertSelection(category)"></span>
-  <span v-else :class="`headline disabledTitle font-weight-bold ${category.color}--text`" v-text="category.name[culture]" v-on:click="InvertSelection(category)"></span>
-</div>
+
 
     <v-timeline>
         <v-timeline-item v-show="history.category.enable"
@@ -227,10 +223,6 @@ export default {
     formatePeriod(date)
     {
       return this.$store.state.months[this.$store.state.culture][date.getMonth()] + " " + date.getFullYear();
-    },
-    InvertSelection(category)
-    {
-        category.enable = !category.enable;
     }
   },
 };
@@ -238,18 +230,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .filter{
-    padding: 5px;
-  }
-
-  .enableTitle{
-    cursor: pointer;
-  }
-
-  .disabledTitle{
-    opacity: 0.4;
-    cursor: pointer;
-  }
 
   .tags{
     margin-top: 15px;

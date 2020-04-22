@@ -1,54 +1,109 @@
 <template>
-  <v-app>
-    <div class="nav-bar">
-      <img class="language" src="./assets/logo.png" title="português" v-on:click="ChangeLangue('pt-BR')" />
-      <img class="language" src="./assets/logo.png" title="inglês"  v-on:click="ChangeLangue('en-US')" />
+  <v-app id="inspire">
+    <v-navigation-drawer
+      v-model="drawerRight"
+      app
+      clipped
+      right
+        permanent
+      expand-on-hover
+    >
+     <div class="filter" v-for="(category, index) in this.$store.state.categoryType" :key="index">
+      <span v-if="category.enable" :class="`headline enableTitle font-weight-bold ${category.color}--text`" v-text="category.name[culture]" v-on:click="InvertSelection(category)"></span>
+      <span v-else :class="`headline disabledTitle font-weight-bold ${category.color}--text`" v-text="category.name[culture]" v-on:click="InvertSelection(category)"></span>
     </div>
-    <!--<Menu></Menu>-->
+    </v-navigation-drawer>
+
+    <v-app-bar
+      app
+      clipped-right
+      color="blue-grey"
+      dark
+    >
+    <img class="language" src="./assets/logo.png" title="português" v-on:click="ChangeLangue('pt-BR')" />
+      <img class="language" src="./assets/logo.png" title="inglês"  v-on:click="ChangeLangue('en-US')" />
+      
+      <v-spacer />
+      <v-toolbar-title>Jonathan Caravaggio Acquesta</v-toolbar-title>
+    </v-app-bar>
+
     <v-content>
-      <Home />
+      <v-container
+        class="fill-height"
+        fluid
+      >
+       <Home />
+      </v-container>
     </v-content>
+
+   
+
+    <v-footer
+      app
+      color="blue-grey"
+      class="white--text"
+    >
+      <span>Vuetify</span>
+      <v-spacer />
+      <span>&copy; 2019</span>
+    </v-footer>
   </v-app>
 </template>
 
 <script>
 import Home from "./views/Home";
-//import Menu from "./components/menu";
 
-export default {
-  name: "App",
-
-  components: {
-    Home, 
-    //Menu
-  },
-
-  data: () => ({
-    //
-  }),
-  methods: {
-    ChangeLangue(language)
-    {
-      this.$store.state.culture = language;
-    }
-  },
-};
+  export default {
+    props: {
+      source: String,
+    },
+    components: {
+      Home
+    },
+    computed:{
+      culture()
+      {
+        return this.$store.state.culture;
+      },
+      tags()
+      {
+        return this.$store.state.tags;
+      }
+    },
+    data: () => ({
+      drawer: null,
+      drawerRight: null,
+      right: false,
+      left: false,
+    }),
+    methods: {
+      ChangeLangue(language)
+      {
+        this.$store.state.culture = language;
+      },
+      InvertSelection(category)
+      {
+          category.enable = !category.enable;
+      }
+    },
+  }
 </script>
 
 <style>
-.nav-bar {
-    background: linear-gradient(-90deg, rgb(202, 202, 202), rgb(145, 158, 170));
-    height: 60px;
-    margin-bottom: 15px;
-}
-
 .language{
-  width: 48px;
-  margin-left: 3px;
-  margin-right: 3px;
-  margin-top: 3px;
   cursor: pointer;
 }
 
-</style>
+  .filter{
+    padding: 5px;
+  }
 
+  .enableTitle{
+    cursor: pointer;
+  }
+
+  .disabledTitle{
+    opacity: 0.4;
+    cursor: pointer;
+  }
+</style>
