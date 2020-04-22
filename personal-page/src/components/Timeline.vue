@@ -2,9 +2,9 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
 
-<div class="filter" v-for="(category, index) in categoryType" :key="index">
-  <span v-if="category.enable" :class="`headline enableTitle font-weight-bold ${category.color}--text`" v-text="category.name" v-on:click="InvertSelection(category)"></span>
-  <span v-else :class="`headline disabledTitle font-weight-bold ${category.color}--text`" v-text="category.name" v-on:click="InvertSelection(category)"></span>
+<div class="filter" v-for="(category, index) in this.$store.state.categoryType" :key="index">
+  <span v-if="category.enable" :class="`headline enableTitle font-weight-bold ${category.color}--text`" v-text="category.name[culture]" v-on:click="InvertSelection(category)"></span>
+  <span v-else :class="`headline disabledTitle font-weight-bold ${category.color}--text`" v-text="category.name[culture]" v-on:click="InvertSelection(category)"></span>
 </div>
 
     <v-timeline>
@@ -24,12 +24,15 @@
           <div class="py-4">
             <span
               :class="`headline font-weight-bold ${history.category.color}--text`"
-              v-text="history.category.name"
+              v-text="history.category.name[culture]"
             ></span>
             <h2 :class="`headline font-weight-light mb-4 ${history.category.color}--text`">
-              {{ history.title }}</h2>
+              {{ history.title[culture] }}</h2>
             <div>
-              {{ history.description }}
+              {{ history.description[culture] }}
+            </div>
+            <div>
+              <span class="tags" v-for="(tag, index) in history.tags" :key="index" >{{ tag[culture] }}</span>
             </div>
           </div>
         </v-timeline-item>
@@ -49,163 +52,167 @@ export default {
       histories: [],
       selectedCategories: [],
       keyWord: [],
-      categoryType: {
-        professionalExperience: {
-          color: "red",
-          name: "ProfessionalExperience",
-          icon: "mdi-briefcase-outline",
-          enable: true
-        },
-        academicLife: { 
-          color: "orange",
-          name: "AcademicLife",
-          icon: "mdi-school",
-          enable: true
-        },
-        courses: {
-          color: "deep-purple",
-          name: "ExtracurricularCourse",
-          icon: "mdi-seal-variant",
-          enable: true
-        },
-        certifications: { 
-          color: "green", 
-          name: "Certification", 
-          icon: "mdi-book-variant",
-          enable: true
-        },
-        books: { 
-          color: "teal", 
-          name: "Book", 
-          icon: "mdi-book-open-page-variant",
-          enable: true 
-        },
-        thoughts: { 
-          color: "pink", 
-          name: "Thoughts", 
-          icon: "mdi-head-snowflake-outline",
-          enable: true 
-        },
-        managementKnowledge: {
-          color: "cyan",
-          name: "ManagementKnowledge",
-          icon: "mdi-account-group",
-          enable: true
-        },
-        technologies: { 
-          color: "purple", 
-          name: "Technologies", 
-          icon: "mdi-laptop",
-          enable: true
-        },
-        languages: { 
-          color: "indigo", 
-          name: "Languages", 
-          icon: "mdi-account-voice",
-          enable: true 
-        },
-        milestones: { 
-          color: "light-blue", 
-          name: "Milestones", 
-          icon: "mdi-flag-checkered",
-          enable: true 
-        }
-      },
-      months: [
-        "Janeiro",
-        "Fevereiro",
-        "Março",
-        "Abril",
-        "Maio",
-        "Junho",
-        "Julho",
-        "Agosto",
-        "Setembro",
-        "Outubro",
-        "Novembro",
-        "Dezembro"
-        ]
     };
+  },
+  computed:{
+    culture()
+    {
+      return this.$store.state.culture;
+    },
+    tags()
+    {
+      return this.$store.state.tags;
+    }
   },
   mounted() {
     this.histories.push({
       date: new Date("2020-07-20 00:33:00"),
-      category: this.categoryType.professionalExperience,
-      title: "Title test",
-      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
-      image: "./assets/thoughts.ico"
+      category: this.$store.state.categoryType.professionalExperience,
+      title: {
+        "pt-BR": "Este é o meu título",
+        "en-US": "It is my title",
+      },
+      description: {
+        "pt-BR": "O futuro está chegando e, com ele, as profissões do futuro: carreiras em ascensão que possivelmente se tornarão ainda mais importantes e significativas nos próximos anos.",
+        "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
+      },
+      image: "./assets/thoughts.ico",
+      tags: [this.tags.scrum, this.tags.kanban]
     });
 
     this.histories.push({
       date: new Date("2020-05-10 00:33:00"),
-      category: this.categoryType.academicLife,
-      title: "Title test",
-      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
-      image: "./assets/thoughts.ico"
+      category: this.$store.state.categoryType.academicLife,
+      title: {
+        "pt-BR": "Este é o meu título",
+        "en-US": "It is my title",
+      },
+      description: {
+        "pt-BR": "O futuro está chegando e, com ele, as profissões do futuro: carreiras em ascensão que possivelmente se tornarão ainda mais importantes e significativas nos próximos anos.",
+        "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
+      },
+      image: "./assets/thoughts.ico",
+      tags: [this.tags.scrum, this.tags.kanban]
     });
 
     this.histories.push({
       date: new Date("2020-05-10 00:33:00"),
-      category: this.categoryType.certifications,
-      title: "Title test",
-      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
-      image: "./assets/thoughts.ico"
+      category: this.$store.state.categoryType.certifications,
+      title: {
+        "pt-BR": "Este é o meu título",
+        "en-US": "It is my title",
+      },
+      description: {
+        "pt-BR": "O futuro está chegando e, com ele, as profissões do futuro: carreiras em ascensão que possivelmente se tornarão ainda mais importantes e significativas nos próximos anos.",
+        "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
+      },
+      image: "./assets/thoughts.ico",
+      tags: [this.tags.scrum, this.tags.kanban]
     });
 
      this.histories.push({
       date: new Date("2020-05-10 00:33:00"),
-      category: this.categoryType.technologies,
-      title: "Title test",
-      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
-      image: "./assets/thoughts.ico"
+      category: this.$store.state.categoryType.technologies,
+      title: {
+        "pt-BR": "Este é o meu título",
+        "en-US": "It is my title",
+      },
+      description: {
+        "pt-BR": "O futuro está chegando e, com ele, as profissões do futuro: carreiras em ascensão que possivelmente se tornarão ainda mais importantes e significativas nos próximos anos.",
+        "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
+      },
+      image: "./assets/thoughts.ico",
+      tags: [this.tags.scrum, this.tags.kanban]
     });
 
      this.histories.push({
       date: new Date("2020-05-10 00:33:00"),
-      category: this.categoryType.courses,
-      title: "Title test",
-      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
-      image: "./assets/thoughts.ico"
+      category: this.$store.state.categoryType.courses,
+      title: {
+        "pt-BR": "Este é o meu título",
+        "en-US": "It is my title",
+      },
+      description: {
+        "pt-BR": "O futuro está chegando e, com ele, as profissões do futuro: carreiras em ascensão que possivelmente se tornarão ainda mais importantes e significativas nos próximos anos.",
+        "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
+      },
+      image: "./assets/thoughts.ico",
+      tags: [this.tags.scrum, this.tags.kanban]
     });
 
      this.histories.push({
       date: new Date("2020-05-10 00:33:00"),
-      category: this.categoryType.books,
-      title: "Title test",
-      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
-      image: "./assets/thoughts.ico"
+      category: this.$store.state.categoryType.books,
+      title: {
+        "pt-BR": "Este é o meu título",
+        "en-US": "It is my title",
+      },
+      description: {
+        "pt-BR": "O futuro está chegando e, com ele, as profissões do futuro: carreiras em ascensão que possivelmente se tornarão ainda mais importantes e significativas nos próximos anos.",
+        "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
+      },
+      image: "./assets/thoughts.ico",
+      tags: [this.tags.scrum, this.tags.kanban]
     });
 
     this.histories.push({
       date: new Date("2020-05-10 00:33:00"),
-      category: this.categoryType.thoughts,
-      title: "Title test",
-      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
-      image: "./assets/thoughts.ico"
+      category: this.$store.state.categoryType.thoughts,
+      title: {
+        "pt-BR": "Este é o meu título",
+        "en-US": "It is my title",
+      },
+      description: {
+        "pt-BR": "O futuro está chegando e, com ele, as profissões do futuro: carreiras em ascensão que possivelmente se tornarão ainda mais importantes e significativas nos próximos anos.",
+        "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
+      },
+      image: "./assets/thoughts.ico",
+      tags: [this.tags.scrum, this.tags.kanban]
     });
 
  this.histories.push({
       date: new Date("2019-01-10 00:33:00"),
-      category: this.categoryType.managementKnowledge,
-      title: "Title test",
-      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
-      image: "./assets/thoughts.ico"
+      category: this.$store.state.categoryType.managementKnowledge,
+      title: {
+        "pt-BR": "Este é o meu título",
+        "en-US": "It is my title",
+      },
+      description: {
+        "pt-BR": "O futuro está chegando e, com ele, as profissões do futuro: carreiras em ascensão que possivelmente se tornarão ainda mais importantes e significativas nos próximos anos.",
+        "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
+      },
+      image: "./assets/thoughts.ico",
+      tags: [this.tags.scrum, this.tags.kanban]
     });
 
      this.histories.push({
       date: new Date("2018-05-10 00:33:00"),
-      category: this.categoryType.languages,
-      title: "Title test",
-      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
-      image: "./assets/thoughts.ico"
+      category: this.$store.state.categoryType.languages,
+      title: {
+        "pt-BR": "Este é o meu título",
+        "en-US": "It is my title",
+      },
+      description: {
+        "pt-BR": "O futuro está chegando e, com ele, as profissões do futuro: carreiras em ascensão que possivelmente se tornarão ainda mais importantes e significativas nos próximos anos.",
+        "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
+      },
+      image: "./assets/thoughts.ico",
+      tags: [this.tags.scrum, this.tags.kanban]
     });
 
     this.histories.push({
       date: new Date("2018-04-10 00:33:00"),
-      category: this.categoryType.milestones,
-      title: "Title test",
-      description: "Teste Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.",
-      image: "./assets/thoughts.ico"
+      category: this.$store.state.categoryType.milestones,
+      title: {
+        "pt-BR": "Este é o meu título",
+        "en-US": "It is my title",
+      },
+      description: {
+        "pt-BR": "O futuro está chegando e, com ele, as profissões do futuro: carreiras em ascensão que possivelmente se tornarão ainda mais importantes e significativas nos próximos anos.",
+        "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
+      },
+      image: "./assets/thoughts.ico",
+      tags: [this.tags.scrum, this.tags.kanban]
     });
 
     this.orderByDates();
@@ -219,7 +226,7 @@ export default {
     },
     formatePeriod(date)
     {
-      return this.months[date.getMonth()] + " " + date.getFullYear();
+      return this.$store.state.months[this.$store.state.culture][date.getMonth()] + " " + date.getFullYear();
     },
     InvertSelection(category)
     {
@@ -242,5 +249,13 @@ export default {
   .disabledTitle{
     opacity: 0.4;
     cursor: pointer;
+  }
+
+  .tags{
+    margin-top: 15px;
+    color:  rgb(7, 52, 177);
+    font-weight: bold;
+    margin-right: 10px;
+    font-size:small;
   }
 </style>
