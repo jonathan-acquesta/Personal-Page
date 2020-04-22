@@ -38,7 +38,7 @@
 
 <script>
 
-export default {
+  export default {
   name: "Timeline",
   props: {
     msg: String
@@ -50,14 +50,9 @@ export default {
       keyWord: [],
     };
   },
-  computed:{
-    culture()
-    {
+  computed: {
+    culture(){
       return this.$store.state.culture;
-    },
-    tags()
-    {
-      return this.$store.state.tags;
     }
   },
   mounted() {
@@ -73,7 +68,7 @@ export default {
         "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
       },
       image: "./assets/thoughts.ico",
-      tags: [this.tags.scrum, this.tags.kanban]
+      tags: [this.$store.state.tags.scrum, this.$store.state.tags.kanban]
     });
 
     this.histories.push({
@@ -88,7 +83,7 @@ export default {
         "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
       },
       image: "./assets/thoughts.ico",
-      tags: [this.tags.scrum, this.tags.kanban]
+      tags: [this.$store.state.tags.scrum, this.$store.state.tags.kanban]
     });
 
     this.histories.push({
@@ -103,7 +98,7 @@ export default {
         "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
       },
       image: "./assets/thoughts.ico",
-      tags: [this.tags.scrum, this.tags.kanban]
+      tags: [this.$store.state.tags.scrum, this.$store.state.tags.kanban]
     });
 
      this.histories.push({
@@ -118,7 +113,7 @@ export default {
         "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
       },
       image: "./assets/thoughts.ico",
-      tags: [this.tags.scrum, this.tags.kanban]
+      tags: [this.$store.state.tags.scrum, this.$store.state.tags.kanban]
     });
 
      this.histories.push({
@@ -133,7 +128,7 @@ export default {
         "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
       },
       image: "./assets/thoughts.ico",
-      tags: [this.tags.scrum, this.tags.kanban]
+      tags: [this.$store.state.tags.scrum, this.$store.state.tags.kanban]
     });
 
      this.histories.push({
@@ -148,7 +143,7 @@ export default {
         "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
       },
       image: "./assets/thoughts.ico",
-      tags: [this.tags.scrum, this.tags.kanban]
+      tags: [this.$store.state.tags.scrum, this.$store.state.tags.kanban]
     });
 
     this.histories.push({
@@ -163,7 +158,7 @@ export default {
         "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
       },
       image: "./assets/thoughts.ico",
-      tags: [this.tags.scrum, this.tags.kanban]
+      tags: [this.$store.state.tags.scrum, this.$store.state.tags.kanban]
     });
 
  this.histories.push({
@@ -178,7 +173,7 @@ export default {
         "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
       },
       image: "./assets/thoughts.ico",
-      tags: [this.tags.scrum, this.tags.kanban]
+      tags: [this.$store.state.tags.scrum, this.$store.state.tags.kanban]
     });
 
      this.histories.push({
@@ -193,7 +188,7 @@ export default {
         "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
       },
       image: "./assets/thoughts.ico",
-      tags: [this.tags.scrum, this.tags.kanban]
+      tags: [this.$store.state.tags.scrum, this.$store.state.tags.kanban]
     });
 
     this.histories.push({
@@ -208,7 +203,7 @@ export default {
         "en-US": "The future is coming and, with it, the professions of the future: careers on the rise that are likely to become even more important and significant in the years to come.",
       },
       image: "./assets/thoughts.ico",
-      tags: [this.tags.scrum, this.tags.kanban]
+      tags: [this.$store.state.tags.scrum, this.$store.state.tags.kanban]
     });
 
     this.orderByDates();

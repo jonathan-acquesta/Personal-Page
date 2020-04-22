@@ -6,6 +6,14 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         culture: 'pt-BR',
+        common: {
+            applicationTitle: { "pt-BR": "Meu Currículo Vivo", "en-US": "My Live Resume" },
+            portfolio: { "pt-BR": "Portfólio", "en-US": "Portfolio" },
+            languages: {
+                portuguese: { "pt-BR": "Português", "en-US": "Portuguese", language: "pt-BR" },
+                english: { "pt-BR": "Inglês", "en-US": "English", language: "en-US" },
+            }
+        },
         months: {
             "pt-BR": [
                 "Janeiro",
@@ -36,9 +44,16 @@ export default new Vuex.Store({
                 "December"
             ]
         },
+        tagTypes: {
+            softSkills: { "pt-BR": "Habilidades Interpessoais", "en-US": "Soft Skills" },
+            managementSkills: { "pt-BR": "Habilidades Gerenciais", "en-US": "Management Skills" },
+            technicalSkills: { "pt-BR": "Habilidades Técnicas", "en-US": "Technical Skills" },
+            languageSkills: { "pt-BR": "Habilidades Lingüísticas", "en-US": "Language Skills" }
+        },
         tags: {
             scrum: { "pt-BR": "#SCRUM", "en-US": "#SCRUM" },
-            kanban: { "pt-BR": "#KANBAN", "en-US": "#KANBAN" }
+            kanban: { "pt-BR": "#KANBAN", "en-US": "#KANBAN" },
+            management30: { "pt-BR": "#Management3.0", "en-US": "#Management3.0" }
         },
         categoryType: {
             professionalExperience: {
