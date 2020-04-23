@@ -1,15 +1,17 @@
 <template>
-  <div class="hello">
 
 
-
-    <v-timeline>
+  <div class="timeLine">
+      <v-timeline class="timelineApp">
         <v-timeline-item v-show="history.category.enable"
           v-for="(history, i) in histories"
           :key="i"
+          :dense="$vuetify.breakpoint.smAndDown"
+          :reverse="reverse"
           :color="history.category.color"
           :icon="history.category.icon"
           fill-dot
+          align-center
         >
           <template v-slot:opposite>
             <span
@@ -48,6 +50,8 @@
       histories: [],
       selectedCategories: [],
       keyWord: [],
+      reverse: true,
+      valueDeterminate: 50
     };
   },
   computed: {
@@ -226,6 +230,14 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+.timeLine{
+  text-align:center;
+}
+
+.timelineApp{
+  margin: 10px;
+}
+
   .tags{
     margin-top: 15px;
     color:  rgb(7, 52, 177);
@@ -233,4 +245,15 @@
     margin-right: 10px;
     font-size:small;
   }
+
+
+.imageMain{
+  box-shadow: 2px 2px 5px grey;
+}
+
+.skills{
+  width: 30%;
+  display: flex
+}
+
 </style>

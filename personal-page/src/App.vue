@@ -49,11 +49,12 @@
       dark
       dense
     >
-    <img class="language" src="./assets/brazil.jpg" :class="{languageDisactive: this.$store.state.common.languages.portuguese.language !== culture}" :title="this.$store.state.common.languages.portuguese[culture]" v-on:click="ChangeLanguePortuguese()" />
-      <img class="language" src="./assets/usa.jpg" :class="{languageDisactive: this.$store.state.common.languages.english.language !== culture}" :title="this.$store.state.common.languages.english[culture]"  v-on:click="ChangeLangueEnglish()" />
-      
-      <v-spacer />
-      <v-toolbar-title>Jonathan Caravaggio Acquesta - Agile Coach - PSM I</v-toolbar-title>
+
+<v-toolbar-title>Jonathan Caravaggio Acquesta - Agile Coach - PSM I</v-toolbar-title>
+    <v-spacer />
+    <label class="language" src="./assets/brazil.jpg" :class="{languageDisactive: this.$store.state.common.languages.portuguese.language !== culture}" :title="this.$store.state.common.languages.portuguese[culture]" v-on:click="ChangeLanguePortuguese()" >PT</label>
+    <label class="languageSeparator">|</label>
+    <label class="language" src="./assets/usa.jpg" :class="{languageDisactive: this.$store.state.common.languages.english.language !== culture}" :title="this.$store.state.common.languages.english[culture]"  v-on:click="ChangeLangueEnglish()">EN</label>
     </v-app-bar>
 
     <v-content>
@@ -65,13 +66,13 @@
       </v-container>
     </v-content>
 
-   
-
-    <v-footer dark padless>
-    <v-card
-      flat
-      tile
-      class="indigo lighten-1 white--text text-center"
+   <v-footer
+    class="indigo lighten-1 white--text text-center"
+    padless
+  >
+    <v-row
+      justify="center"
+      no-gutters
     >
       <v-card-text>
         <v-btn
@@ -84,17 +85,15 @@
         </v-btn>
       </v-card-text>
 
-      <v-card-text class="white--text pt-0">
-        Todos os direitos reservados à Jonathan Caravaggio Acquesta Todos os direitos reservados à Jonathan Caravaggio Acquesta Todos os direitos reservados à Jonathan Caravaggio Acquesta Todos os direitos reservados à Jonathan Caravaggio Acquesta Todos os direitos reservados à Jonathan Caravaggio Acquesta
-      </v-card-text>
-
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
         {{ new Date().getFullYear() }} — <strong>{{this.$store.state.common.portfolio[culture]}}</strong>
       </v-card-text>
-    </v-card>
+    </v-row>
   </v-footer>
+
+
   </v-app>
 </template>
 
@@ -156,12 +155,13 @@ import Home from "./views/Home";
 <style>
 .language{
   cursor: pointer;
-  width: 60px;
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
   opacity: 1;
-  border-style:solid;
-  opacity: 0.9;
-  border-color: rgb(255, 255, 255);
+}
+
+.languageSeparator{
+  color: blueviolet;
 }
 
 .languageDisactive{
