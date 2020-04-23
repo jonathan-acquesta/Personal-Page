@@ -2,16 +2,15 @@
 
 
   <div class="timeLine">
-      <v-timeline class="timelineApp" :dense="$vuetify.breakpoint.smAndDown">
+      <v-timeline class="timelineApp" :dense="$vuetify.breakpoint.smAndDown" :reverse="!$vuetify.breakpoint.smAndDown" :left="$vuetify.breakpoint.smAndDown">
         <v-timeline-item v-if="history.category.enable"
           v-for="(history, i) in histories"
           :key="i"
           :dense="!$vuetify.breakpoint.smAndDown"
-          :reverse="reverse"
+          :reverse="$vuetify.breakpoint.smAndDown"
           :color="history.category.color"
           :icon="history.category.icon"
-          :right="$vuetify.breakpoint.smAndDown"
-          :left="left"
+          :left="$vuetify.breakpoint.smAndDown"
         :small="small"
           fill-dot
         >
