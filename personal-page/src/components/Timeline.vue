@@ -24,6 +24,7 @@
           :left="$vuetify.breakpoint.smAndDown"
         :small="small"
           fill-dot
+          
         >
           <template v-if="!$vuetify.breakpoint.smAndDown" v-slot:opposite>
             <span style="opacity:0.8"
@@ -47,7 +48,7 @@
               {{ history.description[culture] }}
             </div>
             <div>
-              <v-img class="descriptionImage"  height="110"  width="110" :src="history.image"></v-img>
+              <v-img class="descriptionImage"  width="110" :src="history.image"></v-img>
 
             </div>
             </div>
@@ -56,7 +57,7 @@
               <span class="tags" v-for="(tag, index) in history.tags" :key="index" >{{ tag[culture] }}</span>
             </div>
             <br>
-               <div class="links">
+               <div class="links" v-if="history.link">
               <span  >Link: </span>
               <a class="linkShow" v-on:click="overlay = true;mainImage=history.link.image">{{history.link.description[culture]}} </a>
               
@@ -280,7 +281,7 @@
       },
       description: {
         "pt-BR": "A certificação Scrum Fundamentals Certified foi importante para mim em relação a validação do conhecimento e correta compreensão os pilares, valores e fundamentos do SCRUM.",
-        "en-US": "Scrum Fundamentals Certified certification was important to me in terms of knowledge validation and correct understanding of the pillars, values and fundamentals of SCRUM.",
+        "en-US": "Scrum Fundamentals Certified was important certification to me in terms of knowledge validation and correct understanding of the pillars, values and fundamentals of SCRUM.",
       },
       image: require('@/assets/scrumfc.png'),
       link: {
@@ -298,8 +299,8 @@
         "en-US": "Microsoft – MCP",
       },
       description: {
-        "pt-BR": "A certificação 70-562 TS: Microsoft .Net Framework 3.5, ASP.NET Application Development foi muito importante como objetivo pessoal com foco em comprovar o conhecimento que eu tinha adquirido enquanto atuava como líder técnico e essa certificação me concedeu o título de MCP. Obter esta certificação também foi parte de um plano para ajudar nos objetivos corporativos em relação a participação em licitações públicas que exigiam um número mínimo de profissionais certificados na empresa.",
-        "en-US": "The 70-562 TS certification: Microsoft .Net Framework 3.5, ASP.NET Application Development was very important as a personal objective with a focus on proving the knowledge I had acquired while acting as a technical leader and this certification granted me the title of MCP. Obtaining this certification was also part of a plan to help corporate objectives regarding participation in public tenders that required a minimum number of certified professionals in the company.",
+        "pt-BR": "A certificação 70-562 Technology Specialist: Microsoft .Net Framework 3.5, ASP.NET Application Development foi muito importante como objetivo pessoal com foco em comprovar o conhecimento que eu tinha adquirido enquanto atuava como líder técnico e essa certificação me concedeu o título de MCP. Obter esta certificação também foi parte de um plano para ajudar nos objetivos corporativos em relação a participação em licitações públicas que exigiam um número mínimo de profissionais certificados na empresa.",
+        "en-US": "The 70-562 Technology Specialist: Microsoft .Net Framework 3.5, ASP.NET Application Development certification was very important as a personal objective with a focus on proving the knowledge I had acquired while I acting as a technical leader, and this certification granted me the title of MCP. Obtaining this certification was also part of a plan to help corporate objectives regarding participation in public tenders that required a minimum number of certified professionals in the company.",
       },
       image: require('@/assets/msoficial.png'),
       link: {
@@ -318,8 +319,8 @@
         "en-US": "Microsoft – MCTS",
       },
       description: {
-        "pt-BR": "A certificação 70-536 TS: Microsoft .Net Framework, ASP.NET Application Development Foundantion foi muito importante para consolidar minha capacidade técnica com as tecnologias Microsoft e essa certificação me concedeu o título de MCTS e apoio na evolução da minha carreira. Obter esta certificação também foi parte de um plano para ajudar nos objetivos corporativos em relação a participação em licitações públicas que exigiam um número mínimo de profissionais certificados na empresa.",
-        "en-US": "The 70-536 TS certification: Microsoft .Net Framework, ASP.NET Application Development Foundantion was very important to consolidate my technical capacity with Microsoft technologies and this certification gave me the title of MCTS and support in the evolution of my career. Obtaining this certification was also part of a plan to help corporate objectives regarding participation in public tenders that required a minimum number of certified professionals in the company.",
+        "pt-BR": "A certificação 70-536 Technology Specialist: Microsoft .Net Framework, ASP.NET Application Development Foundantion foi muito importante para consolidar minha capacidade técnica com as tecnologias Microsoft e essa certificação me concedeu o título de MCTS e apoio na evolução da minha carreira. Obter esta certificação também foi parte de um plano para ajudar nos objetivos corporativos em relação a participação em licitações públicas que exigiam um número mínimo de profissionais certificados na empresa.",
+        "en-US": "The 70-536 Technology Specialist: Microsoft .Net Framework, ASP.NET Application Development Foundantion certification was very important to consolidate my technical capacity with Microsoft technologies, and this certification gave me the title of MCTS, beside that, it supported the evolution of my career in that occasion. Obtaining this certification was also part of a plan to help corporate objectives regarding participation in public tenders that required a minimum number of certified professionals in the company",
       },
       image: require('@/assets/msoficial.png'),
       link: {
@@ -327,6 +328,22 @@
         description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
       },
       tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp]
+    });
+
+
+this.histories.push({
+      date: new Date("2020-04-02"),
+      category: this.$store.state.categoryType.books,
+      title: {
+        "pt-BR": "KANBAN - James Turner",
+        "en-US": "KANBAN - James Turner",
+      },
+      description: {
+        "pt-BR": "O livro Kanban: O melhor guia para iniciantes aprenderem Kanban passo a passo, foi escrito por James Turner e traz diversas aplicações sobre o conceito em diversos setores industriais, também faz comparações sobre a aplicação do Kanban em relação a outros frameworks e metodologias ágeis, ajudando a clarificar as melhores situações para se aplicar a metodologia.",
+        "en-US": "The book Kanban: The ultimate guide for beginner's to learn Kanban step by step, was written by James Turner and brings several applications about the concept in different industrial sectors, it also makes comparisons about the application of Kanban in relation to other agile frameworks and methodologies, helping to clarify the best situations to apply the methodology.",
+      },
+      image: require('@/assets/book_kanban.jpg'),
+      tags: [this.$store.state.tags.kanban]
     });
 
 
