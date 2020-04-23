@@ -2,7 +2,7 @@
 
 
   <div class="timeLine">
-      <v-timeline class="timelineApp">
+      <v-timeline class="timelineApp" :dense="$vuetify.breakpoint.smAndDown">
         <v-timeline-item v-if="history.category.enable"
           v-for="(history, i) in histories"
           :key="i"
@@ -11,6 +11,8 @@
           :color="history.category.color"
           :icon="history.category.icon"
           :right="$vuetify.breakpoint.smAndDown"
+          :left="left"
+        :small="small"
           fill-dot
         >
           <template v-if="!$vuetify.breakpoint.smAndDown" v-slot:opposite>
@@ -56,7 +58,9 @@
       selectedCategories: [],
       keyWord: [],
       reverse: false,
-      right: true,
+      right: false,
+      left: false,
+      small: false,
       valueDeterminate: 50
     };
   },
