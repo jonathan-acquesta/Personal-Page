@@ -270,6 +270,25 @@
       tags: [this.$store.state.tags.scrum]
     });
 
+    this.histories.push({
+      date: new Date("2018-10-20"),
+      category: this.$store.state.categoryType.certifications,
+      title: {
+        "pt-BR": "SCRUMstudy – SFC",
+        "en-US": "SCRUMstudy – SFC",
+      },
+      description: {
+        "pt-BR": "A certificação Scrum Fundamentals Certified foi importante para mim em relação a validação do conhecimento e correta compreensão os pilares, valores e fundamentos do SCRUM.",
+        "en-US": "Scrum Fundamentals Certified certification was important to me in terms of knowledge validation and correct understanding of the pillars, values and fundamentals of SCRUM.",
+      },
+      image: require('@/assets/scrumfc.png'),
+      link: {
+        image:   require('@/assets/certificatescrumfoundation.jpg'),
+        description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
+      },
+      tags: [this.$store.state.tags.scrum]
+    });
+
     this.orderByDates();
     
     
