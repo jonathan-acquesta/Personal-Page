@@ -53,8 +53,15 @@ export default new Vuex.Store({
         tags: {
             scrum: { "pt-BR": "#SCRUM", "en-US": "#SCRUM" },
             kanban: { "pt-BR": "#KANBAN", "en-US": "#KANBAN" },
-            management30: { "pt-BR": "#Management3.0", "en-US": "#Management3.0" }
+            management30: { "pt-BR": "#Management3.0", "en-US": "#Management3.0" },
+
+            dotNetFramework: { "pt-BR": "#.NetFramework", "en-US": "#.NetFramework" },
+            aspNet: { "pt-BR": "#Asp.Net", "en-US": "#Asp.Net" },
+            cSharp: { "pt-BR": "#C#", "en-US": "#C#" },
+
         },
+
+
         categoryType: {
             professionalExperience: {
                 color: "red",

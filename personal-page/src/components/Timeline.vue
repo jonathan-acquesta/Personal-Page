@@ -2,6 +2,15 @@
 
 
   <div class="timeLine">
+ <v-overlay class="overlay" :value="overlay">
+                  <v-btn
+                    icon
+                    @click="overlay = false"
+                  >
+                    <v-icon>mdi-close</v-icon>
+                  </v-btn>
+                  <v-img class="descriptionImageLink"  :src="mainImage"></v-img>
+                </v-overlay>
 
 
       <v-timeline class="timelineApp" :dense="$vuetify.breakpoint.smAndDown" :reverse="!$vuetify.breakpoint.smAndDown" :left="$vuetify.breakpoint.smAndDown">
@@ -49,18 +58,9 @@
             <br>
                <div class="links">
               <span  >Link: </span>
-              <a class="linkShow" v-on:click="overlay = true;">{{history.link.description[culture]}} </a>
+              <a class="linkShow" v-on:click="overlay = true;mainImage=history.link.image">{{history.link.description[culture]}} </a>
               
-               <v-overlay class="overlay" :value="overlay">
-      <v-btn
-        icon
-        @click="overlay = false"
-      >
-        <v-icon>mdi-close</v-icon>
-      </v-btn>
-      <v-img class="descriptionImageLink"  :src="history.link.image"></v-img>
-    </v-overlay>
-
+              
             </div>
             <span style="opacity:0.8" v-if="$vuetify.breakpoint.smAndDown"
               :class="`headline font-weight-bold ${history.category.color}--text`"
@@ -90,7 +90,8 @@
       left: false,
       small: false,
       overlay: false,
-      valueDeterminate: 50
+      valueDeterminate: 50,
+      mainImage: "",
     };
   },
   computed: {
@@ -288,6 +289,46 @@
       },
       tags: [this.$store.state.tags.scrum]
     });
+
+    this.histories.push({
+      date: new Date("2011-02-18"),
+      category: this.$store.state.categoryType.certifications,
+      title: {
+        "pt-BR": "Microsoft – MCP",
+        "en-US": "Microsoft – MCP",
+      },
+      description: {
+        "pt-BR": "A certificação 70-562 TS: Microsoft .Net Framework 3.5, ASP.NET Application Development foi muito importante como objetivo pessoal com foco em comprovar o conhecimento que eu tinha adquirido enquanto atuava como líder técnico e essa certificação me concedeu o título de MCP. Obter esta certificação também foi parte de um plano para ajudar nos objetivos corporativos em relação a participação em licitações públicas que exigiam um número mínimo de profissionais certificados na empresa.",
+        "en-US": "The 70-562 TS certification: Microsoft .Net Framework 3.5, ASP.NET Application Development was very important as a personal objective with a focus on proving the knowledge I had acquired while acting as a technical leader and this certification granted me the title of MCP. Obtaining this certification was also part of a plan to help corporate objectives regarding participation in public tenders that required a minimum number of certified professionals in the company.",
+      },
+      image: require('@/assets/msoficial.png'),
+      link: {
+        image:   require('@/assets/MCP70562Certification.png'),
+        description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
+      },
+      tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp]
+    });
+
+
+    this.histories.push({
+      date: new Date("2012-04-16"),
+      category: this.$store.state.categoryType.certifications,
+      title: {
+        "pt-BR": "Microsoft – MCTS",
+        "en-US": "Microsoft – MCTS",
+      },
+      description: {
+        "pt-BR": "A certificação 70-536 TS: Microsoft .Net Framework, ASP.NET Application Development Foundantion foi muito importante para consolidar minha capacidade técnica com as tecnologias Microsoft e essa certificação me concedeu o título de MCTS e apoio na evolução da minha carreira. Obter esta certificação também foi parte de um plano para ajudar nos objetivos corporativos em relação a participação em licitações públicas que exigiam um número mínimo de profissionais certificados na empresa.",
+        "en-US": "The 70-536 TS certification: Microsoft .Net Framework, ASP.NET Application Development Foundantion was very important to consolidate my technical capacity with Microsoft technologies and this certification gave me the title of MCTS and support in the evolution of my career. Obtaining this certification was also part of a plan to help corporate objectives regarding participation in public tenders that required a minimum number of certified professionals in the company.",
+      },
+      image: require('@/assets/msoficial.png'),
+      link: {
+        image:   require('@/assets/MCTS70536Certification.png'),
+        description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
+      },
+      tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp]
+    });
+
 
     this.orderByDates();
     
