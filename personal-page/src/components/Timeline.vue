@@ -3,23 +3,28 @@
 
   <div class="timeLine">
       <v-timeline class="timelineApp">
-        <v-timeline-item v-show="history.category.enable"
+        <v-timeline-item v-if="history.category.enable"
           v-for="(history, i) in histories"
           :key="i"
-          :dense="$vuetify.breakpoint.smAndDown"
+          :dense="!$vuetify.breakpoint.smAndDown"
           :reverse="reverse"
           :color="history.category.color"
           :icon="history.category.icon"
+          :right="$vuetify.breakpoint.smAndDown"
           fill-dot
-          align-center
         >
-          <template v-slot:opposite>
-            <span
+          <template v-if="!$vuetify.breakpoint.smAndDown" v-slot:opposite>
+            <span style="opacity:0.8"
               :class="`headline font-weight-bold ${history.category.color}--text`"
               v-text="formatePeriod(history.date)"
             ></span>
           </template>
           <div class="py-4">
+            <span style="opacity:0.6" v-if="$vuetify.breakpoint.smAndDown"
+              :class="`headline font-weight-bold ${history.category.color}--text`"
+              v-text="formatePeriod(history.date)"
+            ></span>
+            <br>
             <span
               :class="`headline font-weight-bold ${history.category.color}--text`"
               v-text="history.category.name[culture]"
@@ -50,7 +55,8 @@
       histories: [],
       selectedCategories: [],
       keyWord: [],
-      reverse: true,
+      reverse: false,
+      right: true,
       valueDeterminate: 50
     };
   },
