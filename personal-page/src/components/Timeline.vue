@@ -376,6 +376,37 @@
     });
 
 
+this.histories.push({
+      date: new Date("2019-10-02"),
+      category: this.$store.state.categoryType.books,
+      title: {
+        "pt-BR": "A Quarta Revolução Industrial",
+        "en-US": "The Fourth Industrial Revolution",
+      },
+      description: {
+        "pt-BR": "O livro A quarta revolução industrial escrito por Klaus Schwab do World Economic Forum foi uma ferramenta muito interessante para ampliar a minha visão sobre as mudanças que estão ocorrendo em nosso mundo globalizado e entender os possíveis riscos e benefícios desses avanços para os diversos setores da economia.",
+        "en-US": "The book The Fourth Industrial Revolution written by Klaus Schwab of the World Economic Forum was a very interesting tool to broaden my view on the changes that are taking place in our globalized world, and I could understand the possible risks and benefits of these advances for many sectors of the economy.",
+      },
+      image: require('@/assets/book_a_quarta_revolucao_industrual.jpg'),
+      tags: [this.$store.state.tags.fourthIndustrialRevolution, this.$store.state.tags.artificialIntelligence, this.$store.state.tags.disruptiveInnovations]
+    });
+    
+    
+this.histories.push({
+      date: new Date("2019-09-15"),
+      category: this.$store.state.categoryType.books,
+      title: {
+        "pt-BR": "SCRUM",
+        "en-US": "SCRUM",
+      },
+      description: {
+        "pt-BR": "O livro SCRUM: A arte de fazer o dobro do trabalho na metade do tempo foi escrito por Jeff Sutherland e J.J. Sutherland, este livro traz toda a visão e vivencia de um dos criadores do SCRUM de forma bem estruturada e deixando muito claro o porque dessa nova abordagem em relação ao desenvolvimento de sistemas, sendo dificil não concordar com os argumentos expostos em relação a utilização da metodologia cascata ser um fiasco em relação a entrega de valor e atendimento das expectativas das partes interessadas.",
+        "en-US": "The book SCRUM: The art of doing twice the work in half the time was written by Jeff Sutherland and JJ Sutherland, this book brings whole the vision and experience from one of the SCRUM creators in a well structured way, making very clear the reason and necessity of create a new approach to the systems development, being difficult not to agree with the arguments that exposed cascade methodology like a fiasco to purposes of delivery value and meeting the expectations of the interested parties.",
+      },
+      image: require('@/assets/book_scrum.jpg'),
+      tags: [this.$store.state.tags.scrum]
+    });
+
     this.orderByDates();
     
     

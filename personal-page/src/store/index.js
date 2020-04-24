@@ -64,6 +64,12 @@ export default new Vuex.Store({
             highPerformanceTeams: { "pt-BR": "#EquipesAltaPerformance", "en-US": "#HighPerformanceTeams" },
             situationalLeadership: { "pt-BR": "#LiderançaSituacional", "en-US": "#SituationalLeadership" },
 
+            fourthIndustrialRevolution: { "pt-BR": "#QuartaRevoluçãoIndustrial", "en-US": "#FourthIndustrialRevolution" },
+            artificialIntelligence: { "pt-BR": "#InteligênciaArtifícial", "en-US": "#ArtificialIntelligence" },
+            disruptiveInnovations: { "pt-BR": "#InovaçõesDisruptivas", "en-US": "#DisruptiveInnovations" },
+
+            //tags: [this.$store.state.tags.fourthIndustrialRevolution, this.$store.state.tags.artificialIntelligence, this.$store.state.tags.disruptiveInnovations]
+
             //, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership
 
         },
