@@ -330,13 +330,12 @@
       tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp]
     });
 
-
-this.histories.push({
+     this.histories.push({
       date: new Date("2020-04-02"),
       category: this.$store.state.categoryType.books,
       title: {
-        "pt-BR": "KANBAN - James Turner",
-        "en-US": "KANBAN - James Turner",
+        "pt-BR": "KANBAN",
+        "en-US": "KANBAN",
       },
       description: {
         "pt-BR": "O livro Kanban: O melhor guia para iniciantes aprenderem Kanban passo a passo, foi escrito por James Turner e traz diversas aplicações sobre o conceito em diversos setores industriais, também faz comparações sobre a aplicação do Kanban em relação a outros frameworks e metodologias ágeis, ajudando a clarificar as melhores situações para se aplicar a metodologia.",
@@ -344,6 +343,36 @@ this.histories.push({
       },
       image: require('@/assets/book_kanban.jpg'),
       tags: [this.$store.state.tags.kanban]
+    });
+
+    this.histories.push({
+      date: new Date("2020-02-05"),
+      category: this.$store.state.categoryType.books,
+      title: {
+        "pt-BR": "Coaching e Liderança",
+        "en-US": "Coaching and Leadership",
+      },
+      description: {
+        "pt-BR": "O livro Coaching e Liderança: Novas maneiras para conduzir, influenciar pessoas e gerar negócios de sucesso foi coordenado por Jaques Grinberg e Jorge Penilo, sendo uma obra que reuni a vivencia e experiência de vinte e três autores em relação aos desafios enfrentados por profissionais que se desafiam a liderar. Essa abordagem foi muito interessante para aprender e comparar a minha realidade com outras situações em contextos diversos.",
+        "en-US": "The book Coaching and Leadership: New ways to lead, influence people and generate successful businesses was coordinated by Jaques Grinberg and Jorge Penilo, being a work that brought together the experience of twenty-three authors in relation to the challenges faced by professionals who challenge themselves to lead. This approach was very interesting to learn and compare my reality with other situations in different contexts.",
+      },
+      image: require('@/assets/book_coaching_lideranca.jpg'),
+      tags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership]
+    });
+
+    this.histories.push({
+      date: new Date("2019-12-22"),
+      category: this.$store.state.categoryType.books,
+      title: {
+        "pt-BR": "Gerenciando Pessoas",
+        "en-US": "Managing People",
+      },
+      description: {
+        "pt-BR": "O livro Gerenciando Pessoas: Os melhores artigos de Harvard Business Review sobre como liderar equipes, traz dez ótimos artigos que me ajudaram em muito na reflexão sobre aspectos de liderança, engajamento, organização e resultados.",
+        "en-US": "The book Managing People: The best articles from Harvard Business Review on how to lead teams, brings ten great articles that helped me a lot in thinking about aspects of leadership, engagement, organization and results.",
+      },
+      image: require('@/assets/book_gerenciando_pessoas.jpg'),
+      tags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership]
     });
 
 

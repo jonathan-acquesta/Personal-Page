@@ -59,6 +59,13 @@ export default new Vuex.Store({
             aspNet: { "pt-BR": "#Asp.Net", "en-US": "#Asp.Net" },
             cSharp: { "pt-BR": "#C#", "en-US": "#C#" },
 
+            coaching: { "pt-BR": "#Coaching", "en-US": "#Coaching" },
+            leadership: { "pt-BR": "#Liderança", "en-US": "#Leadership" },
+            highPerformanceTeams: { "pt-BR": "#EquipesAltaPerformance", "en-US": "#HighPerformanceTeams" },
+            situationalLeadership: { "pt-BR": "#LiderançaSituacional", "en-US": "#SituationalLeadership" },
+
+            //, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership
+
         },
 
 
