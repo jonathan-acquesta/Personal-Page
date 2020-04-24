@@ -49,8 +49,11 @@
       dark
       dense
     >
-
-<v-toolbar-title>Jonathan Caravaggio Acquesta - Agile Coach - PSM I</v-toolbar-title>
+    
+        <v-btn icon>
+          <v-icon  size="24px" @click="openLinkedIn('https://www.linkedin.com/in/jonathan-caravaggio-acquesta-a26a4422/')">fab fa-linkedin</v-icon>
+        </v-btn>
+    <v-toolbar-title style="margin-left:-15px;">Jonathan Caravaggio Acquesta - Agile Coach - PSM I</v-toolbar-title>
     <v-spacer />
     <label class="language" src="./assets/brazil.jpg" :class="{languageDisactive: this.$store.state.common.languages.portuguese.language !== culture}" :title="this.$store.state.common.languages.portuguese[culture]" v-on:click="ChangeLanguePortuguese()" >PT</label>
     <label class="languageSeparator">|</label>
@@ -77,11 +80,11 @@
       <v-card-text>
         <v-btn
           v-for="icon in icons"
-          :key="icon"
+          :key="icon.icon"
           class="mx-4 white--text"
           icon
         >
-          <v-icon size="24px">{{ icon }}</v-icon>
+          <v-icon size="24px" @click="openLinkedIn(icon.url)">{{ icon.icon }}</v-icon>
         </v-btn>
       </v-card-text>
 
@@ -113,20 +116,14 @@ import Home from "./views/Home";
       left: false,
       miniVariant: true,
         icons: [
-        'fab fa-linkedin',
-        'fab fa-github',
-        'fab fa-stack-overflow',
-        'fab fa-youtube',
-        'fab fa-medium',
-        'fab fa-instagram',
-        'fab fa-facebook',
-        'fab fa-twitter',
-      ],
-      items: [
-        { title: 'Click Me' },
-        { title: 'Click Me' },
-        { title: 'Click Me' },
-        { title: 'Click Me 2' },
+        {icon: 'fab fa-linkedin', url:'https://www.linkedin.com/in/jonathan-caravaggio-acquesta-a26a4422/'},
+        {icon: 'fab fa-github', url:'https://github.com/jonathan-acquesta'},
+        {icon: 'fab fa-stack-overflow', url:'https://stackoverflow.com/users/9547421/jonathan-caravaggio-acquesta'},
+        {icon: 'fab fa-youtube', url:'https://www.youtube.com/channel/UC9dky_d4FDcHUc13iwA19-w?view_as=subscriber'},
+        {icon: 'fab fa-medium', url:'https://medium.com/@jcagames'},
+        {icon: 'fab fa-instagram', url:'https://www.instagram.com/jonathan.acquesta/?hl=pt-br'},
+        {icon: 'fab fa-facebook', url:'https://www.facebook.com/jonathan.acquesta'},
+        {icon: 'fab fa-twitter', url:'https://twitter.com/JonathanCAcques'}
       ],
     }),
     computed: {
@@ -147,6 +144,9 @@ import Home from "./views/Home";
       InvertSelection(category)
       {
           category.enable = !category.enable;
+      },
+      openLinkedIn: function (url) {   
+          window.open(url, "_blank");    
       }
     },
   }
