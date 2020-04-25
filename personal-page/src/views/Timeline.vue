@@ -50,9 +50,12 @@
             </div>
             </div>
          
-            <div>
-              <span class="tags" v-for="(tag, index) in history.tags" :key="index" >{{ tag[culture] }}</span>
+            <div class="tagsDiv">
+              <v-chip class="logs" color="white" label :text-color="tag.color" v-for="(tag, index) in history.tags" :key="index">
+                <b>{{ tag[culture] }}</b>
+              </v-chip>
             </div>
+
             <br>
                <div class="links" v-if="history.link">
               <span  >Link: </span>
@@ -476,7 +479,25 @@ this.histories.push({
         "en-US": "My career was going fast and I received an interesting offer to work for Adedo Contact Center as a full developer where my main responsibility had been starting a new department to system development. The first project was to create a new multi-language commercial site for the company with the objective of stop a outsource contract, I did this project together the marketing department and create a management area to able admin users to managed new content on the site. This project was approved like a success with the director board and the president, achieving the results of cost reduction and agility in external communication.",
       },
       image: require('@/assets/professionalExperiences/adedo.jpg'),
-      tags: [this.$store.state.tags.fullDeveloper, this.$store.state.tags.criatitySolution, this.$store.state.tags.successCase, this.$store.state.tags.selfManagement,
+      tags: [this.$store.state.tags.fullDeveloper, this.$store.state.tags.criatitySolution, this.$store.state.tags.selfManagement, this.$store.state.tags.successCase,
+             this.$store.state.tags.photoshop, this.$store.state.tags.aspNet, this.$store.state.tags.vbNet, this.$store.state.tags.vbScript, this.$store.state.tags.sql,
+             this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html]
+    });
+
+ this.histories.push({
+      date: new Date("2009-09-15"),
+      category: this.$store.state.categoryType.professionalExperience,
+      title: {
+        "pt-BR": "Adedo Contact Center - Intranet",
+        "en-US": "Adedo Contact Center - Intranet",
+      },
+      description: {
+        "pt-BR": "Após concluir o projeto do site comercial, iniciei um novo grande desafio nessa empresa, criei uma intranet para conectar os departamentos de Marketing, Infraestrutura, Helpdesk e Call Centers. Esse projeto foi realmente gratificante, porque tive a oportunidade de conhecer muitas pessoas de diferentes partes da empresa e entender o que elas realmente precisavam. Durante esse período, criei muitos softwares para dar suporte às operações do call center e um sistema para controlar a distribuição de almoço por código de barras.",
+        "en-US": "After conclude the commercial site project, I started a new great challenge in that company, I created an intranet to connect the departments of Marketing, Infrastructure, Helpdesk and Call Centers. This project was really rewarding because I had the opportunity to know many people of different parts of the company and understand what them really needed. During this period, I created too many software to support the call center operations and a system to control lunch distribution by bar code.",
+      },
+      image: require('@/assets/professionalExperiences/adedo.jpg'),
+      tags: [this.$store.state.tags.fullDeveloper, this.$store.state.tags.criatitySolution, this.$store.state.tags.selfManagement, this.$store.state.tags.greatChallenge, this.$store.state.tags.rewarding,
+             this.$store.state.tags.successCase,  this.$store.state.tags.silverlight, this.$store.state.tags.webServices,
              this.$store.state.tags.photoshop, this.$store.state.tags.aspNet, this.$store.state.tags.vbNet, this.$store.state.tags.vbScript, this.$store.state.tags.sql,
              this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html]
     });
@@ -502,12 +523,20 @@ this.histories.push({
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+.logs{
+  margin-right: -10px;
+}
+
 .card{
   margin-left: 10px;
 }
 
 .timelineApp{
   margin: 10px;
+}
+
+.tagsDiv{
+  margin-left: -10px;
 }
 
   .tags{
