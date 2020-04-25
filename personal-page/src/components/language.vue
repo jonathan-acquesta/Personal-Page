@@ -1,8 +1,8 @@
 <template>
     <div>
-        <label class="language" :class="{languageDisactive: this.$store.state.common.languages.portuguese.language !== culture}" :title="this.$store.state.common.languages.portuguese[culture]" v-on:click="ChangeLanguePortuguese()" >PT</label>
+        <label class="language" :class="{languageDisactive: !IsActive(this.$store.state.common.languages.portuguese.language)}" :title="this.$store.state.common.languages.portuguese[culture]" v-on:click="ChangeLanguePortuguese()" >PT</label>
         <label class="languageSeparator">|</label>
-        <label class="language" :class="{languageDisactive: this.$store.state.common.languages.english.language !== culture}" :title="this.$store.state.common.languages.english[culture]"  v-on:click="ChangeLangueEnglish()">EN</label>
+        <label class="language" :class="{languageDisactive: !IsActive(this.$store.state.common.languages.english.language)}" :title="this.$store.state.common.languages.english[culture]"  v-on:click="ChangeLangueEnglish()">EN</label>
     </div>
 </template>
 
@@ -23,6 +23,10 @@
             {
                 this.$store.state.culture = this.$store.state.common.languages.english.language;
             },
+            IsActive(language)
+            {
+                return language == this.$store.state.culture;
+            }
         }
     }
 </script>

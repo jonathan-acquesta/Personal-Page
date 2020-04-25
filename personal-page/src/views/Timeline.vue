@@ -12,9 +12,6 @@
                   <v-img class="descriptionImageLink"  :src="mainImage"></v-img>
                 </v-overlay>
 
-
-
-    
         <v-timeline class="timelineApp" :dense="$vuetify.breakpoint.smAndDown" :reverse="!$vuetify.breakpoint.smAndDown" :left="$vuetify.breakpoint.smAndDown">
         <v-timeline-item v-if="history.category.enable"
           v-for="(history, i) in histories"
@@ -37,8 +34,6 @@
           <v-card class="elevation-2">
           <div class="py-4 card">
 
-            
-           
             <span
               :class="`headline font-weight-bold ${history.category.color}--text`"
               v-text="history.category.name[culture]"
@@ -62,8 +57,6 @@
                <div class="links" v-if="history.link">
               <span  >Link: </span>
               <a class="linkShow" v-on:click="overlay = true;mainImage=history.link.image">{{history.link.description[culture]}} </a>
-              
-              
             </div>
             <span style="opacity:0.8" v-if="$vuetify.breakpoint.smAndDown"
               :class="`headline font-weight-bold ${history.category.color}--text`"
@@ -413,6 +406,7 @@ this.histories.push({
 
     this.orderByDates();
     
+    this.$store.state.histories = this.histories;
     
   },
   methods: {
