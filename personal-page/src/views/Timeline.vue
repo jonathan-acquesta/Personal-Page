@@ -75,9 +75,6 @@
 
   export default {
   name: "Timeline",
-  props: {
-    msg: String
-  },
   data() {
     return {
       histories: [],
@@ -261,9 +258,9 @@
         "pt-BR": "A certificação Professional Scrum Master foi um momento importante para formalização do conhecimento que adquiri durante toda a minha carreira profissional. Eu tive a oportunidade de trabalhar com SCRUM desde o inicio dos anos 2010 e esse framework agregou em muito nos bons resultados que venho obtendo.",
         "en-US": "The Professional Scrum Master certification was an important moment to formalize the knowledge I acquired throughout my professional career. I had the opportunity to work with SCRUM since the beginning of the 2010s and this framework added a lot to the good results I have been getting.",
       },
-      image: require('@/assets/psmi.png'),
+      image: require('@/assets/certifications/psm1.png'),
       link: {
-        image:   require('@/assets/certificatepsm1.jpg'),
+        image:   require('@/assets/certificates/psm1.jpg'),
         description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
       },
       tags: [this.$store.state.tags.scrum]
@@ -280,9 +277,9 @@
         "pt-BR": "A certificação Scrum Fundamentals Certified foi importante para mim em relação a validação do conhecimento e correta compreensão os pilares, valores e fundamentos do SCRUM.",
         "en-US": "Scrum Fundamentals Certified was important certification to me in terms of knowledge validation and correct understanding of the pillars, values and fundamentals of SCRUM.",
       },
-      image: require('@/assets/scrumfc.png'),
+      image: require('@/assets/certifications/sfc.png'),
       link: {
-        image:   require('@/assets/certificatescrumfoundation.jpg'),
+        image:   require('@/assets/certificates/sfc.jpg'),
         description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
       },
       tags: [this.$store.state.tags.scrum]
@@ -299,9 +296,9 @@
         "pt-BR": "A certificação 70-562 Technology Specialist: Microsoft .Net Framework 3.5, ASP.NET Application Development foi muito importante como objetivo pessoal com foco em comprovar o conhecimento que eu tinha adquirido enquanto atuava como líder técnico e essa certificação me concedeu o título de MCP. Obter esta certificação também foi parte de um plano para ajudar nos objetivos corporativos em relação a participação em licitações públicas que exigiam um número mínimo de profissionais certificados na empresa.",
         "en-US": "The 70-562 Technology Specialist: Microsoft .Net Framework 3.5, ASP.NET Application Development certification was very important as a personal objective with a focus on proving the knowledge I had acquired while I acting as a technical leader, and this certification granted me the title of MCP. Obtaining this certification was also part of a plan to help corporate objectives regarding participation in public tenders that required a minimum number of certified professionals in the company.",
       },
-      image: require('@/assets/msoficial.png'),
+      image: require('@/assets/certifications/msoficial.png'),
       link: {
-        image:   require('@/assets/MCP70562Certification.png'),
+        image:   require('@/assets/certificates/MCP70562.png'),
         description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
       },
       tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp]
@@ -319,9 +316,9 @@
         "pt-BR": "A certificação 70-536 Technology Specialist: Microsoft .Net Framework, ASP.NET Application Development Foundantion foi muito importante para consolidar minha capacidade técnica com as tecnologias Microsoft e essa certificação me concedeu o título de MCTS e apoio na evolução da minha carreira. Obter esta certificação também foi parte de um plano para ajudar nos objetivos corporativos em relação a participação em licitações públicas que exigiam um número mínimo de profissionais certificados na empresa.",
         "en-US": "The 70-536 Technology Specialist: Microsoft .Net Framework, ASP.NET Application Development Foundantion certification was very important to consolidate my technical capacity with Microsoft technologies, and this certification gave me the title of MCTS, beside that, it supported the evolution of my career in that occasion. Obtaining this certification was also part of a plan to help corporate objectives regarding participation in public tenders that required a minimum number of certified professionals in the company",
       },
-      image: require('@/assets/msoficial.png'),
+      image: require('@/assets/certifications/msoficial.png'),
       link: {
-        image:   require('@/assets/MCTS70536Certification.png'),
+        image:   require('@/assets/certificates/MCTS70536.png'),
         description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
       },
       tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp]
@@ -338,7 +335,7 @@
         "pt-BR": "O livro Kanban: O melhor guia para iniciantes aprenderem Kanban passo a passo, foi escrito por James Turner e traz diversas aplicações sobre o conceito em diversos setores industriais, também faz comparações sobre a aplicação do Kanban em relação a outros frameworks e metodologias ágeis, ajudando a clarificar as melhores situações para se aplicar a metodologia.",
         "en-US": "The book Kanban: The ultimate guide for beginner's to learn Kanban step by step, was written by James Turner and brings several applications about the concept in different industrial sectors, it also makes comparisons about the application of Kanban in relation to other agile frameworks and methodologies, helping to clarify the best situations to apply the methodology.",
       },
-      image: require('@/assets/book_kanban.jpg'),
+      image: require('@/assets/books/kanban.jpg'),
       tags: [this.$store.state.tags.kanban]
     });
 
@@ -353,7 +350,7 @@
         "pt-BR": "O livro Coaching e Liderança: Novas maneiras para conduzir, influenciar pessoas e gerar negócios de sucesso foi coordenado por Jaques Grinberg e Jorge Penilo, sendo uma obra que reuni a vivencia e experiência de vinte e três autores em relação aos desafios enfrentados por profissionais que se desafiam a liderar. Essa abordagem foi muito interessante para aprender e comparar a minha realidade com outras situações em contextos diversos.",
         "en-US": "The book Coaching and Leadership: New ways to lead, influence people and generate successful businesses was coordinated by Jaques Grinberg and Jorge Penilo, being a work that brought together the experience of twenty-three authors in relation to the challenges faced by professionals who challenge themselves to lead. This approach was very interesting to learn and compare my reality with other situations in different contexts.",
       },
-      image: require('@/assets/book_coaching_lideranca.jpg'),
+      image: require('@/assets/books/coaching_lideranca.jpg'),
       tags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership]
     });
 
@@ -368,7 +365,7 @@
         "pt-BR": "O livro Gerenciando Pessoas: Os melhores artigos de Harvard Business Review sobre como liderar equipes, traz dez ótimos artigos que me ajudaram em muito na reflexão sobre aspectos de liderança, engajamento, organização e resultados.",
         "en-US": "The book Managing People: The best articles from Harvard Business Review on how to lead teams, brings ten great articles that helped me a lot in thinking about aspects of leadership, engagement, organization and results.",
       },
-      image: require('@/assets/book_gerenciando_pessoas.jpg'),
+      image: require('@/assets/books/gerenciando_pessoas.jpg'),
       tags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership]
     });
 
@@ -384,7 +381,7 @@ this.histories.push({
         "pt-BR": "O livro A quarta revolução industrial escrito por Klaus Schwab do World Economic Forum foi uma ferramenta muito interessante para ampliar a minha visão sobre as mudanças que estão ocorrendo em nosso mundo globalizado e entender os possíveis riscos e benefícios desses avanços para os diversos setores da economia.",
         "en-US": "The book The Fourth Industrial Revolution written by Klaus Schwab of the World Economic Forum was a very interesting tool to broaden my view on the changes that are taking place in our globalized world, and I could understand the possible risks and benefits of these advances for many sectors of the economy.",
       },
-      image: require('@/assets/book_a_quarta_revolucao_industrual.jpg'),
+      image: require('@/assets/books/quarta_revolucao_industrual.jpg'),
       tags: [this.$store.state.tags.fourthIndustrialRevolution, this.$store.state.tags.artificialIntelligence, this.$store.state.tags.disruptiveInnovations]
     });
     
@@ -400,8 +397,24 @@ this.histories.push({
         "pt-BR": "O livro SCRUM: A arte de fazer o dobro do trabalho na metade do tempo foi escrito por Jeff Sutherland e JJ Sutherland. Este livro traz toda a visão e experiência de um dos criadores do SCRUM de uma maneira bem estruturada, fundamentando as razões para criação de uma nova abordagem no setor de desenvolvimento de sistemas. Este livro foi muito interessante para mim, devido a me possibilitar a oportunidade de entender melhor como o SCRUM nasceu e cresceu.",
         "en-US": "The book SCRUM: The art of doing twice the work in half the time was written by Jeff Sutherland and JJ Sutherland, this book brings all the vision and experience from one of the SCRUM creators in a well structured way, making the reasons for create a new approach to the systems development very clear. It was interesting to me, who wanted to know better how SCRUM borned and growed.",
       },
-      image: require('@/assets/book_scrum.jpg'),
+      image: require('@/assets/books/scrum.jpg'),
       tags: [this.$store.state.tags.scrum]
+    });
+
+
+this.histories.push({
+      date: new Date("2007-11-01"),
+      category: this.$store.state.categoryType.professionalExperience,
+      title: {
+        "pt-BR": "POLITEC S/A - Minha primeira oportunidade.",
+        "en-US": "POLITEC S/A - My first opportunity",
+      },
+      description: {
+        "pt-BR": "Foi em 2007, quando eu recebi a minha primeira oportunidade em minha carreira, naquela ocasião eu tinha 19 anos e estava ansioso para começar a trabalhar no setor de TI. A Politec S/A me contratou como estagiário e me ofereceu a chance de obter experiência em um ambiente de trabalho.",
+        "en-US": "It was in 2007 when I receive my first opportunity in my career, in that occasion I was 19 years old and I was looking forward to start to work in IT industry. Politec S/A hired me as an intern and gave me the chance of get experience in a work environment.",
+      },
+      image: require('@/assets/professionalExperiences/politec.png'),
+      tags: [this.$store.state.tags.intern, this.$store.state.tags.opportunity]
     });
 
     this.orderByDates();

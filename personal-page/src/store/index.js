@@ -78,9 +78,9 @@ export default new Vuex.Store({
             artificialIntelligence: { "pt-BR": "#InteligênciaArtifícial", "en-US": "#ArtificialIntelligence" },
             disruptiveInnovations: { "pt-BR": "#InovaçõesDisruptivas", "en-US": "#DisruptiveInnovations" },
 
-            //tags: [this.$store.state.tags.fourthIndustrialRevolution, this.$store.state.tags.artificialIntelligence, this.$store.state.tags.disruptiveInnovations]
+            intern: { "pt-BR": "#Estagiário", "en-US": "#Intern" },
 
-            //, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership
+            opportunity: { "pt-BR": "#Oportunidade", "en-US": "#Opportunity" },
 
         },
 
