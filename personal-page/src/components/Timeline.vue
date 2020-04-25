@@ -13,7 +13,9 @@
                 </v-overlay>
 
 
-      <v-timeline class="timelineApp" :dense="$vuetify.breakpoint.smAndDown" :reverse="!$vuetify.breakpoint.smAndDown" :left="$vuetify.breakpoint.smAndDown">
+
+    
+        <v-timeline class="timelineApp" :dense="$vuetify.breakpoint.smAndDown" :reverse="!$vuetify.breakpoint.smAndDown" :left="$vuetify.breakpoint.smAndDown">
         <v-timeline-item v-if="history.category.enable"
           v-for="(history, i) in histories"
           :key="i"
@@ -71,6 +73,8 @@
           </v-card>
         </v-timeline-item>
       </v-timeline>
+     
+      
   </div>
 </template>
 
@@ -400,8 +404,8 @@ this.histories.push({
         "en-US": "SCRUM",
       },
       description: {
-        "pt-BR": "O livro SCRUM: A arte de fazer o dobro do trabalho na metade do tempo foi escrito por Jeff Sutherland e J.J. Sutherland, este livro traz toda a visão e vivencia de um dos criadores do SCRUM de forma bem estruturada e deixando muito claro o porque dessa nova abordagem em relação ao desenvolvimento de sistemas, sendo dificil não concordar com os argumentos expostos em relação a utilização da metodologia cascata ser um fiasco em relação a entrega de valor e atendimento das expectativas das partes interessadas.",
-        "en-US": "The book SCRUM: The art of doing twice the work in half the time was written by Jeff Sutherland and JJ Sutherland, this book brings whole the vision and experience from one of the SCRUM creators in a well structured way, making very clear the reason and necessity of create a new approach to the systems development, being difficult not to agree with the arguments that exposed cascade methodology like a fiasco to purposes of delivery value and meeting the expectations of the interested parties.",
+        "pt-BR": "O livro SCRUM: A arte de fazer o dobro do trabalho na metade do tempo foi escrito por Jeff Sutherland e JJ Sutherland. Este livro traz toda a visão e experiência de um dos criadores do SCRUM de uma maneira bem estruturada, fundamentando as razões para criação de uma nova abordagem no setor de desenvolvimento de sistemas. Este livro foi muito interessante para mim, devido a me possibilitar a oportunidade de entender melhor como o SCRUM nasceu e cresceu.",
+        "en-US": "The book SCRUM: The art of doing twice the work in half the time was written by Jeff Sutherland and JJ Sutherland, this book brings all the vision and experience from one of the SCRUM creators in a well structured way, making the reasons for create a new approach to the systems development very clear. It was interesting to me, who wanted to know better how SCRUM borned and growed.",
       },
       image: require('@/assets/book_scrum.jpg'),
       tags: [this.$store.state.tags.scrum]

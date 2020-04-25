@@ -1,46 +1,8 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer
-      v-model="drawerRight"
-      app
-      clipped
-      right
-        permanent
-      expand-on-hover
-    >
 
-    <v-list
-          dense
-          nav
-          class="py-0"
-        >
-          <v-list-item two-line :class="miniVariant && 'px-0'">
-            <v-list-item-avatar>
-              <img src="./assets/myFace.png">
-            </v-list-item-avatar>
 
-            <v-list-item-content>
-              <v-list-item-title ><span class="applicationTitle">{{ this.$store.state.common.applicationTitle[culture]}}</span></v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-
-          <v-divider></v-divider>
-
-          <v-list-item
-            v-for="(category, index) in this.$store.state.categoryType" :key="index" link v-on:click="InvertSelection(category)">
-            
-            <v-list-item-icon>
-              <v-icon :color="category.color" :class="{desactiveCategory: !category.enable}">{{ category.icon }}</v-icon>
-            </v-list-item-icon>
-                <v-list-item-content>
-                  <v-list-item-title :class="{desactiveCategory: !category.enable}">{{ category.name[culture] }} 
-              </v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
-
-     
-    </v-navigation-drawer>
+    
 
     <v-app-bar
       app
@@ -59,6 +21,8 @@
     <label class="languageSeparator">|</label>
     <label class="language" src="./assets/usa.jpg" :class="{languageDisactive: this.$store.state.common.languages.english.language !== culture}" :title="this.$store.state.common.languages.english[culture]"  v-on:click="ChangeLangueEnglish()">EN</label>
     </v-app-bar>
+
+<sideMenu></sideMenu>
 
     <v-content>
       <v-container
@@ -102,19 +66,20 @@
 
 <script>
 import Home from "./views/Home";
+import sideMenu from "./components/sideMenu.vue";
+
   export default {
     props: {
       source: String,
     },
     components: {
-      Home
+      Home, sideMenu
     },
     data: () => ({
       drawer: null,
-      drawerRight: null,
       right: false,
       left: false,
-      miniVariant: true,
+
         icons: [
         {icon: 'fab fa-linkedin', url:'https://www.linkedin.com/in/jonathan-caravaggio-acquesta-a26a4422/'},
         {icon: 'fab fa-github', url:'https://github.com/jonathan-acquesta'},
@@ -140,10 +105,6 @@ import Home from "./views/Home";
       ChangeLangueEnglish()
       {
         this.$store.state.culture = this.$store.state.common.languages.english.language;
-      },
-      InvertSelection(category)
-      {
-          category.enable = !category.enable;
       },
       openLinkedIn: function (url) {   
           window.open(url, "_blank");    
@@ -188,7 +149,5 @@ import Home from "./views/Home";
     color: rgb(1, 32, 71);
   }
 
-  .desactiveCategory{
-    opacity: 0.4;
-  }
+  
 </style>
