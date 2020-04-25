@@ -67,7 +67,14 @@ export default new Vuex.Store({
 
             dotNetFramework: { "pt-BR": "#.NetFramework", "en-US": "#.NetFramework" },
             aspNet: { "pt-BR": "#Asp.Net", "en-US": "#Asp.Net" },
+            asp: { "pt-BR": "#Asp", "en-US": "#Asp" },
             cSharp: { "pt-BR": "#C#", "en-US": "#C#" },
+            sql: { "pt-BR": "#SQL", "en-US": "#SQL" },
+            visualBasic6: { "pt-BR": "#VisualBasic6", "en-US": "#VisualBasic6" },
+            vbScript: { "pt-BR": "#VBScript", "en-US": "#VBScript" },
+            javascript: { "pt-BR": "#Javascript", "en-US": "#Javascript" },
+            css: { "pt-BR": "#CSS", "en-US": "#CSS" },
+            html: { "pt-BR": "#HTML", "en-US": "#HTML" },
 
             coaching: { "pt-BR": "#Coaching", "en-US": "#Coaching" },
             leadership: { "pt-BR": "#Liderança", "en-US": "#Leadership" },

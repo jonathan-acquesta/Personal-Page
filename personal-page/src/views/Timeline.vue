@@ -417,6 +417,21 @@ this.histories.push({
       tags: [this.$store.state.tags.intern, this.$store.state.tags.opportunity]
     });
 
+    this.histories.push({
+      date: new Date("2008-02-01"),
+      category: this.$store.state.categoryType.professionalExperience,
+      title: {
+        "pt-BR": "POLITEC S/A - Seis meses de carreira.",
+        "en-US": "POLITEC S/A - Six months of career.",
+      },
+      description: {
+        "pt-BR": "Eu estava completando seis meses de carreira e acredito que tive sorte, porque, logo no primeiro emprego, fui alocado em um importante projeto da Gol Linhas Aéreas, onde me foi permitido resolver problemas de produção relatados pelos clientes. Neste projeto, pude aprimorar minhas habilidades com Asp, Javascript, Visual Basic 6 e SQL.",
+        "en-US": "I had been completing six months of career, and I believe that I was lucky, because right in the first job, I was allocated in a important project of Gol Linhas Aereas, where I was allowed to solve production issues that were reported by clients. In this project, I could improve my skills with Asp, Javascript, Visual Basic 6 and SQL.",
+      },
+      image: require('@/assets/professionalExperiences/politec_gol.png'),
+      tags: [this.$store.state.tags.intern, this.$store.state.tags.sql, this.$store.state.tags.visualBasic6, this.$store.state.tags.asp, this.$store.state.tags.vbScript, this.$store.state.tags.javascript, this.$store.state.tags.css, this.$store.state.tags.html]
+    });
+
     this.orderByDates();
     
     this.$store.state.histories = this.histories;
