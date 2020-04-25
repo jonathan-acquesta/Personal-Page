@@ -258,7 +258,7 @@
         "pt-BR": "A certificação Professional Scrum Master foi um momento importante para formalização do conhecimento que adquiri durante toda a minha carreira profissional. Eu tive a oportunidade de trabalhar com SCRUM desde o inicio dos anos 2010 e esse framework agregou em muito nos bons resultados que venho obtendo.",
         "en-US": "The Professional Scrum Master certification was an important moment to formalize the knowledge I acquired throughout my professional career. I had the opportunity to work with SCRUM since the beginning of the 2010s and this framework added a lot to the good results I have been getting.",
       },
-      image: require('@/assets/certifications/psm1.png'),
+      image: require('@/assets/certifications/psm1.jpg'),
       link: {
         image:   require('@/assets/certificates/psm1.jpg'),
         description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
@@ -277,7 +277,7 @@
         "pt-BR": "A certificação Scrum Fundamentals Certified foi importante para mim em relação a validação do conhecimento e correta compreensão os pilares, valores e fundamentos do SCRUM.",
         "en-US": "Scrum Fundamentals Certified was important certification to me in terms of knowledge validation and correct understanding of the pillars, values and fundamentals of SCRUM.",
       },
-      image: require('@/assets/certifications/sfc.png'),
+      image: require('@/assets/certifications/sfc.jpg'),
       link: {
         image:   require('@/assets/certificates/sfc.jpg'),
         description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
@@ -296,7 +296,7 @@
         "pt-BR": "A certificação 70-562 Technology Specialist: Microsoft .Net Framework 3.5, ASP.NET Application Development foi muito importante como objetivo pessoal com foco em comprovar o conhecimento que eu tinha adquirido enquanto atuava como líder técnico e essa certificação me concedeu o título de MCP. Obter esta certificação também foi parte de um plano para ajudar nos objetivos corporativos em relação a participação em licitações públicas que exigiam um número mínimo de profissionais certificados na empresa.",
         "en-US": "The 70-562 Technology Specialist: Microsoft .Net Framework 3.5, ASP.NET Application Development certification was very important as a personal objective with a focus on proving the knowledge I had acquired while I acting as a technical leader, and this certification granted me the title of MCP. Obtaining this certification was also part of a plan to help corporate objectives regarding participation in public tenders that required a minimum number of certified professionals in the company.",
       },
-      image: require('@/assets/certifications/msoficial.png'),
+      image: require('@/assets/certifications/msoficial.jpg'),
       link: {
         image:   require('@/assets/certificates/MCP70562.png'),
         description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
@@ -316,7 +316,7 @@
         "pt-BR": "A certificação 70-536 Technology Specialist: Microsoft .Net Framework, ASP.NET Application Development Foundantion foi muito importante para consolidar minha capacidade técnica com as tecnologias Microsoft e essa certificação me concedeu o título de MCTS e apoio na evolução da minha carreira. Obter esta certificação também foi parte de um plano para ajudar nos objetivos corporativos em relação a participação em licitações públicas que exigiam um número mínimo de profissionais certificados na empresa.",
         "en-US": "The 70-536 Technology Specialist: Microsoft .Net Framework, ASP.NET Application Development Foundantion certification was very important to consolidate my technical capacity with Microsoft technologies, and this certification gave me the title of MCTS, beside that, it supported the evolution of my career in that occasion. Obtaining this certification was also part of a plan to help corporate objectives regarding participation in public tenders that required a minimum number of certified professionals in the company",
       },
-      image: require('@/assets/certifications/msoficial.png'),
+      image: require('@/assets/certifications/msoficial.jpg'),
       link: {
         image:   require('@/assets/certificates/MCTS70536.png'),
         description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
@@ -413,7 +413,7 @@ this.histories.push({
         "pt-BR": "Foi em 2007, quando eu recebi a minha primeira oportunidade em minha carreira, naquela ocasião eu tinha 19 anos e estava ansioso para começar a trabalhar no setor de TI. A Politec S/A me contratou como estagiário e me ofereceu a chance de obter experiência em um ambiente de trabalho.",
         "en-US": "It was in 2007 when I receive my first opportunity in my career, in that occasion I was 19 years old and I was looking forward to start to work in IT industry. Politec S/A hired me as an intern and gave me the chance of get experience in a work environment.",
       },
-      image: require('@/assets/professionalExperiences/politec.png'),
+      image: require('@/assets/professionalExperiences/politec.jpg'),
       tags: [this.$store.state.tags.intern, this.$store.state.tags.opportunity]
     });
 
@@ -426,9 +426,9 @@ this.histories.push({
       },
       description: {
         "pt-BR": "Eu estava completando seis meses de carreira e acredito que tive sorte, porque, logo no primeiro emprego, fui alocado em um importante projeto da Gol Linhas Aéreas, onde me foi permitido resolver problemas de produção relatados pelos clientes. Neste projeto, pude aprimorar minhas habilidades com Asp, Javascript, Visual Basic 6 e SQL.",
-        "en-US": "I had been completing six months of career, and I believe that I was lucky, because right in the first job, I was allocated in a important project of Gol Linhas Aereas, where I was allowed to solve production issues that were reported by clients. In this project, I could improve my skills with Asp, Javascript, Visual Basic 6 and SQL.",
+        "en-US": "I had been completing six months of career, and I believe that I was lucky, because right in the first job, I was allocated in an important project of Gol Linhas Aereas, where I was allowed to solve production issues that were reported by clients. In this project, I could improve my skills with Asp, Javascript, Visual Basic 6 and SQL.",
       },
-      image: require('@/assets/professionalExperiences/politec_gol.png'),
+      image: require('@/assets/professionalExperiences/politec_gol.jpg'),
       tags: [this.$store.state.tags.intern, this.$store.state.tags.sql, this.$store.state.tags.visualBasic6, this.$store.state.tags.asp, this.$store.state.tags.vbScript, this.$store.state.tags.javascript, this.$store.state.tags.css, this.$store.state.tags.html]
     });
 
@@ -443,7 +443,7 @@ this.histories.push({
         "pt-BR": "Infelizmente, a Politec S/A perdeu seu principal projeto e consequentemente, quase todos os funcionários também perderam seus empregos. Por isso, tive que encontrar um novo caminho o mais rápido possível, e logo após um mês comecei a trabalhar na Prosegur Brasil, essa oportunidade foi interessante e me permitiu aprender novas tecnologias como VB.Net e Oracle. Eu era um estagiário e a minha principal responsabilidade era criar novos recursos em um sistema interno.",
         "en-US": "Unfortunately, Politec S/A had lost his main project and consequently, almost all the employees lost their jobs too, so, I had to find a new way as soon as possible, and just after one month I started to work for Prosegur Brasil, this opportunity was interesting and allowed me to learn new technologies like VB.Net and Oracle. I was an intern and my main responsibility was to create new features in an internal system.",
       },
-      image: require('@/assets/professionalExperiences/prosegurBrasil.png'),
+      image: require('@/assets/professionalExperiences/prosegurBrasil.jpg'),
       tags: [this.$store.state.tags.intern, this.$store.state.tags.oracle, this.$store.state.tags.visualBasic6, this.$store.state.tags.vbNet]
     });
 
@@ -458,9 +458,27 @@ this.histories.push({
         "pt-BR": "Depois de alguns meses trabalhando como estagiário na Prosegur Brasil, meu chefe na época compartilhou com a equipe seu plano de melhorar seu departamento, mas sua idéia era me colocar em uma área de suporte, onde minha principal atividade não era o desenvolvimento de software. Decidi mudar novamente e surgiu uma nova oportunidade de trabalhar como programador júnior em uma empresa de pesquisa chamada CNP Brasil. Esta empresa era pequena e eu era o único desenvolvedor, mas tive a oportunidade de criar alguns sites e aplicativos móveis para coletar dados sobre pesquisas de um projeto para a Sadia, além de trabalhar em um sistema interno. Este trabalho me permitiu aprender Asp.Net, Ajax, SQL Compact e me unir essas tecnologias com as outras que eu já havia aprendido anteriormente.",
         "en-US": "After some months working like an intern at Prosegur Brasil, my boss at that time shared with the team his plan to improve his department, but his idea was to put me in a support area, where my main activity was not development software, so, I decided to change again and a new opportunity emerged to work as junior developer in a research company called CNP Brasil. This company was small and I was the unique developer, but I had the opportunity to create some sites and mobile applications to collect data about surveys for a project to Sadia, besides work in an internal system. This job let me learn Asp.Net, Ajax, SQL Compact and join those technologies with the other that I had leaned before.",
       },
-      image: require('@/assets/professionalExperiences/cnpBrasil_Sadia.png'),
+      image: require('@/assets/professionalExperiences/cnpBrasil_Sadia.jpg'),
       tags: [this.$store.state.tags.juniorDeveloper, this.$store.state.tags.aspNet, this.$store.state.tags.vbNet, this.$store.state.tags.vbScript, this.$store.state.tags.sql,
              this.$store.state.tags.sqlCompact, this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html]
+    });
+
+
+    this.histories.push({
+      date: new Date("2009-02-04"),
+      category: this.$store.state.categoryType.professionalExperience,
+      title: {
+        "pt-BR": "Adedo Contact Center - Site Comercial",
+        "en-US": "Adedo Contact Center - Site Comercial",
+      },
+      description: {
+        "pt-BR": "Minha carreira estava avançando rapidamente e recebi uma oferta interessante para trabalhar na Adedo Contact Center como desenvolvedor pleno, onde minha principal responsabilidade era iniciar um novo departamento para o desenvolvimento de sistemas. O primeiro projeto foi criar um novo site comercial em vários idiomas para a empresa, com o objetivo de interromper um contrato de terceirização, eu fiz esse projeto junto ao departamento de marketing e criei uma área de gerenciamento para que usuários administrativos gerenciem novos conteúdos no site. Este projeto foi aprovado como um sucesso pelo conselho diretor e pelo presidente, alcançando os resultados de redução de custos e ganho de agilidade na comunicação externa.",
+        "en-US": "My career was going fast and I received an interesting offer to work for Adedo Contact Center as a full developer where my main responsibility had been starting a new department to system development. The first project was to create a new multi-language commercial site for the company with the objective of stop a outsource contract, I did this project together the marketing department and create a management area to able admin users to managed new content on the site. This project was approved like a success with the director board and the president, achieving the results of cost reduction and agility in external communication.",
+      },
+      image: require('@/assets/professionalExperiences/adedo.jpg'),
+      tags: [this.$store.state.tags.fullDeveloper, this.$store.state.tags.criatitySolution, this.$store.state.tags.successCase, this.$store.state.tags.selfManagement,
+             this.$store.state.tags.photoshop, this.$store.state.tags.aspNet, this.$store.state.tags.vbNet, this.$store.state.tags.vbScript, this.$store.state.tags.sql,
+             this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html]
     });
 
     this.orderByDates();

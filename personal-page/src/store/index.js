@@ -79,18 +79,23 @@ export default new Vuex.Store({
             jQuery: { "pt-BR": "#jQuery", "en-US": "#jQuery" },
             css: { "pt-BR": "#CSS", "en-US": "#CSS" },
             html: { "pt-BR": "#HTML", "en-US": "#HTML" },
+            photoshop: { "pt-BR": "#Photoshop", "en-US": "#Photoshop" },
 
             coaching: { "pt-BR": "#Coaching", "en-US": "#Coaching" },
             leadership: { "pt-BR": "#Liderança", "en-US": "#Leadership" },
             highPerformanceTeams: { "pt-BR": "#EquipesAltaPerformance", "en-US": "#HighPerformanceTeams" },
             situationalLeadership: { "pt-BR": "#LiderançaSituacional", "en-US": "#SituationalLeadership" },
+            criatitySolution: { "pt-BR": "#SoluçãoCriativa", "en-US": "#CriatitySolution" },
+            selfManagement: { "pt-BR": "#AutoGerenciamento", "en-US": "#SelfManagement" },
 
             fourthIndustrialRevolution: { "pt-BR": "#QuartaRevoluçãoIndustrial", "en-US": "#FourthIndustrialRevolution" },
             artificialIntelligence: { "pt-BR": "#InteligênciaArtifícial", "en-US": "#ArtificialIntelligence" },
             disruptiveInnovations: { "pt-BR": "#InovaçõesDisruptivas", "en-US": "#DisruptiveInnovations" },
+            successCase: { "pt-BR": "#CasoDeSucesso", "en-US": "#successCase" },
 
             intern: { "pt-BR": "#Estagiário", "en-US": "#Intern" },
             juniorDeveloper: { "pt-BR": "#DesenvolverJunior", "en-US": "#JuniorDeveloper" },
+            fullDeveloper: { "pt-BR": "#DesenvolverPleno", "en-US": "#FullDeveloper" },
 
             opportunity: { "pt-BR": "#Oportunidade", "en-US": "#Opportunity" },
 
