@@ -66,13 +66,17 @@ export default new Vuex.Store({
             management30: { "pt-BR": "#Management3.0", "en-US": "#Management3.0" },
 
             dotNetFramework: { "pt-BR": "#.NetFramework", "en-US": "#.NetFramework" },
+            vbNet: { "pt-BR": "#VB.Net", "en-US": "#VB.Net" },
             aspNet: { "pt-BR": "#Asp.Net", "en-US": "#Asp.Net" },
             asp: { "pt-BR": "#Asp", "en-US": "#Asp" },
             cSharp: { "pt-BR": "#C#", "en-US": "#C#" },
             sql: { "pt-BR": "#SQL", "en-US": "#SQL" },
+            sqlCompact: { "pt-BR": "#SQLCompact", "en-US": "#SQLCompact" },
+            oracle: { "pt-BR": "#Oracle", "en-US": "#Oracle" },
             visualBasic6: { "pt-BR": "#VisualBasic6", "en-US": "#VisualBasic6" },
             vbScript: { "pt-BR": "#VBScript", "en-US": "#VBScript" },
             javascript: { "pt-BR": "#Javascript", "en-US": "#Javascript" },
+            jQuery: { "pt-BR": "#jQuery", "en-US": "#jQuery" },
             css: { "pt-BR": "#CSS", "en-US": "#CSS" },
             html: { "pt-BR": "#HTML", "en-US": "#HTML" },
 
@@ -86,6 +90,7 @@ export default new Vuex.Store({
             disruptiveInnovations: { "pt-BR": "#InovaçõesDisruptivas", "en-US": "#DisruptiveInnovations" },
 
             intern: { "pt-BR": "#Estagiário", "en-US": "#Intern" },
+            juniorDeveloper: { "pt-BR": "#DesenvolverJunior", "en-US": "#JuniorDeveloper" },
 
             opportunity: { "pt-BR": "#Oportunidade", "en-US": "#Opportunity" },
 
