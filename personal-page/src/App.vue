@@ -17,9 +17,7 @@
         </v-btn>
     <v-toolbar-title style="margin-left:-15px;">Jonathan Caravaggio Acquesta - Agile Coach - PSM I</v-toolbar-title>
     <v-spacer />
-    <label class="language" src="./assets/brazil.jpg" :class="{languageDisactive: this.$store.state.common.languages.portuguese.language !== culture}" :title="this.$store.state.common.languages.portuguese[culture]" v-on:click="ChangeLanguePortuguese()" >PT</label>
-    <label class="languageSeparator">|</label>
-    <label class="language" src="./assets/usa.jpg" :class="{languageDisactive: this.$store.state.common.languages.english.language !== culture}" :title="this.$store.state.common.languages.english[culture]"  v-on:click="ChangeLangueEnglish()">EN</label>
+    <language></language>
     </v-app-bar>
 
 <sideMenu></sideMenu>
@@ -67,13 +65,14 @@
 <script>
 import Home from "./views/Home";
 import sideMenu from "./components/sideMenu.vue";
+import language from "./components/language.vue";
 
   export default {
     props: {
       source: String,
     },
     components: {
-      Home, sideMenu
+      Home, sideMenu, language
     },
     data: () => ({
       drawer: null,
@@ -114,20 +113,6 @@ import sideMenu from "./components/sideMenu.vue";
 </script>
 
 <style>
-.language{
-  cursor: pointer;
-  margin-right: 5px;
-  margin-left: 5px;
-  opacity: 1;
-}
-
-.languageSeparator{
-  color: blueviolet;
-}
-
-.languageDisactive{
-  opacity: 0.5;
-}
 
   .filter{
     padding: 5px;
