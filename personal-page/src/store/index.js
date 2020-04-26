@@ -64,6 +64,7 @@ export default new Vuex.Store({
             intern: { "pt-BR": "#Estagiário", "en-US": "#Intern", color: "red" },
             juniorDeveloper: { "pt-BR": "#DesenvolverJunior", "en-US": "#JuniorDeveloper", color: "red" },
             fullDeveloper: { "pt-BR": "#DesenvolverPleno", "en-US": "#FullDeveloper", color: "red" },
+            seniorDeveloper: { "pt-BR": "#DesenvolverSenior", "en-US": "#SeniorDeveloper", color: "red" },
 
             scrum: { "pt-BR": "#SCRUM", "en-US": "#SCRUM", color: "cyan" },
             kanban: { "pt-BR": "#KANBAN", "en-US": "#KANBAN", color: "cyan" },
@@ -75,9 +76,11 @@ export default new Vuex.Store({
             situationalLeadership: { "pt-BR": "#LiderançaSituacional", "en-US": "#SituationalLeadership", color: "cyan" },
             criatitySolution: { "pt-BR": "#SoluçãoCriativa", "en-US": "#CriatitySolution", color: "cyan" },
             selfManagement: { "pt-BR": "#AutoGerenciamento", "en-US": "#SelfManagement", color: "cyan" },
+            teamManagement: { "pt-BR": "#GerenciamentoEquipe", "en-US": "#TeamManagement", color: "cyan" },
 
             dotNetFramework: { "pt-BR": "#.NetFramework", "en-US": "#.NetFramework", color: "purple" },
             vbNet: { "pt-BR": "#VB.Net", "en-US": "#VB.Net", color: "purple" },
+            vba: { "pt-BR": "#VBA", "en-US": "#VBA", color: "purple" },
             aspNet: { "pt-BR": "#Asp.Net", "en-US": "#Asp.Net", color: "purple" },
             asp: { "pt-BR": "#Asp", "en-US": "#Asp", color: "purple" },
             webServices: { "pt-BR": "#WebServices", "en-US": "#WebServices", color: "purple" },
@@ -93,6 +96,14 @@ export default new Vuex.Store({
             html: { "pt-BR": "#HTML", "en-US": "#HTML", color: "purple" },
             photoshop: { "pt-BR": "#Photoshop", "en-US": "#Photoshop", color: "purple" },
             silverlight: { "pt-BR": "#Silverlight", "en-US": "#Silverlight", color: "purple" },
+            excel: { "pt-BR": "#Excel", "en-US": "#Excel", color: "purple" },
+
+            unitTest: { "pt-BR": "#TesteUnitário", "en-US": "#UnitTest", color: "green" },
+            integratedTest: { "pt-BR": "#TesteIntegrado", "en-US": "#IntegratedTest", color: "green" },
+            codeCoverage: { "pt-BR": "#CodeCoverage", "en-US": "#CodeCoverage", color: "green" },
+            codeAnalysis: { "pt-BR": "#CodeAnalysis", "en-US": "#CodeAnalysis", color: "green" },
+            styleCop: { "pt-BR": "#StyleCop", "en-US": "#StyleCop", color: "green" },
+            codeMetrics: { "pt-BR": "#CodeMetrics", "en-US": "#CodeMetrics", color: "green" },
 
             fourthIndustrialRevolution: { "pt-BR": "#QuartaRevoluçãoIndustrial", "en-US": "#FourthIndustrialRevolution", color: "blue" },
             artificialIntelligence: { "pt-BR": "#InteligênciaArtifícial", "en-US": "#ArtificialIntelligence", color: "blue" },

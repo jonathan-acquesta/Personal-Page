@@ -528,7 +528,7 @@ this.histories.push({
       },
       description: {
         "pt-BR": "O trabalho na Adedo Contact Center foi um grande passo na minha carreira, mas eu sentia que precisava de um novo grande desafio; portanto, aceitei uma oferta para trabalhar como desenvolvedor sênior da CPM Braxis. Minha primeira oportunidade foi no Projeto Ambiente de Pagamento, na Sefaz SP, onde trabalhei como desenvolvedor de sistemas e pude aprender muito trabalhando com ótimos profissionais e logo comecei a receber bons feedbacks.",
-        "en-US": "Work at Adedo Contact Center was a great step in my career, but I was feeling that I needed a new big challenge, therefore, I accept ed an offer to work as Senior Developer for CPM Braxis. My first opportunity was the Payment Environment Project in Sefaz SP that I worked as a system developer and could learn a lot working with great professionals and soon I started to receive good feedbacks.",
+        "en-US": "Work at Adedo Contact Center was a great step in my career, but I was feeling that I needed a new big challenge, therefore, I accepted an offer to work as Senior Developer for CPM Braxis. My first opportunity was the Payment Environment Project in Sefaz SP that I worked as a system developer and could learn a lot working with great professionals and soon I started to receive good feedbacks.",
       },
       image: require('@/assets/professionalExperiences/cpmbraxis.jpg'),
       tags: [],
@@ -541,6 +541,11 @@ this.histories.push({
         description:{ "pt-BR": "Capgemini", "en-US": "Capgemini"},
         url:"https://www.capgemini.com/br-pt/"
       }],
+      tags: [this.$store.state.tags.seniorDeveloper, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.greatChallenge,
+             this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest, this.$store.state.tags.codeCoverage, this.$store.state.tags.codeAnalysis,
+             this.$store.state.tags.codeMetrics, this.$store.state.tags.styleCop, this.$store.state.tags.webServices,
+             this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.vbScript, this.$store.state.tags.sql,
+             this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html]
     });
 
 
@@ -566,6 +571,11 @@ this.histories.push({
         description:{ "pt-BR": "Capgemini", "en-US": "Capgemini"},
         url:"https://www.capgemini.com/br-pt/"
       }],
+      tags: [this.$store.state.tags.seniorDeveloper, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.teamManagement, this.$store.state.tags.greatChallenge,
+             this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest, this.$store.state.tags.codeCoverage, this.$store.state.tags.codeAnalysis,
+             this.$store.state.tags.codeMetrics, this.$store.state.tags.styleCop, this.$store.state.tags.webServices,
+             this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.vbScript, this.$store.state.tags.sql,
+             this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html]
     });
 
 
@@ -591,6 +601,11 @@ this.histories.push({
         description:{ "pt-BR": "Capgemini", "en-US": "Capgemini"},
         url:"https://www.capgemini.com/br-pt/"
       }],
+      tags: [this.$store.state.tags.seniorDeveloper, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.teamManagement, this.$store.state.tags.rewarding,
+             this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest, this.$store.state.tags.codeCoverage, this.$store.state.tags.codeAnalysis,
+             this.$store.state.tags.codeMetrics, this.$store.state.tags.styleCop, this.$store.state.tags.excel, this.$store.state.tags.vba, this.$store.state.tags.webServices,
+             this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.vbScript, this.$store.state.tags.sql,
+             this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html]
     });
 
     this.histories.push({
@@ -615,6 +630,11 @@ this.histories.push({
         description:{ "pt-BR": "Capgemini", "en-US": "Capgemini"},
         url:"https://www.capgemini.com/br-pt/"
       }],
+      tags: [this.$store.state.tags.seniorDeveloper, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.rewarding,
+             this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest, this.$store.state.tags.codeCoverage, this.$store.state.tags.codeAnalysis,
+             this.$store.state.tags.codeMetrics, this.$store.state.tags.styleCop, this.$store.state.tags.excel, this.$store.state.tags.vba, this.$store.state.tags.webServices,
+             this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.vbScript, this.$store.state.tags.sql,
+             this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html]
     });
 
 
