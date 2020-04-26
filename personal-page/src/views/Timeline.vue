@@ -527,8 +527,8 @@ this.histories.push({
         "en-US": "CPM Braxis - Payment Environment",
       },
       description: {
-        "pt-BR": ".",
-        "en-US": ".",
+        "pt-BR": "O trabalho na Adedo Contact Center foi um grande passo na minha carreira, mas eu sentia que precisava de um novo grande desafio; portanto, aceitei uma oferta para trabalhar como desenvolvedor sênior da CPM Braxis. Minha primeira oportunidade foi no Projeto Ambiente de Pagamento, na Sefaz SP, onde trabalhei como desenvolvedor de sistemas e pude aprender muito trabalhando com ótimos profissionais e logo comecei a receber bons feedbacks.",
+        "en-US": "Work at Adedo Contact Center was a great step in my career, but I was feeling that I needed a new big challenge, therefore, I accept ed an offer to work as Senior Developer for CPM Braxis. My first opportunity was the Payment Environment Project in Sefaz SP that I worked as a system developer and could learn a lot working with great professionals and soon I started to receive good feedbacks.",
       },
       image: require('@/assets/professionalExperiences/cpmbraxis.jpg'),
       tags: [],
@@ -552,8 +552,8 @@ this.histories.push({
         "en-US": "CPM Braxis - Accumulated Credit",
       },
       description: {
-        "pt-BR": ".",
-        "en-US": ".",
+        "pt-BR": "Após alguns meses trabalhando para a CPM Braxis, passamos por um momento complicado para atender a todos os requisitos exigidos pelo governo de São Paulo, então meu gerente organizou um grande esforço para ajustar todos os projetos aos requisitos. Tivemos que trabalhar duro por três meses e eu pude trabalhar no meu projeto e ajudar o projeto Crédito Acumulado, onde tive algumas idéias para melhorar a maneira como estávamos trabalhando para atender aos requisitos. Não foi fácil, mas alcançamos a meta e todos os projetos puderam continuar, evitando grandes problemas para a empresa.",
+        "en-US": "After some months working to CPM Braxis, we passed for a complicated moment to meet all the requirements that the São Paulo government demands, so, my manager organized a big effort to adjusted all the projects to the requirements. We had to work hard for three months and I could work in my project and help the project Accumulated Credit where I had some ideas to improve the ways that we were working to meet the requirements. It was not easy but we achieve the goal and all the projects could continue, avoiding big problems for the company.",
       },
       image: require('@/assets/professionalExperiences/cpmbraxis.jpg'),
       tags: [],
@@ -577,8 +577,8 @@ this.histories.push({
         "en-US": "CPM Braxis - SAT",
       },
       description: {
-        "pt-BR": ".",
-        "en-US": ".",
+        "pt-BR": "Eu havia completado o primeiro ciclo de avaliação e muitas boas notícias vieram, fui promovido a analista de sistemas júnior e ganhei a oportunidade de liderar uma nova equipe para um novo projeto chamado SAT, foi a minha primeira experiência em liderar os outros. Quando me tornei o líder da equipe, comecei a melhorar meu entendimento sobre o SCRUM e o Kanban, eles eram meus parceiros para melhorar o trabalho em equipe e colocar todos em evidência.",
+        "en-US": "I had completed the first evaluation cycle and many good news came, I was promoted to junior system analyst and I earned the opportunity to lead a new team for a new project called SAT, it was my first experience in lead the others. When I became the team leader I started to improve my understanding about the SCRUM and Kanban, they were my partners to improve my team work and put everyone in evidence.",
       },
       image: require('@/assets/professionalExperiences/cpmbraxis.jpg'),
       tags: [],
@@ -601,8 +601,8 @@ this.histories.push({
         "en-US": "CPM Braxis - SAT",
       },
       description: {
-        "pt-BR": ".",
-        "en-US": ".",
+        "pt-BR": "Outro ciclo de avaliação se completou e desta vez, não apenas eu, mas toda a minha equipe foi promovida, tornei-me um analista de sistemas pleno e o projeto SAT estava evoluindo com boas idéias sobre novas soluções técnicas e uma equipe organizada trabalhando muito bem em conjunto.",
+        "en-US": "Another evaluation cycle completed itself, and this time not just me but all my team were promoted, I became a full system analyst and the SAT project was evolving with good ideas about new technical solutions and an organized team working very well together.",
       },
       image: require('@/assets/professionalExperiences/capgemini.jpg'),
       tags: [],
