@@ -8,7 +8,7 @@
       dense
     >
         <v-btn icon>
-          <v-icon  size="24px" @click="openLinkedIn('https://www.linkedin.com/in/jonathan-caravaggio-acquesta-a26a4422/')">fab fa-linkedin</v-icon>
+          <v-icon  size="24px" @click="openSite('https://www.linkedin.com/in/jonathan-caravaggio-acquesta-a26a4422/')">fab fa-linkedin</v-icon>
         </v-btn>
     <v-toolbar-title style="margin-left:-15px;">Jonathan Caravaggio Acquesta - Agile Coach - PSM I</v-toolbar-title>
     <v-spacer />
@@ -52,6 +52,11 @@ import Timeline from "@/views/Timeline.vue";
       {
         return this.$store.state.culture;
       }
+    },
+    methods: {
+      openSite: function (url) {   
+                window.open(url, "_blank");    
+            }
     },
   }
 </script>

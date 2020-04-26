@@ -46,7 +46,6 @@
             </div>
             <div>
               <v-img class="descriptionImage"  width="110" :src="history.image"></v-img>
-
             </div>
             </div>
          
@@ -57,10 +56,11 @@
             </div>
 
             <br>
-               <div class="links" v-if="history.link">
-              <span  >Link: </span>
-              <a class="linkShow" v-on:click="overlay = true;mainImage=history.link.image">{{history.link.description[culture]}} </a>
-            </div>
+               <div class="links" v-if="history.link || history.externalLinks">
+                  <span  >Link: </span>
+                  <a v-if="history.link" class="linkShow" v-on:click="overlay = true;mainImage=history.link.image">{{history.link.description[culture]}} </a>
+                  <a class="linkShow" style="margin-left:10px;" v-for="(externalLink, index) in history.externalLinks" :key="index" v-on:click="openSite(externalLink.url)">{{ externalLink.description[culture] }}</a>
+                </div>
             <span style="opacity:0.8" v-if="$vuetify.breakpoint.smAndDown"
               :class="`headline font-weight-bold ${history.category.color}--text`"
               v-text="formatePeriod(history.date)"
@@ -266,6 +266,10 @@
         image:   require('@/assets/certificates/psm1.jpg'),
         description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
       },
+      externalLinks:[{
+        description:{ "pt-BR": "Scrum.org", "en-US": "Scrum.org"},
+        url:"https://www.scrum.org/"
+      }],
       tags: [this.$store.state.tags.scrum]
     });
 
@@ -289,7 +293,7 @@
     });
 
     this.histories.push({
-      date: new Date("2011-02-18"),
+      date: new Date("2010-12-06"),
       category: this.$store.state.categoryType.certifications,
       title: {
         "pt-BR": "Microsoft – MCP",
@@ -309,7 +313,7 @@
 
 
     this.histories.push({
-      date: new Date("2012-04-16"),
+      date: new Date("2011-02-18"),
       category: this.$store.state.categoryType.certifications,
       title: {
         "pt-BR": "Microsoft – MCTS",
@@ -502,6 +506,106 @@ this.histories.push({
              this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html]
     });
 
+
+    this.histories.push({
+      date: new Date("2010-04-08"),
+      category: this.$store.state.categoryType.professionalExperience,
+      title: {
+        "pt-BR": "CPM Braxis - Ambiente De Pagamentos",
+        "en-US": "CPM Braxis - Payment Environment",
+      },
+      description: {
+        "pt-BR": ".",
+        "en-US": ".",
+      },
+      image: require('@/assets/professionalExperiences/cpmbraxis.jpg'),
+      tags: [],
+       externalLinks:[
+      {
+        description:{ "pt-BR": "AmbienteDePagamentos", "en-US": "PaymentEnvironment"},
+        url:"https://portal.fazenda.sp.gov.br/acessoinformacao/Paginas/Ambiente-de-Pagamentos.aspx"
+      },
+         {
+        description:{ "pt-BR": "Capgemini", "en-US": "Capgemini"},
+        url:"https://www.capgemini.com/br-pt/"
+      }],
+    });
+
+
+    this.histories.push({
+      date: new Date("2010-09-08"),
+      category: this.$store.state.categoryType.professionalExperience,
+      title: {
+        "pt-BR": "CPM Braxis - Crédito Acumulado",
+        "en-US": "CPM Braxis - Accumulated Credit",
+      },
+      description: {
+        "pt-BR": ".",
+        "en-US": ".",
+      },
+      image: require('@/assets/professionalExperiences/cpmbraxis.jpg'),
+      tags: [],
+       externalLinks:[
+      {
+        description:{ "pt-BR": "CréditoAcumulado", "en-US": "Accumulatedcredit"},
+        url:"https://portal.fazenda.sp.gov.br/servicos/ecredac/"
+      },
+         {
+        description:{ "pt-BR": "Capgemini", "en-US": "Capgemini"},
+        url:"https://www.capgemini.com/br-pt/"
+      }],
+    });
+
+
+    this.histories.push({
+      date: new Date("2011-01-08"),
+      category: this.$store.state.categoryType.professionalExperience,
+      title: {
+        "pt-BR": "CPM Braxis - SAT",
+        "en-US": "CPM Braxis - SAT",
+      },
+      description: {
+        "pt-BR": ".",
+        "en-US": ".",
+      },
+      image: require('@/assets/professionalExperiences/cpmbraxis.jpg'),
+      tags: [],
+       externalLinks:[
+      {
+        description:{ "pt-BR": "SAT", "en-US": "SAT"},
+        url:"https://portal.fazenda.sp.gov.br/servicos/sat"
+      },
+         {
+        description:{ "pt-BR": "Capgemini", "en-US": "Capgemini"},
+        url:"https://www.capgemini.com/br-pt/"
+      }],
+    });
+
+    this.histories.push({
+      date: new Date("2012-01-08"),
+      category: this.$store.state.categoryType.professionalExperience,
+      title: {
+        "pt-BR": "CPM Braxis - SAT",
+        "en-US": "CPM Braxis - SAT",
+      },
+      description: {
+        "pt-BR": ".",
+        "en-US": ".",
+      },
+      image: require('@/assets/professionalExperiences/capgemini.jpg'),
+      tags: [],
+       externalLinks:[
+      {
+        description:{ "pt-BR": "SAT", "en-US": "SAT"},
+        url:"https://portal.fazenda.sp.gov.br/servicos/sat"
+      },
+         {
+        description:{ "pt-BR": "Capgemini", "en-US": "Capgemini"},
+        url:"https://www.capgemini.com/br-pt/"
+      }],
+    });
+
+
     this.orderByDates();
     
     this.$store.state.histories = this.histories;
@@ -515,6 +619,9 @@ this.histories.push({
     formatePeriod(date)
     {
       return this.$store.state.months[this.$store.state.culture][date.getMonth()] + " " + date.getFullYear();
+    },
+     openSite: function (url) {   
+        window.open(url, "_blank");    
     }
   },
 };

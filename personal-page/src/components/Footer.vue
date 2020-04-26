@@ -7,7 +7,7 @@
           :key="icon.icon"
           class="mx-4 white--text"
           icon>
-          <v-icon size="24px" @click="openLinkedIn(icon.url)">{{ icon.icon }}</v-icon>
+          <v-icon size="24px" @click="openSite(icon.url)">{{ icon.icon }}</v-icon>
         </v-btn>
       </v-card-text>
 
@@ -23,7 +23,7 @@
 <script>
     export default {
         methods: {
-            openLinkedIn: function (url) {   
+            openSite: function (url) {   
                 window.open(url, "_blank");    
             }
         },
