@@ -289,6 +289,10 @@
         image:   require('@/assets/certificates/sfc.jpg'),
         description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
       },
+      externalLinks:[{
+        description:{ "pt-BR": "SCRUMstudy", "en-US": "SCRUMstudy"},
+        url:"https://www.scrumstudy.com/portuguese/"
+      }],
       tags: [this.$store.state.tags.scrum]
     });
 
@@ -308,6 +312,10 @@
         image:   require('@/assets/certificates/MCP70562.png'),
         description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
       },
+      externalLinks:[{
+        description:{ "pt-BR": "Transcrição", "en-US": "Transcript"},
+        url:"https://github.com/jonathan-acquesta/Personal-Page/blob/master/personal-page/public/microsoft_certified_professional_transcript.pdf"
+      }],
       tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp]
     });
 
@@ -328,6 +336,10 @@
         image:   require('@/assets/certificates/MCTS70536.png'),
         description:{ "pt-BR": "Certificado", "en-US": "Certificate"}
       },
+      externalLinks:[{
+        description:{ "pt-BR": "Transcrição", "en-US": "Transcript"},
+        url:"https://github.com/jonathan-acquesta/Personal-Page/blob/master/personal-page/public/microsoft_certified_professional_transcript.pdf"
+      }],
       tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp]
     });
 
