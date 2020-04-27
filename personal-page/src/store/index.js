@@ -65,6 +65,11 @@ export default new Vuex.Store({
             juniorDeveloper: { "pt-BR": "#DesenvolverJunior", "en-US": "#JuniorDeveloper", color: "red" },
             fullDeveloper: { "pt-BR": "#DesenvolverPleno", "en-US": "#FullDeveloper", color: "red" },
             seniorDeveloper: { "pt-BR": "#DesenvolverSenior", "en-US": "#SeniorDeveloper", color: "red" },
+            juniorSystemAnalyst: { "pt-BR": "#AnalistaDeSistemasJunior", "en-US": "#JuniorSystemAnalyst", color: "red" },
+            fullSystemAnalyst: { "pt-BR": "#AnalistaDeSistemasPleno", "en-US": "#FullSystemAnalyst", color: "red" },
+            seniorSystemAnalyst: { "pt-BR": "#AnalistaDeSistemasSenior", "en-US": "#SeniorSystemAnalyst", color: "red" },
+            scrumMaster: { "pt-BR": "#ScrumMaster", "en-US": "#ScrumMaster", color: "red" },
+            agileCoach: { "pt-BR": "#AgileCoach", "en-US": "#AgileCoach", color: "red" },
 
             scrum: { "pt-BR": "#SCRUM", "en-US": "#SCRUM", color: "cyan" },
             kanban: { "pt-BR": "#KANBAN", "en-US": "#KANBAN", color: "cyan" },
@@ -97,6 +102,9 @@ export default new Vuex.Store({
             photoshop: { "pt-BR": "#Photoshop", "en-US": "#Photoshop", color: "purple" },
             silverlight: { "pt-BR": "#Silverlight", "en-US": "#Silverlight", color: "purple" },
             excel: { "pt-BR": "#Excel", "en-US": "#Excel", color: "purple" },
+            mvvm: { "pt-BR": "#MVVM", "en-US": "#MVVM", color: "purple" },
+            mvc: { "pt-BR": "#MVC", "en-US": "#MVC", color: "purple" },
+            designPattern: { "pt-BR": "#PadrãoDeProjetos", "en-US": "#designPattern", color: "purple" },
 
             unitTest: { "pt-BR": "#TesteUnitário", "en-US": "#UnitTest", color: "green" },
             integratedTest: { "pt-BR": "#TesteIntegrado", "en-US": "#IntegratedTest", color: "green" },
