@@ -436,6 +436,90 @@ var app = new Vue({
         });
 
 
+        histories.push({
+            date: new Date("2013-10-01"),
+            category: this.$store.state.categoryType.professionalExperience,
+            title: {
+                "pt-BR": "Talent Four Consulting",
+                "en-US": "Talent Four Consulting",
+            },
+            description: {
+                "pt-BR": "Às vezes, as coisas não funcionam como queremos, mas precisamos passar por esses momentos para crescer e desenvolver resiliência, então, um novo capítulo em minha vida começou quando aceitei trabalhar para a Talent Four, ainda não sabia, mas isso mudaria minha vida de uma maneira excelente. Fui alocado em um novo projeto chamado MindSet e jurei para mim que ajudaria esse projeto a se tornar grandioso.",
+                "en-US": "Sometimes the things doesn't work how we want, but we need to pass for thoses moments to grow and to develop resilience, so, a new chapter in my life started when I accepted to work for Talent Four, I didn't know yet, but it would change my life in a great way. I was allocated in a new project called MindSet and I swore for myself that I would help this project became huge.",
+            },
+            image: require('@/assets/professionalExperiences/talentFour.jpg'),
+            tags: [],
+            externalLinks: [{
+                description: { "pt-BR": "TalentFourConsulting", "en-US": "TalentFourConsulting" },
+                url: "http://www.talentfour.com.br/"
+            }, {
+                description: { "pt-BR": "MindSet", "en-US": "MindSet" },
+                url: "http://www.unous.com.br/mindset/"
+            }],
+            tags: [this.$store.state.tags.fullSystemAnalyst, this.$store.state.tags.opportunity, this.$store.state.tags.greatChallenge, this.$store.state.tags.aspNetMVC,
+                this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.razor, this.$store.state.tags.javascript,
+                this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.photoshop, this.$store.state.tags.mvc
+            ]
+        });
+
+        histories.push({
+            date: new Date("2014-11-10"),
+            category: this.$store.state.categoryType.professionalExperience,
+            title: {
+                "pt-BR": "Talent Four Consulting",
+                "en-US": "Talent Four Consulting",
+            },
+            description: {
+                "pt-BR": "Trabalhei na TalentFour e o cliente era uma startup de inteligência em negócios com foco no setor de varejo. O projeto MindSet foi um desafio para enfrentar o mercado com uma nova solução que poderia resolver grandes problemas sobre o varejo, e comecei a aprender muito sobre os negócios enquanto ajudava a equipe a desenvolver essa nova solução. Após o primeiro ano do projeto, tivemos a entrega do módulo OpenToBuy para alguns clientes e fui promovido a analista de sistemas sênior pelo meu trabalho.",
+                "en-US": "I worked for TalentFour and the client was a business intelligence startup with focus in the retail sector. The project MindSet was a challenge to face the market with a new solution that could solve great problem about retail, and I started learning a lot about the business while I help the team to develop this new solution. After the first year of the project we had delivery open to buy module for some clients and I was promoted to senior system analyst for my hardwork.",
+            },
+            image: require('@/assets/professionalExperiences/talentFour.jpg'),
+            tags: [],
+            externalLinks: [{
+                description: { "pt-BR": "TalentFourConsulting", "en-US": "TalentFourConsulting" },
+                url: "http://www.talentfour.com.br/"
+            }, {
+                description: { "pt-BR": "MindSet", "en-US": "MindSet" },
+                url: "http://www.unous.com.br/mindset/"
+            }],
+            tags: [this.$store.state.tags.seniorSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.hardworking,
+                this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.aspNetMVC,
+                this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.razor, this.$store.state.tags.javascript,
+                this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.photoshop, this.$store.state.tags.mvc
+            ]
+        });
+
+        histories.push({
+            date: new Date("2015-04-01"),
+            category: this.$store.state.categoryType.professionalExperience,
+            title: {
+                "pt-BR": "Unous Inteligência em Negócios",
+                "en-US": "Unous Business Intelligence",
+            },
+            description: {
+                "pt-BR": "Depois de alguns meses, recebi uma oferta para trabalhar diretamente para a Unous como Coordenador de TI e assumi a responsabilidade pelo projeto MindSet. Nesta ocasião, desempenhei o papel de Scrum Master, ajudando a equipe a aplicar o Scrum e ensinei-lhes regras de negócios, além de ser responsável pelo processo de contratação, treinamento e planejamento de lançamentos.",
+                "en-US": "After some months I received an offer to work direct to Unous as IT Coordinator and I assumed the responsibility for the MindSet project. In this occasion I played the Scrum Master role, helping the team to apply Scrum and I taught them business rules, besides I was responsable for the hire process, trainning and planning of releases.",
+            },
+            image: require('@/assets/professionalExperiences/unous.jpg'),
+            tags: [],
+            externalLinks: [{
+                description: { "pt-BR": "Unous", "en-US": "Unous" },
+                url: "http://www.unous.com.br/"
+            }, {
+                description: { "pt-BR": "MindSet", "en-US": "MindSet" },
+                url: "http://www.unous.com.br/mindset/"
+            }],
+            tags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.scrumMaster, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
+                this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership,
+                this.$store.state.tags.coaching, this.$store.state.tags.trainning,
+                this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.hardworking,
+                this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
+                this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
+                this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.photoshop, this.$store.state.tags.mvc
+            ]
+        });
+
+
         histories.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
 
         this.$store.state.histories = histories;

@@ -70,6 +70,7 @@ export default new Vuex.Store({
             seniorSystemAnalyst: { "pt-BR": "#AnalistaDeSistemasSenior", "en-US": "#SeniorSystemAnalyst", color: "red" },
             scrumMaster: { "pt-BR": "#ScrumMaster", "en-US": "#ScrumMaster", color: "red" },
             agileCoach: { "pt-BR": "#AgileCoach", "en-US": "#AgileCoach", color: "red" },
+            itCoordinator: { "pt-BR": "#CoordenadorDeTI", "en-US": "#ITCoordinator", color: "red" },
 
             scrum: { "pt-BR": "#SCRUM", "en-US": "#SCRUM", color: "cyan" },
             kanban: { "pt-BR": "#KANBAN", "en-US": "#KANBAN", color: "cyan" },
@@ -82,11 +83,15 @@ export default new Vuex.Store({
             criatitySolution: { "pt-BR": "#SoluçãoCriativa", "en-US": "#CriatitySolution", color: "cyan" },
             selfManagement: { "pt-BR": "#AutoGerenciamento", "en-US": "#SelfManagement", color: "cyan" },
             teamManagement: { "pt-BR": "#GerenciamentoEquipe", "en-US": "#TeamManagement", color: "cyan" },
+            hireProcess: { "pt-BR": "#ProcessoDeContratação", "en-US": "#HireProcess", color: "cyan" },
+            trainning: { "pt-BR": "#Treinamento", "en-US": "#Trainning", color: "cyan" },
 
             dotNetFramework: { "pt-BR": "#.NetFramework", "en-US": "#.NetFramework", color: "purple" },
             vbNet: { "pt-BR": "#VB.Net", "en-US": "#VB.Net", color: "purple" },
             vba: { "pt-BR": "#VBA", "en-US": "#VBA", color: "purple" },
             aspNet: { "pt-BR": "#Asp.Net", "en-US": "#Asp.Net", color: "purple" },
+            aspNetMVC: { "pt-BR": "#Asp.NetMVC", "en-US": "#Asp.NetMVC", color: "purple" },
+            razor: { "pt-BR": "#Razor", "en-US": "#Razor", color: "purple" },
             asp: { "pt-BR": "#Asp", "en-US": "#Asp", color: "purple" },
             webServices: { "pt-BR": "#WebServices", "en-US": "#WebServices", color: "purple" },
             cSharp: { "pt-BR": "#C#", "en-US": "#C#", color: "purple" },
@@ -122,8 +127,7 @@ export default new Vuex.Store({
             opportunity: { "pt-BR": "#Oportunidade", "en-US": "#Opportunity", color: "blue" },
             greatChallenge: { "pt-BR": "#GrandeDesafío", "en-US": "#GreatChallenge", color: "blue" },
             rewarding: { "pt-BR": "#Recompensador", "en-US": "#Rewarding", color: "blue" },
-
-
+            hardworking: { "pt-BR": "#TrabalhoDuro", "en-US": "#Hardworking", color: "blue" },
         },
 
         histories: [],
