@@ -187,7 +187,7 @@ var app = new Vue({
 
 
         histories.push({
-            date: new Date("2007-11-01"),
+            date: new Date("2007-11-05"),
             category: this.$store.state.categoryType.professionalExperience,
             title: {
                 "pt-BR": "POLITEC S/A - Minha primeira oportunidade.",
@@ -202,7 +202,7 @@ var app = new Vue({
         });
 
         histories.push({
-            date: new Date("2008-02-01"),
+            date: new Date("2008-02-05"),
             category: this.$store.state.categoryType.professionalExperience,
             title: {
                 "pt-BR": "POLITEC S/A - Seis meses de carreira.",
@@ -217,7 +217,7 @@ var app = new Vue({
         });
 
         histories.push({
-            date: new Date("2008-09-01"),
+            date: new Date("2008-09-05"),
             category: this.$store.state.categoryType.professionalExperience,
             title: {
                 "pt-BR": "Prosegur Brasil",
@@ -437,7 +437,7 @@ var app = new Vue({
 
 
         histories.push({
-            date: new Date("2013-10-01"),
+            date: new Date("2013-10-05"),
             category: this.$store.state.categoryType.professionalExperience,
             title: {
                 "pt-BR": "Talent Four Consulting",
@@ -490,7 +490,7 @@ var app = new Vue({
         });
 
         histories.push({
-            date: new Date("2015-04-01"),
+            date: new Date("2015-04-10"),
             category: this.$store.state.categoryType.professionalExperience,
             title: {
                 "pt-BR": "Unous Inteligência em Negócios",

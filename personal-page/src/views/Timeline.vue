@@ -109,7 +109,7 @@
   methods: {
     formatePeriod(date)
     {
-      return this.$store.state.months[this.$store.state.culture][date.getMonth() +1] + " " + date.getFullYear();
+      return this.$store.state.months[this.$store.state.culture][date.getMonth()] + " " + date.getFullYear();
     },
      openSite: function (url) {   
         window.open(url, "_blank");    
