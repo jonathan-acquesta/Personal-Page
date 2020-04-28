@@ -520,6 +520,103 @@ var app = new Vue({
         });
 
 
+        histories.push({
+            date: new Date("2016-10-10"),
+            category: this.$store.state.categoryType.professionalExperience,
+            title: {
+                "pt-BR": "Unous Inteligência em Negócios",
+                "en-US": "Unous Business Intelligence",
+            },
+            description: {
+                "pt-BR": "Não é fácil liderar os outros e acredito que todos os líderes evoluem apenas enfrentando situações difíceis e tomando decisões, é claro que isso não foi diferente comigo, de qualquer maneira, me sinto gratificado por toda a situação complexa que o projeto e a equipe passaram e eu pude experienciar. Depois de três anos atuando no projeto MindSet, tive o prazer de trabalhar com muitas pessoas e aprendi muito com todos. Nesse momento, o MindSet é um grande software com três módulos de negócios e com novos grandes clientes de varejo. Tenho orgulho de deixar minha marca nesses resultados.",
+                "en-US": "It's not easy lead the others and I believe that every leader only evolve facing hard situation and taking decisions, of course that this wasn't different with me, anyway I am greatfull for all the complex situation that the project and the team had passed and I was able to experience. After three years working on MindSet project, I had the pleasure of work with many people and I learned a lot with everyone. At this time, the MindSet is a big software with three business modules and with new big retail clients. I am proud in let my mark in this results.",
+            },
+            image: require('@/assets/professionalExperiences/unous.jpg'),
+            tags: [],
+            externalLinks: [{
+                description: { "pt-BR": "Unous", "en-US": "Unous" },
+                url: "http://www.unous.com.br/"
+            }, {
+                description: { "pt-BR": "MindSet", "en-US": "MindSet" },
+                url: "http://www.unous.com.br/mindset/"
+            }],
+            tags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.scrumMaster, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
+                this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engaged,
+                this.$store.state.tags.coaching, this.$store.state.tags.trainning,
+                this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
+                this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
+                this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
+                this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.photoshop, this.$store.state.tags.mvc
+            ]
+        });
+
+
+        histories.push({
+            date: new Date("2018-08-27"),
+            category: this.$store.state.categoryType.professionalExperience,
+            title: {
+                "pt-BR": "Unous Inteligência em Negócios",
+                "en-US": "Unous Business Intelligence",
+            },
+            description: {
+                "pt-BR": "Eu estava quase completando cinco anos de dedicação no projeto MindSet e meu maior presente foi ver o projeto muito bem exposto no Latam Retail Show, a sensação foi incrível quando pude ver meu trabalho e o trabalho de todos os que já participam deste projeto exposto, foi gratificante.",
+                "en-US": "I was almost completing five years of dedication in MindSet project and my biggest gift was to see the project very well exposed in the Latam Retail Show, the feeling was amazing when I could see my work and the work of every one that already participate of this project exposed, it was rewarding.",
+            },
+            image: require('@/assets/professionalExperiences/unous_latam.jpg'),
+            tags: [],
+            externalLinks: [{
+                description: { "pt-BR": "Unous", "en-US": "Unous" },
+                url: "http://www.unous.com.br/"
+            }, {
+                description: { "pt-BR": "MindSet", "en-US": "MindSet" },
+                url: "http://www.unous.com.br/mindset/"
+            }],
+            tags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
+                this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engaged,
+                this.$store.state.tags.coaching, this.$store.state.tags.trainning,
+                this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
+                this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.vueJS, this.$store.state.tags.webAPI,
+                this.$store.state.tags.dotNetCore, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
+                this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
+                this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.photoshop, this.$store.state.tags.mvc
+            ]
+        });
+
+
+        histories.push({
+            date: new Date("2020-01-15"),
+            category: this.$store.state.categoryType.professionalExperience,
+            title: {
+                "pt-BR": "Unous Inteligência em Negócios",
+                "en-US": "Unous Business Intelligence",
+            },
+            description: {
+                "pt-BR": "Iniciamos o ano de 2020 com um novo desafio, o número de clientes aumentou e suas características demandam mais do nosso projeto. Neste ano, estamos evoluindo em muitos aspectos, como arquitetura, escalabilidade, desempenho, usabilidade, além de melhorar nossos processos com base em práticas ágeis.",
+                "en-US": "We started the 2020 with a new challenge, the number of clients increased and their characteristics demand more of our project. This years we are evolving in many aspects as architecture, scalability, performance, usability, besides we are improving our processes based on agile practices.",
+            },
+            image: require('@/assets/professionalExperiences/unous.jpg'),
+            tags: [],
+            externalLinks: [{
+                description: { "pt-BR": "Unous", "en-US": "Unous" },
+                url: "http://www.unous.com.br/"
+            }, {
+                description: { "pt-BR": "MindSet", "en-US": "MindSet" },
+                url: "http://www.unous.com.br/mindset/"
+            }],
+            tags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30, this.$store.state.tags.extremeProgramming,
+                this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engaged,
+                this.$store.state.tags.coaching, this.$store.state.tags.trainning,
+                this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
+                this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge,
+                this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest, this.$store.state.tags.codeCoverage, this.$store.state.tags.codeAnalysis,
+                this.$store.state.tags.codeMetrics, this.$store.state.tags.TDD, this.$store.state.tags.BDD, this.$store.state.tags.styleCop,
+                this.$store.state.tags.vueJS, this.$store.state.tags.webAPI, this.$store.state.tags.dotNetCore,
+                this.$store.state.tags.DDD, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
+                this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
+                this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.photoshop, this.$store.state.tags.mvc
+            ]
+        });
+
         histories.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
 
         this.$store.state.histories = histories;

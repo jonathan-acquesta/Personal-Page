@@ -75,6 +75,7 @@ export default new Vuex.Store({
             scrum: { "pt-BR": "#SCRUM", "en-US": "#SCRUM", color: "cyan" },
             kanban: { "pt-BR": "#KANBAN", "en-US": "#KANBAN", color: "cyan" },
             management30: { "pt-BR": "#Management3.0", "en-US": "#Management3.0", color: "cyan" },
+            extremeProgramming: { "pt-BR": "#ExtremeProgramming", "en-US": "#ExtremeProgramming", color: "cyan" },
 
             coaching: { "pt-BR": "#Coaching", "en-US": "#Coaching", color: "cyan" },
             leadership: { "pt-BR": "#Liderança", "en-US": "#Leadership", color: "cyan" },
@@ -85,8 +86,10 @@ export default new Vuex.Store({
             teamManagement: { "pt-BR": "#GerenciamentoEquipe", "en-US": "#TeamManagement", color: "cyan" },
             hireProcess: { "pt-BR": "#ProcessoDeContratação", "en-US": "#HireProcess", color: "cyan" },
             trainning: { "pt-BR": "#Treinamento", "en-US": "#Trainning", color: "cyan" },
+            engaged: { "pt-BR": "#Engajado", "en-US": "#Engaged", color: "cyan" },
 
             dotNetFramework: { "pt-BR": "#.NetFramework", "en-US": "#.NetFramework", color: "purple" },
+            dotNetCore: { "pt-BR": "#.NetCore", "en-US": "#.NetCore", color: "purple" },
             vbNet: { "pt-BR": "#VB.Net", "en-US": "#VB.Net", color: "purple" },
             vba: { "pt-BR": "#VBA", "en-US": "#VBA", color: "purple" },
             aspNet: { "pt-BR": "#Asp.Net", "en-US": "#Asp.Net", color: "purple" },
@@ -94,6 +97,7 @@ export default new Vuex.Store({
             razor: { "pt-BR": "#Razor", "en-US": "#Razor", color: "purple" },
             asp: { "pt-BR": "#Asp", "en-US": "#Asp", color: "purple" },
             webServices: { "pt-BR": "#WebServices", "en-US": "#WebServices", color: "purple" },
+            webAPI: { "pt-BR": "#WebAPI", "en-US": "#WebAPI", color: "purple" },
             cSharp: { "pt-BR": "#C#", "en-US": "#C#", color: "purple" },
             sql: { "pt-BR": "#SQL", "en-US": "#SQL", color: "purple" },
             sqlCompact: { "pt-BR": "#SQLCompact", "en-US": "#SQLCompact", color: "purple" },
@@ -101,6 +105,7 @@ export default new Vuex.Store({
             visualBasic6: { "pt-BR": "#VisualBasic6", "en-US": "#VisualBasic6", color: "purple" },
             vbScript: { "pt-BR": "#VBScript", "en-US": "#VBScript", color: "purple" },
             javascript: { "pt-BR": "#Javascript", "en-US": "#Javascript", color: "purple" },
+            vueJS: { "pt-BR": "#VueJS", "en-US": "#VueJS", color: "purple" },
             jQuery: { "pt-BR": "#jQuery", "en-US": "#jQuery", color: "purple" },
             css: { "pt-BR": "#CSS", "en-US": "#CSS", color: "purple" },
             html: { "pt-BR": "#HTML", "en-US": "#HTML", color: "purple" },
@@ -110,6 +115,7 @@ export default new Vuex.Store({
             mvvm: { "pt-BR": "#MVVM", "en-US": "#MVVM", color: "purple" },
             mvc: { "pt-BR": "#MVC", "en-US": "#MVC", color: "purple" },
             designPattern: { "pt-BR": "#PadrãoDeProjetos", "en-US": "#designPattern", color: "purple" },
+            DDD: { "pt-BR": "#DDD", "en-US": "#DDD", color: "purple" },
 
             unitTest: { "pt-BR": "#TesteUnitário", "en-US": "#UnitTest", color: "green" },
             integratedTest: { "pt-BR": "#TesteIntegrado", "en-US": "#IntegratedTest", color: "green" },
@@ -117,6 +123,9 @@ export default new Vuex.Store({
             codeAnalysis: { "pt-BR": "#CodeAnalysis", "en-US": "#CodeAnalysis", color: "green" },
             styleCop: { "pt-BR": "#StyleCop", "en-US": "#StyleCop", color: "green" },
             codeMetrics: { "pt-BR": "#CodeMetrics", "en-US": "#CodeMetrics", color: "green" },
+            TDD: { "pt-BR": "#TDD", "en-US": "#TDD", color: "green" },
+            BDD: { "pt-BR": "#BDD", "en-US": "#BDD", color: "green" },
+
 
             fourthIndustrialRevolution: { "pt-BR": "#QuartaRevoluçãoIndustrial", "en-US": "#FourthIndustrialRevolution", color: "blue" },
             artificialIntelligence: { "pt-BR": "#InteligênciaArtifícial", "en-US": "#ArtificialIntelligence", color: "blue" },
@@ -128,6 +137,7 @@ export default new Vuex.Store({
             greatChallenge: { "pt-BR": "#GrandeDesafío", "en-US": "#GreatChallenge", color: "blue" },
             rewarding: { "pt-BR": "#Recompensador", "en-US": "#Rewarding", color: "blue" },
             hardworking: { "pt-BR": "#TrabalhoDuro", "en-US": "#Hardworking", color: "blue" },
+            continuousEvolution: { "pt-BR": "#EvoluçãoContínua", "en-US": "#ContinuousEvolution", color: "blue" },
         },
 
         histories: [],
