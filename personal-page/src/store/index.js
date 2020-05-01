@@ -12,7 +12,9 @@ export default new Vuex.Store({
             languages: {
                 portuguese: { "pt-BR": "Português", "en-US": "Portuguese", language: "pt-BR" },
                 english: { "pt-BR": "Inglês", "en-US": "English", language: "en-US" },
-            }
+            },
+            showDetails: { "pt-BR": "Mostrar Detalhes", "en-US": "Show Details", language: "pt-BR" },
+            closeDetails: { "pt-BR": "Fechar Detalhes", "en-US": "Close Details", language: "pt-BR" },
         },
         months: {
             "pt-BR": [
@@ -86,7 +88,7 @@ export default new Vuex.Store({
             teamManagement: { "pt-BR": "#GerenciamentoEquipe", "en-US": "#TeamManagement", color: "cyan" },
             hireProcess: { "pt-BR": "#ProcessoDeContratação", "en-US": "#HireProcess", color: "cyan" },
             trainning: { "pt-BR": "#Treinamento", "en-US": "#Trainning", color: "cyan" },
-            engaged: { "pt-BR": "#Engajado", "en-US": "#Engaged", color: "cyan" },
+            engagement: { "pt-BR": "#Engajamento", "en-US": "#Engagement", color: "cyan" },
 
             dotNetFramework: { "pt-BR": "#.NetFramework", "en-US": "#.NetFramework", color: "purple" },
             dotNetCore: { "pt-BR": "#.NetCore", "en-US": "#.NetCore", color: "purple" },
