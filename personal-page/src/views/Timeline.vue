@@ -121,7 +121,6 @@
                 <b>{{ tag[culture] }}</b>
               </v-chip>
             </div>
-
             
             <div
               class="links"
@@ -200,7 +199,7 @@ export default {
     },
     openSite: function(url) {
       window.open(url, "_blank");
-    },
+    }
   },
 };
 </script>

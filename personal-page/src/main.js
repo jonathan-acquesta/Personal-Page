@@ -80,8 +80,8 @@ var app = new Vue({
                     "en-US": "Microsoft – MCP",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "70-562 Technology Specialist: Microsoft .Net Framework 3.5, ASP.NET Application Development",
+                    "en-US": "70-562 Technology Specialist: Microsoft .Net Framework 3.5, ASP.NET Application Development",
                 },
                 description: {
                     "pt-BR": "A certificação 70-562 Technology Specialist: Microsoft .Net Framework 3.5, ASP.NET Application Development foi muito importante como objetivo pessoal com foco em comprovar o conhecimento que eu tinha adquirido enquanto atuava como líder técnico e essa certificação me concedeu o título de MCP. Obter esta certificação também foi parte de um plano para ajudar nos objetivos corporativos em relação a participação em licitações públicas que exigiam um número mínimo de profissionais certificados na empresa.",
@@ -97,6 +97,7 @@ var app = new Vue({
                     url: "https://github.com/jonathan-acquesta/Personal-Page/blob/master/personal-page/public/microsoft_certified_professional_transcript.pdf"
                 }],
                 tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
+                mainTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
                 showDetail: false
             });
 
@@ -109,8 +110,8 @@ var app = new Vue({
                     "en-US": "Microsoft – MCTS",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "70-536 Technology Specialist: Microsoft .Net Framework, ASP.NET Application Development Foundantion",
+                    "en-US": "70-536 Technology Specialist: Microsoft .Net Framework, ASP.NET Application Development Foundantion",
                 },
                 description: {
                     "pt-BR": "A certificação 70-536 Technology Specialist: Microsoft .Net Framework, ASP.NET Application Development Foundantion foi muito importante para consolidar minha capacidade técnica com as tecnologias Microsoft e essa certificação me concedeu o título de MCTS e apoio na evolução da minha carreira. Obter esta certificação também foi parte de um plano para ajudar nos objetivos corporativos em relação a participação em licitações públicas que exigiam um número mínimo de profissionais certificados na empresa.",
@@ -126,6 +127,7 @@ var app = new Vue({
                     url: "https://github.com/jonathan-acquesta/Personal-Page/blob/master/personal-page/public/microsoft_certified_professional_transcript.pdf"
                 }],
                 tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
+                mainTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
                 showDetail: false
             });
         },
@@ -139,8 +141,8 @@ var app = new Vue({
                     "en-US": "KANBAN",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "O melhor guia para iniciantes aprenderem Kanban passo a passo",
+                    "en-US": "The ultimate guide for beginner's to learn Kanban step by step",
                 },
                 description: {
                     "pt-BR": "O livro Kanban: O melhor guia para iniciantes aprenderem Kanban passo a passo, foi escrito por James Turner e traz diversas aplicações sobre o conceito em diversos setores industriais, também faz comparações sobre a aplicação do Kanban em relação a outros frameworks e metodologias ágeis, ajudando a clarificar as melhores situações para se aplicar a metodologia.",
@@ -148,6 +150,7 @@ var app = new Vue({
                 },
                 image: require('@/assets/books/kanban.jpg'),
                 tags: [this.$store.state.tags.kanban],
+                mainTags: [this.$store.state.tags.kanban],
                 showDetail: true
             });
 
@@ -159,8 +162,8 @@ var app = new Vue({
                     "en-US": "Coaching and Leadership",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Novas maneiras para conduzir, influenciar pessoas e gerar negócios de sucesso",
+                    "en-US": "New ways to lead, influence people and generate successful businesses",
                 },
                 description: {
                     "pt-BR": "O livro Coaching e Liderança: Novas maneiras para conduzir, influenciar pessoas e gerar negócios de sucesso foi coordenado por Jaques Grinberg e Jorge Penilo, sendo uma obra que reuni a vivencia e experiência de vinte e três autores em relação aos desafios enfrentados por profissionais que se desafiam a liderar. Essa abordagem foi muito interessante para aprender e comparar a minha realidade com outras situações em contextos diversos.",
@@ -168,6 +171,7 @@ var app = new Vue({
                 },
                 image: require('@/assets/books/coaching_lideranca.jpg'),
                 tags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership],
+                mainTags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership],
                 showDetail: false
             });
 
@@ -179,8 +183,8 @@ var app = new Vue({
                     "en-US": "Managing People",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Os melhores artigos de Harvard Business Review sobre como liderar equipes",
+                    "en-US": "The best articles from Harvard Business Review on how to lead teams",
                 },
                 description: {
                     "pt-BR": "O livro Gerenciando Pessoas: Os melhores artigos de Harvard Business Review sobre como liderar equipes, traz dez ótimos artigos que me ajudaram em muito na reflexão sobre aspectos de liderança, engajamento, organização e resultados.",
@@ -188,6 +192,7 @@ var app = new Vue({
                 },
                 image: require('@/assets/books/gerenciando_pessoas.jpg'),
                 tags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership],
+                mainTags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership],
                 showDetail: false
             });
 
@@ -200,8 +205,8 @@ var app = new Vue({
                     "en-US": "The Fourth Industrial Revolution",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Fórum Econômico Mundial",
+                    "en-US": "World Economic Forum",
                 },
                 description: {
                     "pt-BR": "O livro A quarta revolução industrial escrito por Klaus Schwab do World Economic Forum foi uma ferramenta muito interessante para ampliar a minha visão sobre as mudanças que estão ocorrendo em nosso mundo globalizado e entender os possíveis riscos e benefícios desses avanços para os diversos setores da economia.",
@@ -209,6 +214,7 @@ var app = new Vue({
                 },
                 image: require('@/assets/books/quarta_revolucao_industrual.jpg'),
                 tags: [this.$store.state.tags.fourthIndustrialRevolution, this.$store.state.tags.artificialIntelligence, this.$store.state.tags.disruptiveInnovations],
+                mainTags: [this.$store.state.tags.fourthIndustrialRevolution, this.$store.state.tags.artificialIntelligence, this.$store.state.tags.disruptiveInnovations],
                 showDetail: false
             });
 
@@ -221,8 +227,8 @@ var app = new Vue({
                     "en-US": "SCRUM",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "A arte de fazer o dobro do trabalho na metade do tempo",
+                    "en-US": "The art of doing twice the work in half the time",
                 },
                 description: {
                     "pt-BR": "O livro SCRUM: A arte de fazer o dobro do trabalho na metade do tempo foi escrito por Jeff Sutherland e JJ Sutherland. Este livro traz toda a visão e experiência de um dos criadores do SCRUM de uma maneira bem estruturada, fundamentando as razões para criação de uma nova abordagem no setor de desenvolvimento de sistemas. Este livro foi muito interessante para mim, devido a me possibilitar a oportunidade de entender melhor como o SCRUM nasceu e cresceu.",
@@ -230,6 +236,7 @@ var app = new Vue({
                 },
                 image: require('@/assets/books/scrum.jpg'),
                 tags: [this.$store.state.tags.scrum],
+                mainTags: [this.$store.state.tags.scrum],
                 showDetail: false
             });
         },
@@ -240,12 +247,12 @@ var app = new Vue({
                 date: new Date("2007-11-05"),
                 category: this.$store.state.categoryType.professionalExperience,
                 title: {
-                    "pt-BR": "POLITEC S/A - Minha primeira oportunidade.",
-                    "en-US": "POLITEC S/A - My first opportunity",
+                    "pt-BR": "POLITEC S/A",
+                    "en-US": "POLITEC S/A",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Minha primeira oportunidade",
+                    "en-US": "My first opportunity",
                 },
                 description: {
                     "pt-BR": "Foi em 2007, quando eu recebi a minha primeira oportunidade em minha carreira, naquela ocasião eu tinha 19 anos e estava ansioso para começar a trabalhar no setor de TI. A Politec S/A me contratou como estagiário e me ofereceu a chance de obter experiência em um ambiente de trabalho.",
@@ -253,6 +260,7 @@ var app = new Vue({
                 },
                 image: require('@/assets/professionalExperiences/politec.jpg'),
                 tags: [this.$store.state.tags.intern, this.$store.state.tags.opportunity],
+                mainTags: [this.$store.state.tags.intern, this.$store.state.tags.opportunity],
                 showDetail: false
             });
 
@@ -260,12 +268,12 @@ var app = new Vue({
                 date: new Date("2008-02-05"),
                 category: this.$store.state.categoryType.professionalExperience,
                 title: {
-                    "pt-BR": "POLITEC S/A - Seis meses de carreira.",
-                    "en-US": "POLITEC S/A - Six months of career.",
+                    "pt-BR": "POLITEC S/A",
+                    "en-US": "POLITEC S/A",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Seis meses de carreira",
+                    "en-US": "Six months of career",
                 },
                 description: {
                     "pt-BR": "Eu estava completando seis meses de carreira e acredito que tive sorte, porque, logo no primeiro emprego, fui alocado em um importante projeto da Gol Linhas Aéreas, onde me foi permitido resolver problemas de produção relatados pelos clientes. Neste projeto, pude aprimorar minhas habilidades com Asp, Javascript, Visual Basic 6 e SQL.",
@@ -273,6 +281,7 @@ var app = new Vue({
                 },
                 image: require('@/assets/professionalExperiences/politec_gol.jpg'),
                 tags: [this.$store.state.tags.intern, this.$store.state.tags.sql, this.$store.state.tags.visualBasic6, this.$store.state.tags.asp, this.$store.state.tags.vbScript, this.$store.state.tags.javascript, this.$store.state.tags.css, this.$store.state.tags.html],
+                mainTags: [this.$store.state.tags.intern, this.$store.state.tags.sql, this.$store.state.tags.visualBasic6, this.$store.state.tags.asp],
                 showDetail: false
             });
 
@@ -284,8 +293,8 @@ var app = new Vue({
                     "en-US": "Prosegur Brasil",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Um novo caminho",
+                    "en-US": "A new path",
                 },
                 description: {
                     "pt-BR": "Infelizmente, a Politec S/A perdeu seu principal projeto e consequentemente, quase todos os funcionários também perderam seus empregos. Por isso, tive que encontrar um novo caminho o mais rápido possível, e logo após um mês comecei a trabalhar na Prosegur Brasil, essa oportunidade foi interessante e me permitiu aprender novas tecnologias como VB.Net e Oracle. Eu era um estagiário e a minha principal responsabilidade era criar novos recursos em um sistema interno.",
@@ -293,6 +302,7 @@ var app = new Vue({
                 },
                 image: require('@/assets/professionalExperiences/prosegurBrasil.jpg'),
                 tags: [this.$store.state.tags.intern, this.$store.state.tags.oracle, this.$store.state.tags.visualBasic6, this.$store.state.tags.vbNet],
+                mainTags: [this.$store.state.tags.intern, this.$store.state.tags.oracle, this.$store.state.tags.visualBasic6, this.$store.state.tags.vbNet],
                 showDetail: false
             });
 
@@ -300,12 +310,12 @@ var app = new Vue({
                 date: new Date("2008-11-11"),
                 category: this.$store.state.categoryType.professionalExperience,
                 title: {
-                    "pt-BR": "CNP Brasil - Projeto Sadia",
-                    "en-US": "CNP Brasil - Sadia Project",
+                    "pt-BR": "CNP Brasil",
+                    "en-US": "CNP Brasil",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Projeto Sadia",
+                    "en-US": "Sadia Project",
                 },
                 description: {
                     "pt-BR": "Depois de alguns meses trabalhando como estagiário na Prosegur Brasil, meu chefe na época compartilhou com a equipe seu plano de melhorar seu departamento, mas sua idéia era me colocar em uma área de suporte, onde minha principal atividade não era o desenvolvimento de software. Decidi mudar novamente e surgiu uma nova oportunidade de trabalhar como programador júnior em uma empresa de pesquisa chamada CNP Brasil. Esta empresa era pequena e eu era o único desenvolvedor, mas tive a oportunidade de criar alguns sites e aplicativos móveis para coletar dados sobre pesquisas de um projeto para a Sadia, além de trabalhar em um sistema interno. Este trabalho me permitiu aprender Asp.Net, Ajax, SQL Compact e me unir essas tecnologias com as outras que eu já havia aprendido anteriormente.",
@@ -315,6 +325,7 @@ var app = new Vue({
                 tags: [this.$store.state.tags.juniorDeveloper, this.$store.state.tags.aspNet, this.$store.state.tags.vbNet, this.$store.state.tags.vbScript, this.$store.state.tags.sql,
                     this.$store.state.tags.sqlCompact, this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html
                 ],
+                mainTags: [this.$store.state.tags.juniorDeveloper, this.$store.state.tags.aspNet, this.$store.state.tags.vbNet, this.$store.state.tags.sql, this.$store.state.tags.sqlCompact],
                 showDetail: false
             });
 
@@ -323,12 +334,12 @@ var app = new Vue({
                 date: new Date("2009-02-04"),
                 category: this.$store.state.categoryType.professionalExperience,
                 title: {
-                    "pt-BR": "Adedo Contact Center - Site Comercial",
-                    "en-US": "Adedo Contact Center - Site Comercial",
+                    "pt-BR": "Adedo Contact Center",
+                    "en-US": "Adedo Contact Center",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Projeto Site Comercial",
+                    "en-US": "Commercial Website Project",
                 },
                 description: {
                     "pt-BR": "Minha carreira estava avançando rapidamente e recebi uma oferta interessante para trabalhar na Adedo Contact Center como desenvolvedor pleno, onde minha principal responsabilidade era iniciar um novo departamento para o desenvolvimento de sistemas. O primeiro projeto foi criar um novo site comercial em vários idiomas para a empresa, com o objetivo de interromper um contrato de terceirização, eu fiz esse projeto junto ao departamento de marketing e criei uma área de gerenciamento para que usuários administrativos gerenciem novos conteúdos no site. Este projeto foi aprovado como um sucesso pelo conselho diretor e pelo presidente, alcançando os resultados de redução de custos e ganho de agilidade na comunicação externa.",
@@ -339,6 +350,9 @@ var app = new Vue({
                     this.$store.state.tags.photoshop, this.$store.state.tags.aspNet, this.$store.state.tags.vbNet, this.$store.state.tags.vbScript, this.$store.state.tags.sql,
                     this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html
                 ],
+                mainTags: [this.$store.state.tags.fullDeveloper, this.$store.state.tags.criatitySolution, this.$store.state.tags.selfManagement, this.$store.state.tags.successCase,
+                    this.$store.state.tags.aspNet, this.$store.state.tags.vbNet, this.$store.state.tags.sql
+                ],
                 showDetail: false
             });
 
@@ -346,12 +360,12 @@ var app = new Vue({
                 date: new Date("2009-09-15"),
                 category: this.$store.state.categoryType.professionalExperience,
                 title: {
-                    "pt-BR": "Adedo Contact Center - Intranet",
-                    "en-US": "Adedo Contact Center - Intranet",
+                    "pt-BR": "Adedo Contact Center",
+                    "en-US": "Adedo Contact Center",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Projeto Intranet",
+                    "en-US": " Project",
                 },
                 description: {
                     "pt-BR": "Após concluir o projeto do site comercial, iniciei um novo grande desafio nessa empresa, criei uma intranet para conectar os departamentos de Marketing, Infraestrutura, Helpdesk e Call Centers. Esse projeto foi realmente gratificante, porque tive a oportunidade de conhecer muitas pessoas de diferentes partes da empresa e entender o que elas realmente precisavam. Durante esse período, criei muitos softwares para dar suporte às operações do call center e um sistema para controlar a distribuição de almoço por código de barras.",
@@ -363,6 +377,10 @@ var app = new Vue({
                     this.$store.state.tags.photoshop, this.$store.state.tags.aspNet, this.$store.state.tags.vbNet, this.$store.state.tags.vbScript, this.$store.state.tags.sql,
                     this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html
                 ],
+                mainTags: [this.$store.state.tags.fullDeveloper, this.$store.state.tags.criatitySolution, this.$store.state.tags.selfManagement, this.$store.state.tags.greatChallenge, this.$store.state.tags.rewarding,
+                    this.$store.state.tags.successCase, this.$store.state.tags.silverlight, this.$store.state.tags.webServices,
+                    this.$store.state.tags.aspNet, this.$store.state.tags.vbNet, this.$store.state.tags.sql
+                ],
                 showDetail: false
             });
 
@@ -371,12 +389,12 @@ var app = new Vue({
                 date: new Date("2010-04-08"),
                 category: this.$store.state.categoryType.professionalExperience,
                 title: {
-                    "pt-BR": "CPM Braxis - Ambiente De Pagamentos",
-                    "en-US": "CPM Braxis - Payment Environment",
+                    "pt-BR": "CPM Braxis",
+                    "en-US": "CPM Braxis",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Projeto Ambiente De Pagamentos",
+                    "en-US": "Payment Environment Project",
                 },
                 description: {
                     "pt-BR": "O trabalho na Adedo Contact Center foi um grande passo na minha carreira, mas eu sentia que precisava de um novo grande desafio; portanto, aceitei uma oferta para trabalhar como desenvolvedor sênior da CPM Braxis. Minha primeira oportunidade foi no Projeto Ambiente de Pagamento, na Sefaz SP, onde trabalhei como desenvolvedor de sistemas e pude aprender muito trabalhando com ótimos profissionais e logo comecei a receber bons feedbacks.",
@@ -399,6 +417,10 @@ var app = new Vue({
                     this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.vbScript, this.$store.state.tags.sql,
                     this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html
                 ],
+                mainTags: [this.$store.state.tags.seniorDeveloper, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.greatChallenge,
+                    this.$store.state.tags.codeCoverage, this.$store.state.tags.codeMetrics, this.$store.state.tags.mvc, this.$store.state.tags.webServices,
+                    this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.sql
+                ],
                 showDetail: false
             });
 
@@ -407,12 +429,12 @@ var app = new Vue({
                 date: new Date("2010-09-08"),
                 category: this.$store.state.categoryType.professionalExperience,
                 title: {
-                    "pt-BR": "CPM Braxis - Crédito Acumulado",
-                    "en-US": "CPM Braxis - Accumulated Credit",
+                    "pt-BR": "CPM Braxis",
+                    "en-US": "CPM Braxis",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Projeto Crédito Acumulado",
+                    "en-US": "Accumulated Credit Project",
                 },
                 description: {
                     "pt-BR": "Após alguns meses trabalhando para a CPM Braxis, passamos por um momento complicado para atender a todos os requisitos exigidos pelo governo de São Paulo, então meu gerente organizou um grande esforço para ajustar todos os projetos aos requisitos. Tivemos que trabalhar duro por três meses e eu pude trabalhar no meu projeto e ajudar o projeto Crédito Acumulado, onde tive algumas idéias para melhorar a maneira como estávamos trabalhando para atender aos requisitos. Não foi fácil, mas alcançamos a meta e todos os projetos puderam continuar, evitando grandes problemas para a empresa.",
@@ -435,6 +457,10 @@ var app = new Vue({
                     this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.vbScript, this.$store.state.tags.sql,
                     this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html
                 ],
+                mainTags: [this.$store.state.tags.seniorDeveloper, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.teamManagement, this.$store.state.tags.greatChallenge,
+                    this.$store.state.tags.codeCoverage, this.$store.state.tags.codeMetrics, this.$store.state.tags.mvc, this.$store.state.tags.webServices,
+                    this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.sql
+                ],
                 showDetail: false
             });
 
@@ -443,12 +469,12 @@ var app = new Vue({
                 date: new Date("2011-01-08"),
                 category: this.$store.state.categoryType.professionalExperience,
                 title: {
-                    "pt-BR": "CPM Braxis - SAT",
-                    "en-US": "CPM Braxis - SAT",
+                    "pt-BR": "CPM Braxis",
+                    "en-US": "CPM Braxis",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Projecto SAT - Oportunidade de Liderança",
+                    "en-US": "SAT Project - Leadership Opportunity",
                 },
                 description: {
                     "pt-BR": "Eu havia completado o primeiro ciclo de avaliação e muitas boas notícias vieram, fui promovido a analista de sistemas júnior e ganhei a oportunidade de liderar uma nova equipe para um novo projeto chamado SAT, foi a minha primeira experiência em liderar os outros. Quando me tornei o líder da equipe, comecei a melhorar meu entendimento sobre o SCRUM e o Kanban, eles eram meus parceiros para melhorar o trabalho em equipe e colocar todos em evidência.",
@@ -465,11 +491,15 @@ var app = new Vue({
                         url: "https://www.capgemini.com/br-pt/"
                     }
                 ],
-                tags: [this.$store.state.tags.seniorDeveloper, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.teamManagement, this.$store.state.tags.rewarding,
+                tags: [this.$store.state.tags.juniorSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.teamManagement, this.$store.state.tags.rewarding,
                     this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest, this.$store.state.tags.codeCoverage, this.$store.state.tags.codeAnalysis,
                     this.$store.state.tags.codeMetrics, this.$store.state.tags.styleCop, this.$store.state.tags.mvc, this.$store.state.tags.excel, this.$store.state.tags.vba, this.$store.state.tags.webServices,
                     this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.vbScript, this.$store.state.tags.sql,
                     this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html
+                ],
+                mainTags: [this.$store.state.tags.juniorSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.teamManagement, this.$store.state.tags.rewarding,
+                    this.$store.state.tags.codeCoverage, this.$store.state.tags.codeMetrics, this.$store.state.tags.mvc, this.$store.state.tags.vba, this.$store.state.tags.webServices,
+                    this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.sql
                 ],
                 showDetail: false
             });
@@ -482,8 +512,8 @@ var app = new Vue({
                     "en-US": "CPM Braxis - SAT",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Projeto SAT - Trabalho em Equipe",
+                    "en-US": "SAT Project - Team Work",
                 },
                 description: {
                     "pt-BR": "Outro ciclo de avaliação se completou e desta vez, não apenas eu, mas toda a minha equipe foi promovida, tornei-me um analista de sistemas pleno e o projeto SAT estava evoluindo com boas idéias sobre novas soluções técnicas e uma equipe organizada trabalhando muito bem em conjunto.",
@@ -500,11 +530,15 @@ var app = new Vue({
                         url: "https://www.capgemini.com/br-pt/"
                     }
                 ],
-                tags: [this.$store.state.tags.juniorSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.rewarding,
+                tags: [this.$store.state.tags.fullSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.rewarding,
                     this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest, this.$store.state.tags.codeCoverage, this.$store.state.tags.codeAnalysis,
                     this.$store.state.tags.codeMetrics, this.$store.state.tags.styleCop, this.$store.state.tags.mvc, this.$store.state.tags.excel, this.$store.state.tags.vba, this.$store.state.tags.webServices,
                     this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.vbScript, this.$store.state.tags.sql,
                     this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html
+                ],
+                mainTags: [this.$store.state.tags.fullSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.rewarding,
+                    this.$store.state.tags.codeCoverage, this.$store.state.tags.codeMetrics, this.$store.state.tags.mvc, this.$store.state.tags.webServices,
+                    this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.sql
                 ],
                 showDetail: false
             });
@@ -518,8 +552,8 @@ var app = new Vue({
                     "en-US": "Sistema Pri",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Projeto de Auditoria de Obras",
+                    "en-US": "Construction Audit Project",
                 },
                 description: {
                     "pt-BR": "Decidi terminar meu ciclo na CPM Braxis e enfrentar um desafio diferente, por isso aceitei trabalhar para a Sistema PRI, e foi uma grande mudança, porque deixei meu cargo de líder para trabalhar novamente como um membro da equipe, mas foi realmente um boa escolha, pois tive a oportunidade de trabalhar com muitos profissionais experientes que me mostraram quais deviam ser meus próximos passos.",
@@ -532,10 +566,13 @@ var app = new Vue({
                     url: "https://infra.bureauveritas.com.br/"
                 }],
                 tags: [this.$store.state.tags.fullSystemAnalyst,
-
-                    this.$store.state.tags.mvvm, this.$store.state.tags.designPattern,
+                    this.$store.state.tags.mvvm, this.$store.state.tags.designPattern, this.$store.state.tags.silverlight,
                     this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.sql,
                     this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html
+                ],
+                mainTags: [this.$store.state.tags.fullSystemAnalyst,
+                    this.$store.state.tags.mvvm, this.$store.state.tags.designPattern, this.$store.state.tags.silverlight,
+                    this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.sql
                 ],
                 showDetail: false
             });
@@ -549,8 +586,8 @@ var app = new Vue({
                     "en-US": "Talent Four Consulting",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Projeto MindSet - Um recomeço",
+                    "en-US": "MindSet Project - A fresh start ",
                 },
                 description: {
                     "pt-BR": "Às vezes, as coisas não funcionam como queremos, mas precisamos passar por esses momentos para crescer e desenvolver resiliência, então, um novo capítulo em minha vida começou quando aceitei trabalhar para a Talent Four, ainda não sabia, mas isso mudaria minha vida de uma maneira excelente. Fui alocado em um novo projeto chamado MindSet e jurei para mim que ajudaria esse projeto a se tornar grandioso.",
@@ -569,6 +606,9 @@ var app = new Vue({
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.photoshop, this.$store.state.tags.mvc
                 ],
+                mainTags: [this.$store.state.tags.fullSystemAnalyst, this.$store.state.tags.opportunity, this.$store.state.tags.greatChallenge, this.$store.state.tags.aspNetMVC,
+                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.mvc
+                ],
                 showDetail: false
             });
 
@@ -581,8 +621,8 @@ var app = new Vue({
                     "en-US": "Talent Four Consulting",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Projeto MindSet - Grande Desáfio",
+                    "en-US": "MindSet Project - Great Challenge",
                 },
                 description: {
                     "pt-BR": "Trabalhei na TalentFour e o cliente era uma startup de inteligência em negócios com foco no setor de varejo. O projeto MindSet foi um desafio para enfrentar o mercado com uma nova solução que poderia resolver grandes problemas sobre o varejo, e comecei a aprender muito sobre os negócios enquanto ajudava a equipe a desenvolver essa nova solução. Após o primeiro ano do projeto, tivemos a entrega do módulo OpenToBuy para alguns clientes e fui promovido a analista de sistemas sênior pelo meu trabalho.",
@@ -602,6 +642,10 @@ var app = new Vue({
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.photoshop, this.$store.state.tags.mvc
                 ],
+                mainTags: [this.$store.state.tags.seniorSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.hardworking,
+                    this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.aspNetMVC,
+                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.mvc
+                ],
                 showDetail: false
             });
 
@@ -613,8 +657,8 @@ var app = new Vue({
                     "en-US": "Unous Business Intelligence",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Projeto MindSet - Trabalho duro recompensador",
+                    "en-US": "MindSet Projet - Rewarding hard work",
                 },
                 description: {
                     "pt-BR": "Depois de alguns meses, recebi uma oferta para trabalhar diretamente para a Unous como Coordenador de TI e assumi a responsabilidade pelo projeto MindSet. Nesta ocasião, desempenhei o papel de Scrum Master, ajudando a equipe a aplicar o Scrum e ensinei-lhes regras de negócios, além de ser responsável pelo processo de contratação, treinamento e planejamento de lançamentos.",
@@ -637,6 +681,13 @@ var app = new Vue({
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.mvc
                 ],
+                mainTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.scrumMaster, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
+                    this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership,
+                    this.$store.state.tags.coaching, this.$store.state.tags.trainning,
+                    this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.hardworking,
+                    this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
+                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.mvc
+                ],
                 showDetail: false
             });
 
@@ -649,8 +700,8 @@ var app = new Vue({
                     "en-US": "Unous Business Intelligence",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Projeto MindSet - Liderança",
+                    "en-US": "MindSet Project - Leadership",
                 },
                 description: {
                     "pt-BR": "Não é fácil liderar os outros e acredito que todos os líderes evoluem apenas enfrentando situações difíceis e tomando decisões, é claro que isso não foi diferente comigo, de qualquer maneira, me sinto gratificado por toda a situação complexa que o projeto e a equipe passaram e eu pude experienciar. Depois de três anos atuando no projeto MindSet, tive o prazer de trabalhar com muitas pessoas e aprendi muito com todos. Nesse momento, o MindSet é um grande software com três módulos de negócios e com novos grandes clientes de varejo. Tenho orgulho de deixar minha marca nesses resultados.",
@@ -673,6 +724,13 @@ var app = new Vue({
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.mvc
                 ],
+                mainTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.scrumMaster, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
+                    this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
+                    this.$store.state.tags.coaching, this.$store.state.tags.trainning,
+                    this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
+                    this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
+                    this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.mvc
+                ],
                 showDetail: false
             });
 
@@ -685,8 +743,8 @@ var app = new Vue({
                     "en-US": "Unous Business Intelligence",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Project MindSet - Latam Retail Show",
+                    "en-US": "MindSet Project - Latam Retail Show",
                 },
                 description: {
                     "pt-BR": "Eu estava quase completando cinco anos de dedicação no projeto MindSet e meu maior presente foi ver o projeto muito bem exposto no Latam Retail Show, a sensação foi incrível quando pude ver meu trabalho e o trabalho de todos os que já participam deste projeto exposto, foi gratificante.",
@@ -713,6 +771,14 @@ var app = new Vue({
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.mvc
                 ],
+                mainTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
+                    this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
+                    this.$store.state.tags.coaching, this.$store.state.tags.trainning,
+                    this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
+                    this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.vueJS, this.$store.state.tags.webAPI,
+                    this.$store.state.tags.dotNetCore, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
+                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.mvc
+                ],
                 showDetail: false
             });
 
@@ -725,8 +791,8 @@ var app = new Vue({
                     "en-US": "Unous Business Intelligence",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Projeto MindSet: Momento de evolução",
+                    "en-US": "MindSet Project: Evolution Moment",
                 },
                 description: {
                     "pt-BR": "Iniciamos o ano de 2020 com um novo desafio, o número de clientes aumentou e suas características demandam mais do nosso projeto. Neste ano, estamos evoluindo em muitos aspectos, como arquitetura, escalabilidade, desempenho, usabilidade, além de melhorar nossos processos com base em práticas ágeis.",
@@ -741,7 +807,8 @@ var app = new Vue({
                     description: { "pt-BR": "MindSet", "en-US": "MindSet" },
                     url: "http://www.unous.com.br/mindset/"
                 }],
-                tags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30, this.$store.state.tags.extremeProgramming,
+                tags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.extremeProgramming,
                     this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
                     this.$store.state.tags.coaching, this.$store.state.tags.trainning,
                     this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
@@ -753,6 +820,14 @@ var app = new Vue({
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.mvc
                 ],
+                mainTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.situationalLeadership, this.$store.state.tags.engagement,
+                    this.$store.state.tags.coaching, this.$store.state.tags.trainning,
+                    this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
+                    this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge,
+                    this.$store.state.tags.vueJS, this.$store.state.tags.webAPI, this.$store.state.tags.dotNetCore,
+                    this.$store.state.tags.DDD, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.mvc
+                ],
                 showDetail: true
             });
 
@@ -763,12 +838,12 @@ var app = new Vue({
                 date: new Date("2005-12-15"),
                 category: this.$store.state.categoryType.academicLife,
                 title: {
-                    "pt-BR": "Colegial - E.E. Comendador Mario Reys",
-                    "en-US": "E.E. Comendador Mario Reys High School",
+                    "pt-BR": "Colegial",
+                    "en-US": "High School",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "E.E. Comendador Mario Reys",
+                    "en-US": "E.E. Comendador Mario Reys",
                 },
                 description: {
                     "pt-BR": ".",
@@ -788,12 +863,12 @@ var app = new Vue({
                 date: new Date("2007-07-15"),
                 category: this.$store.state.categoryType.academicLife,
                 title: {
-                    "pt-BR": "ETEC-ZL - Escola Técnica Estadual - Informática",
-                    "en-US": "ETEC-ZL - State Technical School - Informatics",
+                    "pt-BR": "ETEC-ZL - Escola Técnica Estadual",
+                    "en-US": "ETEC-ZL - State Technical School",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Curso de Informática",
+                    "en-US": "Computer course",
                 },
                 description: {
                     "pt-BR": ".",
@@ -812,12 +887,12 @@ var app = new Vue({
                 date: new Date("2009-07-15"),
                 category: this.$store.state.categoryType.academicLife,
                 title: {
-                    "pt-BR": "FATEC-ZL - Faculdade de Técnologia Estadual - Informática para Gestão de Negócios",
-                    "en-US": "FATEC-ZL - State Technology University - Computer Science for Business Management",
+                    "pt-BR": "FATEC-ZL - Faculdade de Técnologia Estadual",
+                    "en-US": "FATEC-ZL - State Technology University",
                 },
                 subTitle: {
-                    "pt-BR": "...",
-                    "en-US": "...",
+                    "pt-BR": "Informática para Gestão de Negócios",
+                    "en-US": "Computer Science for Business Management",
                 },
                 description: {
                     "pt-BR": ".",
