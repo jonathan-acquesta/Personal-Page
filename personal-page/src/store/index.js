@@ -67,6 +67,8 @@ export default new Vuex.Store({
         tags: {
             highSchool: { "pt-BR": "#EnsinoMédio", "en-US": "#HighSchool", color: "red" },
             technicalSchool: { "pt-BR": "#EscolaTécnica", "en-US": "#TechnicalSchool", color: "red" },
+            university: { "pt-BR": "#Universidade", "en-US": "#University", color: "red" },
+            mba: { "pt-BR": "#MBA", "en-US": "#MBA", color: "red" },
 
             intern: { "pt-BR": "#Estagiário", "en-US": "#Intern", color: "red" },
             juniorDeveloper: { "pt-BR": "#DesenvolverJunior", "en-US": "#JuniorDeveloper", color: "red" },
@@ -83,6 +85,7 @@ export default new Vuex.Store({
             kanban: { "pt-BR": "#KANBAN", "en-US": "#KANBAN", color: "cyan" },
             management30: { "pt-BR": "#Management3.0", "en-US": "#Management3.0", color: "cyan" },
             extremeProgramming: { "pt-BR": "#ExtremeProgramming", "en-US": "#ExtremeProgramming", color: "cyan" },
+            pmi: { "pt-BR": "#PMI", "en-US": "#PMI", color: "cyan" },
 
             coaching: { "pt-BR": "#Coaching", "en-US": "#Coaching", color: "cyan" },
             leadership: { "pt-BR": "#Liderança", "en-US": "#Leadership", color: "cyan" },
@@ -94,6 +97,8 @@ export default new Vuex.Store({
             hireProcess: { "pt-BR": "#ProcessoDeContratação", "en-US": "#HireProcess", color: "cyan" },
             trainning: { "pt-BR": "#Treinamento", "en-US": "#Trainning", color: "cyan" },
             engagement: { "pt-BR": "#Engajamento", "en-US": "#Engagement", color: "cyan" },
+            businessManagement: { "pt-BR": "#GestãoDeNegócios", "en-US": "#BusinessManagement", color: "cyan" },
+            businessProcess: { "pt-BR": "#GestãoDeProcesso", "en-US": "#BusinessProcess", color: "cyan" },
 
             dotNetFramework: { "pt-BR": "#.NetFramework", "en-US": "#.NetFramework", color: "purple" },
             dotNetCore: { "pt-BR": "#.NetCore", "en-US": "#.NetCore", color: "purple" },
@@ -129,6 +134,7 @@ export default new Vuex.Store({
             pascal: { "pt-BR": "#Pascal", "en-US": "#Pascal", color: "purple" },
             delphi: { "pt-BR": "#Delphi", "en-US": "#Delphi", color: "purple" },
             php: { "pt-BR": "#Php", "en-US": "#Php", color: "purple" },
+            java: { "pt-BR": "#Java", "en-US": "#Java", color: "purple" },
 
             unitTest: { "pt-BR": "#TesteUnitário", "en-US": "#UnitTest", color: "green" },
             integratedTest: { "pt-BR": "#TesteIntegrado", "en-US": "#IntegratedTest", color: "green" },

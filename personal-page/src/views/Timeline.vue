@@ -134,7 +134,7 @@
               </a>
             </div>
 
-
+            <br v-show="history.showDetail">
             <v-tooltip left v-show="history.showDetail">
               <template v-slot:activator="{ on }">
                 <v-btn v-show="history.showDetail"
