@@ -1049,8 +1049,8 @@ var app = new Vue({
                     "en-US": "Micro Assembly and Configuration Course, lasting 3 months",
                 },
                 description: {
-                    "pt-BR": "Nessa época, eu tinha apenas 13 anos e estava realmente curioso sobre microcomputadores. Meu pai me ajudou a fazer meu primeiro curso na área de TI no SENAI e esse foi o primeiro passo para iniciar uma paixão.",
-                    "en-US": "In this time, I was just 13 years old and I was really curious about microcomputers. My father helped me to do my first course at IT area in SENAI and that was the first step to start a passion.",
+                    "pt-BR": "Nessa época, eu tinha apenas 15 anos e estava realmente curioso sobre microcomputadores. Meu pai me ajudou a fazer meu primeiro curso na área de TI no SENAI e esse foi o primeiro passo para iniciar uma paixão.",
+                    "en-US": "In this time, I was just 15 years old and I was really curious about microcomputers. My father helped me to do my first course at IT area in SENAI and that was the first step to start a passion.",
                 },
                 image: require('@/assets/courses/senai.jpg'),
                 tags: [this.$store.state.tags.microAssembly],
@@ -1063,6 +1063,78 @@ var app = new Vue({
                     {
                         description: { "pt-BR": "SENAI", "en-US": "SENAI" },
                         url: "http://www.sp.senai.br/cursos/18/cursos-tecnicos?menu=31",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            });
+
+            histories.push({
+                date: new Date("2004-11-15"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "CEDASPY – Cedaspy Computer Training",
+                    "en-US": "CEDASPY – Cedaspy Computer Training",
+                },
+                subTitle: {
+                    "pt-BR": "Curso para formação de Instrutores com duração de 3 meses",
+                    "en-US": "Instructor training course, lasting 3 months",
+                },
+                description: {
+                    "pt-BR": "Os melhores alunos da escola ganharam o curso de treinamento para instrutores como um prêmio pela dedicação e pelos resultados no curso principal, e eu consegui estar entre os melhores alunos. Foi uma ótima experiência, porque eu pude aprender na prática como ajudar os outros alunos a entender o que o professor estava ensinando.",
+                    "en-US": "The best students in the school earned the instructor training course as a prize for the dedication and the results in the main course, and I achieved to be between the best students. It was a great experience, because I could learning in the practice how to help the other students to understand what the teacher was teaching.",
+                },
+                image: require('@/assets/courses/cedaspy.jpg'),
+                tags: [this.$store.state.tags.instructor],
+                mainTags: [this.$store.state.tags.instructor],
+                links: [{
+                        image: require('@/assets/certificates/cedaspyInstrutor.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "CEDASPY", "en-US": "CEDASPY" },
+                        url: "https://www.cedaspy.com.br/",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            });
+
+            histories.push({
+                date: new Date("2005-06-15"),
+                category: this.$store.state.categoryType.courses,
+                period: {
+                    begin: '2004',
+                    end: '2005'
+                },
+                title: {
+                    "pt-BR": "CEDASPY – Cedaspy Computer Training",
+                    "en-US": "CEDASPY – Cedaspy Computer Training",
+                },
+                subTitle: {
+                    "pt-BR": "Curso Técnico de Computação Jr",
+                    "en-US": "Jr Computer Technician Course",
+                },
+                description: {
+                    "pt-BR": "Este curso foi realmente ótimo para me mostrar muitas possibilidades sobre o trabalho com computador, tive a oportunidade de aprender o pacote office e outras ferramentas para criar vídeos e imagens.",
+                    "en-US": "This course was really great to show me many possibilities about work with computer, I had an opportunity of learn the office package and other tools to create videos and images.",
+                },
+                image: require('@/assets/courses/cedaspy.jpg'),
+                tags: [this.$store.state.tags.computing, this.$store.state.tags.excel, this.$store.state.tags.word, this.$store.state.tags.powerPoint,
+                    this.$store.state.tags.outlook, this.$store.state.tags.coreldraw, this.$store.state.tags.movieMaker, this.$store.state.tags.access
+                ],
+                mainTags: [this.$store.state.tags.computing, this.$store.state.tags.excel, this.$store.state.tags.word, this.$store.state.tags.powerPoint,
+                    this.$store.state.tags.outlook, this.$store.state.tags.coreldraw, this.$store.state.tags.movieMaker, this.$store.state.tags.access
+                ],
+                links: [{
+                        image: require('@/assets/certificates/cedaspyTecnicoDeComputacaoJr.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "CEDASPY", "en-US": "CEDASPY" },
+                        url: "https://www.cedaspy.com.br/",
                         type: "link"
                     }
                 ],

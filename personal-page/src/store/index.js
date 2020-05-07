@@ -100,6 +100,8 @@ export default new Vuex.Store({
             businessManagement: { "pt-BR": "#GestãoDeNegócios", "en-US": "#BusinessManagement", color: "cyan" },
             businessProcess: { "pt-BR": "#GestãoDeProcesso", "en-US": "#BusinessProcess", color: "cyan" },
             negotiation: { "pt-BR": "#Negociação", "en-US": "#Negotiation", color: "cyan" },
+            instructor: { "pt-BR": "#Instrutor", "en-US": "#Instructor", color: "cyan" },
+            computing: { "pt-BR": "#Computação", "en-US": "#Computing", color: "cyan" },
 
             dotNetFramework: { "pt-BR": "#.NetFramework", "en-US": "#.NetFramework", color: "purple" },
             dotNetCore: { "pt-BR": "#.NetCore", "en-US": "#.NetCore", color: "purple" },
@@ -124,11 +126,18 @@ export default new Vuex.Store({
             html: { "pt-BR": "#HTML", "en-US": "#HTML", color: "purple" },
             photoshop: { "pt-BR": "#Photoshop", "en-US": "#Photoshop", color: "purple" },
             silverlight: { "pt-BR": "#Silverlight", "en-US": "#Silverlight", color: "purple" },
-            excel: { "pt-BR": "#Excel", "en-US": "#Excel", color: "purple" },
             mvvm: { "pt-BR": "#MVVM", "en-US": "#MVVM", color: "purple" },
             mvc: { "pt-BR": "#MVC", "en-US": "#MVC", color: "purple" },
             designPattern: { "pt-BR": "#PadrãoDeProjetos", "en-US": "#designPattern", color: "purple" },
             DDD: { "pt-BR": "#DDD", "en-US": "#DDD", color: "purple" },
+
+            excel: { "pt-BR": "#Excel", "en-US": "#Excel", color: "purple" },
+            word: { "pt-BR": "#Word", "en-US": "#Word", color: "purple" },
+            powerPoint: { "pt-BR": "#PowerPoint", "en-US": "#PowerPoint", color: "purple" },
+            outlook: { "pt-BR": "#Outlook", "en-US": "#Outlook", color: "purple" },
+            coreldraw: { "pt-BR": "#CorelDraw", "en-US": "#CorelDraw", color: "purple" },
+            movieMaker: { "pt-BR": "#MovieMaker", "en-US": "#MovieMaker", color: "purple" },
+            access: { "pt-BR": "#Access", "en-US": "#Access", color: "purple" },
 
             c: { "pt-BR": "#C", "en-US": "#C", color: "purple" },
             cPlusPlus: { "pt-BR": "#C++", "en-US": "#C++", color: "purple" },
@@ -136,7 +145,6 @@ export default new Vuex.Store({
             delphi: { "pt-BR": "#Delphi", "en-US": "#Delphi", color: "purple" },
             php: { "pt-BR": "#Php", "en-US": "#Php", color: "purple" },
             java: { "pt-BR": "#Java", "en-US": "#Java", color: "purple" },
-
             microAssembly: { "pt-BR": "#MontagemComputador", "en-US": "#MicroAssembly", color: "purple" },
 
             unitTest: { "pt-BR": "#TesteUnitário", "en-US": "#UnitTest", color: "green" },
