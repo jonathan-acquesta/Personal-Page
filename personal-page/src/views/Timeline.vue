@@ -4,7 +4,9 @@
       <v-btn icon @click="overlay = false">
         <v-icon>mdi-close</v-icon>
       </v-btn>
-      <v-img class="descriptionImageLink" :src="mainImage"></v-img>
+      <div class="imageLink">
+        <v-img class="descriptionImageLink" :src="mainImage"></v-img>
+      </div>
     </v-overlay>
 
     <v-timeline
@@ -332,6 +334,11 @@ export default {
   margin-left: 10%;
   max-width: 1000px;
   text-align: center;
+}
+
+.imageLink{
+  max-height: 600px;
+  overflow: visible;
 }
 
 .overlay {

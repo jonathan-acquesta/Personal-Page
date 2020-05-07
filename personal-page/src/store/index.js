@@ -99,6 +99,7 @@ export default new Vuex.Store({
             engagement: { "pt-BR": "#Engajamento", "en-US": "#Engagement", color: "cyan" },
             businessManagement: { "pt-BR": "#GestãoDeNegócios", "en-US": "#BusinessManagement", color: "cyan" },
             businessProcess: { "pt-BR": "#GestãoDeProcesso", "en-US": "#BusinessProcess", color: "cyan" },
+            negotiation: { "pt-BR": "#Negociação", "en-US": "#Negotiation", color: "cyan" },
 
             dotNetFramework: { "pt-BR": "#.NetFramework", "en-US": "#.NetFramework", color: "purple" },
             dotNetCore: { "pt-BR": "#.NetCore", "en-US": "#.NetCore", color: "purple" },
@@ -135,6 +136,8 @@ export default new Vuex.Store({
             delphi: { "pt-BR": "#Delphi", "en-US": "#Delphi", color: "purple" },
             php: { "pt-BR": "#Php", "en-US": "#Php", color: "purple" },
             java: { "pt-BR": "#Java", "en-US": "#Java", color: "purple" },
+
+            microAssembly: { "pt-BR": "#MontagemComputador", "en-US": "#MicroAssembly", color: "purple" },
 
             unitTest: { "pt-BR": "#TesteUnitário", "en-US": "#UnitTest", color: "green" },
             integratedTest: { "pt-BR": "#TesteIntegrado", "en-US": "#IntegratedTest", color: "green" },

@@ -1027,13 +1027,46 @@ var app = new Vue({
                 tags: [this.$store.state.tags.mba, this.$store.state.tags.pmi, this.$store.state.tags.scrum, this.$store.state.tags.coaching,
                     this.$store.state.tags.leadership, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership,
                     this.$store.state.tags.criatitySolution, this.$store.state.tags.selfManagement, this.$store.state.tags.teamManagement,
-                    this.$store.state.tags.businessProcess
+                    this.$store.state.tags.businessProcess, this.$store.state.tags.negotiation
                 ],
                 mainTags: [this.$store.state.tags.mba, this.$store.state.tags.pmi, this.$store.state.tags.scrum, this.$store.state.tags.businessProcess,
                     this.$store.state.tags.leadership, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership,
                     this.$store.state.tags.criatitySolution, this.$store.state.tags.teamManagement
                 ],
                 showDetail: true
+            });
+        },
+        mountCourses(histories) {
+            histories.push({
+                date: new Date("2003-06-15"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "SENAI – Serviço Nacional de Aprendizagem Industrial",
+                    "en-US": "SENAI - National Service for Industrial Learning",
+                },
+                subTitle: {
+                    "pt-BR": "Curso de Montagem e Configuração de Micro, com duração de 3 meses",
+                    "en-US": "Micro Assembly and Configuration Course, lasting 3 months",
+                },
+                description: {
+                    "pt-BR": "Nessa época, eu tinha apenas 13 anos e estava realmente curioso sobre microcomputadores. Meu pai me ajudou a fazer meu primeiro curso na área de TI no SENAI e esse foi o primeiro passo para iniciar uma paixão.",
+                    "en-US": "In this time, I was just 13 years old and I was really curious about microcomputers. My father helped me to do my first course at IT area in SENAI and that was the first step to start a passion.",
+                },
+                image: require('@/assets/courses/senai.jpg'),
+                tags: [this.$store.state.tags.microAssembly],
+                mainTags: [this.$store.state.tags.microAssembly],
+                links: [{
+                        image: require('@/assets/certificates/senaiMicrocomputadores.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "SENAI", "en-US": "SENAI" },
+                        url: "http://www.sp.senai.br/cursos/18/cursos-tecnicos?menu=31",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
             });
         }
     },
@@ -1044,6 +1077,7 @@ var app = new Vue({
         this.mountBooks(histories);
         this.mountProfessionExperiences(histories);
         this.mountAcademicLife(histories);
+        this.mountCourses(histories);
 
         histories.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
 
