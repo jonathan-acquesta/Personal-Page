@@ -25,7 +25,6 @@
             },
             IsActive(language)
             {
-                debugger;
                 return language == this.$store.state.culture;
             }
         }

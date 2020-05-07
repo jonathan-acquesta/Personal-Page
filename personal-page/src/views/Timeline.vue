@@ -74,7 +74,7 @@
                     :class="`subTitle font-weight-light mb-4 ${history.category.color}--text`">
                     {{ history.subTitle[culture] }}
                   </h2>
-                  <h4 :class="`period mb-4 ${history.category.color}--text`" v-if="history.period">{{ GetPeriodDescription(history.period) }}</h4>
+                  <h4 :class="`period mb-4 ${history.category.color}--text`" v-if="history.period">{{ getPeriodDescription(history.period) }}</h4>
                   <span
               style="opacity:0.8"
               v-if="$vuetify.breakpoint.smAndDown"
@@ -125,19 +125,13 @@
             
             <div
               class="links"
-              v-if="(history.link || history.externalLinks)">
-              <span>Link: </span>
-              <a
-                v-if="history.link"
+              v-if="(history.links)">
+              <span>Links: </span>
+              <a v-for="(link, index) in history.links" :key="index"
+                v-if="history.links"
                 class="linkShow"
-                v-on:click="overlay = true; mainImage = history.link.image;">{{ history.link.description[culture] }}
+                v-on:click="processLink(link)">{{ link.description[culture] }}
               </a>
-              <a
-                class="linkShow"
-                style="margin-left:10px;"
-                v-for="(externalLink, index) in history.externalLinks"
-                :key="index"
-                v-on:click="openSite(externalLink.url)">{{ externalLink.description[culture] }}</a>
             </div>
 
 
@@ -199,9 +193,20 @@ export default {
     openSite: function(url) {
       window.open(url, "_blank");
     },
-    GetPeriodDescription(period)
+    getPeriodDescription(period)
     {
       return this.$store.state.common.from[this.culture] + " "  + period.begin + " "  + this.$store.state.common.to[this.culture] + " " + period.end;
+    },
+    processLink(link){
+      if(link.type == "certificate")
+      {
+          this.overlay = true; 
+          this.mainImage = link.image;
+      }
+      else
+      {
+        this.openSite(link.url);
+      }
     }
   },
 };
@@ -319,6 +324,7 @@ export default {
 
 .linkShow {
   font-size:small;
+  margin: 4px;
 }
 
 .descriptionImageLink {

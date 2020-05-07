@@ -65,6 +65,9 @@ export default new Vuex.Store({
             languageSkills: { "pt-BR": "Habilidades Lingüísticas", "en-US": "Language Skills" }
         },
         tags: {
+            highSchool: { "pt-BR": "#EnsinoMédio", "en-US": "#HighSchool", color: "red" },
+            technicalSchool: { "pt-BR": "#EscolaTécnica", "en-US": "#TechnicalSchool", color: "red" },
+
             intern: { "pt-BR": "#Estagiário", "en-US": "#Intern", color: "red" },
             juniorDeveloper: { "pt-BR": "#DesenvolverJunior", "en-US": "#JuniorDeveloper", color: "red" },
             fullDeveloper: { "pt-BR": "#DesenvolverPleno", "en-US": "#FullDeveloper", color: "red" },
@@ -120,6 +123,12 @@ export default new Vuex.Store({
             mvc: { "pt-BR": "#MVC", "en-US": "#MVC", color: "purple" },
             designPattern: { "pt-BR": "#PadrãoDeProjetos", "en-US": "#designPattern", color: "purple" },
             DDD: { "pt-BR": "#DDD", "en-US": "#DDD", color: "purple" },
+
+            c: { "pt-BR": "#C", "en-US": "#C", color: "purple" },
+            cPlusPlus: { "pt-BR": "#C++", "en-US": "#C++", color: "purple" },
+            pascal: { "pt-BR": "#Pascal", "en-US": "#Pascal", color: "purple" },
+            delphi: { "pt-BR": "#Delphi", "en-US": "#Delphi", color: "purple" },
+            php: { "pt-BR": "#Php", "en-US": "#Php", color: "purple" },
 
             unitTest: { "pt-BR": "#TesteUnitário", "en-US": "#UnitTest", color: "green" },
             integratedTest: { "pt-BR": "#TesteIntegrado", "en-US": "#IntegratedTest", color: "green" },

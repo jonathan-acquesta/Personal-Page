@@ -30,14 +30,17 @@ var app = new Vue({
                     "en-US": "The Professional Scrum Master certification was an important moment to formalize the knowledge I acquired throughout my professional career. I had the opportunity to work with SCRUM since the beginning of the 2010s and this framework added a lot to the good results I have been getting.",
                 },
                 image: require('@/assets/certifications/psm1.jpg'),
-                link: {
-                    image: require('@/assets/certificates/psm1.jpg'),
-                    description: { "pt-BR": "Certificado", "en-US": "Certificate" }
-                },
-                externalLinks: [{
-                    description: { "pt-BR": "Scrum.org", "en-US": "Scrum.org" },
-                    url: "https://www.scrum.org/"
-                }],
+                links: [{
+                        image: require('@/assets/certificates/psm1.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "Scrum.org", "en-US": "Scrum.org" },
+                        url: "https://www.scrum.org/",
+                        type: "link"
+                    }
+                ],
                 tags: [this.$store.state.tags.scrum],
                 mainTags: [this.$store.state.tags.scrum],
                 showDetail: true
@@ -59,14 +62,17 @@ var app = new Vue({
                     "en-US": "Scrum Fundamentals Certified was important certification to me in terms of knowledge validation and correct understanding of the pillars, values and fundamentals of SCRUM.",
                 },
                 image: require('@/assets/certifications/sfc.jpg'),
-                link: {
-                    image: require('@/assets/certificates/sfc.jpg'),
-                    description: { "pt-BR": "Certificado", "en-US": "Certificate" }
-                },
-                externalLinks: [{
-                    description: { "pt-BR": "SCRUMstudy", "en-US": "SCRUMstudy" },
-                    url: "https://www.scrumstudy.com/portuguese/"
-                }],
+                links: [{
+                        image: require('@/assets/certificates/sfc.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "SCRUMstudy", "en-US": "SCRUMstudy" },
+                        url: "https://www.scrumstudy.com/portuguese/",
+                        type: "link"
+                    }
+                ],
                 tags: [this.$store.state.tags.scrum],
                 mainTags: [this.$store.state.tags.scrum],
                 showDetail: false
@@ -88,14 +94,17 @@ var app = new Vue({
                     "en-US": "The 70-562 Technology Specialist: Microsoft .Net Framework 3.5, ASP.NET Application Development certification was very important as a personal objective with a focus on proving the knowledge I had acquired while I acting as a technical leader, and this certification granted me the title of MCP. Obtaining this certification was also part of a plan to help corporate objectives regarding participation in public tenders that required a minimum number of certified professionals in the company.",
                 },
                 image: require('@/assets/certifications/msoficial.jpg'),
-                link: {
-                    image: require('@/assets/certificates/MCP70562.png'),
-                    description: { "pt-BR": "Certificado", "en-US": "Certificate" }
-                },
-                externalLinks: [{
-                    description: { "pt-BR": "Transcrição", "en-US": "Transcript" },
-                    url: "https://github.com/jonathan-acquesta/Personal-Page/blob/master/personal-page/public/microsoft_certified_professional_transcript.pdf"
-                }],
+                links: [{
+                        image: require('@/assets/certificates/MCP70562.png'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "Transcrição", "en-US": "Transcript" },
+                        url: "https://github.com/jonathan-acquesta/Personal-Page/blob/master/personal-page/public/microsoft_certified_professional_transcript.pdf",
+                        type: "link"
+                    }
+                ],
                 tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
                 mainTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
                 showDetail: false
@@ -118,14 +127,17 @@ var app = new Vue({
                     "en-US": "The 70-536 Technology Specialist: Microsoft .Net Framework, ASP.NET Application Development Foundantion certification was very important to consolidate my technical capacity with Microsoft technologies, and this certification gave me the title of MCTS, beside that, it supported the evolution of my career in that occasion. Obtaining this certification was also part of a plan to help corporate objectives regarding participation in public tenders that required a minimum number of certified professionals in the company",
                 },
                 image: require('@/assets/certifications/msoficial.jpg'),
-                link: {
-                    image: require('@/assets/certificates/MCTS70536.png'),
-                    description: { "pt-BR": "Certificado", "en-US": "Certificate" }
-                },
-                externalLinks: [{
-                    description: { "pt-BR": "Transcrição", "en-US": "Transcript" },
-                    url: "https://github.com/jonathan-acquesta/Personal-Page/blob/master/personal-page/public/microsoft_certified_professional_transcript.pdf"
-                }],
+                links: [{
+                        image: require('@/assets/certificates/MCTS70536.png'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "Transcrição", "en-US": "Transcript" },
+                        url: "https://github.com/jonathan-acquesta/Personal-Page/blob/master/personal-page/public/microsoft_certified_professional_transcript.pdf",
+                        type: "link"
+                    }
+                ],
                 tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
                 mainTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
                 showDetail: false
@@ -402,13 +414,15 @@ var app = new Vue({
                 },
                 image: require('@/assets/professionalExperiences/cpmbraxis.jpg'),
                 tags: [],
-                externalLinks: [{
+                links: [{
                         description: { "pt-BR": "AmbienteDePagamentos", "en-US": "PaymentEnvironment" },
-                        url: "https://portal.fazenda.sp.gov.br/acessoinformacao/Paginas/Ambiente-de-Pagamentos.aspx"
+                        url: "https://portal.fazenda.sp.gov.br/acessoinformacao/Paginas/Ambiente-de-Pagamentos.aspx",
+                        type: "link"
                     },
                     {
                         description: { "pt-BR": "Capgemini", "en-US": "Capgemini" },
-                        url: "https://www.capgemini.com/br-pt/"
+                        url: "https://www.capgemini.com/br-pt/",
+                        type: "link"
                     }
                 ],
                 tags: [this.$store.state.tags.seniorDeveloper, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.greatChallenge,
@@ -442,13 +456,15 @@ var app = new Vue({
                 },
                 image: require('@/assets/professionalExperiences/cpmbraxis.jpg'),
                 tags: [],
-                externalLinks: [{
+                links: [{
                         description: { "pt-BR": "CréditoAcumulado", "en-US": "Accumulatedcredit" },
-                        url: "https://portal.fazenda.sp.gov.br/servicos/ecredac/"
+                        url: "https://portal.fazenda.sp.gov.br/servicos/ecredac/",
+                        type: "link"
                     },
                     {
                         description: { "pt-BR": "Capgemini", "en-US": "Capgemini" },
-                        url: "https://www.capgemini.com/br-pt/"
+                        url: "https://www.capgemini.com/br-pt/",
+                        type: "link"
                     }
                 ],
                 tags: [this.$store.state.tags.seniorDeveloper, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.teamManagement, this.$store.state.tags.greatChallenge,
@@ -482,13 +498,15 @@ var app = new Vue({
                 },
                 image: require('@/assets/professionalExperiences/cpmbraxis.jpg'),
                 tags: [],
-                externalLinks: [{
+                links: [{
                         description: { "pt-BR": "SAT", "en-US": "SAT" },
-                        url: "https://portal.fazenda.sp.gov.br/servicos/sat"
+                        url: "https://portal.fazenda.sp.gov.br/servicos/sat",
+                        type: "link"
                     },
                     {
                         description: { "pt-BR": "Capgemini", "en-US": "Capgemini" },
-                        url: "https://www.capgemini.com/br-pt/"
+                        url: "https://www.capgemini.com/br-pt/",
+                        type: "link"
                     }
                 ],
                 tags: [this.$store.state.tags.juniorSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.teamManagement, this.$store.state.tags.rewarding,
@@ -521,13 +539,15 @@ var app = new Vue({
                 },
                 image: require('@/assets/professionalExperiences/capgemini.jpg'),
                 tags: [],
-                externalLinks: [{
+                links: [{
                         description: { "pt-BR": "SAT", "en-US": "SAT" },
-                        url: "https://portal.fazenda.sp.gov.br/servicos/sat"
+                        url: "https://portal.fazenda.sp.gov.br/servicos/sat",
+                        type: "link"
                     },
                     {
                         description: { "pt-BR": "Capgemini", "en-US": "Capgemini" },
-                        url: "https://www.capgemini.com/br-pt/"
+                        url: "https://www.capgemini.com/br-pt/",
+                        type: "link"
                     }
                 ],
                 tags: [this.$store.state.tags.fullSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.rewarding,
@@ -561,9 +581,10 @@ var app = new Vue({
                 },
                 image: require('@/assets/professionalExperiences/sistemaPri.jpg'),
                 tags: [],
-                externalLinks: [{
+                links: [{
                     description: { "pt-BR": "SistemaPri", "en-US": "SistemaPri" },
-                    url: "https://infra.bureauveritas.com.br/"
+                    url: "https://infra.bureauveritas.com.br/",
+                    type: "link"
                 }],
                 tags: [this.$store.state.tags.fullSystemAnalyst,
                     this.$store.state.tags.mvvm, this.$store.state.tags.designPattern, this.$store.state.tags.silverlight,
@@ -595,12 +616,14 @@ var app = new Vue({
                 },
                 image: require('@/assets/professionalExperiences/talentFour.jpg'),
                 tags: [],
-                externalLinks: [{
+                links: [{
                     description: { "pt-BR": "TalentFourConsulting", "en-US": "TalentFourConsulting" },
-                    url: "http://www.talentfour.com.br/"
+                    url: "http://www.talentfour.com.br/",
+                    type: "link"
                 }, {
                     description: { "pt-BR": "MindSet", "en-US": "MindSet" },
-                    url: "http://www.unous.com.br/mindset/"
+                    url: "http://www.unous.com.br/mindset/",
+                    type: "link"
                 }],
                 tags: [this.$store.state.tags.fullSystemAnalyst, this.$store.state.tags.opportunity, this.$store.state.tags.greatChallenge, this.$store.state.tags.aspNetMVC,
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.razor, this.$store.state.tags.javascript,
@@ -630,12 +653,14 @@ var app = new Vue({
                 },
                 image: require('@/assets/professionalExperiences/talentFour.jpg'),
                 tags: [],
-                externalLinks: [{
+                links: [{
                     description: { "pt-BR": "TalentFourConsulting", "en-US": "TalentFourConsulting" },
-                    url: "http://www.talentfour.com.br/"
+                    url: "http://www.talentfour.com.br/",
+                    type: "link"
                 }, {
                     description: { "pt-BR": "MindSet", "en-US": "MindSet" },
-                    url: "http://www.unous.com.br/mindset/"
+                    url: "http://www.unous.com.br/mindset/",
+                    type: "link"
                 }],
                 tags: [this.$store.state.tags.seniorSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.hardworking,
                     this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.aspNetMVC,
@@ -666,12 +691,14 @@ var app = new Vue({
                 },
                 image: require('@/assets/professionalExperiences/unous.jpg'),
                 tags: [],
-                externalLinks: [{
+                links: [{
                     description: { "pt-BR": "Unous", "en-US": "Unous" },
-                    url: "http://www.unous.com.br/"
+                    url: "http://www.unous.com.br/",
+                    type: "link"
                 }, {
                     description: { "pt-BR": "MindSet", "en-US": "MindSet" },
-                    url: "http://www.unous.com.br/mindset/"
+                    url: "http://www.unous.com.br/mindset/",
+                    type: "link"
                 }],
                 tags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.scrumMaster, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
                     this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership,
@@ -709,12 +736,14 @@ var app = new Vue({
                 },
                 image: require('@/assets/professionalExperiences/unous.jpg'),
                 tags: [],
-                externalLinks: [{
+                links: [{
                     description: { "pt-BR": "Unous", "en-US": "Unous" },
-                    url: "http://www.unous.com.br/"
+                    url: "http://www.unous.com.br/",
+                    type: "link"
                 }, {
                     description: { "pt-BR": "MindSet", "en-US": "MindSet" },
-                    url: "http://www.unous.com.br/mindset/"
+                    url: "http://www.unous.com.br/mindset/",
+                    type: "link"
                 }],
                 tags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.scrumMaster, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
                     this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
@@ -752,15 +781,18 @@ var app = new Vue({
                 },
                 image: require('@/assets/professionalExperiences/unous_latam.jpg'),
                 tags: [],
-                externalLinks: [{
+                links: [{
                     description: { "pt-BR": "Unous", "en-US": "Unous" },
-                    url: "http://www.unous.com.br/"
+                    url: "http://www.unous.com.br/",
+                    type: "link"
                 }, {
                     description: { "pt-BR": "MindSet", "en-US": "MindSet" },
-                    url: "http://www.unous.com.br/mindset/"
+                    url: "http://www.unous.com.br/mindset/",
+                    type: "link"
                 }, {
                     description: { "pt-BR": "LatamRetailShow", "en-US": "LatamRetailShow" },
-                    url: "https://latamretailshow.com.br/"
+                    url: "https://latamretailshow.com.br/",
+                    type: "link"
                 }],
                 tags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
                     this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
@@ -800,12 +832,14 @@ var app = new Vue({
                 },
                 image: require('@/assets/professionalExperiences/unous.jpg'),
                 tags: [],
-                externalLinks: [{
+                links: [{
                     description: { "pt-BR": "Unous", "en-US": "Unous" },
-                    url: "http://www.unous.com.br/"
+                    url: "http://www.unous.com.br/",
+                    type: "link"
                 }, {
                     description: { "pt-BR": "MindSet", "en-US": "MindSet" },
-                    url: "http://www.unous.com.br/mindset/"
+                    url: "http://www.unous.com.br/mindset/",
+                    type: "link"
                 }],
                 tags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
                     this.$store.state.tags.extremeProgramming,
@@ -854,16 +888,13 @@ var app = new Vue({
                     "en-US": ".",
                 },
                 image: require('@/assets/academicLife/highSchool.jpg'),
-                tags: [],
-                link: {
-                    image: require('@/assets/certificates/psm1.jpg'),
-                    description: { "pt-BR": "Certificado", "en-US": "Certificate" }
-                },
-                externalLinks: [{
+                tags: [this.$store.state.tags.highSchool],
+                mainTags: [this.$store.state.tags.highSchool],
+                links: [{
                     description: { "pt-BR": "ComendadorMarioReys", "en-US": "ComendadorMarioReys" },
-                    url: "https://www.educamaisbrasil.com.br/escolas/mario-reys-comendador"
+                    url: "https://www.educamaisbrasil.com.br/escolas/mario-reys-comendador",
+                    type: "link"
                 }],
-                //tags: [],
                 showDetail: false
             });
 
@@ -887,12 +918,28 @@ var app = new Vue({
                     "en-US": ".",
                 },
                 image: require('@/assets/academicLife/technicalSchool.jpg'),
-                tags: [],
-                externalLinks: [{
-                    description: { "pt-BR": "ETEC-ZL", "en-US": "ETEC-ZL" },
-                    url: "https://eteczonaleste.com.br/"
-                }],
-                //tags: []
+                tags: [this.$store.state.tags.technicalSchool, this.$store.state.tags.sql, this.$store.state.tags.visualBasic6, this.$store.state.tags.asp, this.$store.state.tags.vbScript, this.$store.state.tags.javascript, this.$store.state.tags.css, this.$store.state.tags.html,
+                    this.$store.state.tags.c, this.$store.state.tags.cPlusPlus, this.$store.state.tags.pascal, this.$store.state.tags.delphi, this.$store.state.tags.php
+                ],
+                mainTags: [this.$store.state.tags.technicalSchool, this.$store.state.tags.sql, this.$store.state.tags.visualBasic6, this.$store.state.tags.asp, this.$store.state.tags.vbScript, this.$store.state.tags.javascript, this.$store.state.tags.css, this.$store.state.tags.html,
+                    this.$store.state.tags.c, this.$store.state.tags.cPlusPlus, this.$store.state.tags.pascal, this.$store.state.tags.delphi, this.$store.state.tags.php
+                ],
+                links: [{
+                        image: require('@/assets/certificates/etecAuxiliarInformatica.jpg'),
+                        description: { "pt-BR": "CertificadoAuxiliarInformática", "en-US": "InformaticAuxiliaryCertificate" },
+                        type: "certificate"
+                    },
+                    {
+                        image: require('@/assets/certificates/etecProgramadorDeComputadores.jpg'),
+                        description: { "pt-BR": "CertificadoProgramador", "en-US": "ProgrammerCertificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "ETEC-ZL", "en-US": "ETEC-ZL" },
+                        url: "https://eteczonaleste.com.br/",
+                        type: "link"
+                    }
+                ]
             });
 
             histories.push({
