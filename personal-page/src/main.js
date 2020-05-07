@@ -837,6 +837,10 @@ var app = new Vue({
             histories.push({
                 date: new Date("2005-12-15"),
                 category: this.$store.state.categoryType.academicLife,
+                period: {
+                    begin: '2003',
+                    end: '2005'
+                },
                 title: {
                     "pt-BR": "Colegial",
                     "en-US": "High School",
@@ -851,6 +855,10 @@ var app = new Vue({
                 },
                 image: require('@/assets/academicLife/highSchool.jpg'),
                 tags: [],
+                link: {
+                    image: require('@/assets/certificates/psm1.jpg'),
+                    description: { "pt-BR": "Certificado", "en-US": "Certificate" }
+                },
                 externalLinks: [{
                     description: { "pt-BR": "ComendadorMarioReys", "en-US": "ComendadorMarioReys" },
                     url: "https://www.educamaisbrasil.com.br/escolas/mario-reys-comendador"
@@ -862,6 +870,10 @@ var app = new Vue({
             histories.push({
                 date: new Date("2007-07-15"),
                 category: this.$store.state.categoryType.academicLife,
+                period: {
+                    begin: '2005',
+                    end: '2007'
+                },
                 title: {
                     "pt-BR": "ETEC-ZL - Escola Técnica Estadual",
                     "en-US": "ETEC-ZL - State Technical School",
@@ -886,6 +898,10 @@ var app = new Vue({
             histories.push({
                 date: new Date("2009-07-15"),
                 category: this.$store.state.categoryType.academicLife,
+                period: {
+                    begin: '2006',
+                    end: '2009'
+                },
                 title: {
                     "pt-BR": "FATEC-ZL - Faculdade de Técnologia Estadual",
                     "en-US": "FATEC-ZL - State Technology University",
@@ -911,6 +927,10 @@ var app = new Vue({
             histories.push({
                 date: new Date("2019-08-15"),
                 category: this.$store.state.categoryType.academicLife,
+                period: {
+                    begin: '2018',
+                    end: '2020'
+                },
                 title: {
                     "pt-BR": "FATEC-SP - Centro Paula Souza",
                     "en-US": "FATEC-SP - Centro Paula Souza",

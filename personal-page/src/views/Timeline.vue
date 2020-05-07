@@ -74,6 +74,7 @@
                     :class="`subTitle font-weight-light mb-4 ${history.category.color}--text`">
                     {{ history.subTitle[culture] }}
                   </h2>
+                  <h4 :class="`period mb-4 ${history.category.color}--text`" v-if="history.period">{{ GetPeriodDescription(history.period) }}</h4>
                   <span
               style="opacity:0.8"
               v-if="$vuetify.breakpoint.smAndDown"
@@ -192,13 +193,15 @@ export default {
   methods: {
     formatePeriod(date) {
       return (
-        this.$store.state.months[this.$store.state.culture][date.getMonth()] +
-        " " +
-        date.getFullYear()
+        this.$store.state.months[this.$store.state.culture][date.getMonth()] + " " + date.getFullYear()
       );
     },
     openSite: function(url) {
       window.open(url, "_blank");
+    },
+    GetPeriodDescription(period)
+    {
+      return this.$store.state.common.from[this.culture] + " "  + period.begin + " "  + this.$store.state.common.to[this.culture] + " " + period.end;
     }
   },
 };
@@ -209,6 +212,14 @@ export default {
 .subTitle{
   font-size: 20px;
 }
+
+.period
+{
+  margin-top: -15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 
 .timeLineItem{
   width: 100%;

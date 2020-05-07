@@ -5,16 +5,18 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
-        culture: 'pt-BR',
+        culture: 'en-US',
         common: {
             applicationTitle: { "pt-BR": "Meu Currículo Vivo", "en-US": "My Live Resume" },
             portfolio: { "pt-BR": "Portfólio", "en-US": "Portfolio" },
             languages: {
-                portuguese: { "pt-BR": "Português", "en-US": "Portuguese", language: "pt-BR" },
-                english: { "pt-BR": "Inglês", "en-US": "English", language: "en-US" },
+                portuguese: { "pt-BR": "Português", "en-US": "Portuguese", "language": "pt-BR" },
+                english: { "pt-BR": "Inglês", "en-US": "English", "language": "en-US" },
             },
-            showDetails: { "pt-BR": "Mostrar Detalhes", "en-US": "Show Details", language: "pt-BR" },
-            closeDetails: { "pt-BR": "Fechar Detalhes", "en-US": "Close Details", language: "pt-BR" },
+            showDetails: { "pt-BR": "Mostrar Detalhes", "en-US": "Show Details" },
+            closeDetails: { "pt-BR": "Fechar Detalhes", "en-US": "Close Details" },
+            from: { "pt-BR": "De", "en-US": "From" },
+            to: { "pt-BR": "Até", "en-US": "To" },
         },
         months: {
             "pt-BR": [
