@@ -146,6 +146,7 @@ export default new Vuex.Store({
             php: { "pt-BR": "#Php", "en-US": "#Php", color: "purple" },
             java: { "pt-BR": "#Java", "en-US": "#Java", color: "purple" },
             microAssembly: { "pt-BR": "#MontagemComputador", "en-US": "#MicroAssembly", color: "purple" },
+            microcomputerMaintenance: { "pt-BR": "#ManutençãoMicrocomputador", "en-US": "#MicrocomputerMaintenance", color: "purple" },
 
             unitTest: { "pt-BR": "#TesteUnitário", "en-US": "#UnitTest", color: "green" },
             integratedTest: { "pt-BR": "#TesteIntegrado", "en-US": "#IntegratedTest", color: "green" },

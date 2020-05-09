@@ -1140,6 +1140,40 @@ var app = new Vue({
                 ],
                 showDetail: false
             });
+
+
+
+            histories.push({
+                date: new Date("2005-10-15"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "DOM BOSCO – Obra Social Dom Bosco",
+                    "en-US": "DOM BOSCO - Dom Bosco Social Work",
+                },
+                subTitle: {
+                    "pt-BR": "Curso de Manutenção de Microcomputadores, com duração de 3 meses",
+                    "en-US": "Microcomputer Maintenance Course, lasting 3 months",
+                },
+                description: {
+                    "pt-BR": "Este curso foi uma oportunidade para aprender a consertar microcomputadores e me ajudou a começar a exporadicamente ganhar algum dinheiro, foi realmente ótimo para esse momento da minha vida e me deu uma boa base sobre como funciona o microcomputador.",
+                    "en-US": "This course was an opportunity to learn how to repair microcomputers and helped me to start earning some money exporadically, it was really great for me on that moment of my life and gave me a good basis on how the microcomputer works.",
+                },
+                image: require('@/assets/courses/domBosco.jpg'),
+                tags: [this.$store.state.tags.microAssembly, this.$store.state.tags.microcomputerMaintenance],
+                mainTags: [this.$store.state.tags.microAssembly, this.$store.state.tags.microcomputerMaintenance],
+                links: [{
+                        image: require('@/assets/certificates/domBoscoMicrocomputadores.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "DomBosco", "en-US": "DomBosco" },
+                        url: "http://www.domboscoitaquera.org.br/",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            });
         }
     },
     mounted() {
