@@ -1447,6 +1447,13 @@ var app = new Vue({
                 ],
                 showDetail: false
             })
+        },
+        mountYears(histories) {
+            this.$store.state.years = histories.map(x => x.date.getFullYear()).filter((value, index, self) => { return self.indexOf(value) === index; }).map(function(x, index) { return { year: x, show: false }; });
+            this.$store.state.years[0].show = true;
+            this.$store.state.years[1].show = true;
+            this.$store.state.years[2].show = true;
+            this.$store.state.years[this.$store.state.years.length - 1].show = true;
         }
     },
     mounted() {
@@ -1461,5 +1468,7 @@ var app = new Vue({
         histories.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
 
         this.$store.state.histories = histories;
+
+        this.mountYears(histories);
     },
 }).$mount("#app");

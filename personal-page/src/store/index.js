@@ -178,6 +178,7 @@ export default new Vuex.Store({
         },
 
         histories: [],
+        years: [],
         categoryType: {
             professionalExperience: {
                 color: "red",

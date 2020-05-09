@@ -23,20 +23,11 @@ export default {
   computed: {
       getYear()
       {
-        if(this.years.length == 0)
-        {
-          this.years = this.$store.state.histories.map(x => x.date.getFullYear()).filter((value, index, self) => { return self.indexOf(value) === index; }).map(function(x, index) { return { year: x, show: false}; });  
-          this.years[0].show = true;
-          this.years[1].show = true;
-          this.years[2].show = true;
-          this.years[this.years.length - 1].show = true;
-        }
-        
-        return this.years;
+        return this.$store.state.years;
       }
   },
   mounted() {
-        //this.years = this.$store.state.histories.map(x => x.date.getFullYear()).filter((value, index, self) => { return self.indexOf(value) === index; }).map(function(x, index) { return { year: x, show: index === 0}; });
+        
   },
   methods: {
     getHistory(year)
