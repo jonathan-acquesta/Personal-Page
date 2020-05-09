@@ -86,6 +86,9 @@ export default new Vuex.Store({
             management30: { "pt-BR": "#Management3.0", "en-US": "#Management3.0", color: "cyan" },
             extremeProgramming: { "pt-BR": "#ExtremeProgramming", "en-US": "#ExtremeProgramming", color: "cyan" },
             pmi: { "pt-BR": "#PMI", "en-US": "#PMI", color: "cyan" },
+            cmmi5: { "pt-BR": "#CMMI5", "en-US": "#CMMI5", color: "cyan" },
+            incidentManagement: { "pt-BR": "#GestãoDeIncidentes", "en-US": "#IncidentManagement", color: "cyan" },
+            problemManagement: { "pt-BR": "#GestãoDeProblemas", "en-US": "#ProblemManagement", color: "cyan" },
 
             coaching: { "pt-BR": "#Coaching", "en-US": "#Coaching", color: "cyan" },
             leadership: { "pt-BR": "#Liderança", "en-US": "#Leadership", color: "cyan" },
@@ -102,6 +105,7 @@ export default new Vuex.Store({
             negotiation: { "pt-BR": "#Negociação", "en-US": "#Negotiation", color: "cyan" },
             instructor: { "pt-BR": "#Instrutor", "en-US": "#Instructor", color: "cyan" },
             computing: { "pt-BR": "#Computação", "en-US": "#Computing", color: "cyan" },
+            teamwork: { "pt-BR": "#TrabalhoEmEquipe", "en-US": "#Teamwork", color: "cyan" },
 
             dotNetFramework: { "pt-BR": "#.NetFramework", "en-US": "#.NetFramework", color: "purple" },
             dotNetCore: { "pt-BR": "#.NetCore", "en-US": "#.NetCore", color: "purple" },
@@ -130,6 +134,8 @@ export default new Vuex.Store({
             mvc: { "pt-BR": "#MVC", "en-US": "#MVC", color: "purple" },
             designPattern: { "pt-BR": "#PadrãoDeProjetos", "en-US": "#designPattern", color: "purple" },
             DDD: { "pt-BR": "#DDD", "en-US": "#DDD", color: "purple" },
+            dataModeling: { "pt-BR": "#ModelagemDeDados", "en-US": "#DataModeling", color: "purple" },
+            uml: { "pt-BR": "#UML", "en-US": "#UML", color: "purple" },
 
             excel: { "pt-BR": "#Excel", "en-US": "#Excel", color: "purple" },
             word: { "pt-BR": "#Word", "en-US": "#Word", color: "purple" },

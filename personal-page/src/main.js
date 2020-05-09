@@ -270,6 +270,11 @@ var app = new Vue({
                     "pt-BR": "Foi em 2007, quando eu recebi a minha primeira oportunidade em minha carreira, naquela ocasião eu tinha 19 anos e estava ansioso para começar a trabalhar no setor de TI. A Politec S/A me contratou como estagiário e me ofereceu a chance de obter experiência em um ambiente de trabalho.",
                     "en-US": "It was in 2007 when I receive my first opportunity in my career, in that occasion I was 19 years old and I was looking forward to start to work in IT industry. Politec S/A hired me as an intern and gave me the chance of get experience in a work environment.",
                 },
+                links: [{
+                    description: { "pt-BR": "Politec", "en-US": "Politec" },
+                    url: "http://www.politecincorporadora.com.br/empresa/",
+                    type: "link"
+                }],
                 image: require('@/assets/professionalExperiences/politec.jpg'),
                 tags: [this.$store.state.tags.intern, this.$store.state.tags.opportunity],
                 mainTags: [this.$store.state.tags.intern, this.$store.state.tags.opportunity],
@@ -291,6 +296,11 @@ var app = new Vue({
                     "pt-BR": "Eu estava completando seis meses de carreira e acredito que tive sorte, porque, logo no primeiro emprego, fui alocado em um importante projeto da Gol Linhas Aéreas, onde me foi permitido resolver problemas de produção relatados pelos clientes. Neste projeto, pude aprimorar minhas habilidades com Asp, Javascript, Visual Basic 6 e SQL.",
                     "en-US": "I had been completing six months of career, and I believe that I was lucky, because right in the first job, I was allocated in an important project of Gol Linhas Aereas, where I was allowed to solve production issues that were reported by clients. In this project, I could improve my skills with Asp, Javascript, Visual Basic 6 and SQL.",
                 },
+                links: [{
+                    description: { "pt-BR": "Politec", "en-US": "Politec" },
+                    url: "http://www.politecincorporadora.com.br/empresa/",
+                    type: "link"
+                }],
                 image: require('@/assets/professionalExperiences/politec_gol.jpg'),
                 tags: [this.$store.state.tags.intern, this.$store.state.tags.sql, this.$store.state.tags.visualBasic6, this.$store.state.tags.asp, this.$store.state.tags.vbScript, this.$store.state.tags.javascript, this.$store.state.tags.css, this.$store.state.tags.html],
                 mainTags: [this.$store.state.tags.intern, this.$store.state.tags.sql, this.$store.state.tags.visualBasic6, this.$store.state.tags.asp],
@@ -1070,7 +1080,7 @@ var app = new Vue({
             });
 
             histories.push({
-                date: new Date("2004-11-15"),
+                date: new Date("2004-10-15"),
                 category: this.$store.state.categoryType.courses,
                 title: {
                     "pt-BR": "CEDASPY – Cedaspy Computer Training",
@@ -1102,7 +1112,7 @@ var app = new Vue({
             });
 
             histories.push({
-                date: new Date("2005-06-15"),
+                date: new Date("2005-07-15"),
                 category: this.$store.state.categoryType.courses,
                 period: {
                     begin: '2004',
@@ -1144,7 +1154,7 @@ var app = new Vue({
 
 
             histories.push({
-                date: new Date("2005-10-15"),
+                date: new Date("2005-05-15"),
                 category: this.$store.state.categoryType.courses,
                 title: {
                     "pt-BR": "DOM BOSCO – Obra Social Dom Bosco",
@@ -1174,6 +1184,269 @@ var app = new Vue({
                 ],
                 showDetail: false
             });
+
+            histories.push({
+                date: new Date("2007-11-15"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Politec S/A – Global IT Services",
+                    "en-US": "Politec S/A – Global IT Services",
+                },
+                subTitle: {
+                    "pt-BR": "Curso de Trabalho em Equipe",
+                    "en-US": "Teamwork Course",
+                },
+                description: {
+                    "pt-BR": "A Politec foi minha primeira oportunidade de trabalho e tive sorte de iniciar uma empresa que realmente investe em sua equipe. Eu fiz o curso de trabalho em equipe e foi ótimo para aumentar meu conjunto de habilidades.",
+                    "en-US": "Politec was my first job opportunity and I was luck for start in a company that really invest in its staff. I did the teamwork course and it was great for increase my skill set.",
+                },
+                image: require('@/assets/courses/politec.jpg'),
+                tags: [this.$store.state.tags.teamwork],
+                mainTags: [this.$store.state.tags.teamwork],
+                links: [{
+                        image: require('@/assets/certificates/politecTrabalhoEquipe.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "Politec", "en-US": "Politec" },
+                        url: "http://www.politecincorporadora.com.br/empresa/",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            });
+
+            histories.push({
+                date: new Date("2007-11-30"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Politec S/A – Global IT Services",
+                    "en-US": "Politec S/A – Global IT Services",
+                },
+                subTitle: {
+                    "pt-BR": "Curso de Modelagem de Dados Junior",
+                    "en-US": "Junior Data Modeling Course",
+                },
+                description: {
+                    "pt-BR": "A Politec foi minha primeira oportunidade de trabalho e tive sorte de iniciar uma empresa que realmente investe em sua equipe. Eu fiz o curso de modelagem de dados junior e foi ótimo para aumentar meu conjunto de habilidades.",
+                    "en-US": "Politec was my first job opportunity and I was luck for start in a company that really invest in its staff. I did the junior data modeling course and it was great for increase my skill set.",
+                },
+                image: require('@/assets/courses/politec.jpg'),
+                tags: [this.$store.state.tags.dataModeling, this.$store.state.tags.sql],
+                mainTags: [this.$store.state.tags.dataModeling, this.$store.state.tags.sql],
+                links: [{
+                        image: require('@/assets/certificates/politecModelagemDeDados.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "Politec", "en-US": "Politec" },
+                        url: "http://www.politecincorporadora.com.br/empresa/",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            });
+
+
+            histories.push({
+                date: new Date("2007-12-20"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Politec S/A – Global IT Services",
+                    "en-US": "Politec S/A – Global IT Services",
+                },
+                subTitle: {
+                    "pt-BR": "Curso de UML Junior",
+                    "en-US": "Junior UML Course",
+                },
+                description: {
+                    "pt-BR": "A Politec foi minha primeira oportunidade de trabalho e tive sorte de iniciar uma empresa que realmente investe em sua equipe. Eu fiz o curso de UML junior e foi ótimo para aumentar meu conjunto de habilidades.",
+                    "en-US": "Politec was my first job opportunity and I was luck for start in a company that really invest in its staff. I did the junior UML course and it was great for increase my skill set.",
+                },
+                image: require('@/assets/courses/politec.jpg'),
+                tags: [this.$store.state.tags.uml],
+                mainTags: [this.$store.state.tags.uml],
+                links: [{
+                        image: require('@/assets/certificates/politecUMLjr.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "Politec", "en-US": "Politec" },
+                        url: "http://www.politecincorporadora.com.br/empresa/",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            });
+
+
+            histories.push({
+                date: new Date("2008-01-29"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Politec S/A – Global IT Services",
+                    "en-US": "Politec S/A – Global IT Services",
+                },
+                subTitle: {
+                    "pt-BR": "Curso de Visual Basic 6 Junior",
+                    "en-US": "Junior Visual Basic 6 Course",
+                },
+                description: {
+                    "pt-BR": "A Politec foi minha primeira oportunidade de trabalho e tive sorte de iniciar uma empresa que realmente investe em sua equipe. Eu fiz o curso de Visual Basic 6 junior e foi ótimo para aumentar meu conjunto de habilidades.",
+                    "en-US": "Politec was my first job opportunity and I was luck for start in a company that really invest in its staff. I did the junior Visual Basic 6 course and it was great for increase my skill set.",
+                },
+                image: require('@/assets/courses/politec.jpg'),
+                tags: [this.$store.state.tags.visualBasic6],
+                mainTags: [this.$store.state.tags.visualBasic6],
+                links: [{
+                        image: require('@/assets/certificates/politecVisualBasic6jr.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "Politec", "en-US": "Politec" },
+                        url: "http://www.politecincorporadora.com.br/empresa/",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            });
+
+            histories.push({
+                date: new Date("2008-02-05"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Politec S/A – Global IT Services",
+                    "en-US": "Politec S/A – Global IT Services",
+                },
+                subTitle: {
+                    "pt-BR": "Curso de ASP Junior",
+                    "en-US": "Junior ASP Course",
+                },
+                description: {
+                    "pt-BR": "A Politec foi minha primeira oportunidade de trabalho e tive sorte de iniciar uma empresa que realmente investe em sua equipe. Eu fiz o curso de ASP junior e foi ótimo para aumentar meu conjunto de habilidades.",
+                    "en-US": "Politec was my first job opportunity and I was luck for start in a company that really invest in its staff. I did the junior ASP course and it was great for increase my skill set.",
+                },
+                image: require('@/assets/courses/politec.jpg'),
+                tags: [this.$store.state.tags.asp],
+                mainTags: [this.$store.state.tags.asp],
+                links: [{
+                        image: require('@/assets/certificates/politecASPjr.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "Politec", "en-US": "Politec" },
+                        url: "http://www.politecincorporadora.com.br/empresa/",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            });
+
+            histories.push({
+                date: new Date("2008-05-19"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Politec S/A – Global IT Services",
+                    "en-US": "Politec S/A – Global IT Services",
+                },
+                subTitle: {
+                    "pt-BR": "Curso de CSS Visão Geral e Ambientação",
+                    "en-US": "CSS Overview and Setting Course",
+                },
+                description: {
+                    "pt-BR": "A Politec foi minha primeira oportunidade de trabalho e tive sorte de iniciar uma empresa que realmente investe em sua equipe. Eu fiz o curso de CSS e foi ótimo para aumentar meu conjunto de habilidades.",
+                    "en-US": "Politec was my first job opportunity and I was luck for start in a company that really invest in its staff. I did the CSS course and it was great for increase my skill set.",
+                },
+                image: require('@/assets/courses/politec.jpg'),
+                tags: [this.$store.state.tags.css],
+                mainTags: [this.$store.state.tags.css],
+                links: [{
+                        image: require('@/assets/certificates/politecCSS.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "Politec", "en-US": "Politec" },
+                        url: "http://www.politecincorporadora.com.br/empresa/",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            });
+
+            histories.push({
+                date: new Date("2008-06-04"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Politec S/A – Global IT Services",
+                    "en-US": "Politec S/A – Global IT Services",
+                },
+                subTitle: {
+                    "pt-BR": "Curso Processo de Gerenciamento de Incidentes e de Problemas",
+                    "en-US": "Incident and Problem Management Process Course",
+                },
+                description: {
+                    "pt-BR": "A Politec foi minha primeira oportunidade de trabalho e tive sorte de iniciar uma empresa que realmente investe em sua equipe. Eu fiz o curso de gerenciamento de incidentes e problemas e foi ótimo para aumentar meu conjunto de habilidades.",
+                    "en-US": "Politec was my first job opportunity and I was luck for start in a company that really invest in its staff. I did the incident and problema management course and it was great for increase my skill set.",
+                },
+                image: require('@/assets/courses/politec.jpg'),
+                tags: [this.$store.state.tags.incidentManagement, this.$store.state.tags.problemManagement],
+                mainTags: [this.$store.state.tags.incidentManagement, this.$store.state.tags.problemManagement],
+                links: [{
+                        image: require('@/assets/certificates/politecProcessosGIP.jpg'),
+                        description: { "pt-BR": "Certificado_I", "en-US": "Certificate_I" },
+                        type: "certificate"
+                    },
+                    {
+                        image: require('@/assets/certificates/politecRAS.jpg'),
+                        description: { "pt-BR": "Certificado_II", "en-US": "Certificate_II" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "Politec", "en-US": "Politec" },
+                        url: "http://www.politecincorporadora.com.br/empresa/",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            })
+
+            histories.push({
+                date: new Date("2008-06-26"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Politec S/A – Global IT Services",
+                    "en-US": "Politec S/A – Global IT Services",
+                },
+                subTitle: {
+                    "pt-BR": "Curso Processo de Apoio ao Desenvolvimento de Software",
+                    "en-US": "Software Development Support Process Course",
+                },
+                description: {
+                    "pt-BR": "A Politec foi minha primeira oportunidade de trabalho e tive sorte de iniciar uma empresa que realmente investe em sua equipe. Eu fiz o curso de CMMI5 e foi ótimo para aumentar meu conjunto de habilidades.",
+                    "en-US": "Politec was my first job opportunity and I was luck for start in a company that really invest in its staff. I did the CMMI5 course and it was great for increase my skill set.",
+                },
+                image: require('@/assets/courses/politec.jpg'),
+                tags: [this.$store.state.tags.cmmi5],
+                mainTags: [this.$store.state.tags.cmmi5],
+                links: [{
+                        image: require('@/assets/certificates/politecProcessoDS.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "Politec", "en-US": "Politec" },
+                        url: "http://www.politecincorporadora.com.br/empresa/",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            })
         }
     },
     mounted() {
