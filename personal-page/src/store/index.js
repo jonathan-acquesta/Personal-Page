@@ -17,6 +17,8 @@ export default new Vuex.Store({
             closeDetails: { "pt-BR": "Fechar Detalhes", "en-US": "Close Details" },
             from: { "pt-BR": "De", "en-US": "From" },
             to: { "pt-BR": "Até", "en-US": "To" },
+            showYear: { "pt-BR": "Mostrar detalhes deste ano", "en-US": "Show details for this year" },
+            closeYear: { "pt-BR": "Minimizar detalhes deste ano", "en-US": "Minimize details for this year" },
         },
         months: {
             "pt-BR": [
@@ -172,6 +174,9 @@ export default new Vuex.Store({
             artificialIntelligence: { "pt-BR": "#InteligênciaArtifícial", "en-US": "#ArtificialIntelligence", color: "blue" },
             disruptiveInnovations: { "pt-BR": "#InovaçõesDisruptivas", "en-US": "#DisruptiveInnovations", color: "blue" },
             successCase: { "pt-BR": "#CasoDeSucesso", "en-US": "#successCase", color: "blue" },
+
+            english: { "pt-BR": "#Inglês", "en-US": "#English", color: "pink" },
+            italian: { "pt-BR": "#Italiano", "en-US": "#Italian", color: "pink" },
 
 
             opportunity: { "pt-BR": "#Oportunidade", "en-US": "#Opportunity", color: "blue" },

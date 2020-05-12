@@ -1469,13 +1469,67 @@ var app = new Vue({
                 ],
                 showDetail: false
             })
+
+
+            histories.push({
+                date: new Date("2010-12-15"),
+                category: this.$store.state.categoryType.languages,
+                title: {
+                    "pt-BR": "Cultura Inglesa",
+                    "en-US": "Cultura Inglesa",
+                },
+                subTitle: {
+                    "pt-BR": "Curso de inglês básico, com duração de dois semestres",
+                    "en-US": "Basic English course, lasting two semesters",
+                },
+                description: {
+                    "pt-BR": "Infelizmente, eu não tinha boas aulas de inglês na adolescência, então, no começo deste ano, decidi começar a estudar inglês, porque acredito que será importante para meus objetivos de longo prazo. Nesse momento, completei um ano no nível básico e foi meu primeiro desafio com esse idioma.",
+                    "en-US": "Unfortunately, I didn't have good English classes at school when I was a teenager, so, in the beginner of this year, I decided to start to study English, because I believe that it will be important for my long-term goals. In this moment, I completed one year in the basic level, and it was my first challenge with this language.",
+                },
+                image: require('@/assets/courses/culturaInglesa.jpg'),
+                tags: [this.$store.state.tags.english],
+                mainTags: [this.$store.state.tags.english],
+                links: [{
+                    description: { "pt-BR": "CulturaInglesa", "en-US": "CulturaInglesa" },
+                    url: "https://www.culturainglesa.com.br/",
+                    type: "link"
+                }],
+                showDetail: false
+            })
+
+            histories.push({
+                date: new Date("2011-12-15"),
+                category: this.$store.state.categoryType.languages,
+                title: {
+                    "pt-BR": "Cultura Inglesa",
+                    "en-US": "Cultura Inglesa",
+                },
+                subTitle: {
+                    "pt-BR": "Curso de inglês pré-intermediario, com duração de dois semestres",
+                    "en-US": "Pre-intermediate English course, lasting two semesters",
+                },
+                description: {
+                    "pt-BR": "Nesse momento, concluí o curso de inglês pré-intermediário, e isto foi suficiente para eu começar a ler muitas coisas que me ajudaram a estudar sobre desenvolvimento de software.",
+                    "en-US": "In this moment, I completed the pre-intermediate english course, it was enough to start reading a lot of things that helped me to study about software development.",
+                },
+                image: require('@/assets/courses/culturaInglesa.jpg'),
+                tags: [this.$store.state.tags.english],
+                mainTags: [this.$store.state.tags.english],
+                links: [{
+                    description: { "pt-BR": "CulturaInglesa", "en-US": "CulturaInglesa" },
+                    url: "https://www.culturainglesa.com.br/",
+                    type: "link"
+                }],
+                showDetail: false
+            })
         },
         mountYears(histories) {
-            this.$store.state.years = histories.map(x => x.date.getFullYear()).filter((value, index, self) => { return self.indexOf(value) === index; }).map(function(x, index) { return { year: x, show: false }; });
-            this.$store.state.years[0].show = true;
-            this.$store.state.years[1].show = true;
-            this.$store.state.years[2].show = true;
-            this.$store.state.years[this.$store.state.years.length - 1].show = true;
+            this.$store.state.years = histories.map(x => x.date.getFullYear()).filter((value, index, self) => { return self.indexOf(value) === index; })
+                .map(function(x, index) { return { year: x, show: true }; });
+            //this.$store.state.years[0].show = true;
+            //this.$store.state.years[1].show = true;
+            //this.$store.state.years[2].show = true;
+            //this.$store.state.years[this.$store.state.years.length - 1].show = true;
         }
     },
     mounted() {
