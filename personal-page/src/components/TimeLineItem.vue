@@ -251,6 +251,7 @@
 
 .timelineApp {
   margin: 10px;
+  text-align: left;
 }
 
 .tagsDiv {

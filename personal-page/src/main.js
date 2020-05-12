@@ -163,7 +163,7 @@ var app = new Vue({
                 image: require('@/assets/books/kanban.jpg'),
                 tags: [this.$store.state.tags.kanban],
                 mainTags: [this.$store.state.tags.kanban],
-                showDetail: true
+                showDetail: false
             });
 
             histories.push({
@@ -250,6 +250,28 @@ var app = new Vue({
                 tags: [this.$store.state.tags.scrum],
                 mainTags: [this.$store.state.tags.scrum],
                 showDetail: false
+            });
+
+
+            histories.push({
+                date: new Date("2020-05-11"),
+                category: this.$store.state.categoryType.books,
+                title: {
+                    "pt-BR": "Avalie o que importa",
+                    "en-US": "Measure what matters",
+                },
+                subTitle: {
+                    "pt-BR": "Como o Google, Bono Vox, e a Fundação Gates sacudiram o mundo com os OKRs",
+                    "en-US": "How Google, Bono, and the Gates Foundation Rock the World with OKRs",
+                },
+                description: {
+                    "pt-BR": "O livro Avalie o que importa: como o Google, Bono Vox e a Fundação Gates sacudiram o mundo com os OKRs foi escrito por John Doerr, eu realmente gostei deste livro que me mostrou como os OKRs e os CRFs têm um forte poder de engajar as pessoas para mudar o mundo, eu acredito firmemente que essas ferramentas podem ser utilizadas em conjunto com práticas ágeis e tornar as empresas ágeis mais organizadas e com foco no que importa.",
+                    "en-US": "The book Measure what matter: How Google, Bono, and the Gates Foundation Rock the World with OKRs was written by John Doerr, I really appreciated this book that showed to me how OKRs and CRFs have a strong power to engaging people to change the world, I strong believe that this tools could be mixed with agile practices and became agile companies more organized and with focus on what matters.",
+                },
+                image: require('@/assets/books/avalieOQueImporta.jpg'),
+                tags: [this.$store.state.tags.okr, this.$store.state.tags.cfr, this.$store.state.tags.engagement, this.$store.state.tags.teamwork, this.$store.state.tags.teamManagement, this.$store.state.tags.feedback, this.$store.state.tags.challengingGoal],
+                mainTags: [this.$store.state.tags.okr, this.$store.state.tags.cfr, this.$store.state.tags.engagement, this.$store.state.tags.teamwork, this.$store.state.tags.teamManagement, this.$store.state.tags.feedback, this.$store.state.tags.challengingGoal],
+                showDetail: true
             });
         },
         mountProfessionExperiences(histories) {

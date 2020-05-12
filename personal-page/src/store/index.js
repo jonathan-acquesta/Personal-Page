@@ -89,10 +89,13 @@ export default new Vuex.Store({
             cmmi5: { "pt-BR": "#CMMI5", "en-US": "#CMMI5", color: "cyan" },
             incidentManagement: { "pt-BR": "#GestãoDeIncidentes", "en-US": "#IncidentManagement", color: "cyan" },
             problemManagement: { "pt-BR": "#GestãoDeProblemas", "en-US": "#ProblemManagement", color: "cyan" },
+            okr: { "pt-BR": "#OKRs", "en-US": "#OKRs", color: "cyan" },
+            cfr: { "pt-BR": "#CFRs", "en-US": "#CFRs", color: "cyan" },
 
             coaching: { "pt-BR": "#Coaching", "en-US": "#Coaching", color: "cyan" },
             leadership: { "pt-BR": "#Liderança", "en-US": "#Leadership", color: "cyan" },
             highPerformanceTeams: { "pt-BR": "#EquipesAltaPerformance", "en-US": "#HighPerformanceTeams", color: "cyan" },
+            challengingGoal: { "pt-BR": "#MetaDesafiadora", "en-US": "#ChallengingGoal", color: "cyan" },
             situationalLeadership: { "pt-BR": "#LiderançaSituacional", "en-US": "#SituationalLeadership", color: "cyan" },
             criatitySolution: { "pt-BR": "#SoluçãoCriativa", "en-US": "#CriatitySolution", color: "cyan" },
             selfManagement: { "pt-BR": "#AutoGerenciamento", "en-US": "#SelfManagement", color: "cyan" },
@@ -106,6 +109,7 @@ export default new Vuex.Store({
             instructor: { "pt-BR": "#Instrutor", "en-US": "#Instructor", color: "cyan" },
             computing: { "pt-BR": "#Computação", "en-US": "#Computing", color: "cyan" },
             teamwork: { "pt-BR": "#TrabalhoEmEquipe", "en-US": "#Teamwork", color: "cyan" },
+            feedback: { "pt-BR": "#Feeback", "en-US": "#Feeback", color: "cyan" },
 
             dotNetFramework: { "pt-BR": "#.NetFramework", "en-US": "#.NetFramework", color: "purple" },
             dotNetCore: { "pt-BR": "#.NetCore", "en-US": "#.NetCore", color: "purple" },
