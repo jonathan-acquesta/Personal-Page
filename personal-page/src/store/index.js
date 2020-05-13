@@ -126,6 +126,9 @@ export default new Vuex.Store({
             cSharp: { "pt-BR": "#C#", "en-US": "#C#", color: "purple" },
             sql: { "pt-BR": "#SQL", "en-US": "#SQL", color: "purple" },
             sqlCompact: { "pt-BR": "#SQLCompact", "en-US": "#SQLCompact", color: "purple" },
+            adoNet: { "pt-BR": "#AdoNet", "en-US": "#AdoNet", color: "purple" },
+            entityframework6: { "pt-BR": "#Entityframework6", "en-US": "#Entityframework6", color: "purple" },
+            entityframeworkNetCore: { "pt-BR": "#EntityframeworkNetCore", "en-US": "#EntityframeworkNetCore", color: "purple" },
             oracle: { "pt-BR": "#Oracle", "en-US": "#Oracle", color: "purple" },
             visualBasic6: { "pt-BR": "#VisualBasic6", "en-US": "#VisualBasic6", color: "purple" },
             vbScript: { "pt-BR": "#VBScript", "en-US": "#VBScript", color: "purple" },
@@ -142,6 +145,7 @@ export default new Vuex.Store({
             DDD: { "pt-BR": "#DDD", "en-US": "#DDD", color: "purple" },
             dataModeling: { "pt-BR": "#ModelagemDeDados", "en-US": "#DataModeling", color: "purple" },
             uml: { "pt-BR": "#UML", "en-US": "#UML", color: "purple" },
+            azure: { "pt-BR": "#Azure", "en-US": "#Azure", color: "purple" },
 
             excel: { "pt-BR": "#Excel", "en-US": "#Excel", color: "purple" },
             word: { "pt-BR": "#Word", "en-US": "#Word", color: "purple" },

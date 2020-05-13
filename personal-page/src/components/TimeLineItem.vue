@@ -335,6 +335,7 @@
 }
 
 .imageLink{
+  text-align: center;
   max-height: 600px;
   overflow: visible;
 }

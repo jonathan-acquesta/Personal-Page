@@ -620,7 +620,7 @@ var app = new Vue({
                 }],
                 tags: [this.$store.state.tags.fullSystemAnalyst,
                     this.$store.state.tags.mvvm, this.$store.state.tags.designPattern, this.$store.state.tags.silverlight,
-                    this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.sql,
+                    this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.sql, this.$store.state.tags.entityframework6,
                     this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html
                 ],
                 mainTags: [this.$store.state.tags.fullSystemAnalyst,
@@ -658,7 +658,7 @@ var app = new Vue({
                     type: "link"
                 }],
                 tags: [this.$store.state.tags.fullSystemAnalyst, this.$store.state.tags.opportunity, this.$store.state.tags.greatChallenge, this.$store.state.tags.aspNetMVC,
-                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.razor, this.$store.state.tags.javascript,
+                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.entityframework6, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.photoshop, this.$store.state.tags.mvc
                 ],
                 mainTags: [this.$store.state.tags.fullSystemAnalyst, this.$store.state.tags.opportunity, this.$store.state.tags.greatChallenge, this.$store.state.tags.aspNetMVC,
@@ -696,7 +696,7 @@ var app = new Vue({
                 }],
                 tags: [this.$store.state.tags.seniorSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.hardworking,
                     this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.aspNetMVC,
-                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.razor, this.$store.state.tags.javascript,
+                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.entityframework6, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.photoshop, this.$store.state.tags.mvc
                 ],
                 mainTags: [this.$store.state.tags.seniorSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.hardworking,
@@ -737,7 +737,7 @@ var app = new Vue({
                     this.$store.state.tags.coaching, this.$store.state.tags.trainning,
                     this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.hardworking,
                     this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
-                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
+                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.entityframework6, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.mvc
                 ],
                 mainTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.scrumMaster, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
@@ -782,7 +782,7 @@ var app = new Vue({
                     this.$store.state.tags.coaching, this.$store.state.tags.trainning,
                     this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
                     this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
-                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
+                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.entityframework6, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.mvc
                 ],
                 mainTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.scrumMaster, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
@@ -832,7 +832,7 @@ var app = new Vue({
                     this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
                     this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.vueJS, this.$store.state.tags.webAPI,
                     this.$store.state.tags.dotNetCore, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
-                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
+                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.entityframework6, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.mvc
                 ],
                 mainTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
@@ -883,7 +883,7 @@ var app = new Vue({
                     this.$store.state.tags.codeMetrics, this.$store.state.tags.TDD, this.$store.state.tags.BDD, this.$store.state.tags.styleCop,
                     this.$store.state.tags.vueJS, this.$store.state.tags.webAPI, this.$store.state.tags.dotNetCore,
                     this.$store.state.tags.DDD, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
-                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
+                    this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.entityframework6, this.$store.state.tags.entityframeworkNetCore, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.mvc
                 ],
                 mainTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
@@ -1470,6 +1470,271 @@ var app = new Vue({
                 showDetail: false
             })
 
+            histories.push({
+                date: new Date("2010-11-12"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Ka Solution - Microsoft Partner",
+                    "en-US": "Ka Solution - Microsoft Partner",
+                },
+                subTitle: {
+                    "pt-BR": "6464 - Visual Studio 2008 ADO.NET 3.2",
+                    "en-US": "6464 - Visual Studio 2008 ADO.NET 3.2",
+                },
+                description: {
+                    "pt-BR": ".",
+                    "en-US": ".",
+                },
+                image: require('@/assets/courses/kaSolution.jpg'),
+                tags: [this.$store.state.tags.adoNet, this.$store.state.tags.sql],
+                mainTags: [this.$store.state.tags.adoNet, this.$store.state.tags.sql],
+                links: [{
+                        image: require('@/assets/certificates/microsoftKaSolution6464.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "KaSolution", "en-US": "KaSolution" },
+                        url: "https://www.kasolution.com.br/Microsoft",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            })
+
+            histories.push({
+                date: new Date("2010-11-08"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Ka Solution - Microsoft Partner",
+                    "en-US": "Ka Solution - Microsoft Partner",
+                },
+                subTitle: {
+                    "pt-BR": "2310 - Developing Microsoft ASP.NET Web Applications Using Visual Studio .Net",
+                    "en-US": "2310 - Developing Microsoft ASP.NET Web Applications Using Visual Studio .Net",
+                },
+                description: {
+                    "pt-BR": ".",
+                    "en-US": ".",
+                },
+                image: require('@/assets/courses/kaSolution.jpg'),
+                tags: [this.$store.state.tags.aspNet, this.$store.state.tags.adoNet],
+                mainTags: [this.$store.state.tags.aspNet, this.$store.state.tags.adoNet],
+                links: [{
+                        image: require('@/assets/certificates/microsoftKaSolution2310.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "KaSolution", "en-US": "KaSolution" },
+                        url: "https://www.kasolution.com.br/Microsoft",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            })
+
+
+            histories.push({
+                date: new Date("2010-12-02"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Ka Solution - Microsoft Partner",
+                    "en-US": "Ka Solution - Microsoft Partner",
+                },
+                subTitle: {
+                    "pt-BR": "2956 - Core Foundations of Microsoft .NET 2.0 Development",
+                    "en-US": "2956 - Core Foundations of Microsoft .NET 2.0 Development",
+                },
+                description: {
+                    "pt-BR": ".",
+                    "en-US": ".",
+                },
+                image: require('@/assets/courses/kaSolution.jpg'),
+                tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
+                mainTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
+                links: [{
+                        image: require('@/assets/certificates/microsoftKaSolution2956.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "KaSolution", "en-US": "KaSolution" },
+                        url: "https://www.kasolution.com.br/Microsoft",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            })
+
+            histories.push({
+                date: new Date("2011-01-07"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Ka Solution - Microsoft Partner",
+                    "en-US": "Ka Solution - Microsoft Partner",
+                },
+                subTitle: {
+                    "pt-BR": "2957 - Advanced Foundations of Microsoft .NET 2.0 Development",
+                    "en-US": "2957 - Advanced Foundations of Microsoft .NET 2.0 Development",
+                },
+                description: {
+                    "pt-BR": ".",
+                    "en-US": ".",
+                },
+                image: require('@/assets/courses/kaSolution.jpg'),
+                tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
+                mainTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
+                links: [{
+                        image: require('@/assets/certificates/microsoftKaSolution2957.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "KaSolution", "en-US": "KaSolution" },
+                        url: "https://www.kasolution.com.br/Microsoft",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            })
+
+
+            histories.push({
+                date: new Date("2013-09-27"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Ka Solution - Microsoft Partner",
+                    "en-US": "Ka Solution - Microsoft Partner",
+                },
+                subTitle: {
+                    "pt-BR": "20480 - Programming in HTML5 with Javascript and CSS3",
+                    "en-US": "20480 - Programming in HTML5 with Javascript and CSS3",
+                },
+                description: {
+                    "pt-BR": ".",
+                    "en-US": ".",
+                },
+                image: require('@/assets/courses/kaSolution.jpg'),
+                tags: [this.$store.state.tags.html, this.$store.state.tags.javascript, this.$store.state.tags.css],
+                mainTags: [this.$store.state.tags.html, this.$store.state.tags.javascript, this.$store.state.tags.css],
+                links: [{
+                        image: require('@/assets/certificates/microsoftKaSolution20480.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "KaSolution", "en-US": "KaSolution" },
+                        url: "https://www.kasolution.com.br/Microsoft",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            })
+
+
+            histories.push({
+                date: new Date("2013-11-14"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Ka Solution - Microsoft Partner",
+                    "en-US": "Ka Solution - Microsoft Partner",
+                },
+                subTitle: {
+                    "pt-BR": "20486 - Developing ASP.NET MVC 4 Web Applications - Visual Studio 2012",
+                    "en-US": "20486 - Developing ASP.NET MVC 4 Web Applications - Visual Studio 2012",
+                },
+                description: {
+                    "pt-BR": ".",
+                    "en-US": ".",
+                },
+                image: require('@/assets/courses/kaSolution.jpg'),
+                tags: [this.$store.state.tags.aspNetMVC],
+                mainTags: [this.$store.state.tags.aspNetMVC],
+                links: [{
+                        image: require('@/assets/certificates/microsoftKaSolution20486.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "KaSolution", "en-US": "KaSolution" },
+                        url: "https://www.kasolution.com.br/Microsoft",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            })
+
+
+            histories.push({
+                date: new Date("2014-12-05"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Ka Solution - Microsoft Partner",
+                    "en-US": "Ka Solution - Microsoft Partner",
+                },
+                subTitle: {
+                    "pt-BR": "20487 - Developing Windows Azure and Web Services - Visual Studio 2012",
+                    "en-US": "20487 - Developing Windows Azure and Web Services - Visual Studio 2012",
+                },
+                description: {
+                    "pt-BR": ".",
+                    "en-US": ".",
+                },
+                image: require('@/assets/courses/kaSolution.jpg'),
+                tags: [this.$store.state.tags.azure, this.$store.state.tags.webServices],
+                mainTags: [this.$store.state.tags.azure, this.$store.state.tags.webServices],
+                links: [{
+                        image: require('@/assets/certificates/microsoftKaSolution20487.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "KaSolution", "en-US": "KaSolution" },
+                        url: "https://www.kasolution.com.br/Microsoft",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            })
+
+
+            histories.push({
+                date: new Date("2015-01-22"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Ka Solution",
+                    "en-US": "Ka Solution",
+                },
+                subTitle: {
+                    "pt-BR": "1001 - SCRUM Gestão Ágil de Projetos",
+                    "en-US": "1001 - SCRUM Gestão Ágil de Projetos",
+                },
+                description: {
+                    "pt-BR": ".",
+                    "en-US": ".",
+                },
+                image: require('@/assets/courses/kaSolution.jpg'),
+                tags: [this.$store.state.tags.scrum],
+                mainTags: [this.$store.state.tags.scrum],
+                links: [{
+                        image: require('@/assets/certificates/kaSolution1001Scrum.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "KaSolution", "en-US": "KaSolution" },
+                        url: "https://www.kasolution.com.br/Microsoft",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            })
+
+
+        },
+        mountLanguageCourses(histories) {
+
 
             histories.push({
                 date: new Date("2010-12-15"),
@@ -1540,6 +1805,7 @@ var app = new Vue({
         this.mountProfessionExperiences(histories);
         this.mountAcademicLife(histories);
         this.mountCourses(histories);
+        this.mountLanguageCourses(histories);
 
         histories.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
 
