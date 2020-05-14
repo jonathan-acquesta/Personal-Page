@@ -1787,6 +1787,67 @@ var app = new Vue({
                 }],
                 showDetail: false
             })
+
+
+            histories.push({
+                date: new Date("2018-06-18"),
+                category: this.$store.state.categoryType.languages,
+                title: {
+                    "pt-BR": "Wise Up",
+                    "en-US": "Wise Up",
+                },
+                subTitle: {
+                    "pt-BR": "Curso completo de inglês, com duração de três semestres",
+                    "en-US": "Complete English course, lasting three semesters",
+                },
+                description: {
+                    "pt-BR": "Depois que parei o curso Cultura Inglesa, concentrei-me em melhorar outras habilidades e deixei o inglês esperando, mas depois de alguns anos comecei a precisar falar inglês, então eu decidi estudar no WiseUp e tentei novamente tornar-me fluente. Fiz o melhor esforço possível por três semestres e consegui passar em todos os níveis da escola, mas aprendi muita gramática e não adquiri confiança suficiente para conversar.",
+                    "en-US": "After I stopped the Cultura Inglesa course, I kept my focus on improve other skills and let speak English waiting, but after some years, I started to need to speak english, then, I decided to study at WiseUp, and tried again to become fluent. I did the best effort that I could for three semesters and I achieved to pass for all the school's levels, but I learned a lot of grammatic and I'm not confident enough to speak yet.",
+                },
+                image: require('@/assets/courses/wiseUp.jpg'),
+                tags: [this.$store.state.tags.english],
+                mainTags: [this.$store.state.tags.english],
+                links: [{
+                        image: require('@/assets/certificates/wiseUp.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "WiseUp", "en-US": "WiseUp" },
+                        url: "https://wiseup.com/",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            })
+        },
+        mountThoughts(histories) {
+
+            histories.push({
+                date: new Date("2020-05-14"),
+                category: this.$store.state.categoryType.thoughts,
+                title: {
+                    "pt-BR": "ZUP Open Talks - Kent Beck",
+                    "en-US": "ZUP Open Talks - Kent Beck",
+                },
+                subTitle: {
+                    "pt-BR": "O que torna os testes bons e o que você pode fazer sobre isso!",
+                    "en-US": "What Makes Tests Good and What You Can Do About It!",
+                },
+                description: {
+                    "pt-BR": "Foi ótimo ouvir Kent Beck ao vivo e interagir com ele através da pergunta: se você vai começar a testar um projeto legado, como você acha que é a melhor maneira de começar? Obrigado equipe ZUP por escolher minha pergunta e obrigado Kent Beck pela resposta. Eu realmente gostei desse Talk.",
+                    "en-US": "It was great to listen Kent Beck live and interect with him though the question: If you are going to start testing on a legacy project, how do you think is the best way to start? Thanks ZUP team for pick my question and thanks Kent Beck for the answer. I really appreciated this Talk.",
+                },
+                image: require('@/assets/thoughts/kentBeckTalk.jpg'),
+                tags: [this.$store.state.tags.extremeProgramming, this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest],
+                mainTags: [this.$store.state.tags.extremeProgramming, this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest],
+                links: [{
+                    description: { "pt-BR": "Talk", "en-US": "Talk" },
+                    url: "https://www.youtube.com/watch?v=lXTwxMxNx-Y&feature=push-u-sub&attr_tag=YhBAm0mv1GVOTSfK%3A6",
+                    type: "link"
+                }],
+                showDetail: false
+            })
         },
         mountYears(histories) {
             this.$store.state.years = histories.map(x => x.date.getFullYear()).filter((value, index, self) => { return self.indexOf(value) === index; })
@@ -1806,6 +1867,7 @@ var app = new Vue({
         this.mountAcademicLife(histories);
         this.mountCourses(histories);
         this.mountLanguageCourses(histories);
+        this.mountThoughts(histories);
 
         histories.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
 
