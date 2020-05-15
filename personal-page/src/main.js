@@ -7,7 +7,19 @@ import '@fortawesome/fontawesome-free/css/all.css'
 
 Vue.config.productionTip = false;
 
+var mixin = {
+    methods: {
+        foo: function() {
+            console.log('algo')
+        },
+        conflicting: function() {
+            console.log('escrito pelo mixin')
+        }
+    }
+}
+
 var app = new Vue({
+    mixins: [mixin],
     router,
     store,
     vuetify,

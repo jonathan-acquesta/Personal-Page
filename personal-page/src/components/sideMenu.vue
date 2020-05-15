@@ -56,7 +56,10 @@
 </template>
 
 <script>
+    import generalMixins from './../mixins/generalMixins.js'
+
     export default {
+        mixins:[generalMixins],
         data() {
             return {
                 drawerRight: null,
@@ -64,19 +67,12 @@
             }
         },
         computed: {
-            culture()
-            {
-                return this.$store.state.culture;
-            }
+            
         },
         methods: {
             InvertSelection(category)
             {
                 category.enable = !category.enable;
-            },
-            showPage(url)
-            {
-               this.$router.push({ name: url});
             }
         },
     }

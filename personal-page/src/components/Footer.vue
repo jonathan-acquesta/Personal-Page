@@ -21,11 +21,12 @@
 </template>
 
 <script>
+    import generalMixins from './../mixins/generalMixins.js'
+
     export default {
+        mixins:[generalMixins],
         methods: {
-            openSite: function (url) {   
-                window.open(url, "_blank");    
-            }
+            
         },
     }
 </script>

@@ -99,32 +99,9 @@
                 </td>
               </tr>
             </table>
-
-            <div class="tagsDiv" v-if="history.showDetail">
-              <v-chip
-                class="logs"
-                color="white"
-                label
-                :text-color="tag.color"
-                v-for="(tag, index) in history.tags"
-                :key="index"
-              >
-                <b>{{ tag[culture] }}</b>
-              </v-chip>
-            </div>
-
-            <div class="tagsDiv" v-if="!history.showDetail">
-              <v-chip
-                class="logs"
-                color="white"
-                label
-                :text-color="tag.color"
-                v-for="(tag, index) in history.mainTags"
-                :key="index"
-              >
-                <b>{{ tag[culture] }}</b>
-              </v-chip>
-            </div>
+            
+            <Tags v-if="history.showDetail" :tags="history.tags"></Tags>
+            <Tags v-else :tags="history.mainTags"></Tags>
             
             <div
               class="links"
@@ -159,8 +136,14 @@
 </template>
 
 <script>
+    import generalMixins from './../mixins/generalMixins.js'
+    import certificateMixins from './../mixins/certificateMixins.js'
+    import Tags from './../components/Tags.vue'
+
     export default {
         props:['histories'],
+        mixins: [generalMixins, certificateMixins],
+        components:{Tags}, 
         data() {
             return {
                 small: false,
@@ -169,22 +152,11 @@
                     reverse: false,
                     right: false,
                     left: false,
-                    overlay: false,
-                    valueDeterminate: 50,
-                    mainImage: "",
             }
         },
         computed: {
-            getHistories()
-            {
-                return this.histories;
-            },
-            culture() {
-                return this.$store.state.culture;
-            },
-            language() {
-                return this.$store.state.common;
-            },
+            
+           
         },
         methods: {
             getPeriodDescription(period)
@@ -193,9 +165,6 @@
             },
             formatePeriod(date) {
                 return (this.$store.state.months[this.$store.state.culture][date.getMonth()] + " " + date.getFullYear());
-            },
-            openSite: function(url) {
-                window.open(url, "_blank");
             },
             processLink(link){
                 if(link.type == "certificate")
@@ -241,10 +210,6 @@
   margin-top: -20px;
 }
 
-.logs {
-  margin-right: -10px;
-}
-
 .card {
   margin-left: 10px;
 }
@@ -254,17 +219,6 @@
   text-align: left;
 }
 
-.tagsDiv {
-  margin-left: -10px;
-}
-
-.tags {
-  margin-top: 15px;
-  color: rgb(7, 52, 177);
-  font-weight: bold;
-  margin-right: 10px;
-  font-size: small;
-}
 
 .imageMain {
   box-shadow: 2px 2px 5px grey;

@@ -35,8 +35,10 @@ import Language from "./components/Language.vue";
 import Footer from "./components/Footer.vue";
 import Timeline from "@/views/Timeline.vue";
 import Resume from "@/views/Resume.vue";
+import generalMixins from './mixins/generalMixins.js'
 
   export default {
+    mixins:[generalMixins],
     props: {
       source: String,
     },
@@ -49,15 +51,10 @@ import Resume from "@/views/Resume.vue";
       left: false,
     }),
     computed: {
-      culture()
-      {
-        return this.$store.state.culture;
-      }
+     
     },
     methods: {
-      openSite: function (url) {   
-                window.open(url, "_blank");    
-            }
+     
     },
   }
 </script>

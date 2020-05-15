@@ -34,18 +34,9 @@
 
                 <v-list-item-content>
                   <v-list-item-title>{{ GetTitle(history) }}</v-list-item-title>
-                  <div class="tagsDiv">
-                    <v-chip
-                        class="logs"
-                        color="white"
-                        label
-                        :text-color="tag.color"
-                        v-for="(tag, index) in history.resumeTags"
-                        :key="index"
-                    >
-                        <b>{{ tag[culture] }}</b>
-                    </v-chip>
-            </div>
+                  
+                  <Tags :tags="history.resumeTags"></Tags>
+                  
             <div
               class="links"
               v-if="(history.links)">
@@ -72,23 +63,20 @@
 </template>
 
 <script>
+    import generalMixins from './../mixins/generalMixins.js'
+    import certificateMixins from './../mixins/certificateMixins.js'
+    import Tags from './../components/Tags.vue'
+
     export default {
+        mixins:[generalMixins, certificateMixins],
+        components:{Tags},
         data() {
             return {
-                mainImage: "",
-                overlay: false,
+               
             }
         },
         computed: {
-                culture() {
-                    return this.$store.state.culture;
-                },
-                language() {
-                    return this.$store.state.common;
-                },
-                categories() {
-                    return this.$store.state.categoryType;
-                }
+            
         },  
         methods: {
             GetHistories(category)
@@ -100,9 +88,6 @@
             GetTitle(history)
             {
                 return history.title[this.culture] + " - " +  history.subTitle[this.culture] + " - " + this.language.yearOf[this.culture] + " " + history.date.getFullYear();
-            },
-            openSite: function(url) {
-                window.open(url, "_blank");
             },
             processLink(link){
                 if(link.type == "certificate")
@@ -162,9 +147,6 @@
   margin: 4px;
 }
 
-.tagsDiv {
-  margin-left: -10px;
-}
 
 .descriptionImageLink {
   width: 80%;

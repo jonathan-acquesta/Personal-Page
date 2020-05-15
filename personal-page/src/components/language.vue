@@ -7,12 +7,12 @@
 </template>
 
 <script>
+    import generalMixins from './../mixins/generalMixins.js'
+
     export default {
+        mixins:[generalMixins],
         computed: {
-            culture()
-            {
-                return this.$store.state.culture;
-            }
+            
         },
         methods: {
             ChangeLanguePortuguese()
