@@ -19,7 +19,7 @@
 
     <v-content>
       <v-container class="fill-height" fluid>
-       <Timeline />
+       <router-view />
       </v-container>
     </v-content>
 
@@ -34,13 +34,14 @@ import SideMenu from "./components/SideMenu.vue";
 import Language from "./components/Language.vue";
 import Footer from "./components/Footer.vue";
 import Timeline from "@/views/Timeline.vue";
+import Resume from "@/views/Resume.vue";
 
   export default {
     props: {
       source: String,
     },
     components: {
-      Timeline, SideMenu, Language, Footer
+      Timeline, Resume, SideMenu, Language, Footer
     },
     data: () => ({
       drawer: null,

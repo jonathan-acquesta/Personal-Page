@@ -26,6 +26,19 @@
           <v-divider></v-divider>
 
           <v-list-item
+            v-for="(menu, index) in this.$store.state.sideMenu" :key="index" link v-on:click="showPage(menu.url)">
+              <v-list-item-icon>
+                <v-icon :color="menu.color">{{ menu.icon }}</v-icon>
+              </v-list-item-icon>
+                  <v-list-item-content>
+                    <v-list-item-title>{{ menu.name[culture] }} 
+                </v-list-item-title>
+              </v-list-item-content>
+          </v-list-item>
+
+          <v-divider></v-divider>
+
+          <v-list-item
             v-for="(category, index) in this.$store.state.categoryType" :key="index" link v-on:click="InvertSelection(category)">
             
             <v-list-item-icon>
@@ -61,6 +74,10 @@
             {
                 category.enable = !category.enable;
             },
+            showPage(url)
+            {
+               this.$router.push({ name: url});
+            }
         },
     }
 </script>

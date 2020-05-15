@@ -40,7 +40,7 @@
             v-text="formatePeriod(history.date)"
           ></span>
         </template>
-        <v-card class="elevation-2">
+        <v-card  class="elevation-2">
           
           <div class="py-4 card">
             <v-tooltip left v-show="!history.showDetail">

@@ -17,6 +17,7 @@ export default new Vuex.Store({
             closeDetails: { "pt-BR": "Fechar Detalhes", "en-US": "Close Details" },
             from: { "pt-BR": "De", "en-US": "From" },
             to: { "pt-BR": "Até", "en-US": "To" },
+            yearOf: { "pt-BR": "Ano de", "en-US": "Year" },
             showYear: { "pt-BR": "Mostrar detalhes deste ano", "en-US": "Show details for this year" },
             closeYear: { "pt-BR": "Minimizar detalhes deste ano", "en-US": "Minimize details for this year" },
         },
@@ -192,6 +193,26 @@ export default new Vuex.Store({
 
         histories: [],
         years: [],
+        sideMenu: {
+            timeLine: {
+                color: "black",
+                name: {
+                    "pt-BR": "Linha do Tempo",
+                    "en-US": "Time Line"
+                },
+                url: "TimeLine",
+                icon: "mdi-timeline-clock-outline",
+            },
+            Curriculum: {
+                color: "black",
+                name: {
+                    "pt-BR": "Currículo",
+                    "en-US": "Resume"
+                },
+                url: "Resume",
+                icon: "mdi-file-account",
+            },
+        },
         categoryType: {
             professionalExperience: {
                 color: "red",
@@ -200,7 +221,8 @@ export default new Vuex.Store({
                     "en-US": "Professional Experiênce"
                 },
                 icon: "mdi-briefcase-outline",
-                enable: true
+                enable: true,
+                showResume: true
             },
             academicLife: {
                 color: "orange",
@@ -209,16 +231,8 @@ export default new Vuex.Store({
                     "en-US": "Academic Life"
                 },
                 icon: "mdi-school",
-                enable: true
-            },
-            courses: {
-                color: "deep-purple",
-                name: {
-                    "pt-BR": "Curso Extracurricular",
-                    "en-US": "Extracurricular Course"
-                },
-                icon: "mdi-seal-variant",
-                enable: true
+                enable: true,
+                showResume: true
             },
             certifications: {
                 color: "green",
@@ -227,43 +241,8 @@ export default new Vuex.Store({
                     "en-US": "Certification"
                 },
                 icon: "mdi-book-variant",
-                enable: true
-            },
-            books: {
-                color: "teal",
-                name: {
-                    "pt-BR": "Livros",
-                    "en-US": "Book"
-                },
-                icon: "mdi-book-open-page-variant",
-                enable: true
-            },
-            thoughts: {
-                color: "pink",
-                name: {
-                    "pt-BR": "Pensamentos",
-                    "en-US": "Thoughts"
-                },
-                icon: "mdi-head-snowflake-outline",
-                enable: true
-            },
-            managementKnowledge: {
-                color: "cyan",
-                name: {
-                    "pt-BR": "Conhecimento em Gestão",
-                    "en-US": "Management Knowledge"
-                },
-                icon: "mdi-account-group",
-                enable: true
-            },
-            technologies: {
-                color: "purple",
-                name: {
-                    "pt-BR": "Tecnologias",
-                    "en-US": "Technologies"
-                },
-                icon: "mdi-laptop",
-                enable: true
+                enable: true,
+                showResume: true
             },
             languages: {
                 color: "indigo",
@@ -272,7 +251,60 @@ export default new Vuex.Store({
                     "en-US": "Languages"
                 },
                 icon: "mdi-account-voice",
-                enable: true
+                enable: true,
+                showResume: true
+            },
+            courses: {
+                color: "deep-purple",
+                name: {
+                    "pt-BR": "Curso Extracurricular",
+                    "en-US": "Extracurricular Course"
+                },
+                icon: "mdi-seal-variant",
+                enable: true,
+                showResume: true
+            },
+
+            books: {
+                color: "teal",
+                name: {
+                    "pt-BR": "Livros",
+                    "en-US": "Book"
+                },
+                icon: "mdi-book-open-page-variant",
+                enable: true,
+                showResume: true
+            },
+            thoughts: {
+                color: "pink",
+                name: {
+                    "pt-BR": "Pensamentos",
+                    "en-US": "Thoughts"
+                },
+                icon: "mdi-head-snowflake-outline",
+                enable: true,
+                showResume: true
+            },
+            /*
+            managementKnowledge: {
+                color: "cyan",
+                name: {
+                    "pt-BR": "Conhecimento em Gestão",
+                    "en-US": "Management Knowledge"
+                },
+                icon: "mdi-account-group",
+                enable: true,
+                showResume: false
+            },
+            technologies: {
+                color: "purple",
+                name: {
+                    "pt-BR": "Tecnologias",
+                    "en-US": "Technologies"
+                },
+                icon: "mdi-laptop",
+                enable: true,
+                showResume: false
             },
             milestones: {
                 color: "light-blue",
@@ -281,8 +313,9 @@ export default new Vuex.Store({
                     "en-US": "Milestones"
                 },
                 icon: "mdi-flag-checkered",
-                enable: true
-            }
+                enable: true,
+                showResume: false
+            }*/
         },
     },
     mutations: {},

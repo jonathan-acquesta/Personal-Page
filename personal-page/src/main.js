@@ -43,6 +43,7 @@ var app = new Vue({
                 ],
                 tags: [this.$store.state.tags.scrum],
                 mainTags: [this.$store.state.tags.scrum],
+                resumeTags: [this.$store.state.tags.scrum],
                 showDetail: true
             });
 
@@ -75,6 +76,7 @@ var app = new Vue({
                 ],
                 tags: [this.$store.state.tags.scrum],
                 mainTags: [this.$store.state.tags.scrum],
+                resumeTags: [this.$store.state.tags.scrum],
                 showDetail: false
             });
 
@@ -107,6 +109,7 @@ var app = new Vue({
                 ],
                 tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
                 mainTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
+                resumeTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
                 showDetail: false
             });
 
@@ -140,6 +143,7 @@ var app = new Vue({
                 ],
                 tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
                 mainTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
+                resumeTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
                 showDetail: false
             });
         },
@@ -163,6 +167,7 @@ var app = new Vue({
                 image: require('@/assets/books/kanban.jpg'),
                 tags: [this.$store.state.tags.kanban],
                 mainTags: [this.$store.state.tags.kanban],
+                resumeTags: [this.$store.state.tags.kanban],
                 showDetail: false
             });
 
@@ -184,6 +189,7 @@ var app = new Vue({
                 image: require('@/assets/books/coaching_lideranca.jpg'),
                 tags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership],
                 mainTags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership],
+                resumeTags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership],
                 showDetail: false
             });
 
@@ -205,6 +211,7 @@ var app = new Vue({
                 image: require('@/assets/books/gerenciando_pessoas.jpg'),
                 tags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership],
                 mainTags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership],
+                resumeTags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership],
                 showDetail: false
             });
 
@@ -227,6 +234,7 @@ var app = new Vue({
                 image: require('@/assets/books/quarta_revolucao_industrual.jpg'),
                 tags: [this.$store.state.tags.fourthIndustrialRevolution, this.$store.state.tags.artificialIntelligence, this.$store.state.tags.disruptiveInnovations],
                 mainTags: [this.$store.state.tags.fourthIndustrialRevolution, this.$store.state.tags.artificialIntelligence, this.$store.state.tags.disruptiveInnovations],
+                resumeTags: [this.$store.state.tags.fourthIndustrialRevolution, this.$store.state.tags.artificialIntelligence, this.$store.state.tags.disruptiveInnovations],
                 showDetail: false
             });
 
@@ -249,6 +257,7 @@ var app = new Vue({
                 image: require('@/assets/books/scrum.jpg'),
                 tags: [this.$store.state.tags.scrum],
                 mainTags: [this.$store.state.tags.scrum],
+                resumeTags: [this.$store.state.tags.scrum],
                 showDetail: false
             });
 
@@ -271,6 +280,7 @@ var app = new Vue({
                 image: require('@/assets/books/avalieOQueImporta.jpg'),
                 tags: [this.$store.state.tags.okr, this.$store.state.tags.cfr, this.$store.state.tags.engagement, this.$store.state.tags.teamwork, this.$store.state.tags.teamManagement, this.$store.state.tags.feedback, this.$store.state.tags.challengingGoal],
                 mainTags: [this.$store.state.tags.okr, this.$store.state.tags.cfr, this.$store.state.tags.engagement, this.$store.state.tags.teamwork, this.$store.state.tags.teamManagement, this.$store.state.tags.feedback, this.$store.state.tags.challengingGoal],
+                resumeTags: [this.$store.state.tags.okr, this.$store.state.tags.cfr, this.$store.state.tags.engagement, this.$store.state.tags.teamwork, this.$store.state.tags.teamManagement, this.$store.state.tags.feedback, this.$store.state.tags.challengingGoal],
                 showDetail: true
             });
         },
@@ -300,6 +310,7 @@ var app = new Vue({
                 image: require('@/assets/professionalExperiences/politec.jpg'),
                 tags: [this.$store.state.tags.intern, this.$store.state.tags.opportunity],
                 mainTags: [this.$store.state.tags.intern, this.$store.state.tags.opportunity],
+                resumeTags: [this.$store.state.tags.intern, this.$store.state.tags.opportunity],
                 showDetail: false
             });
 
@@ -326,6 +337,7 @@ var app = new Vue({
                 image: require('@/assets/professionalExperiences/politec_gol.jpg'),
                 tags: [this.$store.state.tags.intern, this.$store.state.tags.sql, this.$store.state.tags.visualBasic6, this.$store.state.tags.asp, this.$store.state.tags.vbScript, this.$store.state.tags.javascript, this.$store.state.tags.css, this.$store.state.tags.html],
                 mainTags: [this.$store.state.tags.intern, this.$store.state.tags.sql, this.$store.state.tags.visualBasic6, this.$store.state.tags.asp],
+                resumeTags: [this.$store.state.tags.intern, this.$store.state.tags.sql, this.$store.state.tags.visualBasic6, this.$store.state.tags.asp],
                 showDetail: false
             });
 
@@ -347,6 +359,7 @@ var app = new Vue({
                 image: require('@/assets/professionalExperiences/prosegurBrasil.jpg'),
                 tags: [this.$store.state.tags.intern, this.$store.state.tags.oracle, this.$store.state.tags.visualBasic6, this.$store.state.tags.vbNet],
                 mainTags: [this.$store.state.tags.intern, this.$store.state.tags.oracle, this.$store.state.tags.visualBasic6, this.$store.state.tags.vbNet],
+                resumeTags: [this.$store.state.tags.intern, this.$store.state.tags.oracle, this.$store.state.tags.visualBasic6, this.$store.state.tags.vbNet],
                 showDetail: false
             });
 
@@ -370,6 +383,7 @@ var app = new Vue({
                     this.$store.state.tags.sqlCompact, this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html
                 ],
                 mainTags: [this.$store.state.tags.juniorDeveloper, this.$store.state.tags.aspNet, this.$store.state.tags.vbNet, this.$store.state.tags.sql, this.$store.state.tags.sqlCompact],
+                resumeTags: [this.$store.state.tags.juniorDeveloper, this.$store.state.tags.aspNet, this.$store.state.tags.vbNet, this.$store.state.tags.sql, this.$store.state.tags.sqlCompact],
                 showDetail: false
             });
 
@@ -396,6 +410,9 @@ var app = new Vue({
                 ],
                 mainTags: [this.$store.state.tags.fullDeveloper, this.$store.state.tags.criatitySolution, this.$store.state.tags.selfManagement, this.$store.state.tags.successCase,
                     this.$store.state.tags.aspNet, this.$store.state.tags.vbNet, this.$store.state.tags.sql
+                ],
+                resumeTags: [this.$store.state.tags.fullDeveloper, this.$store.state.tags.criatitySolution, this.$store.state.tags.selfManagement,
+                    this.$store.state.tags.successCase, this.$store.state.tags.vbNet, this.$store.state.tags.aspNet, this.$store.state.tags.sql
                 ],
                 showDetail: false
             });
@@ -424,6 +441,9 @@ var app = new Vue({
                 mainTags: [this.$store.state.tags.fullDeveloper, this.$store.state.tags.criatitySolution, this.$store.state.tags.selfManagement, this.$store.state.tags.greatChallenge, this.$store.state.tags.rewarding,
                     this.$store.state.tags.successCase, this.$store.state.tags.silverlight, this.$store.state.tags.webServices,
                     this.$store.state.tags.aspNet, this.$store.state.tags.vbNet, this.$store.state.tags.sql
+                ],
+                resumeTags: [this.$store.state.tags.fullDeveloper, this.$store.state.tags.selfManagement, this.$store.state.tags.rewarding,
+                    this.$store.state.tags.successCase, this.$store.state.tags.vbNet, this.$store.state.tags.aspNet, this.$store.state.tags.sql
                 ],
                 showDetail: false
             });
@@ -467,6 +487,9 @@ var app = new Vue({
                     this.$store.state.tags.codeCoverage, this.$store.state.tags.codeMetrics, this.$store.state.tags.mvc, this.$store.state.tags.webServices,
                     this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.sql
                 ],
+                resumeTags: [this.$store.state.tags.seniorDeveloper, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
+                    this.$store.state.tags.greatChallenge, this.$store.state.tags.cSharp, this.$store.state.tags.aspNet, this.$store.state.tags.sql
+                ],
                 showDetail: false
             });
 
@@ -508,6 +531,9 @@ var app = new Vue({
                 mainTags: [this.$store.state.tags.seniorDeveloper, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.teamManagement, this.$store.state.tags.greatChallenge,
                     this.$store.state.tags.codeCoverage, this.$store.state.tags.codeMetrics, this.$store.state.tags.mvc, this.$store.state.tags.webServices,
                     this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.sql
+                ],
+                resumeTags: [this.$store.state.tags.seniorDeveloper, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
+                    this.$store.state.tags.greatChallenge, this.$store.state.tags.cSharp, this.$store.state.tags.aspNet, this.$store.state.tags.sql
                 ],
                 showDetail: false
             });
@@ -551,6 +577,9 @@ var app = new Vue({
                     this.$store.state.tags.codeCoverage, this.$store.state.tags.codeMetrics, this.$store.state.tags.mvc, this.$store.state.tags.vba, this.$store.state.tags.webServices,
                     this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.sql
                 ],
+                resumeTags: [this.$store.state.tags.juniorSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
+                    this.$store.state.tags.teamManagement, this.$store.state.tags.cSharp, this.$store.state.tags.aspNet, this.$store.state.tags.sql
+                ],
                 showDetail: false
             });
 
@@ -592,6 +621,9 @@ var app = new Vue({
                     this.$store.state.tags.codeCoverage, this.$store.state.tags.codeMetrics, this.$store.state.tags.mvc, this.$store.state.tags.webServices,
                     this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.sql
                 ],
+                resumeTags: [this.$store.state.tags.fullSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
+                    this.$store.state.tags.rewarding, this.$store.state.tags.cSharp, this.$store.state.tags.aspNet, this.$store.state.tags.sql
+                ],
                 showDetail: false
             });
 
@@ -620,12 +652,15 @@ var app = new Vue({
                 }],
                 tags: [this.$store.state.tags.fullSystemAnalyst,
                     this.$store.state.tags.mvvm, this.$store.state.tags.designPattern, this.$store.state.tags.silverlight,
-                    this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.sql, this.$store.state.tags.entityframework6,
+                    this.$store.state.tags.cSharp, this.$store.state.tags.sql, this.$store.state.tags.entityframework6,
                     this.$store.state.tags.javascript, this.$store.state.tags.jQuery, this.$store.state.tags.css, this.$store.state.tags.html
                 ],
                 mainTags: [this.$store.state.tags.fullSystemAnalyst,
                     this.$store.state.tags.mvvm, this.$store.state.tags.designPattern, this.$store.state.tags.silverlight,
-                    this.$store.state.tags.aspNet, this.$store.state.tags.cSharp, this.$store.state.tags.sql
+                    this.$store.state.tags.cSharp, this.$store.state.tags.sql
+                ],
+                resumeTags: [this.$store.state.tags.fullSystemAnalyst, this.$store.state.tags.designPattern, this.$store.state.tags.silverlight, this.$store.state.tags.cSharp,
+                    this.$store.state.tags.mvvm, this.$store.state.tags.sql
                 ],
                 showDetail: false
             });
@@ -663,6 +698,9 @@ var app = new Vue({
                 ],
                 mainTags: [this.$store.state.tags.fullSystemAnalyst, this.$store.state.tags.opportunity, this.$store.state.tags.greatChallenge, this.$store.state.tags.aspNetMVC,
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.mvc
+                ],
+                resumeTags: [this.$store.state.tags.fullSystemAnalyst, this.$store.state.tags.opportunity, this.$store.state.tags.greatChallenge, this.$store.state.tags.cSharp,
+                    this.$store.state.tags.aspNetMVC, this.$store.state.tags.sql
                 ],
                 showDetail: false
             });
@@ -703,6 +741,9 @@ var app = new Vue({
                     this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.aspNetMVC,
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.mvc
                 ],
+                resumeTags: [this.$store.state.tags.seniorSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.rewarding, this.$store.state.tags.cSharp,
+                    this.$store.state.tags.aspNetMVC, this.$store.state.tags.sql
+                ],
                 showDetail: false
             });
 
@@ -715,7 +756,7 @@ var app = new Vue({
                 },
                 subTitle: {
                     "pt-BR": "Projeto MindSet - Trabalho duro recompensador",
-                    "en-US": "MindSet Projet - Rewarding hard work",
+                    "en-US": "MindSet Project - Rewarding hard work",
                 },
                 description: {
                     "pt-BR": "Depois de alguns meses, recebi uma oferta para trabalhar diretamente para a Unous como Coordenador de TI e assumi a responsabilidade pelo projeto MindSet. Nesta ocasião, desempenhei o papel de Scrum Master, ajudando a equipe a aplicar o Scrum e ensinei-lhes regras de negócios, além de ser responsável pelo processo de contratação, treinamento e planejamento de lançamentos.",
@@ -746,6 +787,9 @@ var app = new Vue({
                     this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.hardworking,
                     this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.mvc
+                ],
+                resumeTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.scrumMaster, this.$store.state.tags.scrum,
+                    this.$store.state.tags.hardworking, this.$store.state.tags.cSharp, this.$store.state.tags.aspNetMVC, this.$store.state.tags.sql
                 ],
                 showDetail: false
             });
@@ -792,6 +836,10 @@ var app = new Vue({
                     this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
                     this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.mvc
                 ],
+                resumeTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.scrumMaster, this.$store.state.tags.scrum,
+                    this.$store.state.tags.situationalLeadership, this.$store.state.tags.cSharp,
+                    this.$store.state.tags.aspNetMVC, this.$store.state.tags.sql
+                ],
                 showDetail: false
             });
 
@@ -831,7 +879,7 @@ var app = new Vue({
                     this.$store.state.tags.coaching, this.$store.state.tags.trainning,
                     this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
                     this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.vueJS, this.$store.state.tags.webAPI,
-                    this.$store.state.tags.dotNetCore, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
+                    this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.entityframework6, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.mvc
                 ],
@@ -840,8 +888,11 @@ var app = new Vue({
                     this.$store.state.tags.coaching, this.$store.state.tags.trainning,
                     this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
                     this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.vueJS, this.$store.state.tags.webAPI,
-                    this.$store.state.tags.dotNetCore, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
+                    this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.mvc
+                ],
+                resumeTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
+                    this.$store.state.tags.rewarding, this.$store.state.tags.designPattern, this.$store.state.tags.vueJS
                 ],
                 showDetail: false
             });
@@ -894,6 +945,9 @@ var app = new Vue({
                     this.$store.state.tags.vueJS, this.$store.state.tags.webAPI, this.$store.state.tags.dotNetCore,
                     this.$store.state.tags.DDD, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.mvc
                 ],
+                resumeTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
+                    this.$store.state.tags.teamManagement, this.$store.state.tags.dotNetCore, this.$store.state.tags.vueJS
+                ],
                 showDetail: true
             });
 
@@ -922,6 +976,7 @@ var app = new Vue({
                 image: require('@/assets/academicLife/highSchool.jpg'),
                 tags: [this.$store.state.tags.highSchool],
                 mainTags: [this.$store.state.tags.highSchool],
+                resumeTags: [this.$store.state.tags.highSchool],
                 links: [{
                     description: { "pt-BR": "ComendadorMarioReys", "en-US": "ComendadorMarioReys" },
                     url: "https://www.educamaisbrasil.com.br/escolas/mario-reys-comendador",
@@ -955,6 +1010,9 @@ var app = new Vue({
                 ],
                 mainTags: [this.$store.state.tags.technicalSchool, this.$store.state.tags.sql, this.$store.state.tags.visualBasic6, this.$store.state.tags.asp, this.$store.state.tags.vbScript, this.$store.state.tags.javascript, this.$store.state.tags.css, this.$store.state.tags.html,
                     this.$store.state.tags.c, this.$store.state.tags.cPlusPlus, this.$store.state.tags.pascal, this.$store.state.tags.delphi, this.$store.state.tags.php
+                ],
+                resumeTags: [this.$store.state.tags.technicalSchool, this.$store.state.tags.sql, this.$store.state.tags.visualBasic6, this.$store.state.tags.asp, this.$store.state.tags.javascript, this.$store.state.tags.css, this.$store.state.tags.html,
+                    this.$store.state.tags.c, this.$store.state.tags.cPlusPlus, this.$store.state.tags.pascal, this.$store.state.tags.delphi
                 ],
                 links: [{
                         image: require('@/assets/certificates/etecAuxiliarInformatica.jpg'),
@@ -1027,6 +1085,11 @@ var app = new Vue({
                     this.$store.state.tags.asp, this.$store.state.tags.vbScript, this.$store.state.tags.javascript, this.$store.state.tags.css, this.$store.state.tags.html,
                     this.$store.state.tags.java, this.$store.state.tags.php
                 ],
+                resumeTags: [this.$store.state.tags.university, this.$store.state.tags.pmi, this.$store.state.tags.businessManagement, this.$store.state.tags.sql,
+                    this.$store.state.tags.visualBasic6,
+                    this.$store.state.tags.asp, this.$store.state.tags.javascript, this.$store.state.tags.css, this.$store.state.tags.html,
+                    this.$store.state.tags.java, this.$store.state.tags.php
+                ],
                 showDetail: false
             });
 
@@ -1065,6 +1128,9 @@ var app = new Vue({
                     this.$store.state.tags.leadership, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership,
                     this.$store.state.tags.criatitySolution, this.$store.state.tags.teamManagement
                 ],
+                resumeTags: [this.$store.state.tags.mba, this.$store.state.tags.pmi, this.$store.state.tags.scrum, this.$store.state.tags.businessProcess,
+                    this.$store.state.tags.leadership, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership
+                ],
                 showDetail: true
             });
         },
@@ -1087,6 +1153,7 @@ var app = new Vue({
                 image: require('@/assets/courses/senai.jpg'),
                 tags: [this.$store.state.tags.microAssembly],
                 mainTags: [this.$store.state.tags.microAssembly],
+                resumeTags: [this.$store.state.tags.microAssembly],
                 links: [{
                         image: require('@/assets/certificates/senaiMicrocomputadores.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1119,6 +1186,7 @@ var app = new Vue({
                 image: require('@/assets/courses/cedaspy.jpg'),
                 tags: [this.$store.state.tags.instructor],
                 mainTags: [this.$store.state.tags.instructor],
+                resumeTags: [this.$store.state.tags.instructor],
                 links: [{
                         image: require('@/assets/certificates/cedaspyInstrutor.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1159,6 +1227,9 @@ var app = new Vue({
                 mainTags: [this.$store.state.tags.computing, this.$store.state.tags.excel, this.$store.state.tags.word, this.$store.state.tags.powerPoint,
                     this.$store.state.tags.outlook, this.$store.state.tags.coreldraw, this.$store.state.tags.movieMaker, this.$store.state.tags.access
                 ],
+                resumeTags: [this.$store.state.tags.computing, this.$store.state.tags.excel, this.$store.state.tags.word, this.$store.state.tags.powerPoint,
+                    this.$store.state.tags.outlook, this.$store.state.tags.coreldraw, this.$store.state.tags.movieMaker, this.$store.state.tags.access
+                ],
                 links: [{
                         image: require('@/assets/certificates/cedaspyTecnicoDeComputacaoJr.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1193,6 +1264,7 @@ var app = new Vue({
                 image: require('@/assets/courses/domBosco.jpg'),
                 tags: [this.$store.state.tags.microAssembly, this.$store.state.tags.microcomputerMaintenance],
                 mainTags: [this.$store.state.tags.microAssembly, this.$store.state.tags.microcomputerMaintenance],
+                resumeTags: [this.$store.state.tags.microAssembly, this.$store.state.tags.microcomputerMaintenance],
                 links: [{
                         image: require('@/assets/certificates/domBoscoMicrocomputadores.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1225,6 +1297,7 @@ var app = new Vue({
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.teamwork],
                 mainTags: [this.$store.state.tags.teamwork],
+                resumeTags: [this.$store.state.tags.teamwork],
                 links: [{
                         image: require('@/assets/certificates/politecTrabalhoEquipe.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1257,6 +1330,7 @@ var app = new Vue({
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.dataModeling, this.$store.state.tags.sql],
                 mainTags: [this.$store.state.tags.dataModeling, this.$store.state.tags.sql],
+                resumeTags: [this.$store.state.tags.dataModeling, this.$store.state.tags.sql],
                 links: [{
                         image: require('@/assets/certificates/politecModelagemDeDados.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1290,6 +1364,7 @@ var app = new Vue({
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.uml],
                 mainTags: [this.$store.state.tags.uml],
+                resumeTags: [this.$store.state.tags.uml],
                 links: [{
                         image: require('@/assets/certificates/politecUMLjr.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1323,6 +1398,7 @@ var app = new Vue({
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.visualBasic6],
                 mainTags: [this.$store.state.tags.visualBasic6],
+                resumeTags: [this.$store.state.tags.visualBasic6],
                 links: [{
                         image: require('@/assets/certificates/politecVisualBasic6jr.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1355,6 +1431,7 @@ var app = new Vue({
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.asp],
                 mainTags: [this.$store.state.tags.asp],
+                resumeTags: [this.$store.state.tags.asp],
                 links: [{
                         image: require('@/assets/certificates/politecASPjr.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1387,6 +1464,7 @@ var app = new Vue({
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.css],
                 mainTags: [this.$store.state.tags.css],
+                resumeTags: [this.$store.state.tags.css],
                 links: [{
                         image: require('@/assets/certificates/politecCSS.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1419,6 +1497,7 @@ var app = new Vue({
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.incidentManagement, this.$store.state.tags.problemManagement],
                 mainTags: [this.$store.state.tags.incidentManagement, this.$store.state.tags.problemManagement],
+                resumeTags: [this.$store.state.tags.incidentManagement, this.$store.state.tags.problemManagement],
                 links: [{
                         image: require('@/assets/certificates/politecProcessosGIP.jpg'),
                         description: { "pt-BR": "Certificado_I", "en-US": "Certificate_I" },
@@ -1456,6 +1535,7 @@ var app = new Vue({
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.cmmi5],
                 mainTags: [this.$store.state.tags.cmmi5],
+                resumeTags: [this.$store.state.tags.cmmi5],
                 links: [{
                         image: require('@/assets/certificates/politecProcessoDS.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1488,6 +1568,7 @@ var app = new Vue({
                 image: require('@/assets/courses/kaSolution.jpg'),
                 tags: [this.$store.state.tags.adoNet, this.$store.state.tags.sql],
                 mainTags: [this.$store.state.tags.adoNet, this.$store.state.tags.sql],
+                resumeTags: [this.$store.state.tags.adoNet, this.$store.state.tags.sql],
                 links: [{
                         image: require('@/assets/certificates/microsoftKaSolution6464.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1519,7 +1600,8 @@ var app = new Vue({
                 },
                 image: require('@/assets/courses/kaSolution.jpg'),
                 tags: [this.$store.state.tags.aspNet, this.$store.state.tags.adoNet],
-                mainTags: [this.$store.state.tags.aspNet, this.$store.state.tags.adoNet],
+                mainTags: [this.$store.state.tags.adoNet, this.$store.state.tags.sql],
+                resumeTags: [this.$store.state.tags.adoNet, this.$store.state.tags.sql],
                 links: [{
                         image: require('@/assets/certificates/microsoftKaSolution2310.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1553,6 +1635,7 @@ var app = new Vue({
                 image: require('@/assets/courses/kaSolution.jpg'),
                 tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
                 mainTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
+                resumeTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
                 links: [{
                         image: require('@/assets/certificates/microsoftKaSolution2956.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1585,6 +1668,7 @@ var app = new Vue({
                 image: require('@/assets/courses/kaSolution.jpg'),
                 tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
                 mainTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
+                resumeTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
                 links: [{
                         image: require('@/assets/certificates/microsoftKaSolution2957.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1618,6 +1702,7 @@ var app = new Vue({
                 image: require('@/assets/courses/kaSolution.jpg'),
                 tags: [this.$store.state.tags.html, this.$store.state.tags.javascript, this.$store.state.tags.css],
                 mainTags: [this.$store.state.tags.html, this.$store.state.tags.javascript, this.$store.state.tags.css],
+                resumeTags: [this.$store.state.tags.html, this.$store.state.tags.javascript, this.$store.state.tags.css],
                 links: [{
                         image: require('@/assets/certificates/microsoftKaSolution20480.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1651,6 +1736,7 @@ var app = new Vue({
                 image: require('@/assets/courses/kaSolution.jpg'),
                 tags: [this.$store.state.tags.aspNetMVC],
                 mainTags: [this.$store.state.tags.aspNetMVC],
+                resumeTags: [this.$store.state.tags.aspNetMVC],
                 links: [{
                         image: require('@/assets/certificates/microsoftKaSolution20486.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1684,6 +1770,7 @@ var app = new Vue({
                 image: require('@/assets/courses/kaSolution.jpg'),
                 tags: [this.$store.state.tags.azure, this.$store.state.tags.webServices],
                 mainTags: [this.$store.state.tags.azure, this.$store.state.tags.webServices],
+                resumeTags: [this.$store.state.tags.azure, this.$store.state.tags.webServices],
                 links: [{
                         image: require('@/assets/certificates/microsoftKaSolution20487.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1717,6 +1804,7 @@ var app = new Vue({
                 image: require('@/assets/courses/kaSolution.jpg'),
                 tags: [this.$store.state.tags.scrum],
                 mainTags: [this.$store.state.tags.scrum],
+                resumeTags: [this.$store.state.tags.scrum],
                 links: [{
                         image: require('@/assets/certificates/kaSolution1001Scrum.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1754,6 +1842,7 @@ var app = new Vue({
                 image: require('@/assets/courses/culturaInglesa.jpg'),
                 tags: [this.$store.state.tags.english],
                 mainTags: [this.$store.state.tags.english],
+                resumeTags: [this.$store.state.tags.english],
                 links: [{
                     description: { "pt-BR": "CulturaInglesa", "en-US": "CulturaInglesa" },
                     url: "https://www.culturainglesa.com.br/",
@@ -1780,6 +1869,7 @@ var app = new Vue({
                 image: require('@/assets/courses/culturaInglesa.jpg'),
                 tags: [this.$store.state.tags.english],
                 mainTags: [this.$store.state.tags.english],
+                resumeTags: [this.$store.state.tags.english],
                 links: [{
                     description: { "pt-BR": "CulturaInglesa", "en-US": "CulturaInglesa" },
                     url: "https://www.culturainglesa.com.br/",
@@ -1807,6 +1897,7 @@ var app = new Vue({
                 image: require('@/assets/courses/wiseUp.jpg'),
                 tags: [this.$store.state.tags.english],
                 mainTags: [this.$store.state.tags.english],
+                resumeTags: [this.$store.state.tags.english],
                 links: [{
                         image: require('@/assets/certificates/wiseUp.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -1841,6 +1932,7 @@ var app = new Vue({
                 image: require('@/assets/thoughts/kentBeckTalk.jpg'),
                 tags: [this.$store.state.tags.extremeProgramming, this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest],
                 mainTags: [this.$store.state.tags.extremeProgramming, this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest],
+                resumeTags: [this.$store.state.tags.extremeProgramming, this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest],
                 links: [{
                     description: { "pt-BR": "Talk", "en-US": "Talk" },
                     url: "https://www.youtube.com/watch?v=lXTwxMxNx-Y&feature=push-u-sub&attr_tag=YhBAm0mv1GVOTSfK%3A6",
@@ -1861,12 +1953,12 @@ var app = new Vue({
     mounted() {
         var histories = [];
 
-        this.mountCertifications(histories);
-        this.mountBooks(histories);
         this.mountProfessionExperiences(histories);
         this.mountAcademicLife(histories);
-        this.mountCourses(histories);
+        this.mountCertifications(histories);
         this.mountLanguageCourses(histories);
+        this.mountCourses(histories);
+        this.mountBooks(histories);
         this.mountThoughts(histories);
 
         histories.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
