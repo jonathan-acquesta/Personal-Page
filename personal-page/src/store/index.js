@@ -182,6 +182,7 @@ export default new Vuex.Store({
 
             english: { "pt-BR": "#Inglês", "en-US": "#English", color: "pink" },
             italian: { "pt-BR": "#Italiano", "en-US": "#Italian", color: "pink" },
+            spanish: { "pt-BR": "#Espanhol", "en-US": "#Spanish", color: "pink" },
 
 
             opportunity: { "pt-BR": "#Oportunidade", "en-US": "#Opportunity", color: "blue" },
@@ -189,6 +190,8 @@ export default new Vuex.Store({
             rewarding: { "pt-BR": "#Recompensador", "en-US": "#Rewarding", color: "blue" },
             hardworking: { "pt-BR": "#TrabalhoDuro", "en-US": "#Hardworking", color: "blue" },
             continuousEvolution: { "pt-BR": "#EvoluçãoContínua", "en-US": "#ContinuousEvolution", color: "blue" },
+
+            inProgress: { "pt-BR": "#EmProgresso", "en-US": "#InProgress", color: "red" },
         },
 
         histories: [],

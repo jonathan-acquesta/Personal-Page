@@ -14,12 +14,16 @@
                
             
 <br>
+<v-icon class="iconTitle" :color="category.color" size="36px">{{category.icon}}</v-icon>
 <span :class="`headline font-weight-bold ${category.color}--text`"
                     v-text="category.name[culture]"
                   ></span>
 
           <v-list>
             <template v-for="(history, index) in GetHistories(category.name)">
+               <v-divider
+                :key="'Divider' + index"
+              ></v-divider>
               <v-list-item
                 :key="index"
               >
@@ -33,6 +37,8 @@
                 </v-list-item-action>
 
                 <v-list-item-content>
+                  
+                  
                   <v-list-item-title>{{ GetTitle(history) }}</v-list-item-title>
                   
                   <Tags :tags="history.resumeTags"></Tags>
@@ -50,9 +56,7 @@
                 </v-list-item-content>
               </v-list-item>
 
-              <v-divider
-                :key="'Divider' + index"
-              ></v-divider>
+             
             </template>
           </v-list>
           </v-card>
@@ -106,6 +110,11 @@
 </script>
 
 <style scoped>
+.iconTitle{
+  margin-left: 20px;
+  top: -5px;
+}
+
     .title{
         margin: 10px;
         padding: 10px;
@@ -131,7 +140,7 @@
         }
 
         .headline{
-            margin: 20px;
+            margin: 10px;
         }
 
         
