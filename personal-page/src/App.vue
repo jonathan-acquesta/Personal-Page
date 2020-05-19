@@ -16,7 +16,7 @@
     </v-app-bar>
 
     <SideMenu></SideMenu>
-
+    <OverlayImage></OverlayImage>
     <v-content>
       <v-container class="fill-height" fluid>
        <router-view />
@@ -35,6 +35,7 @@ import Language from "./components/Language.vue";
 import Footer from "./components/Footer.vue";
 import Timeline from "@/views/Timeline.vue";
 import Resume from "@/views/Resume.vue";
+import OverlayImage from "./components/OverlayImage.vue";
 import generalMixins from './mixins/generalMixins.js'
 
   export default {
@@ -43,7 +44,7 @@ import generalMixins from './mixins/generalMixins.js'
       source: String,
     },
     components: {
-      Timeline, Resume, SideMenu, Language, Footer
+      Timeline, Resume, SideMenu, Language, Footer, OverlayImage
     },
     data: () => ({
       drawer: null,

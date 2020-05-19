@@ -21,6 +21,8 @@ export default new Vuex.Store({
             showYear: { "pt-BR": "Mostrar detalhes deste ano", "en-US": "Show details for this year" },
             closeYear: { "pt-BR": "Minimizar detalhes deste ano", "en-US": "Minimize details for this year" },
         },
+        overlay: false,
+        mainImage: "",
         months: {
             "pt-BR": [
                 "Janeiro",

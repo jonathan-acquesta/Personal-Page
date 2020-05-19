@@ -1,13 +1,6 @@
 <template>
     <div>
-<v-overlay class="overlay" :value="overlay">
-      <v-btn icon @click="overlay = false">
-        <v-icon>mdi-close</v-icon>
-      </v-btn>
-      <div class="imageLink">
-        <v-img class="descriptionImageLink" :src="mainImage"></v-img>
-      </div>
-    </v-overlay>
+
         
         <div class="divResume" v-for="(category, index) in this.$store.state.categoryType" :key="index">
             <v-card outlined class="elevation-2"  v-if="category.showResume && category.enable">
@@ -24,7 +17,7 @@
                <v-divider
                 :key="'Divider' + index"
               ></v-divider>
-              
+
               <v-list-item
                 :key="index"
               >
@@ -44,16 +37,8 @@
                   
                   <Tags :tags="history.resumeTags"></Tags>
                   
-            <div
-              class="links"
-              v-if="(history.links)">
-              <span>Links: </span>
-              <a v-for="(link, index) in history.links" :key="index"
-                v-if="history.links"
-                class="linkShow"
-                v-on:click="processLink(link)">{{ link.description[culture] }}
-              </a>
-            </div>
+                  <Links :history="history"></Links>
+         
                 </v-list-item-content>
               </v-list-item>
 
@@ -69,12 +54,12 @@
 
 <script>
     import generalMixins from './../mixins/generalMixins.js'
-    import certificateMixins from './../mixins/certificateMixins.js'
     import Tags from './../components/Tags.vue'
+    import Links from './../components/Links.vue'
 
     export default {
-        mixins:[generalMixins, certificateMixins],
-        components:{Tags},
+        mixins:[generalMixins],
+        components:{Tags, Links},
         data() {
             return {
                
@@ -93,19 +78,7 @@
             GetTitle(history)
             {
                 return history.title[this.culture] + " - " +  history.subTitle[this.culture] + " - " + this.language.yearOf[this.culture] + " " + history.date.getFullYear();
-            },
-            processLink(link){
-                if(link.type == "certificate")
-                {
-                    this.overlay = true; 
-                    this.mainImage = link.image;
-                }
-                else
-                {
-                    this.openSite(link.url);
-                }
             }
-
         },
     }
 </script>
@@ -145,33 +118,6 @@
         }
 
         
-.links {
-  color: rgb(10, 10, 32);
-  font-size:small;
-  margin-top: 15px;
-  margin-left: 5px;
-}
-
-.linkShow {
-  font-size:small;
-  margin: 4px;
-}
 
 
-.descriptionImageLink {
-  width: 80%;
-  margin-left: 10%;
-  max-width: 1000px;
-  text-align: center;
-}
-
-.imageLink{
-  text-align: center;
-  max-height: 600px;
-  overflow: visible;
-}
-
-.overlay {
-  text-align: center;
-}
 </style>

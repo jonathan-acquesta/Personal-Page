@@ -1,14 +1,5 @@
 <template>
 <div>
-    <v-overlay class="overlay" :value="overlay">
-      <v-btn icon @click="overlay = false">
-        <v-icon>mdi-close</v-icon>
-      </v-btn>
-      <div class="imageLink">
-        <v-img class="descriptionImageLink" :src="mainImage"></v-img>
-      </div>
-    </v-overlay>
-
     <v-timeline
       class="timelineApp"
       :dense="$vuetify.breakpoint.smAndDown"
@@ -103,16 +94,7 @@
             <Tags v-if="history.showDetail" :tags="history.tags"></Tags>
             <Tags v-else :tags="history.mainTags"></Tags>
             
-            <div
-              class="links"
-              v-if="(history.links)">
-              <span>Links: </span>
-              <a v-for="(link, index) in history.links" :key="index"
-                v-if="history.links"
-                class="linkShow"
-                v-on:click="processLink(link)">{{ link.description[culture] }}
-              </a>
-            </div>
+            <Links :history="history"></Links>
 
             <br v-show="history.showDetail">
             <v-tooltip left v-show="history.showDetail">
@@ -137,13 +119,13 @@
 
 <script>
     import generalMixins from './../mixins/generalMixins.js'
-    import certificateMixins from './../mixins/certificateMixins.js'
     import Tags from './../components/Tags.vue'
+    import Links from './../components/Links.vue'
 
     export default {
         props:['histories'],
-        mixins: [generalMixins, certificateMixins],
-        components:{Tags}, 
+        mixins: [generalMixins],
+        components:{Tags, Links}, 
         data() {
             return {
                 small: false,
@@ -165,17 +147,6 @@
             },
             formatePeriod(date) {
                 return (this.$store.state.months[this.$store.state.culture][date.getMonth()] + " " + date.getFullYear());
-            },
-            processLink(link){
-                if(link.type == "certificate")
-                {
-                    this.overlay = true; 
-                    this.mainImage = link.image;
-                }
-                else
-                {
-                    this.openSite(link.url);
-                }
             }
         },
     }
@@ -219,10 +190,6 @@
   text-align: left;
 }
 
-
-.imageMain {
-  box-shadow: 2px 2px 5px grey;
-}
 
 .skills {
   width: 30%;
@@ -269,32 +236,4 @@
   margin-top: -14px;
 }
 
-.links {
-  color: rgb(10, 10, 32);
-  font-size:small;
-  margin-top: 15px;
-  margin-left: 5px;
-}
-
-.linkShow {
-  font-size:small;
-  margin: 4px;
-}
-
-.descriptionImageLink {
-  width: 80%;
-  margin-left: 10%;
-  max-width: 1000px;
-  text-align: center;
-}
-
-.imageLink{
-  text-align: center;
-  max-height: 600px;
-  overflow: visible;
-}
-
-.overlay {
-  text-align: center;
-}
 </style>
