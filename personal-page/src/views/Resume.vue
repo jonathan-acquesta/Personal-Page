@@ -1,14 +1,13 @@
 <template>
-    <div>
-
-        
-        <div class="divResume" v-for="(category, index) in this.$store.state.categoryType" :key="index">
+    <div class="divBlock">
+        <div class="divResume" v-for="(category, index) in this.$store.state.categoryType" :key="index" v-if="category.enable">
             <v-card outlined class="elevation-2"  v-if="category.showResume && category.enable">
                
             
-<br>
-<v-icon class="iconTitle" :color="category.color" size="36px">{{category.icon}}</v-icon>
-<span :class="`headline font-weight-bold ${category.color}--text`"
+          <br>
+          
+          <v-icon class="iconTitle" :color="category.color" size="36px">{{category.icon}}</v-icon>
+          <span :class="`headline font-weight-bold ${category.color}--text`"
                     v-text="category.name[culture]"
                   ></span>
 
@@ -47,8 +46,6 @@
           </v-list>
           </v-card>
         </div>
-
-
     </div>
 </template>
 
@@ -84,6 +81,11 @@
 </script>
 
 <style scoped>
+.divBlock{
+  margin: 0px;
+  padding: 0px;
+}
+
 .iconTitle{
   margin-left: 20px;
   top: -5px;
@@ -96,7 +98,7 @@
     }
 
     .divResume{
-        padding: 10px;
+        padding-bottom: 10px;
     }
 
     li{
