@@ -34,7 +34,7 @@
         <v-card  class="elevation-2">
           
           <div class="py-4 card">
-            <v-tooltip left v-show="!history.showDetail">
+            <v-tooltip left v-if="history.showDetail !== undefined" v-show="!history.showDetail">
               <template v-slot:activator="{ on }">
                 <v-btn v-show="!history.showDetail"
                   class=" showDetails"

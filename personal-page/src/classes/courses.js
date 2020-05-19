@@ -115,8 +115,6 @@ const courses = {
                 showDetail: false
             });
 
-
-
             histories.push({
                 date: new Date("2005-05-15"),
                 category: this.$store.state.categoryType.courses,
@@ -689,6 +687,148 @@ const courses = {
                 ],
                 showDetail: false
             })
+
+
+            histories.push({
+                date: new Date("2020-02-21"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "LinkedIn Learning - PMI",
+                    "en-US": "LinkedIn Learning - PMI",
+                },
+                subTitle: {
+                    "pt-BR": "Ram Charan em Coaching Pessoas de Alto Potencial",
+                    "en-US": "Ram Charan on Coaching High Potentials",
+                },
+                image: require('@/assets/courses/linkedinLearning.jpg'),
+                tags: [this.$store.state.tags.coaching],
+                mainTags: [this.$store.state.tags.coaching],
+                resumeTags: [this.$store.state.tags.coaching],
+                links: [{
+                        image: require('@/assets/certificates/LinkedInLearningRamCharanOnCoachingHighPotentials.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "LinkedInLearning", "en-US": "LinkedInLearning" },
+                        url: "https://www.linkedin.com/learning/ram-charan-on-coaching-high-potentials/welcome",
+                        type: "link"
+                    }
+                ]
+            })
+
+            histories.push({
+                date: new Date("2020-04-02"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "LinkedIn Learning",
+                    "en-US": "LinkedIn Learning",
+                },
+                subTitle: {
+                    "pt-BR": "Liderar como um chefe",
+                    "en-US": "Lead Like a Boss",
+                },
+                image: require('@/assets/courses/linkedinLearning.jpg'),
+                tags: [this.$store.state.tags.leadership],
+                mainTags: [this.$store.state.tags.leadership],
+                resumeTags: [this.$store.state.tags.leadership],
+                links: [{
+                        image: require('@/assets/certificates/LinkedInLeadLikeABoss.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "LinkedInLearning", "en-US": "LinkedInLearning" },
+                        url: "https://www.linkedin.com/learning/lead-like-a-boss/politics-at-work",
+                        type: "link"
+                    }
+                ]
+            })
+
+            histories.push({
+                date: new Date("2020-02-27"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "LinkedIn Learning",
+                    "en-US": "LinkedIn Learning",
+                },
+                subTitle: {
+                    "pt-BR": "Ken Blanchard em Liderança Servil",
+                    "en-US": "Ken Blanchard on Servant Leadership",
+                },
+                image: require('@/assets/courses/linkedinLearning.jpg'),
+                tags: [this.$store.state.tags.servantLeadership],
+                mainTags: [this.$store.state.tags.servantLeadership],
+                resumeTags: [this.$store.state.tags.servantLeadership],
+                links: [{
+                        image: require('@/assets/certificates/LinkedInLearningKenBlanchardOnServantLeadership.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "LinkedInLearning", "en-US": "LinkedInLearning" },
+                        url: "https://www.linkedin.com/learning/ken-blanchard-on-servant-leadership/welcome",
+                        type: "link"
+                    }
+                ]
+            })
+
+            histories.push({
+                date: new Date("2020-04-13"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "LinkedIn Learning",
+                    "en-US": "LinkedIn Learning",
+                },
+                subTitle: {
+                    "pt-BR": "Enterprise Agile: Growing Scrum",
+                    "en-US": "Enterprise Agile: Crescendo Scrum",
+                },
+                image: require('@/assets/courses/linkedinLearning.jpg'),
+                tags: [this.$store.state.tags.less, this.$store.state.tags.scrum],
+                mainTags: [this.$store.state.tags.less, this.$store.state.tags.scrum],
+                resumeTags: [this.$store.state.tags.less, this.$store.state.tags.scrum],
+                links: [{
+                        image: require('@/assets/certificates/LinkedInLearningEnterpriseAgileGrowingScrum.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "LinkedInLearning", "en-US": "LinkedInLearning" },
+                        url: "https://www.linkedin.com/learning/enterprise-agile-growing-scrum/welcome",
+                        type: "link"
+                    }
+                ]
+            })
+
+            histories.push({
+                date: new Date("2020-04-07"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "LinkedIn Learning",
+                    "en-US": "LinkedIn Learning",
+                },
+                subTitle: {
+                    "pt-BR": "Goal Setting: Objectives and Key Results (OKRs)",
+                    "en-US": "Goal Setting: Objectives and Key Results (OKRs)",
+                },
+                image: require('@/assets/courses/linkedinLearning.jpg'),
+                tags: [this.$store.state.tags.okr],
+                mainTags: [this.$store.state.tags.okr],
+                resumeTags: [this.$store.state.tags.okr],
+                links: [{
+                        image: require('@/assets/certificates/LinkedInLearningOKRs.jpg'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "LinkedInLearning", "en-US": "LinkedInLearning" },
+                        url: "https://www.linkedin.com/learning/goal-setting-objectives-and-key-results-okrs/the-power-of-strategic-goals-objectives-and-key-results-okrs",
+                        type: "link"
+                    }
+                ]
+            })
+
 
 
         },

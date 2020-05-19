@@ -96,9 +96,12 @@ export default new Vuex.Store({
             problemManagement: { "pt-BR": "#GestãoDeProblemas", "en-US": "#ProblemManagement", color: "cyan" },
             okr: { "pt-BR": "#OKRs", "en-US": "#OKRs", color: "cyan" },
             cfr: { "pt-BR": "#CFRs", "en-US": "#CFRs", color: "cyan" },
+            less: { "pt-BR": "#LeSS", "en-US": "#LeSS", color: "cyan" },
 
             coaching: { "pt-BR": "#Coaching", "en-US": "#Coaching", color: "cyan" },
             leadership: { "pt-BR": "#Liderança", "en-US": "#Leadership", color: "cyan" },
+            servantLeadership: { "pt-BR": "#LiderançaServil", "en-US": "#ServantLeadership", color: "cyan" },
+
             highPerformanceTeams: { "pt-BR": "#EquipesAltaPerformance", "en-US": "#HighPerformanceTeams", color: "cyan" },
             challengingGoal: { "pt-BR": "#MetaDesafiadora", "en-US": "#ChallengingGoal", color: "cyan" },
             situationalLeadership: { "pt-BR": "#LiderançaSituacional", "en-US": "#SituationalLeadership", color: "cyan" },
