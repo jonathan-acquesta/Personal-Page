@@ -7,8 +7,10 @@
           <br>
           
           <div class="categoryGroup" @click="toggleItems(category)">
-          <v-icon class="iconTitle" :color="category.color" size="36px">{{category.icon}}</v-icon>
-          <span :class="`headline font-weight-bold ${category.color}--text`" v-text="category.name[culture]"></span>
+          <v-icon v-if="isMobile()" class="iconTitleMobile" :color="category.color" size="24px">{{category.icon}}</v-icon>
+          <v-icon v-else class="iconTitle" :color="category.color" size="36px">{{category.icon}}</v-icon>
+          <span v-if="isMobile()" :class="`mobile font-weight-bold ${category.color}--text`" v-text="category.name[culture]"></span>
+          <span v-else :class="`headline font-weight-bold ${category.color}--text`" v-text="category.name[culture]"></span>
         </div>
           <ResumeItem v-if="!isMobile()" :category="category" :history="getHistotyByCategory(category.name)"></ResumeItem>
           <ResumeItemMobile v-else :category="category" :history="getHistotyByCategory(category.name)"></ResumeItemMobile>
@@ -76,7 +78,13 @@
 
 .iconTitle{
   margin-left: 20px;
+  margin-right: 5px;
   top: -5px;
+}
+
+.iconTitleMobile{
+  margin-left: 20px;
+  top: -2px;
 }
 
     .title{
@@ -91,7 +99,9 @@
     }
 
    
-
+.mobile{
+  padding: 5px;
+}
 
         
 

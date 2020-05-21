@@ -99,7 +99,7 @@ export default new Vuex.Store({
                 color: "red",
                 name: {
                     "pt-BR": "Experiência Profissional",
-                    "en-US": "Professional Experiênce"
+                    "en-US": "Professional Experience"
                 },
                 icon: "mdi-briefcase-outline",
                 enable: true,
