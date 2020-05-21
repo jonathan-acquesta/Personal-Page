@@ -31,14 +31,20 @@
                 
                 <v-list-item-content >
                 <div class="itemContent">  
-                  
+                  <ButtonShowDetail :history="history"></ButtonShowDetail>
                   <v-list-item-title class="titleRegister">{{ getTitle(history) }}</v-list-item-title>
                   <v-list-item-title class="subTitleRegister">{{ getSubTitle(history) }}</v-list-item-title>
+
+                  <div class="description" v-show="history.showDetail">
+                      {{ history.description[culture] }}
+                  </div>
+                  
                   
                   <Tags :tags="getTags(history)"></Tags>
                   
                   <Links :history="history"></Links>
          
+                  <ButtonCloseDetail :history="history"></ButtonCloseDetail>
                   </div>
                 </v-list-item-content>
                 
@@ -53,14 +59,16 @@
 </template>
 
 <script>
-    import generalMixins from './../mixins/generalMixins.js'
-    import historyMixins from './../mixins/historyMixins.js'
-    import Tags from './../components/Tags.vue'
-    import Links from './../components/Links.vue'
+    import generalMixins from './../mixins/generalMixins.js';
+    import historyMixins from './../mixins/historyMixins.js';
+    import Tags from './../components/Tags.vue';
+    import Links from './../components/Links.vue';
+    import ButtonShowDetail from './../components/ButtonShowDetail.vue';
+    import ButtonCloseDetail from './../components/ButtonCloseDetail.vue';
 
     export default {
         mixins:[generalMixins, historyMixins],
-        components:{Tags, Links},
+        components:{Tags, Links, ButtonShowDetail, ButtonCloseDetail},
         data() {
             return {
                
@@ -108,10 +116,12 @@
 .titleRegister{
   font-weight: bold;
   margin-bottom: 5px;
+  font-size: 20px;
 }
 
 .subTitleRegister{
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .divBlock{
@@ -163,6 +173,12 @@
         }
 
         
-
+.description {
+  width: 95%;
+  text-align: justify;
+  display: flex;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
 
 </style>

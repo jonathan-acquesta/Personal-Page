@@ -34,19 +34,8 @@
         <v-card  class="elevation-2">
           
           <div class="py-4 card">
-            <v-tooltip left v-if="history.showDetail !== undefined" v-show="!history.showDetail">
-              <template v-slot:activator="{ on }">
-                <v-btn v-show="!history.showDetail"
-                  class=" showDetails"
-                  v-on="on"
-                  icon
-                  v-on:click="history.showDetail = true"
-                >
-                  <v-icon color="pink" size="24px">mdi-download</v-icon>
-                </v-btn>
-              </template>
-              <span>{{ language.showDetails[culture]}}</span>
-            </v-tooltip>
+            <ButtonShowDetail :history="history"></ButtonShowDetail>
+           
 
             <table class="header">
               <tr>
@@ -97,18 +86,8 @@
             <Links :history="history"></Links>
 
             <br v-show="history.showDetail">
-            <v-tooltip left v-show="history.showDetail">
-              <template v-slot:activator="{ on }">
-                <v-btn v-show="history.showDetail"
-                  class=" showDetailsUp"
-                  v-on="on"
-                  icon
-                  v-on:click="history.showDetail = false">
-                  <v-icon color="pink" size="24px">mdi-upload</v-icon>
-                </v-btn>
-              </template>
-              <span>{{ language.closeDetails[culture]}}</span>
-            </v-tooltip>
+            <ButtonCloseDetail :history="history"></ButtonCloseDetail>
+            
 
           </div>
         </v-card>
@@ -122,11 +101,13 @@
     import historyMixins from './../mixins/historyMixins.js'
     import Tags from './../components/Tags.vue'
     import Links from './../components/Links.vue'
+    import ButtonShowDetail from './../components/ButtonShowDetail.vue'
+    import ButtonCloseDetail from './../components/ButtonCloseDetail.vue'
 
     export default {
         props:['histories'],
         mixins: [generalMixins, historyMixins],
-        components:{Tags, Links}, 
+        components:{Tags, Links, ButtonShowDetail, ButtonCloseDetail}, 
         data() {
             return {
                 small: false,
@@ -170,17 +151,9 @@
   width: 100%;
 }
 
-.showDetails {
-  float: right;
-  margin-right: 10px;
-}
 
-.showDetailsUp
-{
-  float: right;
-  margin-right: 10px;
-  margin-top: -20px;
-}
+
+
 
 .card {
   margin-left: 10px;
