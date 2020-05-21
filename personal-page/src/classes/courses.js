@@ -749,6 +749,8 @@ const courses = {
                 ]
             })
 
+
+
             histories.push({
                 date: new Date("2020-04-07"),
                 category: this.$store.state.categoryType.courses,

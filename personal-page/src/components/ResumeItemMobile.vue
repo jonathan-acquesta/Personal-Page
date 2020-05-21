@@ -25,7 +25,7 @@
             <p class="titleRegister">{{ getTitle(history) }}</p>
             <p class="subTitleRegister">{{ getSubTitle(history) }}</p>
 
-            <div class="description" v-show="history.showDetail">
+            <div v-if="history.description" class="description" v-show="history.showDetail">
                 {{ history.description[culture] }}
             </div>
             

@@ -104,7 +104,7 @@ export default new Vuex.Store({
                 icon: "mdi-briefcase-outline",
                 enable: true,
                 showResume: true,
-                showItems: false,
+                showItems: true,
             },
             academicLife: {
                 color: "orange",
@@ -115,7 +115,7 @@ export default new Vuex.Store({
                 icon: "mdi-school",
                 enable: true,
                 showResume: true,
-                showItems: false,
+                showItems: true,
             },
             certifications: {
                 color: "green",
@@ -126,7 +126,7 @@ export default new Vuex.Store({
                 icon: "mdi-book-variant",
                 enable: true,
                 showResume: true,
-                showItems: false,
+                showItems: true,
             },
             languages: {
                 color: "indigo",
@@ -137,7 +137,7 @@ export default new Vuex.Store({
                 icon: "mdi-account-voice",
                 enable: true,
                 showResume: true,
-                showItems: false,
+                showItems: true,
             },
             courses: {
                 color: "deep-purple",
@@ -148,7 +148,7 @@ export default new Vuex.Store({
                 icon: "mdi-seal-variant",
                 enable: true,
                 showResume: true,
-                showItems: false,
+                showItems: true,
             },
 
             books: {
@@ -160,7 +160,7 @@ export default new Vuex.Store({
                 icon: "mdi-book-open-page-variant",
                 enable: true,
                 showResume: true,
-                showItems: false,
+                showItems: true,
             },
             thoughts: {
                 color: "pink",
@@ -171,7 +171,7 @@ export default new Vuex.Store({
                 icon: "mdi-head-snowflake-outline",
                 enable: true,
                 showResume: true,
-                showItems: false,
+                showItems: true,
             },
             /*
             managementKnowledge: {

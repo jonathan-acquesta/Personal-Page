@@ -159,6 +159,8 @@ const books = {
                 image: require('@/assets/books/extremeProgramming.jpg'),
                 tags: [this.$store.state.tags.extremeProgramming, this.$store.state.tags.TDD, this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest, this.$store.state.tags.codeCoverage, this.$store.state.tags.continuousDelivery, this.$store.state.tags.refactoring]
             });
+
+
         },
     },
 }
