@@ -11,12 +11,13 @@ import academicLife from "./classes/academicLife.js";
 import courses from "./classes/courses.js";
 import languageCourses from "./classes/languageCourses.js";
 import thoughts from "./classes/thoughts.js";
+import tags from "./classes/tags.js";
 
 
 Vue.config.productionTip = false;
 
 var app = new Vue({
-    mixins: [certifications, books, professionalExperiences, academicLife, courses, languageCourses, thoughts],
+    mixins: [certifications, books, professionalExperiences, academicLife, courses, languageCourses, thoughts, tags],
     router,
     store,
     vuetify,
@@ -28,6 +29,8 @@ var app = new Vue({
         }
     },
     mounted() {
+        this.$store.state.tags = this.mountTags();
+
         var histories = [];
 
         this.mountProfessionalExperiences(histories);

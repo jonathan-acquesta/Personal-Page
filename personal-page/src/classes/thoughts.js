@@ -24,8 +24,6 @@ const thoughts = {
                 },
                 image: require('@/assets/thoughts/kentBeckTalk.jpg'),
                 tags: [this.$store.state.tags.extremeProgramming, this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest],
-                mainTags: [this.$store.state.tags.extremeProgramming, this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest],
-                resumeTags: [this.$store.state.tags.extremeProgramming, this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest],
                 links: [{
                     description: { "pt-BR": "Talk", "en-US": "Talk" },
                     url: "https://www.youtube.com/watch?v=lXTwxMxNx-Y&feature=push-u-sub&attr_tag=YhBAm0mv1GVOTSfK%3A6",

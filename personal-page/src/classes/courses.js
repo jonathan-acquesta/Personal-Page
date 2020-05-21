@@ -23,8 +23,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/senai.jpg'),
                 tags: [this.$store.state.tags.microAssembly],
-                mainTags: [this.$store.state.tags.microAssembly],
-                resumeTags: [this.$store.state.tags.microAssembly],
                 links: [{
                         image: require('@/assets/certificates/senaiMicrocomputadores.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -56,8 +54,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/cedaspy.jpg'),
                 tags: [this.$store.state.tags.instructor],
-                mainTags: [this.$store.state.tags.instructor],
-                resumeTags: [this.$store.state.tags.instructor],
                 links: [{
                         image: require('@/assets/certificates/cedaspyInstrutor.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -95,12 +91,6 @@ const courses = {
                 tags: [this.$store.state.tags.computing, this.$store.state.tags.excel, this.$store.state.tags.word, this.$store.state.tags.powerPoint,
                     this.$store.state.tags.outlook, this.$store.state.tags.coreldraw, this.$store.state.tags.movieMaker, this.$store.state.tags.access
                 ],
-                mainTags: [this.$store.state.tags.computing, this.$store.state.tags.excel, this.$store.state.tags.word, this.$store.state.tags.powerPoint,
-                    this.$store.state.tags.outlook, this.$store.state.tags.coreldraw, this.$store.state.tags.movieMaker, this.$store.state.tags.access
-                ],
-                resumeTags: [this.$store.state.tags.computing, this.$store.state.tags.excel, this.$store.state.tags.word, this.$store.state.tags.powerPoint,
-                    this.$store.state.tags.outlook, this.$store.state.tags.coreldraw, this.$store.state.tags.movieMaker, this.$store.state.tags.access
-                ],
                 links: [{
                         image: require('@/assets/certificates/cedaspyTecnicoDeComputacaoJr.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -132,8 +122,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/domBosco.jpg'),
                 tags: [this.$store.state.tags.microAssembly, this.$store.state.tags.microcomputerMaintenance],
-                mainTags: [this.$store.state.tags.microAssembly, this.$store.state.tags.microcomputerMaintenance],
-                resumeTags: [this.$store.state.tags.microAssembly, this.$store.state.tags.microcomputerMaintenance],
                 links: [{
                         image: require('@/assets/certificates/domBoscoMicrocomputadores.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -165,8 +153,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.teamwork],
-                mainTags: [this.$store.state.tags.teamwork],
-                resumeTags: [this.$store.state.tags.teamwork],
                 links: [{
                         image: require('@/assets/certificates/politecTrabalhoEquipe.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -198,8 +184,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.dataModeling, this.$store.state.tags.sql],
-                mainTags: [this.$store.state.tags.dataModeling, this.$store.state.tags.sql],
-                resumeTags: [this.$store.state.tags.dataModeling, this.$store.state.tags.sql],
                 links: [{
                         image: require('@/assets/certificates/politecModelagemDeDados.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -232,8 +216,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.uml],
-                mainTags: [this.$store.state.tags.uml],
-                resumeTags: [this.$store.state.tags.uml],
                 links: [{
                         image: require('@/assets/certificates/politecUMLjr.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -266,8 +248,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.visualBasic6],
-                mainTags: [this.$store.state.tags.visualBasic6],
-                resumeTags: [this.$store.state.tags.visualBasic6],
                 links: [{
                         image: require('@/assets/certificates/politecVisualBasic6jr.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -299,8 +279,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.asp],
-                mainTags: [this.$store.state.tags.asp],
-                resumeTags: [this.$store.state.tags.asp],
                 links: [{
                         image: require('@/assets/certificates/politecASPjr.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -332,8 +310,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.css],
-                mainTags: [this.$store.state.tags.css],
-                resumeTags: [this.$store.state.tags.css],
                 links: [{
                         image: require('@/assets/certificates/politecCSS.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -365,8 +341,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.incidentManagement, this.$store.state.tags.problemManagement],
-                mainTags: [this.$store.state.tags.incidentManagement, this.$store.state.tags.problemManagement],
-                resumeTags: [this.$store.state.tags.incidentManagement, this.$store.state.tags.problemManagement],
                 links: [{
                         image: require('@/assets/certificates/politecProcessosGIP.jpg'),
                         description: { "pt-BR": "Certificado_I", "en-US": "Certificate_I" },
@@ -403,8 +377,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/politec.jpg'),
                 tags: [this.$store.state.tags.cmmi5],
-                mainTags: [this.$store.state.tags.cmmi5],
-                resumeTags: [this.$store.state.tags.cmmi5],
                 links: [{
                         image: require('@/assets/certificates/politecProcessoDS.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -436,8 +408,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/kaSolution.jpg'),
                 tags: [this.$store.state.tags.adoNet, this.$store.state.tags.sql],
-                mainTags: [this.$store.state.tags.adoNet, this.$store.state.tags.sql],
-                resumeTags: [this.$store.state.tags.adoNet, this.$store.state.tags.sql],
                 links: [{
                         image: require('@/assets/certificates/microsoftKaSolution6464.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -468,9 +438,7 @@ const courses = {
                     "en-US": "The 2310 - Developing Microsoft ASP.NET Web Applications Using Visual Studio .Net Course was a great opportunity that help me to improve my technical background beside that help me with my Microsoft certification test.",
                 },
                 image: require('@/assets/courses/kaSolution.jpg'),
-                tags: [this.$store.state.tags.aspNet, this.$store.state.tags.adoNet],
-                mainTags: [this.$store.state.tags.adoNet, this.$store.state.tags.sql],
-                resumeTags: [this.$store.state.tags.adoNet, this.$store.state.tags.sql],
+                tags: [this.$store.state.tags.aspNet, this.$store.state.tags.adoNet, this.$store.state.tags.sql],
                 links: [{
                         image: require('@/assets/certificates/microsoftKaSolution2310.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -503,8 +471,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/kaSolution.jpg'),
                 tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
-                mainTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
-                resumeTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
                 links: [{
                         image: require('@/assets/certificates/microsoftKaSolution2956.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -536,8 +502,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/kaSolution.jpg'),
                 tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
-                mainTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
-                resumeTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.cSharp],
                 links: [{
                         image: require('@/assets/certificates/microsoftKaSolution2957.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -570,8 +534,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/kaSolution.jpg'),
                 tags: [this.$store.state.tags.html, this.$store.state.tags.javascript, this.$store.state.tags.css],
-                mainTags: [this.$store.state.tags.html, this.$store.state.tags.javascript, this.$store.state.tags.css],
-                resumeTags: [this.$store.state.tags.html, this.$store.state.tags.javascript, this.$store.state.tags.css],
                 links: [{
                         image: require('@/assets/certificates/microsoftKaSolution20480.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -604,8 +566,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/kaSolution.jpg'),
                 tags: [this.$store.state.tags.aspNetMVC],
-                mainTags: [this.$store.state.tags.aspNetMVC],
-                resumeTags: [this.$store.state.tags.aspNetMVC],
                 links: [{
                         image: require('@/assets/certificates/microsoftKaSolution20486.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -638,8 +598,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/kaSolution.jpg'),
                 tags: [this.$store.state.tags.azure, this.$store.state.tags.webServices],
-                mainTags: [this.$store.state.tags.azure, this.$store.state.tags.webServices],
-                resumeTags: [this.$store.state.tags.azure, this.$store.state.tags.webServices],
                 links: [{
                         image: require('@/assets/certificates/microsoftKaSolution20487.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -672,8 +630,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/kaSolution.jpg'),
                 tags: [this.$store.state.tags.scrum],
-                mainTags: [this.$store.state.tags.scrum],
-                resumeTags: [this.$store.state.tags.scrum],
                 links: [{
                         image: require('@/assets/certificates/kaSolution1001Scrum.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -702,8 +658,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/linkedinLearning.jpg'),
                 tags: [this.$store.state.tags.coaching],
-                mainTags: [this.$store.state.tags.coaching],
-                resumeTags: [this.$store.state.tags.coaching],
                 links: [{
                         image: require('@/assets/certificates/LinkedInLearningRamCharanOnCoachingHighPotentials.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -730,8 +684,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/linkedinLearning.jpg'),
                 tags: [this.$store.state.tags.leadership],
-                mainTags: [this.$store.state.tags.leadership],
-                resumeTags: [this.$store.state.tags.leadership],
                 links: [{
                         image: require('@/assets/certificates/LinkedInLeadLikeABoss.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -758,8 +710,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/linkedinLearning.jpg'),
                 tags: [this.$store.state.tags.servantLeadership],
-                mainTags: [this.$store.state.tags.servantLeadership],
-                resumeTags: [this.$store.state.tags.servantLeadership],
                 links: [{
                         image: require('@/assets/certificates/LinkedInLearningKenBlanchardOnServantLeadership.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -786,8 +736,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/linkedinLearning.jpg'),
                 tags: [this.$store.state.tags.less, this.$store.state.tags.scrum],
-                mainTags: [this.$store.state.tags.less, this.$store.state.tags.scrum],
-                resumeTags: [this.$store.state.tags.less, this.$store.state.tags.scrum],
                 links: [{
                         image: require('@/assets/certificates/LinkedInLearningEnterpriseAgileGrowingScrum.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -814,8 +762,6 @@ const courses = {
                 },
                 image: require('@/assets/courses/linkedinLearning.jpg'),
                 tags: [this.$store.state.tags.okr],
-                mainTags: [this.$store.state.tags.okr],
-                resumeTags: [this.$store.state.tags.okr],
                 links: [{
                         image: require('@/assets/certificates/LinkedInLearningOKRs.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },

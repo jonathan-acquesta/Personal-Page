@@ -24,8 +24,6 @@ const books = {
                 },
                 image: require('@/assets/books/kanban.jpg'),
                 tags: [this.$store.state.tags.kanban],
-                mainTags: [this.$store.state.tags.kanban],
-                resumeTags: [this.$store.state.tags.kanban],
                 showDetail: false
             });
 
@@ -46,8 +44,6 @@ const books = {
                 },
                 image: require('@/assets/books/coaching_lideranca.jpg'),
                 tags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership],
-                mainTags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership],
-                resumeTags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership],
                 showDetail: false
             });
 
@@ -68,8 +64,6 @@ const books = {
                 },
                 image: require('@/assets/books/gerenciando_pessoas.jpg'),
                 tags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership],
-                mainTags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership],
-                resumeTags: [this.$store.state.tags.coaching, this.$store.state.tags.leadership, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership],
                 showDetail: false
             });
 
@@ -91,8 +85,6 @@ const books = {
                 },
                 image: require('@/assets/books/quarta_revolucao_industrual.jpg'),
                 tags: [this.$store.state.tags.fourthIndustrialRevolution, this.$store.state.tags.artificialIntelligence, this.$store.state.tags.disruptiveInnovations],
-                mainTags: [this.$store.state.tags.fourthIndustrialRevolution, this.$store.state.tags.artificialIntelligence, this.$store.state.tags.disruptiveInnovations],
-                resumeTags: [this.$store.state.tags.fourthIndustrialRevolution, this.$store.state.tags.artificialIntelligence, this.$store.state.tags.disruptiveInnovations],
                 showDetail: false
             });
 
@@ -114,8 +106,6 @@ const books = {
                 },
                 image: require('@/assets/books/scrum.jpg'),
                 tags: [this.$store.state.tags.scrum],
-                mainTags: [this.$store.state.tags.scrum],
-                resumeTags: [this.$store.state.tags.scrum],
                 showDetail: false
             });
 
@@ -137,9 +127,22 @@ const books = {
                 },
                 image: require('@/assets/books/avalieOQueImporta.jpg'),
                 tags: [this.$store.state.tags.okr, this.$store.state.tags.cfr, this.$store.state.tags.engagement, this.$store.state.tags.teamwork, this.$store.state.tags.teamManagement, this.$store.state.tags.feedback, this.$store.state.tags.challengingGoal],
-                mainTags: [this.$store.state.tags.okr, this.$store.state.tags.cfr, this.$store.state.tags.engagement, this.$store.state.tags.teamwork, this.$store.state.tags.teamManagement, this.$store.state.tags.feedback, this.$store.state.tags.challengingGoal],
-                resumeTags: [this.$store.state.tags.okr, this.$store.state.tags.cfr, this.$store.state.tags.engagement, this.$store.state.tags.teamwork, this.$store.state.tags.teamManagement, this.$store.state.tags.feedback, this.$store.state.tags.challengingGoal],
                 showDetail: true
+            });
+
+            histories.push({
+                date: new Date("2019-09-15"),
+                category: this.$store.state.categoryType.books,
+                title: {
+                    "pt-BR": "Gemba Kaizen",
+                    "en-US": "Gemba Kaizen",
+                },
+                subTitle: {
+                    "pt-BR": "Uma abordagem de bom senso à estratégia de melhoria contínua",
+                    "en-US": "A common sense approach to continuous improvement strategy",
+                },
+                image: require('@/assets/books/gembaKaisen.jpg'),
+                tags: [this.$store.state.tags.continuousEvolution, this.$store.state.tags.kaisen, this.$store.state.tags.gemba, this.$store.state.tags.kanban],
             });
         },
     },

@@ -1,8 +1,8 @@
 <template>
     <div>
-        <label class="language" :class="{languageDisactive: !IsActive(this.$store.state.common.languages.portuguese.language)}" :title="this.$store.state.common.languages.portuguese[culture]" v-on:click="ChangeLanguePortuguese()" >PT</label>
+        <label class="language" :class="{languageDisactive: !isActive(this.$store.state.common.languages.portuguese.language)}" :title="this.$store.state.common.languages.portuguese[culture]" v-on:click="changeLanguePortuguese()" >PT</label>
         <label class="languageSeparator">|</label>
-        <label class="language" :class="{languageDisactive: !IsActive(this.$store.state.common.languages.english.language)}" :title="this.$store.state.common.languages.english[culture]"  v-on:click="ChangeLangueEnglish()">EN</label>
+        <label class="language" :class="{languageDisactive: !isActive(this.$store.state.common.languages.english.language)}" :title="this.$store.state.common.languages.english[culture]"  v-on:click="changeLangueEnglish()">EN</label>
     </div>
 </template>
 
@@ -15,15 +15,15 @@
             
         },
         methods: {
-            ChangeLanguePortuguese()
+            changeLanguePortuguese()
             {
                 this.$store.state.culture = this.$store.state.common.languages.portuguese.language;
             },
-            ChangeLangueEnglish()
+            changeLangueEnglish()
             {
                 this.$store.state.culture = this.$store.state.common.languages.english.language;
             },
-            IsActive(language)
+            isActive(language)
             {
                 return language == this.$store.state.culture;
             }

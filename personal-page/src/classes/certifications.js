@@ -34,8 +34,6 @@ const certifications = {
                     }
                 ],
                 tags: [this.$store.state.tags.scrum],
-                mainTags: [this.$store.state.tags.scrum],
-                resumeTags: [this.$store.state.tags.scrum],
                 showDetail: true
             });
 
@@ -67,8 +65,6 @@ const certifications = {
                     }
                 ],
                 tags: [this.$store.state.tags.scrum],
-                mainTags: [this.$store.state.tags.scrum],
-                resumeTags: [this.$store.state.tags.scrum],
                 showDetail: false
             });
 
@@ -100,8 +96,6 @@ const certifications = {
                     }
                 ],
                 tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
-                mainTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
-                resumeTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
                 showDetail: false
             });
 
@@ -134,8 +128,6 @@ const certifications = {
                     }
                 ],
                 tags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
-                mainTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
-                resumeTags: [this.$store.state.tags.dotNetFramework, this.$store.state.tags.aspNet, this.$store.state.tags.cSharp],
                 showDetail: false
             });
         },

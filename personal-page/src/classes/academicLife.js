@@ -27,8 +27,6 @@ const academicLife = {
                 },
                 image: require('@/assets/academicLife/highSchool.jpg'),
                 tags: [this.$store.state.tags.highSchool],
-                mainTags: [this.$store.state.tags.highSchool],
-                resumeTags: [this.$store.state.tags.highSchool],
                 links: [{
                     description: { "pt-BR": "ComendadorMarioReys", "en-US": "ComendadorMarioReys" },
                     url: "https://www.educamaisbrasil.com.br/escolas/mario-reys-comendador",

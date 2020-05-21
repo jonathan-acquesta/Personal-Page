@@ -39,7 +39,7 @@
           <v-divider></v-divider>
 
           <v-list-item
-            v-for="(category, index) in this.$store.state.categoryType" :key="index" link v-on:click="InvertSelection(category)">
+            v-for="(category, index) in this.$store.state.categoryType" :key="index" link v-on:click="invertSelection(category)">
             
             <v-list-item-icon>
               <v-icon :color="category.color" :class="{desactiveCategory: !category.enable}">{{ category.icon }}</v-icon>
@@ -70,7 +70,7 @@
             
         },
         methods: {
-            InvertSelection(category)
+            invertSelection(category)
             {
                 category.enable = !category.enable;
             }

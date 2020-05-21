@@ -29,8 +29,6 @@ const professionalExperiences = {
                 }],
                 image: require('@/assets/professionalExperiences/politec.jpg'),
                 tags: [this.$store.state.tags.intern, this.$store.state.tags.opportunity],
-                mainTags: [this.$store.state.tags.intern, this.$store.state.tags.opportunity],
-                resumeTags: [this.$store.state.tags.intern, this.$store.state.tags.opportunity],
                 showDetail: false
             });
 
@@ -78,8 +76,6 @@ const professionalExperiences = {
                 },
                 image: require('@/assets/professionalExperiences/prosegurBrasil.jpg'),
                 tags: [this.$store.state.tags.intern, this.$store.state.tags.oracle, this.$store.state.tags.visualBasic6, this.$store.state.tags.vbNet],
-                mainTags: [this.$store.state.tags.intern, this.$store.state.tags.oracle, this.$store.state.tags.visualBasic6, this.$store.state.tags.vbNet],
-                resumeTags: [this.$store.state.tags.intern, this.$store.state.tags.oracle, this.$store.state.tags.visualBasic6, this.$store.state.tags.vbNet],
                 showDetail: false
             });
 

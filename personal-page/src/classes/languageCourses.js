@@ -25,8 +25,6 @@ const languageCourses = {
                 },
                 image: require('@/assets/courses/culturaInglesa.jpg'),
                 tags: [this.$store.state.tags.english],
-                mainTags: [this.$store.state.tags.english],
-                resumeTags: [this.$store.state.tags.english],
                 links: [{
                     description: { "pt-BR": "CulturaInglesa", "en-US": "CulturaInglesa" },
                     url: "https://www.culturainglesa.com.br/",
@@ -52,8 +50,6 @@ const languageCourses = {
                 },
                 image: require('@/assets/courses/culturaInglesa.jpg'),
                 tags: [this.$store.state.tags.english],
-                mainTags: [this.$store.state.tags.english],
-                resumeTags: [this.$store.state.tags.english],
                 links: [{
                     description: { "pt-BR": "CulturaInglesa", "en-US": "CulturaInglesa" },
                     url: "https://www.culturainglesa.com.br/",
@@ -80,8 +76,6 @@ const languageCourses = {
                 },
                 image: require('@/assets/courses/wiseUp.jpg'),
                 tags: [this.$store.state.tags.english],
-                mainTags: [this.$store.state.tags.english],
-                resumeTags: [this.$store.state.tags.english],
                 links: [{
                         image: require('@/assets/certificates/wiseUp.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -115,8 +109,6 @@ const languageCourses = {
                 },
                 image: require('@/assets/courses/englishLive.jpg'),
                 tags: [this.$store.state.tags.english],
-                mainTags: [this.$store.state.tags.english],
-                resumeTags: [this.$store.state.tags.english],
                 links: [{
                         image: require('@/assets/certificates/EFLevel01.jpg'),
                         description: { "pt-BR": "CertificadoNível01", "en-US": "CertificateLevel01" },
@@ -159,8 +151,6 @@ const languageCourses = {
                 },
                 image: require('@/assets/courses/englishLive.jpg'),
                 tags: [this.$store.state.tags.english],
-                mainTags: [this.$store.state.tags.english],
-                resumeTags: [this.$store.state.tags.english],
                 links: [{
                         image: require('@/assets/certificates/EFLevel04.jpg'),
                         description: { "pt-BR": "CertificadoNível04", "en-US": "CertificateLevel04" },
@@ -203,8 +193,6 @@ const languageCourses = {
                 },
                 image: require('@/assets/courses/englishLive.jpg'),
                 tags: [this.$store.state.tags.inProgress, this.$store.state.tags.english],
-                mainTags: [this.$store.state.tags.inProgress, this.$store.state.tags.english],
-                resumeTags: [this.$store.state.tags.inProgress, this.$store.state.tags.english],
                 links: [{
                         image: require('@/assets/certificates/EFLevel07.jpg'),
                         description: { "pt-BR": "CertificadoNível07", "en-US": "CertificateLevel07" },
@@ -240,9 +228,7 @@ const languageCourses = {
                     "en-US": "I want to learn Italian, so I started to study at Busuu to learn the basic, and I have finished the level A1 that showed me a lot of new words and grammatical rules.",
                 },
                 image: require('@/assets/courses/busuuItalian.jpg'),
-                tags: [this.$store.state.tags.english],
-                mainTags: [this.$store.state.tags.english],
-                resumeTags: [this.$store.state.tags.english],
+                tags: [this.$store.state.tags.italian],
                 links: [{
                         image: require('@/assets/certificates/busuuItalianoA1.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -274,8 +260,6 @@ const languageCourses = {
                 },
                 image: require('@/assets/courses/busuuItalian.jpg'),
                 tags: [this.$store.state.tags.inProgress, this.$store.state.tags.italian],
-                mainTags: [this.$store.state.tags.inProgress, this.$store.state.tags.italian],
-                resumeTags: [this.$store.state.tags.inProgress, this.$store.state.tags.italian],
                 links: [{
                     description: { "pt-BR": "Busuu", "en-US": "Busuu" },
                     url: "https://www.busuu.com/",
@@ -301,8 +285,6 @@ const languageCourses = {
                 },
                 image: require('@/assets/courses/busuuSpanish.jpg'),
                 tags: [this.$store.state.tags.inProgress, this.$store.state.tags.spanish],
-                mainTags: [this.$store.state.tags.inProgress, this.$store.state.tags.spanish],
-                resumeTags: [this.$store.state.tags.inProgress, this.$store.state.tags.spanish],
                 links: [{
                         image: require('@/assets/certificates/EFLevel07.jpg'),
                         description: { "pt-BR": "CertificadoNível07", "en-US": "CertificateLevel07" },

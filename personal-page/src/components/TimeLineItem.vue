@@ -54,7 +54,7 @@
                   <div v-if="!history.showDetail">
                     <v-img
                       class="descriptionImageMin"
-                      width="40"
+                      width="60"
                       :src="history.image"
                     ></v-img>
                   </div>
@@ -92,7 +92,7 @@
             </table>
             
             <Tags v-if="history.showDetail" :tags="history.tags"></Tags>
-            <Tags v-else :tags="history.mainTags"></Tags>
+            <Tags v-else :tags="getTags(history)"></Tags>
             
             <Links :history="history"></Links>
 
@@ -119,12 +119,13 @@
 
 <script>
     import generalMixins from './../mixins/generalMixins.js'
+    import historyMixins from './../mixins/historyMixins.js'
     import Tags from './../components/Tags.vue'
     import Links from './../components/Links.vue'
 
     export default {
         props:['histories'],
-        mixins: [generalMixins],
+        mixins: [generalMixins, historyMixins],
         components:{Tags, Links}, 
         data() {
             return {

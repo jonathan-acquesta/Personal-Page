@@ -6,12 +6,12 @@
             
           <br>
           
-          <div class="categoryGroup" @click="ToogleItems(category)">
+          <div class="categoryGroup" @click="toggleItems(category)">
           <v-icon class="iconTitle" :color="category.color" size="36px">{{category.icon}}</v-icon>
           <span :class="`headline font-weight-bold ${category.color}--text`" v-text="category.name[culture]"></span>
         </div>
           <v-list v-if="category.showItems">
-            <template v-for="(history, index) in GetHistories(category.name)">
+            <template v-for="(history, index) in getHistotyByCategory(category.name)">
                <v-divider
                 :key="'Divider' + index"
               ></v-divider>
@@ -28,17 +28,20 @@
                     ></v-img>
                 </v-list-item-action>
 
-                <v-list-item-content>
+                
+                <v-list-item-content >
+                <div class="itemContent">  
                   
+                  <v-list-item-title class="titleRegister">{{ getTitle(history) }}</v-list-item-title>
+                  <v-list-item-title class="subTitleRegister">{{ getSubTitle(history) }}</v-list-item-title>
                   
-                  <v-list-item-title class="titleRegister">{{ GetTitle(history) }}</v-list-item-title>
-                  <v-list-item-title class="subTitleRegister">{{ GetSubTitle(history) }}</v-list-item-title>
-                  
-                  <Tags :tags="history.resumeTags"></Tags>
+                  <Tags :tags="getTags(history)"></Tags>
                   
                   <Links :history="history"></Links>
          
+                  </div>
                 </v-list-item-content>
+                
               </v-list-item>
 
              
@@ -51,11 +54,12 @@
 
 <script>
     import generalMixins from './../mixins/generalMixins.js'
+    import historyMixins from './../mixins/historyMixins.js'
     import Tags from './../components/Tags.vue'
     import Links from './../components/Links.vue'
 
     export default {
-        mixins:[generalMixins],
+        mixins:[generalMixins, historyMixins],
         components:{Tags, Links},
         data() {
             return {
@@ -66,25 +70,25 @@
             
         },  
         methods: {
-            GetHistories(category)
+            getHistotyByCategory(category)
             {
                 var result = this.$store.state.histories.filter(x => x.category.name === category);
 
                 return result;
             },
-            GetTitle(history)
+            getTitle(history)
             {
                 return history.title[this.culture] + " - " + this.language.yearOf[this.culture] + " " + history.date.getFullYear();
             },
-            GetSubTitle(history)
+            getSubTitle(history)
             {
                 return  history.subTitle[this.culture];
             },
-            ToogleItems(category)
+            toggleItems(category)
             {
-              debugger;
                 category.showItems = !category.showItems;
-            }
+            },
+            
         },
     }
 </script>
@@ -116,6 +120,12 @@
   width: 100%;
   vertical-align: top;
   height: 100%;
+}
+
+.itemContent{
+  vertical-align: top;
+  height: 100%;
+  min-height: 105px;
 }
 
 .iconTitle{
