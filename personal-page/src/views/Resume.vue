@@ -40,7 +40,8 @@
                   </div>
                   
                   
-                  <Tags :tags="getTags(history)"></Tags>
+                  <Tags v-if="history.showDetail" :tags="history.tags"></Tags>
+                  <Tags v-else :tags="getTags(history)"></Tags>
                   
                   <Links :history="history"></Links>
          

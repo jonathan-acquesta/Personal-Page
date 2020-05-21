@@ -27,7 +27,7 @@ import generalMixins from './mixins/generalMixins.js'
   export default {
     mixins:[generalMixins],
     components: {
-      Timeline, Resume, SideMenu, Language, Footer, OverlayImage, Header
+      Timeline, Resume, SideMenu, Footer, OverlayImage, Header
     },
     data: () => ({
       drawer: null,
