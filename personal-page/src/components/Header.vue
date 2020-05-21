@@ -12,7 +12,7 @@
         <v-btn icon class="gitButton">
           <v-icon  size="24px" @click="openSite('https://github.com/jonathan-acquesta/')">fab fa-github</v-icon>
         </v-btn>
-    <v-toolbar-title class="title">Jonathan Caravaggio Acquesta - Agile Coach - PSM I</v-toolbar-title>
+    <v-toolbar-title class="title">{{ getTitle() }}</v-toolbar-title>
     <v-spacer />
     <Language></Language>
     </v-app-bar>
@@ -24,7 +24,18 @@ import Language from "./Language.vue";
 
     export default {
         mixins:[generalMixins],
-        components: {Language }
+        components: {Language },
+        methods: {
+            getTitle()
+            {
+                if(this.isMobile())
+                {
+                    return this.language.toolbarTitleMobile[this.culture];
+                }
+
+                return this.language.toolbarTitle[this.culture];
+            }
+        },
     }
 </script>
 

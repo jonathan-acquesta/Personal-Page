@@ -12,7 +12,8 @@
             </v-tooltip>
 
 
-      <TimeLineItem v-show="year.show" :histories="getHistory(year.year)"></TimeLineItem>
+      <TimeLineItem v-if="!isMobile()" v-show="year.show" :histories="getHistory(year.year)"></TimeLineItem>
+      <TimeLineItemMobile v-else v-show="year.show" :histories="getHistory(year.year)"></TimeLineItemMobile>
     </div>
      
   </div>
@@ -20,10 +21,13 @@
 
 <script>
 import TimeLineItem from './../components/TimeLineItem.vue'
+import TimeLineItemMobile from './../components/TimeLineItemMobile.vue'
+import generalMixins from './../mixins/generalMixins.js';
 
 export default {
   name: "Timeline",
-  components:{TimeLineItem},
+  mixins:[generalMixins],
+  components:{TimeLineItem, TimeLineItemMobile},
   data() {
     return {
       years:[]
@@ -52,6 +56,7 @@ export default {
     toggleVisibility(year)
     {
       year.show = !year.show;
+      
     },
     getButtonYearText(year)
     {

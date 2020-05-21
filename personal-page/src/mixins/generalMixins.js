@@ -26,6 +26,9 @@ const generalMixins = {
             if (this.$router.currentRoute.name !== url) {
                 this.$router.push({ name: url });
             }
+        },
+        isMobile() {
+            return this.$vuetify.breakpoint.width < 550;
         }
     },
 }
