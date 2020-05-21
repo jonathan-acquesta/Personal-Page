@@ -664,7 +664,7 @@ const professionalExperiences = {
                 resumeTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
                     this.$store.state.tags.teamManagement, this.$store.state.tags.dotNetCore, this.$store.state.tags.vueJS
                 ],
-                showDetail: true
+                showDetail: false
             });
 
 

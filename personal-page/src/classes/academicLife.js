@@ -181,7 +181,7 @@ const academicLife = {
                 resumeTags: [this.$store.state.tags.mba, this.$store.state.tags.pmi, this.$store.state.tags.scrum, this.$store.state.tags.businessProcess,
                     this.$store.state.tags.leadership, this.$store.state.tags.highPerformanceTeams, this.$store.state.tags.situationalLeadership
                 ],
-                showDetail: true
+                showDetail: false
             });
         },
     },

@@ -127,7 +127,7 @@ const books = {
                 },
                 image: require('@/assets/books/avalieOQueImporta.jpg'),
                 tags: [this.$store.state.tags.okr, this.$store.state.tags.cfr, this.$store.state.tags.engagement, this.$store.state.tags.teamwork, this.$store.state.tags.teamManagement, this.$store.state.tags.feedback, this.$store.state.tags.challengingGoal],
-                showDetail: true
+                showDetail: false
             });
 
             histories.push({
@@ -143,6 +143,21 @@ const books = {
                 },
                 image: require('@/assets/books/gembaKaisen.jpg'),
                 tags: [this.$store.state.tags.continuousEvolution, this.$store.state.tags.kaisen, this.$store.state.tags.gemba, this.$store.state.tags.kanban],
+            });
+
+            histories.push({
+                date: new Date("2019-08-15"),
+                category: this.$store.state.categoryType.books,
+                title: {
+                    "pt-BR": "Extreme Programming",
+                    "en-US": "Extreme Programming",
+                },
+                subTitle: {
+                    "pt-BR": "Aprenda como encantar seus usuários desenvolvendo software com agilidade e alta qualidade",
+                    "en-US": "Learn how to delight your users by developing software with agility and high quality",
+                },
+                image: require('@/assets/books/extremeProgramming.jpg'),
+                tags: [this.$store.state.tags.extremeProgramming, this.$store.state.tags.TDD, this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest, this.$store.state.tags.codeCoverage, this.$store.state.tags.continuousDelivery, this.$store.state.tags.refactoring]
             });
         },
     },

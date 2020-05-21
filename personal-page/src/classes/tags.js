@@ -106,6 +106,9 @@ const tags = {
             tags["uml"] = { "pt-BR": "#UML", "en-US": "#UML", color: "purple" };
             tags["azure"] = { "pt-BR": "#Azure", "en-US": "#Azure", color: "purple" };
             tags["computing"] = { "pt-BR": "#Computação", "en-US": "#Computing", color: "purple" };
+            tags["refactoring"] = { "pt-BR": "#Refatoração", "en-US": "#Refactoring", color: "purple" };
+            tags["continuousDelivery"] = { "pt-BR": "#EntregaContínua", "en-US": "#continuousDelivery", color: "purple" };
+
 
             tags["excel"] = { "pt-BR": "#Excel", "en-US": "#Excel", color: "purple" };
             tags["word"] = { "pt-BR": "#Word", "en-US": "#Word", color: "purple" };

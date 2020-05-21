@@ -34,7 +34,7 @@ const certifications = {
                     }
                 ],
                 tags: [this.$store.state.tags.scrum],
-                showDetail: true
+                showDetail: false
             });
 
             histories.push({

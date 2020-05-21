@@ -209,7 +209,7 @@ const languageCourses = {
                         type: "link"
                     }
                 ],
-                showDetail: true
+                showDetail: false
             })
 
             histories.push({
