@@ -230,7 +230,8 @@ export default new Vuex.Store({
                 },
                 icon: "mdi-briefcase-outline",
                 enable: true,
-                showResume: true
+                showResume: true,
+                showItems: false,
             },
             academicLife: {
                 color: "orange",
@@ -240,7 +241,8 @@ export default new Vuex.Store({
                 },
                 icon: "mdi-school",
                 enable: true,
-                showResume: true
+                showResume: true,
+                showItems: false,
             },
             certifications: {
                 color: "green",
@@ -250,7 +252,8 @@ export default new Vuex.Store({
                 },
                 icon: "mdi-book-variant",
                 enable: true,
-                showResume: true
+                showResume: true,
+                showItems: false,
             },
             languages: {
                 color: "indigo",
@@ -260,7 +263,8 @@ export default new Vuex.Store({
                 },
                 icon: "mdi-account-voice",
                 enable: true,
-                showResume: true
+                showResume: true,
+                showItems: false,
             },
             courses: {
                 color: "deep-purple",
@@ -270,7 +274,8 @@ export default new Vuex.Store({
                 },
                 icon: "mdi-seal-variant",
                 enable: true,
-                showResume: true
+                showResume: true,
+                showItems: false,
             },
 
             books: {
@@ -281,7 +286,8 @@ export default new Vuex.Store({
                 },
                 icon: "mdi-book-open-page-variant",
                 enable: true,
-                showResume: true
+                showResume: true,
+                showItems: false,
             },
             thoughts: {
                 color: "pink",
@@ -291,7 +297,8 @@ export default new Vuex.Store({
                 },
                 icon: "mdi-head-snowflake-outline",
                 enable: true,
-                showResume: true
+                showResume: true,
+                showItems: false,
             },
             /*
             managementKnowledge: {
@@ -302,7 +309,8 @@ export default new Vuex.Store({
                 },
                 icon: "mdi-account-group",
                 enable: true,
-                showResume: false
+                showResume: false,
+                showItems: true,
             },
             technologies: {
                 color: "purple",
@@ -312,7 +320,8 @@ export default new Vuex.Store({
                 },
                 icon: "mdi-laptop",
                 enable: true,
-                showResume: false
+                showResume: false,
+                showItems: true,
             },
             milestones: {
                 color: "light-blue",
@@ -322,7 +331,8 @@ export default new Vuex.Store({
                 },
                 icon: "mdi-flag-checkered",
                 enable: true,
-                showResume: false
+                showResume: false,
+                showItems: true,
             }*/
         },
     },

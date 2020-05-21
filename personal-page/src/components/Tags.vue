@@ -1,15 +1,10 @@
 <template>
-    <div class="tagsDiv">
-      <v-chip
-        class="tags"
-        color="white"
-        label
-        :text-color="tag.color"
-        v-for="(tag, index) in tags"
-        :key="index"
-      >
-        <b>{{ tag[culture] }}</b>
-      </v-chip>
+    <div class="tagsGroup">
+      <div class="tagsDiv" v-for="(tag, index) in tags" :key="index">
+          <span class="tags" 
+            :class="`font-weight-bold ${tag.color}--text`"
+            v-text="tag[culture]"></span>
+        </div>
     </div>
 </template>
 
@@ -25,12 +20,19 @@
 </script>
 
 <style scoped>
-.tagsDiv {
-  margin-left: -10px;
+.tagsGroup{
+  max-width: 800px;
+  padding-right: 20px;
 }
 
 .tags {
-  margin-right: -10px;
+  margin-right: 10px;
+  font-size: small;
+  white-space: pre;
+}
+
+.tagsDiv{
+  display: inline;
 }
 
 </style>
