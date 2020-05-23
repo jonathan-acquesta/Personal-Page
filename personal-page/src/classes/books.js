@@ -248,6 +248,216 @@ const books = {
                 tags: [this.$store.state.tags.devOps]
             });
 
+            histories.push({
+                date: new Date("2020-05-20"),
+                category: this.$store.state.categoryType.books,
+                author: "Jurgen Appelo",
+                title: {
+                    "pt-BR": "Management 3.0",
+                    "en-US": "Management 3.0",
+                },
+                subTitle: {
+                    "pt-BR": "Conduzindo Desenvolvedore Ágeis, Desenvolvendo Lider Ágil",
+                    "en-US": "Leading Agile Developers, Developing Agile Leader",
+                },
+                image: require('@/assets/books/management30.jpg'),
+                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.management30]
+            });
+
+            histories.push({
+                date: new Date("2019-01-20"),
+                category: this.$store.state.categoryType.books,
+                author: "Augusto Cury",
+                title: {
+                    "pt-BR": "Prisioneiros da Mente",
+                    "en-US": "Prisoners of the Mind",
+                },
+                subTitle: {
+                    "pt-BR": "Os cárceres mentais",
+                    "en-US": "Mental prisons",
+                },
+                image: require('@/assets/books/prisioneirosDaMente.jpg'),
+                tags: [this.$store.state.tags.humanMind]
+            });
+
+            histories.push({
+                date: new Date("2018-12-20"),
+                category: this.$store.state.categoryType.books,
+                author: "Augusto Cury",
+                title: {
+                    "pt-BR": "Ansiedade",
+                    "en-US": "Anxiety",
+                },
+                subTitle: {
+                    "pt-BR": "Como enfrentar o mal do século",
+                    "en-US": "How to face the evil of the century",
+                },
+                image: require('@/assets/books/ansiedade.jpg'),
+                tags: [this.$store.state.tags.anxiety, this.$store.state.tags.humanMind]
+            });
+
+            histories.push({
+                date: new Date("2018-11-20"),
+                category: this.$store.state.categoryType.books,
+                author: "Alvaro Fernando",
+                title: {
+                    "pt-BR": "Comunicação e Persuasão",
+                    "en-US": "Communication and Persuasion",
+                },
+                subTitle: {
+                    "pt-BR": "O Poder do Diálogo",
+                    "en-US": "The Power of Dialogue",
+                },
+                image: require('@/assets/books/comunicacaoPersuasao.jpg'),
+                tags: [this.$store.state.tags.communication, this.$store.state.tags.persuasion]
+            });
+
+            histories.push({
+                date: new Date("2018-09-20"),
+                category: this.$store.state.categoryType.books,
+                author: "Carol S. Dweck",
+                title: {
+                    "pt-BR": "MindSet",
+                    "en-US": "MindSet",
+                },
+                subTitle: {
+                    "pt-BR": "A nova psicologia do sucesso",
+                    "en-US": "The new psychology of success",
+                },
+                image: require('@/assets/books/mindSet.jpg'),
+                tags: [this.$store.state.tags.humanMind]
+            });
+
+            histories.push({
+                date: new Date("2018-08-20"),
+                category: this.$store.state.categoryType.books,
+                author: "Tom Rath e Donald O. Clifton",
+                title: {
+                    "pt-BR": "Seu Balde está cheio?",
+                    "en-US": "Is your bucket full?",
+                },
+                subTitle: {
+                    "pt-BR": "O poder transformador das emoções positivas na vida profissional e afetiva",
+                    "en-US": "The transforming power of positive emotions in professional and affective life",
+                },
+                image: require('@/assets/books/baldeCheio.jpg'),
+                tags: [this.$store.state.tags.feedback]
+            });
+
+            histories.push({
+                date: new Date("2018-07-20"),
+                category: this.$store.state.categoryType.books,
+                author: "Geoff Colvin",
+                title: {
+                    "pt-BR": "Os humanos subestimados",
+                    "en-US": "Underestimated humans",
+                },
+                subTitle: {
+                    "pt-BR": "O que as pessoas de sucesso sabem que as máquinas mais brilhantes jamais saberão",
+                    "en-US": "What successful people know that the brightest machines will never know",
+                },
+                image: require('@/assets/books/osHumanosSubestimados.jpg'),
+                tags: [this.$store.state.tags.feedback]
+            });
+
+            histories.push({
+                date: new Date("2018-07-10"),
+                category: this.$store.state.categoryType.books,
+                author: "Richard L. Williams",
+                title: {
+                    "pt-BR": "Preciso saber se estou indo bem!",
+                    "en-US": "I need to know if I'm doing well!",
+                },
+                subTitle: {
+                    "pt-BR": "Uma história sobre a importância de dar e receber feedback",
+                    "en-US": "A story about the importance of giving and receiving feedback",
+                },
+                image: require('@/assets/books/precisoSaber.jpg'),
+                tags: [this.$store.state.tags.feedback]
+            });
+
+            histories.push({
+                date: new Date("2014-01-10"),
+                category: this.$store.state.categoryType.books,
+                author: "Jeffrey Palermo, Ben Sheirman e Jimmy Bogard",
+                title: {
+                    "pt-BR": "ASP.NET MVC 4 em Ação",
+                    "en-US": "ASP.NET MVC 4 In Action",
+                },
+                subTitle: {
+                    "pt-BR": "Em Ação",
+                    "en-US": "In Action",
+                },
+                image: require('@/assets/books/aspNetMVC4.jpg'),
+                tags: [this.$store.state.tags.aspNetMVC]
+            });
+
+
+            histories.push({
+                date: new Date("2014-06-10"),
+                category: this.$store.state.categoryType.books,
+                author: "Eric Freeman & Elisabeth Freeman",
+                title: {
+                    "pt-BR": "Use a Cabeça!",
+                    "en-US": "Head First!",
+                },
+                subTitle: {
+                    "pt-BR": "Padrões de Projetos",
+                    "en-US": "Design Patterns",
+                },
+                image: require('@/assets/books/designPattern.jpg'),
+                tags: [this.$store.state.tags.designPattern]
+            });
+
+            histories.push({
+                date: new Date("2010-04-10"),
+                category: this.$store.state.categoryType.books,
+                author: "John Sharp",
+                title: {
+                    "pt-BR": "Microsoft Visual C# 2008",
+                    "en-US": "Microsoft Visual C# 2008",
+                },
+                subTitle: {
+                    "pt-BR": "Passo a Passo",
+                    "en-US": "Step by Step",
+                },
+                image: require('@/assets/books/cSharp.jpg'),
+                tags: [this.$store.state.tags.cSharp]
+            });
+
+            histories.push({
+                date: new Date("2009-04-10"),
+                category: this.$store.state.categoryType.books,
+                author: "Luis Abreu",
+                title: {
+                    "pt-BR": "Silverlight 4.0",
+                    "en-US": "Silverlight 4.0",
+                },
+                subTitle: {
+                    "pt-BR": "Curso Completo",
+                    "en-US": "Full Course",
+                },
+                image: require('@/assets/books/silverlight4.jpg'),
+                tags: [this.$store.state.tags.designPattern]
+            });
+
+
+            histories.push({
+                date: new Date("2007-04-10"),
+                category: this.$store.state.categoryType.books,
+                author: "José Augusto N. G. Manzano",
+                title: {
+                    "pt-BR": "Estudo Dirigido SQL",
+                    "en-US": "SQL Directed Study",
+                },
+                subTitle: {
+                    "pt-BR": "Structured Query Language",
+                    "en-US": "Structured Query Language",
+                },
+                image: require('@/assets/books/sql.jpg'),
+                tags: [this.$store.state.tags.sql]
+            });
+
 
         },
     },

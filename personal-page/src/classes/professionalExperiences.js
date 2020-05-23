@@ -640,7 +640,7 @@ const professionalExperiences = {
                     url: "http://www.unous.com.br/mindset/",
                     type: "link"
                 }],
-                tags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
                     this.$store.state.tags.extremeProgramming,
                     this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
                     this.$store.state.tags.coaching, this.$store.state.tags.trainning,
@@ -653,7 +653,7 @@ const professionalExperiences = {
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.entityframework6, this.$store.state.tags.entityframeworkNetCore, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.mvc
                 ],
-                mainTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                mainTags: [this.$store.state.tags.inProgress, this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
                     this.$store.state.tags.situationalLeadership, this.$store.state.tags.engagement,
                     this.$store.state.tags.coaching, this.$store.state.tags.trainning,
                     this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
@@ -661,7 +661,7 @@ const professionalExperiences = {
                     this.$store.state.tags.vueJS, this.$store.state.tags.webAPI, this.$store.state.tags.dotNetCore,
                     this.$store.state.tags.DDD, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.mvc
                 ],
-                resumeTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
+                resumeTags: [this.$store.state.tags.inProgress, this.$store.state.tags.itCoordinator, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
                     this.$store.state.tags.teamManagement, this.$store.state.tags.dotNetCore, this.$store.state.tags.vueJS
                 ],
                 showDetail: false

@@ -19,7 +19,7 @@ const generalMixins = {
         },
         getHistories() {
             return this.histories;
-        }
+        },
     },
     methods: {
         openSite: function(url) {

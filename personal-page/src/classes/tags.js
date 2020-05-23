@@ -80,6 +80,9 @@ const tags = {
             tags["instructor"] = { "pt-BR": "#Instrutor", "en-US": "#Instructor", color: "indigo" };
             tags["teamwork"] = { "pt-BR": "#TrabalhoEmEquipe", "en-US": "#Teamwork", color: "indigo" };
             tags["feedback"] = { "pt-BR": "#Feeback", "en-US": "#Feeback", color: "indigo" };
+            tags["persuasion"] = { "pt-BR": "#Persuasão", "en-US": "#Persuasion", color: "indigo" };
+            tags["communication"] = { "pt-BR": "#Comunicação", "en-US": "#Communication", color: "indigo" };
+
         },
         mountTechnicalSkill(tags) {
             tags["dotNetFramework"] = { "pt-BR": "#.NetFramework", "en-US": "#.NetFramework", color: "purple" };
@@ -166,9 +169,11 @@ const tags = {
             tags["gemba"] = { "pt-BR": "#Gemba", "en-US": "#Gemba", color: "blue" };
             tags["startup"] = { "pt-BR": "#Startup", "en-US": "#Startup", color: "blue" };
             tags["innovation"] = { "pt-BR": "#Inovação", "en-US": "#Innovation", color: "blue" };
+            tags["humanMind"] = { "pt-BR": "#MenteHumana", "en-US": "#HumanMind", color: "blue" };
+            tags["anxiety"] = { "pt-BR": "#Ansiedade", "en-US": "#Anxiety", color: "blue" };
 
 
-            tags["inProgress"] = { "pt-BR": "#EmProgresso", "en-US": "#InProgress", color: "red" };
+            tags["inProgress"] = { "pt-BR": "#EmProgresso", "en-US": "#InProgress", color: "deep-purple" };
         }
     },
 }

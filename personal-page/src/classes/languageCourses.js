@@ -58,6 +58,26 @@ const languageCourses = {
                 showDetail: false
             })
 
+            histories.push({
+                date: new Date("2018-05-10"),
+                category: this.$store.state.categoryType.languages,
+                title: {
+                    "pt-BR": "Duoling",
+                    "en-US": "Duoling",
+                },
+                subTitle: {
+                    "pt-BR": "Aplicativo para aprendizado de inglês",
+                    "en-US": "English learning application",
+                },
+                image: require('@/assets/courses/duolingo.jpg'),
+                tags: [this.$store.state.tags.english],
+                links: [{
+                    description: { "pt-BR": "Duolingo", "en-US": "Duolingo" },
+                    url: "https://www.duolingo.com/",
+                    type: "link"
+                }],
+            });
+
 
             histories.push({
                 date: new Date("2018-06-18"),

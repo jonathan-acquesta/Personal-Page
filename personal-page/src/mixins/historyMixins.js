@@ -5,7 +5,7 @@ const historyMixins = {
             if (history.mainTags) { return history.mainTags; }
 
             return history.tags;
-        }
+        },
     },
 };
 

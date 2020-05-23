@@ -749,8 +749,6 @@ const courses = {
                 ]
             })
 
-
-
             histories.push({
                 date: new Date("2020-04-07"),
                 category: this.$store.state.categoryType.courses,
@@ -775,6 +773,52 @@ const courses = {
                         type: "link"
                     }
                 ]
+            })
+
+            histories.push({
+                date: new Date("2020-04-07"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Vue Mastery",
+                    "en-US": "Vue Mastery",
+                },
+                subTitle: {
+                    "pt-BR": "Intro to Vue.JS",
+                    "en-US": "Introdução ao Vue.JS",
+                },
+                image: require('@/assets/courses/vueMastery01.jpg'),
+                tags: [this.$store.state.tags.vueJS],
+                links: [{
+                        description: { "pt-BR": "GitHub", "en-US": "GitHub" },
+                        url: "https://github.com/jonathan-acquesta/Vue-Mastery/tree/master/1st%20Intro%20to%20Vue",
+                        type: "link"
+                    },
+                    {
+                        description: { "pt-BR": "VueMastery", "en-US": "VueMastery" },
+                        url: "https://www.vuemastery.com/courses/intro-to-vue-js/tabs",
+                        type: "link"
+                    }
+                ]
+            })
+
+            histories.push({
+                date: new Date("2020-05-07"),
+                category: this.$store.state.categoryType.courses,
+                title: {
+                    "pt-BR": "Vue Mastery",
+                    "en-US": "Vue Mastery",
+                },
+                subTitle: {
+                    "pt-BR": "Vue JS no mundo real",
+                    "en-US": "Real World Vue.JS",
+                },
+                image: require('@/assets/courses/vueMastery02.jpg'),
+                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.vueJS],
+                links: [{
+                    description: { "pt-BR": "VueMastery", "en-US": "VueMastery" },
+                    url: "https://www.vuemastery.com/courses/real-world-vue-js/API-calls-with-Axios",
+                    type: "link"
+                }]
             })
 
 

@@ -183,6 +183,29 @@ const academicLife = {
                 ],
                 showDetail: false
             });
+
+            histories.push({
+                date: new Date("2020-05-20"),
+                category: this.$store.state.categoryType.academicLife,
+                title: {
+                    "pt-BR": "FATEC-SP - Centro Paula Souza - MBA TCC",
+                    "en-US": "FATEC-SP - Centro Paula Souza - MBA TCC",
+                },
+                subTitle: {
+                    "pt-BR": "Os benefícios do gerenciamento ágil de projetos com Management 3.0, Scrum, Extreme Programming e Kanban",
+                    "en-US": "The benefits of agile project management with Management 3.0, Scrum, Extreme Programming and Kanban",
+                },
+                image: require('@/assets/academicLife/mba.jpg'),
+                tags: [],
+                links: [{
+                    description: { "pt-BR": "MBA", "en-US": "MBA" },
+                    url: "https://posgraduacao.cps.sp.gov.br/lato-sensu/",
+                    type: "link"
+                }],
+                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.mba, this.$store.state.tags.management30, this.$store.state.tags.scrum,
+                    this.$store.state.tags.extremeProgramming, this.$store.state.tags.kanban
+                ]
+            });
         },
     },
 }

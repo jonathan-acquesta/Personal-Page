@@ -12,6 +12,7 @@ export default new Vuex.Store({
             applicationTitle: { "pt-BR": "Meu Currículo Vivo", "en-US": "My Live Resume" },
             portfolio: { "pt-BR": "Portfólio", "en-US": "Portfolio" },
             filter: { "pt-BR": "Filtros", "en-US": "Filter" },
+            all: { "pt-BR": "Mostrar Todas as Categorias", "en-US": "Show All Categories" },
             languages: {
                 portuguese: { "pt-BR": "Português", "en-US": "Portuguese", "language": "pt-BR" },
                 english: { "pt-BR": "Inglês", "en-US": "English", "language": "en-US" },
@@ -96,130 +97,7 @@ export default new Vuex.Store({
                 icon: "mdi-file-account",
             },
         },
-        categoryType: {
-            professionalExperience: {
-                color: "red",
-                name: {
-                    "pt-BR": "Experiência Profissional",
-                    "en-US": "Professional Experience"
-                },
-                icon: "mdi-briefcase-outline",
-                enable: true,
-                showResume: true,
-                showItems: true,
-                pinned: false,
-            },
-            academicLife: {
-                color: "orange",
-                name: {
-                    "pt-BR": "Vida Academica",
-                    "en-US": "Academic Life"
-                },
-                icon: "mdi-school",
-                enable: true,
-                showResume: true,
-                showItems: true,
-                pinned: false,
-            },
-            certifications: {
-                color: "green",
-                name: {
-                    "pt-BR": "Certificações",
-                    "en-US": "Certifications"
-                },
-                icon: "mdi-book-variant",
-                enable: true,
-                showResume: true,
-                showItems: true,
-                pinned: false,
-            },
-            languages: {
-                color: "indigo",
-                name: {
-                    "pt-BR": "Idiomas",
-                    "en-US": "Languages"
-                },
-                icon: "mdi-account-voice",
-                enable: true,
-                showResume: true,
-                showItems: true,
-                pinned: false,
-            },
-            courses: {
-                color: "deep-purple",
-                name: {
-                    "pt-BR": "Cursos Extracurriculares",
-                    "en-US": "Extracurricular Courses"
-                },
-                icon: "mdi-seal-variant",
-                enable: true,
-                showResume: true,
-                showItems: true,
-                pinned: false,
-            },
-
-            books: {
-                color: "teal",
-                name: {
-                    "pt-BR": "Livros",
-                    "en-US": "Books"
-                },
-                icon: "mdi-book-open-page-variant",
-                enable: true,
-                showResume: true,
-                showItems: true,
-                pinned: false,
-            },
-            thoughts: {
-                color: "pink",
-                name: {
-                    "pt-BR": "Pensamentos",
-                    "en-US": "Thoughts"
-                },
-                icon: "mdi-head-snowflake-outline",
-                enable: true,
-                showResume: true,
-                showItems: true,
-                pinned: false,
-            },
-            /*
-            managementKnowledge: {
-                color: "cyan",
-                name: {
-                    "pt-BR": "Conhecimento em Gestão",
-                    "en-US": "Management Knowledge"
-                },
-                icon: "mdi-account-group",
-                enable: true,
-                showResume: false,
-                showItems: true,
-                pinned: false,
-            },
-            technologies: {
-                color: "purple",
-                name: {
-                    "pt-BR": "Tecnologias",
-                    "en-US": "Technologies"
-                },
-                icon: "mdi-laptop",
-                enable: true,
-                showResume: false,
-                showItems: true,
-                pinned: false,
-            },
-            milestones: {
-                color: "light-blue",
-                name: {
-                    "pt-BR": "Marcos",
-                    "en-US": "Milestones"
-                },
-                icon: "mdi-flag-checkered",
-                enable: true,
-                showResume: false,
-                showItems: true,
-                pinned: false,
-            }*/
-        },
+        categoryType: {},
     },
     mutations: {},
     actions: {},

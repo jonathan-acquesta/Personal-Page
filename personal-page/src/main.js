@@ -11,13 +11,15 @@ import academicLife from "./classes/academicLife.js";
 import courses from "./classes/courses.js";
 import languageCourses from "./classes/languageCourses.js";
 import thoughts from "./classes/thoughts.js";
+import technologies from "./classes/technologies.js";
 import tags from "./classes/tags.js";
+import categories from "./classes/categories.js";
 
 
 Vue.config.productionTip = false;
 
 var app = new Vue({
-    mixins: [certifications, books, professionalExperiences, academicLife, courses, languageCourses, thoughts, tags],
+    mixins: [certifications, books, professionalExperiences, academicLife, courses, languageCourses, thoughts, technologies, tags, categories],
     router,
     store,
     vuetify,
@@ -28,8 +30,9 @@ var app = new Vue({
                 .map(function(x, index) { return { year: x, show: true }; });
         }
     },
-    mounted() {
+    beforeMount() {
         this.$store.state.tags = this.mountTags();
+        this.$store.state.categoryType = this.mountCategories();
 
         var histories = [];
 
@@ -40,6 +43,7 @@ var app = new Vue({
         this.mountCourses(histories);
         this.mountBooks(histories);
         this.mountThoughts(histories);
+        this.mountTechnologies(histories);
 
         histories.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
 

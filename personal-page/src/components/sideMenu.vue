@@ -38,6 +38,20 @@
 
           <v-divider></v-divider>
 
+           <v-list-item link v-on:click="showAll()" class="allItems">
+              <v-list-item-icon>
+                <v-icon color="black" class="iconAll">mdi-clipboard-check-multiple</v-icon>
+              </v-list-item-icon>
+                  <v-list-item-content >
+                    <v-list-item-title><b>{{ language.all[culture] }}</b> 
+                    <v-icon v-if="!getAllPin" class="pin" color="black" size="18px" @click="pinAll(true)">mdi-pin</v-icon>
+                    <v-icon v-else color="black" class="pin" size="18px" @click="pinAll(false)">mdi-pin-off</v-icon>
+                </v-list-item-title>
+              </v-list-item-content>
+          </v-list-item>
+
+          <v-divider class="menuDividerAll"></v-divider>
+
           <v-list-item
             v-for="(category, index) in this.$store.state.categoryType" :key="index" link v-on:click="action(category)">
             
@@ -69,7 +83,19 @@
             }
         },
         computed: {
+          getAllPin()
+          {
+              let categories = Object.entries(this.state.categoryType);
+              var pinnedItems = 0;
+                categories.map(x => 
+                {  
+                    if(x[1].pinned){
+                      pinnedItems++;
+                    }
+                });
 
+              return pinnedItems == categories.length;
+          }
         },
         methods: {
             action(category)
@@ -77,8 +103,8 @@
                 let categories = Object.entries(this.state.categoryType);
                 categories.map(x => 
                 {  
-                    x[1].enable = (x[1].name[this.culture] == category.name[this.culture] || x[1].pinned);
-                    x[1].showItems = (x[1].name[this.culture] == category.name[this.culture]);
+                    x[1].enable = (x[1].id == category.id || x[1].pinned);
+                    x[1].showItems = (x[1].id == category.id);
 
                 });
 
@@ -98,6 +124,25 @@
             pin(category)
             {
                 category.pinned = !category.pinned;
+            },
+            showAll(){
+              let categories = Object.entries(this.state.categoryType);
+                categories.map(x => 
+                {  
+                    x[1].enable = true;
+                    x[1].showItems = true;
+
+                });
+
+                this.scrollToTop();
+            },
+            pinAll(value)
+            {
+                let categories = Object.entries(this.state.categoryType);
+                categories.map(x => 
+                {  
+                    x[1].pinned = value;
+                });
             }
         },
     }
@@ -114,5 +159,28 @@
 
   .menu{
     width: 100%;
+    animation-name: menuOpacity;
+    animation-duration: 1s;
+    transition: width 0s;
   }
+  
+
+  .allItems
+  {
+    margin-top: 0px;
+  }
+
+  .menuDividerAll{
+    margin-top: 0px;
+    opacity: 0.4;
+  }
+
+  .iconAll{
+    opacity: 0.8;
+  }
+
+  @keyframes menuOpacity {
+  from {opacity: 0}
+  to {opacity: 1}
+}
 </style>
