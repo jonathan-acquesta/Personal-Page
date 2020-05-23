@@ -50,6 +50,16 @@ const tags = {
             tags["okr"] = { "pt-BR": "#OKRs", "en-US": "#OKRs", color: "cyan" };
             tags["cfr"] = { "pt-BR": "#CFRs", "en-US": "#CFRs", color: "cyan" };
             tags["less"] = { "pt-BR": "#LeSS", "en-US": "#LeSS", color: "cyan" };
+            tags["lean"] = { "pt-BR": "#Lean", "en-US": "#Lean", color: "cyan" };
+            tags["mvp"] = { "pt-BR": "#MVP", "en-US": "#MVP", color: "cyan" };
+            tags["designThinking"] = { "pt-BR": "#DesignThinking", "en-US": "#DesignThinking", color: "cyan" };
+            tags["requirements"] = { "pt-BR": "#Requisitos", "en-US": "#Requirements", color: "cyan" };
+            tags["agile"] = { "pt-BR": "#Agilidade", "en-US": "#Agile", color: "cyan" };
+            tags["userStories"] = { "pt-BR": "#HistóriasDeUsuário", "en-US": "#UserStories", color: "cyan" };
+            tags["leanInception"] = { "pt-BR": "#LeanInception", "en-US": "#LeanInception", color: "cyan" };
+            tags["devOps"] = { "pt-BR": "#DevOps", "en-US": "#DevOps", color: "cyan" };
+
+
         },
         mountSoftSkill(tags) {
             tags["coaching"] = { "pt-BR": "#Coaching", "en-US": "#Coaching", color: "indigo" };
@@ -154,6 +164,9 @@ const tags = {
             tags["continuousEvolution"] = { "pt-BR": "#EvoluçãoContínua", "en-US": "#ContinuousEvolution", color: "blue" };
             tags["kaisen"] = { "pt-BR": "#Kaisen", "en-US": "#Kaisen", color: "blue" };
             tags["gemba"] = { "pt-BR": "#Gemba", "en-US": "#Gemba", color: "blue" };
+            tags["startup"] = { "pt-BR": "#Startup", "en-US": "#Startup", color: "blue" };
+            tags["innovation"] = { "pt-BR": "#Inovação", "en-US": "#Innovation", color: "blue" };
+
 
             tags["inProgress"] = { "pt-BR": "#EmProgresso", "en-US": "#InProgress", color: "red" };
         }

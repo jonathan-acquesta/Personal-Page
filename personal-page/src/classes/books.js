@@ -10,6 +10,7 @@ const books = {
             histories.push({
                 date: new Date("2020-04-02"),
                 category: this.$store.state.categoryType.books,
+                author: "James Turner",
                 title: {
                     "pt-BR": "KANBAN",
                     "en-US": "KANBAN",
@@ -30,6 +31,7 @@ const books = {
             histories.push({
                 date: new Date("2020-02-05"),
                 category: this.$store.state.categoryType.books,
+                author: "Jaques Grinberg e Jorge Penilo",
                 title: {
                     "pt-BR": "Coaching e Liderança",
                     "en-US": "Coaching and Leadership",
@@ -71,6 +73,7 @@ const books = {
             histories.push({
                 date: new Date("2019-10-02"),
                 category: this.$store.state.categoryType.books,
+                author: "Klaus Schwab",
                 title: {
                     "pt-BR": "A Quarta Revolução Industrial",
                     "en-US": "The Fourth Industrial Revolution",
@@ -92,6 +95,7 @@ const books = {
             histories.push({
                 date: new Date("2019-09-15"),
                 category: this.$store.state.categoryType.books,
+                author: "Jeff Sutherland e JJ Sutherland",
                 title: {
                     "pt-BR": "SCRUM",
                     "en-US": "SCRUM",
@@ -113,6 +117,7 @@ const books = {
             histories.push({
                 date: new Date("2020-05-11"),
                 category: this.$store.state.categoryType.books,
+                author: "John Doerr",
                 title: {
                     "pt-BR": "Avalie o que importa",
                     "en-US": "Measure what matters",
@@ -133,6 +138,7 @@ const books = {
             histories.push({
                 date: new Date("2019-09-15"),
                 category: this.$store.state.categoryType.books,
+                author: "Masaaki Imai",
                 title: {
                     "pt-BR": "Gemba Kaizen",
                     "en-US": "Gemba Kaizen",
@@ -148,6 +154,7 @@ const books = {
             histories.push({
                 date: new Date("2019-08-15"),
                 category: this.$store.state.categoryType.books,
+                author: "Vinícius Manhães Teles",
                 title: {
                     "pt-BR": "Extreme Programming",
                     "en-US": "Extreme Programming",
@@ -158,6 +165,87 @@ const books = {
                 },
                 image: require('@/assets/books/extremeProgramming.jpg'),
                 tags: [this.$store.state.tags.extremeProgramming, this.$store.state.tags.TDD, this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest, this.$store.state.tags.codeCoverage, this.$store.state.tags.continuousDelivery, this.$store.state.tags.refactoring]
+            });
+
+            histories.push({
+                date: new Date("2019-07-15"),
+                category: this.$store.state.categoryType.books,
+                author: "Eric Ries",
+                title: {
+                    "pt-BR": "A Startup Enxuta",
+                    "en-US": "The Lean Startup",
+                },
+                subTitle: {
+                    "pt-BR": "Como os Empreendedores atuais utilizam a inovação contínua para criar empresas extremamente bem-sucedidas",
+                    "en-US": "How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses",
+                },
+                image: require('@/assets/books/aStartupEnxuta.jpg'),
+                tags: [this.$store.state.tags.lean, this.$store.state.tags.mvp, this.$store.state.tags.startup, this.$store.state.tags.continuousEvolution]
+            });
+
+            histories.push({
+                date: new Date("2019-06-15"),
+                category: this.$store.state.categoryType.books,
+                author: "Tim Brown",
+                title: {
+                    "pt-BR": "Design Thinking",
+                    "en-US": "Design Thinking",
+                },
+                subTitle: {
+                    "pt-BR": "Uma metodologia poderosa para decretar o fim das velhas ideias",
+                    "en-US": "A powerful methodology to enact the end of old ideas",
+                },
+                image: require('@/assets/books/designThinking.jpg'),
+                tags: [this.$store.state.tags.designThinking, this.$store.state.tags.innovation]
+            });
+
+            histories.push({
+                date: new Date("2019-06-02"),
+                category: this.$store.state.categoryType.books,
+                author: "Rafael Helm e Daniel Wildt",
+                title: {
+                    "pt-BR": "Histórias de Usuário",
+                    "en-US": "User Stories",
+                },
+                subTitle: {
+                    "pt-BR": "Por que e como escrever requisitos de forma ágil",
+                    "en-US": "Why and how to write requirements in an agile way",
+                },
+                image: require('@/assets/books/userStories.jpg'),
+                tags: [this.$store.state.tags.userStories, this.$store.state.tags.agile, this.$store.state.tags.requirements]
+            });
+
+
+            histories.push({
+                date: new Date("2019-05-15"),
+                category: this.$store.state.categoryType.books,
+                author: "Paulo Caroli",
+                title: {
+                    "pt-BR": "Lean Inception",
+                    "en-US": "Lean Inception",
+                },
+                subTitle: {
+                    "pt-BR": "Como alinhar pessoas e construir o produto certo",
+                    "en-US": "How to align people and build the right product",
+                },
+                image: require('@/assets/books/leanInception.jpg'),
+                tags: [this.$store.state.tags.leanInception, this.$store.state.tags.mvp, this.$store.state.tags.innovation]
+            });
+
+            histories.push({
+                date: new Date("2019-03-15"),
+                category: this.$store.state.categoryType.books,
+                author: "Gene Kim, Jez Humble, Patrick Debois e John Willis",
+                title: {
+                    "pt-BR": "Manual de DevOps",
+                    "en-US": "The DevOps Handbook",
+                },
+                subTitle: {
+                    "pt-BR": "Como obter agilidade, confiabilidade e segurança em organizações tecnológicas",
+                    "en-US": "How to Create World-Class Agility, Reliability, and Security in Technology Organizations",
+                },
+                image: require('@/assets/books/devOps.jpg'),
+                tags: [this.$store.state.tags.devOps]
             });
 
 
