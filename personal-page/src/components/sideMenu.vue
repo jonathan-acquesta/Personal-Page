@@ -1,11 +1,12 @@
 <template>
-    <v-navigation-drawer
+    <v-navigation-drawer class="menu"
       v-model="drawerRight"
       app
+      :width="getMenuWidth()"
       clipped
       right
-      permanent
-      expand-on-hover
+      :permanent="!isMobile() || (isMobile() && showMobileMenu())"
+      :expand-on-hover="!isMobile()"
     >
 
     <v-list
@@ -67,12 +68,23 @@
             }
         },
         computed: {
-            
+
         },
         methods: {
             invertSelection(category)
             {
                 category.enable = !category.enable;
+            },
+            getMenuWidth()
+            {
+              if(this.isMobile())
+              {
+                return "100%";
+              }
+              else
+              {
+                return "300";
+              }
             }
         },
     }
@@ -81,5 +93,9 @@
 <style scoped>
 .desactiveCategory{
     opacity: 0.4;
+  }
+
+  .menu{
+    width: 100%;
   }
 </style>

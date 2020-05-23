@@ -7,7 +7,7 @@ export default new Vuex.Store({
     state: {
         culture: 'en-US',
         common: {
-            toolbarTitleMobile: { "pt-BR": "J. C. Acquesta - Agile Coach", "en-US": "Acquesta, J. C. - Agile Coach" },
+            toolbarTitleMobile: { "pt-BR": "Jonathan C Acquesta", "en-US": "Jonathan C Acquesta" },
             toolbarTitle: { "pt-BR": "Jonathan Caravaggio Acquesta - Agile Coach - PSM I", "en-US": "Jonathan Caravaggio Acquesta - Agile Coach - PSM I" },
             applicationTitle: { "pt-BR": "Meu Currículo Vivo", "en-US": "My Live Resume" },
             portfolio: { "pt-BR": "Portfólio", "en-US": "Portfolio" },
@@ -24,6 +24,7 @@ export default new Vuex.Store({
             closeYear: { "pt-BR": "Minimizar detalhes deste ano", "en-US": "Minimize details for this year" },
         },
         overlay: false,
+        showMobileMenu: false,
         mainImage: "",
         months: {
             "pt-BR": [

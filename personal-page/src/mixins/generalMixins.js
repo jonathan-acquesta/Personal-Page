@@ -11,6 +11,9 @@ const generalMixins = {
         language() {
             return this.$store.state.common;
         },
+        state() {
+            return this.$store.state;
+        },
         categories() {
             return this.$store.state.categoryType;
         },
@@ -23,12 +26,17 @@ const generalMixins = {
             window.open(url, "_blank");
         },
         showPage(url) {
+            this.state.showMobileMenu = false;
+
             if (this.$router.currentRoute.name !== url) {
                 this.$router.push({ name: url });
             }
         },
         isMobile() {
             return this.$vuetify.breakpoint.width < 550;
+        },
+        showMobileMenu() {
+            return this.state.showMobileMenu;
         }
     },
 }

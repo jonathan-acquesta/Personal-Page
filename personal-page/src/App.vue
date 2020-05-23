@@ -3,9 +3,9 @@
     <Header></Header>
     <SideMenu></SideMenu>
     <OverlayImage></OverlayImage>
-    <v-content>
+    <v-content >
       <v-container class="fill-height" fluid>
-       <router-view />
+       <router-view v-show="!isMobile() || (isMobile() && !showMobileMenu())" />
       </v-container>
     </v-content>
 
