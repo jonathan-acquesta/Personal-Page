@@ -159,8 +159,6 @@
 
   .menu{
     width: 100%;
-    animation-name: menuOpacity;
-    animation-duration: 1s;
     transition: width 0s;
   }
   
@@ -179,8 +177,4 @@
     opacity: 0.8;
   }
 
-  @keyframes menuOpacity {
-  from {opacity: 0}
-  to {opacity: 1}
-}
 </style>
