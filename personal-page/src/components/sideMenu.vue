@@ -78,6 +78,8 @@
                 categories.map(x => 
                 {  
                     x[1].enable = (x[1].name[this.culture] == category.name[this.culture] || x[1].pinned);
+                    x[1].showItems = (x[1].name[this.culture] == category.name[this.culture]);
+
                 });
 
                 this.scrollToTop();
