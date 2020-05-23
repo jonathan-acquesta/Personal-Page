@@ -9,17 +9,20 @@
         <v-list-item
             :key="index"
         >
-            <v-list-item-action>
-            <v-img
-                :key="'Image' + index"
-                class="descriptionImageMin"
-                width="80"
-                :src="history.image"
-                ></v-img>
-            </v-list-item-action>
-
-            
-            <v-list-item-content >
+        <table class="tableResume">
+            <tr>
+                <td>
+                    <div class="imageResume">
+                        <v-img
+                            :key="'Image' + index"
+                            class="descriptionImageMin"
+                            width="80"
+                            :src="history.image"
+                            ></v-img>
+                </div>
+                </td>
+                <td>
+                    <v-list-item-content >
             <div class="itemContent">  
             <p class="titlePeriodRegister">{{ getPeriod(history) }}</p>
             <p class="titleRegister">{{ getTitle(history) }}</p>
@@ -36,6 +39,10 @@
     
             </div>
             </v-list-item-content>
+                </td>
+            </tr>
+        </table>
+            
             
         </v-list-item>
 
@@ -73,6 +80,14 @@
 
 <style scoped>
 
+.tableResume{
+    height: 100%;
+}
+
+.imageResume{
+    height: 100%;
+}
+
 .titleRegister{
   font-weight: bold;
   margin-bottom: 5px;
@@ -102,8 +117,11 @@
 
     .descriptionImageMin {
         text-align: justify;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: -10px;
+        margin-top: 25px;
+        margin-right: 10px;
+        vertical-align: top;
+        
         }
 
         .headline{
