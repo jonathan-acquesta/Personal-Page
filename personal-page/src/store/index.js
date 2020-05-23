@@ -11,6 +11,7 @@ export default new Vuex.Store({
             toolbarTitle: { "pt-BR": "Jonathan Caravaggio Acquesta - Agile Coach - PSM I", "en-US": "Jonathan Caravaggio Acquesta - Agile Coach - PSM I" },
             applicationTitle: { "pt-BR": "Meu Currículo Vivo", "en-US": "My Live Resume" },
             portfolio: { "pt-BR": "Portfólio", "en-US": "Portfolio" },
+            filter: { "pt-BR": "Filtros", "en-US": "Filter" },
             languages: {
                 portuguese: { "pt-BR": "Português", "en-US": "Portuguese", "language": "pt-BR" },
                 english: { "pt-BR": "Inglês", "en-US": "English", "language": "en-US" },
@@ -106,6 +107,7 @@ export default new Vuex.Store({
                 enable: true,
                 showResume: true,
                 showItems: true,
+                pinned: false,
             },
             academicLife: {
                 color: "orange",
@@ -117,6 +119,7 @@ export default new Vuex.Store({
                 enable: true,
                 showResume: true,
                 showItems: true,
+                pinned: false,
             },
             certifications: {
                 color: "green",
@@ -128,6 +131,7 @@ export default new Vuex.Store({
                 enable: true,
                 showResume: true,
                 showItems: true,
+                pinned: false,
             },
             languages: {
                 color: "indigo",
@@ -139,6 +143,7 @@ export default new Vuex.Store({
                 enable: true,
                 showResume: true,
                 showItems: true,
+                pinned: false,
             },
             courses: {
                 color: "deep-purple",
@@ -150,6 +155,7 @@ export default new Vuex.Store({
                 enable: true,
                 showResume: true,
                 showItems: true,
+                pinned: false,
             },
 
             books: {
@@ -162,6 +168,7 @@ export default new Vuex.Store({
                 enable: true,
                 showResume: true,
                 showItems: true,
+                pinned: false,
             },
             thoughts: {
                 color: "pink",
@@ -173,6 +180,7 @@ export default new Vuex.Store({
                 enable: true,
                 showResume: true,
                 showItems: true,
+                pinned: false,
             },
             /*
             managementKnowledge: {
@@ -185,6 +193,7 @@ export default new Vuex.Store({
                 enable: true,
                 showResume: false,
                 showItems: true,
+                pinned: false,
             },
             technologies: {
                 color: "purple",
@@ -196,6 +205,7 @@ export default new Vuex.Store({
                 enable: true,
                 showResume: false,
                 showItems: true,
+                pinned: false,
             },
             milestones: {
                 color: "light-blue",
@@ -207,6 +217,7 @@ export default new Vuex.Store({
                 enable: true,
                 showResume: false,
                 showItems: true,
+                pinned: false,
             }*/
         },
     },

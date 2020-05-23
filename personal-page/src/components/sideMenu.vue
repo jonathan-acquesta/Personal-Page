@@ -24,7 +24,6 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-divider></v-divider>
 
           <v-list-item
             v-for="(menu, index) in this.$store.state.sideMenu" :key="index" link v-on:click="showPage(menu.url)">
@@ -40,13 +39,15 @@
           <v-divider></v-divider>
 
           <v-list-item
-            v-for="(category, index) in this.$store.state.categoryType" :key="index" link v-on:click="invertSelection(category)">
+            v-for="(category, index) in this.$store.state.categoryType" :key="index" link v-on:click="action(category)">
             
             <v-list-item-icon>
               <v-icon :color="category.color" :class="{desactiveCategory: !category.enable}">{{ category.icon }}</v-icon>
             </v-list-item-icon>
                 <v-list-item-content>
                   <v-list-item-title :class="{desactiveCategory: !category.enable}">{{ category.name[culture] }} 
+                    <v-icon v-if="category.pinned" class="pin" color="black" size="18px" @click="pin(category)">mdi-pin</v-icon>
+                    <v-icon v-else color="black" class="pin" size="18px" @click="pin(category)">mdi-pin-off</v-icon>
               </v-list-item-title>
             </v-list-item-content>
           </v-list-item>
@@ -71,9 +72,15 @@
 
         },
         methods: {
-            invertSelection(category)
-            {
-                category.enable = !category.enable;
+            action(category)
+            {  
+                let categories = Object.entries(this.state.categoryType);
+                categories.map(x => 
+                {  
+                    x[1].enable = (x[1].name[this.culture] == category.name[this.culture] || x[1].pinned);
+                });
+
+                this.scrollToTop();
             },
             getMenuWidth()
             {
@@ -85,6 +92,10 @@
               {
                 return "300";
               }
+            },
+            pin(category)
+            {
+                category.pinned = !category.pinned;
             }
         },
     }
@@ -93,6 +104,10 @@
 <style scoped>
 .desactiveCategory{
     opacity: 0.4;
+  }
+
+  .pin{
+    float: right;
   }
 
   .menu{

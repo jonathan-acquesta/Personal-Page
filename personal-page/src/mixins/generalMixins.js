@@ -19,7 +19,7 @@ const generalMixins = {
         },
         getHistories() {
             return this.histories;
-        },
+        }
     },
     methods: {
         openSite: function(url) {
@@ -37,6 +37,9 @@ const generalMixins = {
         },
         showMobileMenu() {
             return this.state.showMobileMenu;
+        },
+        scrollToTop() {
+            window.scrollTo(0, 0);
         }
     },
 }
