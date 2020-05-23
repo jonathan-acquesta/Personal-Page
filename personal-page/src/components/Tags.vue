@@ -4,6 +4,7 @@
           <span class="tags" 
             :class="`font-weight-bold ${tag.color}--text`"
             v-text="tag[culture]"></span>
+            <br v-if="vertical">
         </div>
     </div>
 </template>
@@ -13,7 +14,7 @@
 
     export default {
       name:'Tags',
-      props:['tags'],
+      props:['tags', 'vertical'],
       mixins:[generalMixins]
         
     }

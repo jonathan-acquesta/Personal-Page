@@ -8,6 +8,7 @@
           
           <div class="py-4 card">
             
+            
             <v-icon class="iconTitle" :color="history.category.color" size="24px">{{history.category.icon}}</v-icon>
             <span v-if="$vuetify.breakpoint.smAndDown"
               :class="`periodTitle font-weight-bold ${history.category.color}--text`"
@@ -45,8 +46,8 @@
               </tr>
             </table>
             
-            <Tags v-if="history.showDetail" :tags="history.tags"></Tags>
-            <Tags v-else :tags="getTags(history)"></Tags>
+            <Tags v-if="history.showDetail" :vertical="false" :tags="history.tags"></Tags>
+            <Tags v-else  :vertical="false" :tags="getTags(history)"></Tags>
             
             <Links :history="history"></Links>
 

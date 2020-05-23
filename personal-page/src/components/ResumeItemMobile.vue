@@ -30,7 +30,7 @@
             </div>
             
             
-            <Tags :tags="getTags(history)"></Tags>
+            <Tags  :vertical="true" :tags="getTags(history)"></Tags>
             
             <Links :history="history"></Links>
     

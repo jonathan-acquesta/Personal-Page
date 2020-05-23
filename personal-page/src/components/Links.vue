@@ -6,7 +6,7 @@
         <a v-for="(link, index) in history.links" :key="index"
         v-if="history.links"
         class="linkShow"
-        v-on:click="processLink(link)">{{ link.description[culture] }}
+        v-on:click="processLink(link)"><br v-if="isMobile()">{{ link.description[culture] }}
         </a>
     </div>
 </template>
