@@ -1,9 +1,9 @@
 <template>
     <div class="tagsGroup">
-      <div class="tagsDiv" v-for="(tag, index) in tags" :key="index">
+      <div class="tagsDiv" v-for="(tag, index) in tagsData" :key="index">
           <span class="tags" 
             :class="`font-weight-bold ${tag.color}--text`"
-            v-text="tag[culture]"></span>
+            v-text="tag.name[culture]"></span>
             <br v-if="vertical">
         </div>
     </div>
@@ -14,7 +14,7 @@
 
     export default {
       name:'Tags',
-      props:['tags', 'vertical'],
+      props:['tagsData', 'vertical'],
       mixins:[generalMixins]
         
     }

@@ -1,6 +1,6 @@
 <template>
   <div class="timeLine">
-    
+    <FilterPanel></FilterPanel>
     <div class="text-center"  v-for="(year,index) in getYear" :key="index">
       
 
@@ -22,12 +22,13 @@
 <script>
 import TimeLineItem from './../components/TimeLineItem.vue'
 import TimeLineItemMobile from './../components/TimeLineItemMobile.vue'
+import FilterPanel from './../components/FilterPanel.vue'
 import generalMixins from './../mixins/generalMixins.js';
 
 export default {
   name: "Timeline",
   mixins:[generalMixins],
-  components:{TimeLineItem, TimeLineItemMobile},
+  components:{TimeLineItem, TimeLineItemMobile, FilterPanel},
   data() {
     return {
       years:[]

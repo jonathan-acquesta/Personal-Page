@@ -26,7 +26,7 @@ const academicLife = {
                     "en-US": "At the end of 2005 I got my high school degree and it was the beginner of my journey, it was like a milestone to me, because I let my childhood behind and start my adult life.",
                 },
                 image: require('@/assets/academicLife/highSchool.jpg'),
-                tags: [this.$store.state.tags.highSchool],
+                tags: [this.$store.state.tags.highSchool, this.$store.state.tags.portuguese],
                 links: [{
                     description: { "pt-BR": "ComendadorMarioReys", "en-US": "ComendadorMarioReys" },
                     url: "https://www.educamaisbrasil.com.br/escolas/mario-reys-comendador",

@@ -14,6 +14,12 @@ const generalMixins = {
         state() {
             return this.$store.state;
         },
+        tags() {
+            return this.$store.state.tags;
+        },
+        tagGroups() {
+            return this.$store.state.tagGroups;
+        },
         categories() {
             return this.$store.state.categoryType;
         },

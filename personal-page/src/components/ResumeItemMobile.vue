@@ -33,7 +33,7 @@
             </div>
             
             
-            <Tags  :vertical="true" :tags="getTags(history)"></Tags>
+            <Tags  :vertical="true" :tagsData="getTags(history)"></Tags>
             
             <Links :history="history"></Links>
     

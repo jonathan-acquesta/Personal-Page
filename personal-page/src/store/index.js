@@ -12,6 +12,7 @@ export default new Vuex.Store({
             applicationTitle: { "pt-BR": "Meu Currículo Vivo", "en-US": "My Live Resume" },
             portfolio: { "pt-BR": "Portfólio", "en-US": "Portfolio" },
             filter: { "pt-BR": "Filtros", "en-US": "Filter" },
+            filterTags: { "pt-BR": "Filtrar #", "en-US": "Filter #" },
             all: { "pt-BR": "Mostrar Todas as Categorias", "en-US": "Show All Categories" },
             languages: {
                 portuguese: { "pt-BR": "Português", "en-US": "Portuguese", "language": "pt-BR" },
@@ -75,6 +76,7 @@ export default new Vuex.Store({
             languageSkills: { "pt-BR": "Habilidades Lingüísticas", "en-US": "Language Skills" }
         },
         tags: {},
+        tagGroups: {},
         histories: [],
         years: [],
         sideMenu: {

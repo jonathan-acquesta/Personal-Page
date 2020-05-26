@@ -46,8 +46,8 @@
               </tr>
             </table>
             
-            <Tags v-if="history.showDetail" :vertical="false" :tags="history.tags"></Tags>
-            <Tags v-else  :vertical="false" :tags="getTags(history)"></Tags>
+            <Tags v-if="history.showDetail" :vertical="false" :tagsData="history.tags"></Tags>
+            <Tags v-else  :vertical="false" :tagsData="getTags(history)"></Tags>
             
             <Links :history="history"></Links>
 

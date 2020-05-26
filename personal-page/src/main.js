@@ -31,7 +31,10 @@ var app = new Vue({
         }
     },
     beforeMount() {
-        this.$store.state.tags = this.mountTags();
+
+
+        this.$store.state.tagGroups = this.mountTagGroups();
+        this.$store.state.tags = this.mountTags(this.$store.state.tagGroups);
         this.$store.state.categoryType = this.mountCategories();
 
         var histories = [];
