@@ -12,8 +12,10 @@ export default new Vuex.Store({
             applicationTitle: { "pt-BR": "Meu Currículo Vivo", "en-US": "My Live Resume" },
             portfolio: { "pt-BR": "Portfólio", "en-US": "Portfolio" },
             filter: { "pt-BR": "Filtros", "en-US": "Filter" },
-            filterTags: { "pt-BR": "Filtrar #", "en-US": "Filter #" },
+            filterTags: { "pt-BR": "Filtrar por #", "en-US": "Filter by #" },
+            quickAccess: { "pt-BR": "Acesso Rápido", "en-US": "Quick Access" },
             all: { "pt-BR": "Mostrar Todas as Categorias", "en-US": "Show All Categories" },
+            allTags: { "pt-BR": "Mostrar Todas as Tags", "en-US": "Show All Tags" },
             languages: {
                 portuguese: { "pt-BR": "Português", "en-US": "Portuguese", "language": "pt-BR" },
                 english: { "pt-BR": "Inglês", "en-US": "English", "language": "en-US" },

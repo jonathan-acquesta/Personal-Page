@@ -1,5 +1,6 @@
 <template>
   <div class="timeLine">
+    <MenuIndex></MenuIndex>
     <FilterPanel></FilterPanel>
     <div class="text-center"  v-for="(year,index) in getYear" :key="index">
       
@@ -23,12 +24,13 @@
 import TimeLineItem from './../components/TimeLineItem.vue'
 import TimeLineItemMobile from './../components/TimeLineItemMobile.vue'
 import FilterPanel from './../components/FilterPanel.vue'
+import MenuIndex from './../components/MenuIndex.vue'
 import generalMixins from './../mixins/generalMixins.js';
 
 export default {
   name: "Timeline",
   mixins:[generalMixins],
-  components:{TimeLineItem, TimeLineItemMobile, FilterPanel},
+  components:{TimeLineItem, TimeLineItemMobile, FilterPanel, MenuIndex},
   data() {
     return {
       years:[]

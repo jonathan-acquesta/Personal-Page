@@ -159,7 +159,7 @@
 
   .menu{
     width: 100%;
-    transition: width 0s;
+    
   }
   
 
