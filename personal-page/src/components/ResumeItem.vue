@@ -1,7 +1,7 @@
 <template>
     
     <v-list v-if="category.showItems">
-        <template v-for="(history, index) in history">
+        <template v-for="(history, index) in history" v-if="isEnableItem(history)">
         <v-divider
             :key="'Divider' + index"
         ></v-divider>
@@ -47,7 +47,6 @@
 </template>
 
 <script>
-    import generalMixins from './../mixins/generalMixins.js';
     import historyMixins from './../mixins/historyMixins.js';
     import ButtonShowDetail from './../components/ButtonShowDetail.vue';
     import ButtonCloseDetail from './../components/ButtonCloseDetail.vue';
@@ -55,7 +54,7 @@
     import Links from './../components/Links.vue';
 
     export default {
-        mixins:[generalMixins, historyMixins],
+        mixins:[historyMixins],
         props:["category", "history"],
         components:{Tags, Links, ButtonShowDetail, ButtonCloseDetail},
         methods: {

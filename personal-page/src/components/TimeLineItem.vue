@@ -7,7 +7,7 @@
       :left="$vuetify.breakpoint.smAndDown"
     >
      <v-timeline-item
-        v-if="history.category.enable"
+        v-if="isEnableItem(history)"
         v-for="(history, i) in getHistories"
         :key="i"
         :dense="!$vuetify.breakpoint.smAndDown"
@@ -97,7 +97,6 @@
 </template>
 
 <script>
-    import generalMixins from './../mixins/generalMixins.js'
     import historyMixins from './../mixins/historyMixins.js'
     import Tags from './../components/Tags.vue'
     import Links from './../components/Links.vue'
@@ -106,7 +105,7 @@
 
     export default {
         props:['histories'],
-        mixins: [generalMixins, historyMixins],
+        mixins: [historyMixins],
         components:{Tags, Links, ButtonShowDetail, ButtonCloseDetail}, 
         data() {
             return {

@@ -1,15 +1,12 @@
 <template>
     <div>
-
-        
-
             <v-tooltip left >
               <template v-slot:activator="{ on }">
                  <v-btn icon class="filter" v-on="on" >
-                    <v-icon  size="24px" @click="toggleFilterMenu()">mdi-filter-menu</v-icon>
+                    <v-icon  size="24px" @click="toggleFilterMenu()"> {{ getIconFilter }}</v-icon>
                 </v-btn>
               </template>
-              <span>{{ language.filterTags[culture] }}</span>
+              <span>{{ getTitleFilter }}</span>
             </v-tooltip>
            
         <span v-if="showFilterMenu" :class="`filterTitle font-weight-bold`"
@@ -65,6 +62,32 @@ import generalMixins from './../mixins/generalMixins.js'
               panel: 0,
             }
         },
+        computed: {
+          getIconFilter()
+          {
+            if(this.showFilterMenu)
+            {
+              return "mdi-filter-menu-outline";
+            }
+            else
+            {
+              return "mdi-filter-menu";
+            }
+          },
+          getTitleFilter()
+          {
+            if(this.showFilterMenu)
+            {
+              return this.language.filterTagsClose[this.culture];
+            }
+            else
+            {
+              return this.language.filterTags[this.culture];
+            }
+          }
+
+
+        },
         methods: {
             toggleFilterMenu()
             {
@@ -73,26 +96,26 @@ import generalMixins from './../mixins/generalMixins.js'
             toggleTag(tag)
             {
               tag.show = !tag.show;
+
+              if(tag.show){
+                this.state.tagsActive.push(tag);
+              }
+              else{
+                this.state.tagsActive = this.state.tagsActive.filter(x => x.id !== tag.id);
+              }
             },
             getTotalItems(group)
             {
-                let totalSelected = this.getTotalSelectedItems(group);
-                
                 let result = "Total de " + Object.entries(group.tags).length + "#"; 
-                if(totalSelected !== 0){
-                  result += " com " + totalSelected + " selecionados";
-                }
 
                 return result
-            },
-            getTotalSelectedItems(group)
-            {
-                return Object.entries(group.tags).filter(q => q.show == true).length; 
             },
             showAllCategories()
             {
                 Object.values(this.tagGroups).forEach(x => Object.values(x.tags).forEach(q => q.show = false));
+                this.state.tagsActive = [];
                 this.showFilterMenu = false;
+                
             }
         },
     }

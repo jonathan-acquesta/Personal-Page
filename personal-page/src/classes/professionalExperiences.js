@@ -410,7 +410,7 @@ const professionalExperiences = {
                 }],
                 tags: [this.$store.state.tags.fullSystemAnalyst, this.$store.state.tags.opportunity, this.$store.state.tags.greatChallenge, this.$store.state.tags.aspNetMVC,
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.entityframework6, this.$store.state.tags.razor, this.$store.state.tags.javascript,
-                    this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.photoshop, this.$store.state.tags.mvc
+                    this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.photoshop, this.$store.state.tags.mvc, this.$store.state.tags.cSharp,
                 ],
                 mainTags: [this.$store.state.tags.fullSystemAnalyst, this.$store.state.tags.opportunity, this.$store.state.tags.greatChallenge, this.$store.state.tags.aspNetMVC,
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.mvc
@@ -449,7 +449,7 @@ const professionalExperiences = {
                     type: "link"
                 }],
                 tags: [this.$store.state.tags.seniorSystemAnalyst, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.hardworking,
-                    this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.aspNetMVC,
+                    this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.aspNetMVC, this.$store.state.tags.cSharp,
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.entityframework6, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.photoshop, this.$store.state.tags.mvc
                 ],
@@ -493,7 +493,7 @@ const professionalExperiences = {
                     this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership,
                     this.$store.state.tags.coaching, this.$store.state.tags.trainning,
                     this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.hardworking,
-                    this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
+                    this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC, this.$store.state.tags.cSharp,
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.entityframework6, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.mvc
                 ],
@@ -541,7 +541,7 @@ const professionalExperiences = {
                     this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
                     this.$store.state.tags.coaching, this.$store.state.tags.trainning,
                     this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
-                    this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
+                    this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC, this.$store.state.tags.cSharp,
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.entityframework6, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.mvc
                 ],
@@ -595,7 +595,7 @@ const professionalExperiences = {
                     this.$store.state.tags.coaching, this.$store.state.tags.trainning,
                     this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
                     this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge, this.$store.state.tags.vueJS, this.$store.state.tags.webAPI,
-                    this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
+                    this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC, this.$store.state.tags.cSharp,
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.entityframework6, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.mvc
                 ],
@@ -648,7 +648,7 @@ const professionalExperiences = {
                     this.$store.state.tags.rewarding, this.$store.state.tags.greatChallenge,
                     this.$store.state.tags.unitTest, this.$store.state.tags.integratedTest, this.$store.state.tags.codeCoverage, this.$store.state.tags.codeAnalysis,
                     this.$store.state.tags.codeMetrics, this.$store.state.tags.TDD, this.$store.state.tags.BDD, this.$store.state.tags.styleCop,
-                    this.$store.state.tags.vueJS, this.$store.state.tags.webAPI, this.$store.state.tags.dotNetCore,
+                    this.$store.state.tags.vueJS, this.$store.state.tags.webAPI, this.$store.state.tags.dotNetCore, this.$store.state.tags.cSharp,
                     this.$store.state.tags.DDD, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC,
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.entityframework6, this.$store.state.tags.entityframeworkNetCore, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.mvc

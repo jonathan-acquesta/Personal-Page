@@ -1,6 +1,9 @@
 <template>
     <div class="divBlock">
-        <FilterPanel></FilterPanel>
+        <MenuIndex></MenuIndex>
+        <FilterPanel class="filterMenu"></FilterPanel>
+        <br>
+        
         <div class="divResume" v-for="(category, index) in this.$store.state.categoryType" :key="index" v-if="category.enable">
             <v-card outlined class="elevation-2"  v-if="category.showResume && category.enable">
                
@@ -26,10 +29,11 @@
     import ResumeItem from './../components/ResumeItem.vue';
     import ResumeItemMobile from './../components/ResumeItemMobile.vue';
     import FilterPanel from './../components/FilterPanel.vue'
+    import MenuIndex from './../components/MenuIndex.vue'
 
     export default {
         mixins:[generalMixins, historyMixins],
-        components:{ResumeItem, ResumeItemMobile, FilterPanel},
+        components:{ResumeItem, ResumeItemMobile, FilterPanel, MenuIndex},
         data() {
             return {
                
@@ -55,6 +59,11 @@
 </script>
 
 <style scoped>
+
+.filterMenu{
+    margin-bottom: 10px;
+}
+
 .categoryGroup{
     cursor: pointer;
     width: 100%;
