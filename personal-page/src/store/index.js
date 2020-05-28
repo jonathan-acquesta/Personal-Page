@@ -6,6 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         culture: 'en-US',
+        sideMenuActive: "TimeLine",
         common: {
             toolbarTitleMobile: { "pt-BR": "Jonathan C Acquesta", "en-US": "Jonathan C Acquesta" },
             toolbarTitle: { "pt-BR": "Jonathan Caravaggio Acquesta - Agile Coach - PSM I", "en-US": "Jonathan Caravaggio Acquesta - Agile Coach - PSM I" },

@@ -110,17 +110,6 @@
 
                 this.scrollToTop();
             },
-            getMenuWidth()
-            {
-              if(this.isMobile())
-              {
-                return "100%";
-              }
-              else
-              {
-                return "300";
-              }
-            },
             pin(category)
             {
                 category.pinned = !category.pinned;

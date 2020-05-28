@@ -2,6 +2,7 @@
     <v-app-bar
       app
       clipped-right
+      clipped-left
       color="blue darken-2"
       dark
       dense

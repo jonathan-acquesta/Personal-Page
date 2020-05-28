@@ -34,6 +34,7 @@ const generalMixins = {
         showPage(url) {
             this.state.showMobileMenu = false;
 
+            this.state.sideMenuActive = url;
             if (this.$router.currentRoute.name !== url) {
                 this.$router.push({ name: url });
             }
@@ -46,7 +47,14 @@ const generalMixins = {
         },
         scrollToTop() {
             window.scrollTo(0, 0);
-        }
+        },
+        getMenuWidth() {
+            if (this.isMobile()) {
+                return "100%";
+            } else {
+                return "300";
+            }
+        },
     },
 }
 
