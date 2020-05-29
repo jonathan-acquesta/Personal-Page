@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="menuIndex">
     <v-sheet class="filterField pa-1 lighten-2">
         
 <v-text-field
@@ -24,11 +24,12 @@
       
     </v-sheet>
     
+    <div class="divTreeview">
       <v-treeview class="tree"
         :items="itemsTree"
         :search="search"
         :filter="filter"
-        :open="state.itemsResumeOpen"
+        :open="open"
         open-on-click
       >
       <template v-slot:label="{ item }" >
@@ -47,6 +48,7 @@
                 ></v-img>
         </template>
       </v-treeview>
+      </div>
     
   </div>
 </template>
@@ -55,6 +57,7 @@
 import historyMixins from './../mixins/historyMixins.js'
 
     export default {
+        props:["open", "items"],
         mixins:[historyMixins],
         data() {
             return {
@@ -67,7 +70,7 @@ import historyMixins from './../mixins/historyMixins.js'
       },
       itemsTree()
       {
-          return this.state.itemsResume;
+          return this.items;
       }
     },
     methods: {
@@ -96,6 +99,15 @@ import historyMixins from './../mixins/historyMixins.js'
 <style scoped>
 .filterField{
     border-radius: 0%;
+}
+
+.divTreeview{
+    height: 92vh;
+    overflow:auto;
+}
+
+.menuIndex{
+    overflow: hidden;
 }
 
 .tree{

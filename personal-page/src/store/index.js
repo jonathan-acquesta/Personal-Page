@@ -41,6 +41,7 @@ export default new Vuex.Store({
         tagsActive: [],
         overlay: false,
         showMobileMenu: false,
+        showLeftMenu: false,
         mainImage: "",
         months: {
             "pt-BR": [

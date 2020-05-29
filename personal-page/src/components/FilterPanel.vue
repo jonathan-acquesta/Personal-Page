@@ -1,5 +1,5 @@
 <template>
-    <div class="FilterTagsFull">
+    <div class="FilterTagsFull" >
             <v-tooltip left >
               <template v-slot:activator="{ on }">
                  <v-btn icon class="filter" v-on="on" >

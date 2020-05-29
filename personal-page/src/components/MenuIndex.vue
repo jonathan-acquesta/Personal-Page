@@ -1,9 +1,10 @@
 <template>
     <div>
-           <v-tooltip right v-if="!showMenu">
+        <div v-if="state.showLeftMenu" class="custom_overlay" @click="state.showLeftMenu = !state.showLeftMenu"></div>
+           <v-tooltip right v-if="!state.showLeftMenu">
               <template v-slot:activator="{ on }">
-                 <v-btn icon class="filter" v-if="!showMenu" v-on="on" @click="toggleMenu()" >
-                    <v-icon  size="24px">{{getIcon()}}</v-icon>
+                 <v-btn small  color="blue darken-2" dark class="filter" v-if="!state.showLeftMenu" v-on="on" @click="toggleMenu()" >
+                    <v-icon  size="20px">{{getIcon()}}</v-icon>
                 </v-btn>
               </template>
               <span>{{ getIconTitle() }}</span>
@@ -11,16 +12,16 @@
             
 
 <v-navigation-drawer class="menu"
-      v-model="showMenu"
+      v-model="state.showLeftMenu"
       app
       :width="getMenuLeftWidth()"
       clipped
       temporary
       stateless
-      :permanent="showMenu"
+      :permanent="state.showLeftMenu"
     >
-    <menu-index-resume @closeMenu="closeMenu" v-if="isTimeLineActive()"></menu-index-resume>
-    <menu-index-time-line @closeMenu="closeMenu" v-else ></menu-index-time-line>
+    <MenuIndexItem :items="this.state.itemsResume" :open="state.itemsResumeOpen" @closeMenu="closeMenu" v-if="isTimeLineActive()"></MenuIndexItem>
+    <MenuIndexItem :items="this.state.itemsTimeLine" :open="state.itemsTimeLineOpen" @closeMenu="closeMenu" v-else></MenuIndexItem>
     
 
 
@@ -31,30 +32,30 @@
 
 <script>
 import generalMixins from './../mixins/generalMixins.js'
-import MenuIndexResume from './../components/MenuIndexResume.vue'
-import MenuIndexTimeLine from './../components/MenuIndexTimeLine.vue'
+import MenuIndexItem from './../components/MenuIndexItem.vue'
     
     export default {
         mixins:[generalMixins],
-        components:{MenuIndexTimeLine, MenuIndexResume},
+        components:{MenuIndexItem},
         data() {
             return {
-                showMenu: false
+                
+                //document.getElementsByClassName("v-overlay__scrim")
             }
         },
         methods: {
             toggleMenu(){
-                this.showMenu = !this.showMenu;
+                this.state.showLeftMenu = !this.state.showLeftMenu;
             },
             closeMenu(){
-                this.showMenu = false;
+                this.state.showLeftMenu = false;
             },
             isTimeLineActive(){
                 return this.$router.currentRoute.name === "Resume";
             },
             getIcon()
             {
-                if(this.showMenu)
+                if(this.state.showLeftMenu)
                 {
                     return "mdi-backburger";
                 }
@@ -65,7 +66,7 @@ import MenuIndexTimeLine from './../components/MenuIndexTimeLine.vue'
             },
             getIconTitle()
             {
-                if(this.showMenu)
+                if(this.state.showLeftMenu)
                 {
                     return this.language.closeQuickAccess[this.culture];
                 }
@@ -85,11 +86,31 @@ import MenuIndexTimeLine from './../components/MenuIndexTimeLine.vue'
     float: left;
     position: fixed;
     z-index: 9999;
+    left: -15px;
+    width: 50px;
+    opacity: 0.4;
+    top:55px;
+    transition-duration: 0.5s;
+    transition-property: width;
+  }
+
+   .filter:hover{
+    width: 70px;
+    opacity: 0.8;
   }
 
   .menu{
+      overflow-y: hidden;
     width: 100%;
     transition-duration: 0s;
     
   }
+
+  .custom_overlay {
+    position: fixed;
+    height: 110vh;
+    width: 100%;
+    z-index:7;
+    top:-20px;
+}
 </style>
