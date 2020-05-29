@@ -25,11 +25,11 @@ import TimeLineItem from './../components/TimeLineItem.vue'
 import TimeLineItemMobile from './../components/TimeLineItemMobile.vue'
 import FilterPanel from './../components/FilterPanel.vue'
 import MenuIndex from './../components/MenuIndex.vue'
-import generalMixins from './../mixins/generalMixins.js';
+import historyMixins from './../mixins/historyMixins.js';
 
 export default {
   name: "Timeline",
-  mixins:[generalMixins],
+  mixins:[historyMixins],
   components:{TimeLineItem, TimeLineItemMobile, FilterPanel, MenuIndex},
   data() {
     return {
@@ -52,10 +52,6 @@ export default {
         
   },
   methods: {
-    getHistory(year)
-    {
-        return this.$store.state.histories.filter(x => x.date.getFullYear() === year);
-    },
     toggleVisibility(year)
     {
       year.show = !year.show;

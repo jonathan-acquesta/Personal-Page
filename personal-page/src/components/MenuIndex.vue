@@ -3,26 +3,27 @@
            <v-tooltip right >
               <template v-slot:activator="{ on }">
                  <v-btn icon class="filter" v-on="on" @click="toggleMenu()" >
-                    <v-icon  size="24px">mdi-backburger</v-icon>
+                    <v-icon  size="24px">{{getIcon()}}</v-icon>
                 </v-btn>
               </template>
-              <span>{{ language.quickAccess[culture] }}</span>
+              <span>{{ getIconTitle() }}</span>
             </v-tooltip>
 
 <v-navigation-drawer class="menu"
-      v-model="drawerLeft"
+      v-model="showMenu"
       app
-      :width="getMenuWidth()"
+      :width="getMenuLeftWidth()"
       clipped
-      left
+      stateless
       :permanent="showMenu"
     >
-    <menu-index-time-line v-if="isTimeLineActive()"></menu-index-time-line>
-    <menu-index-resume v-else></menu-index-resume>
+    <menu-index-resume @closeMenu="closeMenu" v-if="isTimeLineActive()"></menu-index-resume>
+    <menu-index-time-line @closeMenu="closeMenu" v-else ></menu-index-time-line>
+    
 
 
 </v-navigation-drawer>
-            <!--<v-icon class="filter" color="white"  size="24px">mdi-backburger</v-icon>-->
+            
     </div>
 </template>
 
@@ -36,7 +37,6 @@ import MenuIndexTimeLine from './../components/MenuIndexTimeLine.vue'
         components:{MenuIndexTimeLine, MenuIndexResume},
         data() {
             return {
-                drawerLeft: null,
                 showMenu: false
             }
         },
@@ -44,9 +44,35 @@ import MenuIndexTimeLine from './../components/MenuIndexTimeLine.vue'
             toggleMenu(){
                 this.showMenu = !this.showMenu;
             },
+            closeMenu(){
+                this.showMenu = false;
+            },
             isTimeLineActive(){
-                return this.state.sideMenuActive === "TimeLine";
+                return this.$router.currentRoute.name === "Resume";
+            },
+            getIcon()
+            {
+                if(this.showMenu)
+                {
+                    return "mdi-backburger";
+                }
+                else
+                {
+                    return "mdi-forwardburger";
+                }
+            },
+            getIconTitle()
+            {
+                if(this.showMenu)
+                {
+                    return this.language.closeQuickAccess[this.culture];
+                }
+                else
+                {
+                    return this.language.quickAccess[this.culture];
+                }
             }
+            
         },
         
     }

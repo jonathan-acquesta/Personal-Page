@@ -6,7 +6,7 @@
       :reverse="!$vuetify.breakpoint.smAndDown"
       :left="$vuetify.breakpoint.smAndDown"
     >
-     <v-timeline-item
+     <v-timeline-item :id="getID(history)"
         v-if="isEnableItem(history)"
         v-for="(history, i) in getHistories"
         :key="i"

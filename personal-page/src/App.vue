@@ -5,8 +5,10 @@
     <OverlayImage></OverlayImage>
     <v-content >
       <v-container class="fill-height" fluid>
+       <ButtonBackPageUp></ButtonBackPageUp>
        <router-view v-show="!isMobile() || (isMobile() && !showMobileMenu())" />
       </v-container>
+      
     </v-content>
 
    <Footer></Footer>
@@ -22,12 +24,13 @@ import Header from "./components/Header.vue";
 import Timeline from "@/views/Timeline.vue";
 import Resume from "@/views/Resume.vue";
 import OverlayImage from "./components/OverlayImage.vue";
+import ButtonBackPageUp from "./components/ButtonBackPageUp.vue";
 import generalMixins from './mixins/generalMixins.js'
 
   export default {
     mixins:[generalMixins],
     components: {
-      Timeline, Resume, SideMenu, Footer, OverlayImage, Header
+      Timeline, Resume, SideMenu, Footer, OverlayImage, Header, ButtonBackPageUp
     },
     data: () => ({
       drawer: null,

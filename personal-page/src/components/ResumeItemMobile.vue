@@ -1,12 +1,12 @@
 <template>
     
     <v-list v-if="category.showItems">
-        <template v-for="(history, index) in history" v-if="isEnableItem(history)">
+        <template v-for="(history, index) in history" v-if="isEnableItem(history)" >
         <v-divider
             :key="'Divider' + index"
         ></v-divider>
 
-        <v-list-item
+        <v-list-item :id="getID(history)"
             :key="index"
         >
         <table class="tableResume">

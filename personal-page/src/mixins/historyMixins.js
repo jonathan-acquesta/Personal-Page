@@ -17,7 +17,18 @@ const historyMixins = {
             }
 
             return history.category.enable;
-        }
+        },
+        getHistotyByCategory(category) {
+            var result = this.$store.state.histories.filter(x => x.category.id === category.id);
+
+            return result;
+        },
+        getHistory(year) {
+            return this.$store.state.histories.filter(x => x.date.getFullYear() === year);
+        },
+        getID(history) {
+            return history.title[this.culture] + " - " + history.subTitle[this.culture];
+        },
     },
 };
 

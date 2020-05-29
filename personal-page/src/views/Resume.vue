@@ -16,15 +16,14 @@
           <span v-if="isMobile()" :class="`mobile font-weight-bold ${category.color}--text`" v-text="category.name[culture]"></span>
           <span v-else :class="`headline font-weight-bold ${category.color}--text`" v-text="category.name[culture]"></span>
         </div>
-          <ResumeItem v-if="!isMobile()" :category="category" :history="getHistotyByCategory(category.name)"></ResumeItem>
-          <ResumeItemMobile v-else :category="category" :history="getHistotyByCategory(category.name)"></ResumeItemMobile>
+          <ResumeItem v-if="!isMobile()" :category="category" :history="getHistotyByCategory(category)"></ResumeItem>
+          <ResumeItemMobile v-else :category="category" :history="getHistotyByCategory(category)"></ResumeItemMobile>
           </v-card>
         </div>
     </div>
 </template>
 
 <script>
-    import generalMixins from './../mixins/generalMixins.js';
     import historyMixins from './../mixins/historyMixins.js';
     import ResumeItem from './../components/ResumeItem.vue';
     import ResumeItemMobile from './../components/ResumeItemMobile.vue';
@@ -32,7 +31,7 @@
     import MenuIndex from './../components/MenuIndex.vue'
 
     export default {
-        mixins:[generalMixins, historyMixins],
+        mixins:[historyMixins],
         components:{ResumeItem, ResumeItemMobile, FilterPanel, MenuIndex},
         data() {
             return {
@@ -43,12 +42,6 @@
             
         },  
         methods: {
-            getHistotyByCategory(category)
-            {
-                var result = this.$store.state.histories.filter(x => x.category.name === category);
-
-                return result;
-            },
             toggleItems(category)
             {
                 category.showItems = !category.showItems;

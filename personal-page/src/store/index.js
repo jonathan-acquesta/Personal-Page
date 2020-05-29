@@ -6,7 +6,6 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         culture: 'en-US',
-        sideMenuActive: "TimeLine",
         common: {
             toolbarTitleMobile: { "pt-BR": "Jonathan C Acquesta", "en-US": "Jonathan C Acquesta" },
             toolbarTitle: { "pt-BR": "Jonathan Caravaggio Acquesta - Agile Coach - PSM I", "en-US": "Jonathan Caravaggio Acquesta - Agile Coach - PSM I" },
@@ -16,6 +15,9 @@ export default new Vuex.Store({
             filterTags: { "pt-BR": "Filtrar por #", "en-US": "Filter by #" },
             filterTagsClose: { "pt-BR": "Fechar filtro", "en-US": "Close filter" },
             quickAccess: { "pt-BR": "Acesso Rápido", "en-US": "Quick Access" },
+            closeQuickAccess: { "pt-BR": "Fechar Acesso Rápido", "en-US": "Close Quick Access" },
+            upPage: { "pt-BR": "Voltar ao Topo", "en-US": "Back to the Top" },
+            search: { "pt-BR": "Pesquisa", "en-US": "Search" },
             all: { "pt-BR": "Mostrar Todas as Categorias", "en-US": "Show All Categories" },
             allTags: { "pt-BR": "Mostrar Todas as Tags", "en-US": "Show All Tags" },
             languages: {

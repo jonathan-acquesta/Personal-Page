@@ -32,9 +32,10 @@ const generalMixins = {
             window.open(url, "_blank");
         },
         showPage(url) {
+            this.scrollToTop();
+
             this.state.showMobileMenu = false;
 
-            this.state.sideMenuActive = url;
             if (this.$router.currentRoute.name !== url) {
                 this.$router.push({ name: url });
             }
@@ -48,11 +49,29 @@ const generalMixins = {
         scrollToTop() {
             window.scrollTo(0, 0);
         },
+        scrollMeTo(refName) {
+            let element = document.getElementById(refName);
+            element.scrollIntoView();
+
+            if (!this.isMobile()) {
+                window.scrollTo(0, window.scrollY - 60);
+            } else {
+                //window.scrollTo(0, window.scrollY - 20);
+            }
+
+        },
         getMenuWidth() {
             if (this.isMobile()) {
                 return "100%";
             } else {
                 return "300";
+            }
+        },
+        getMenuLeftWidth() {
+            if (this.isMobile()) {
+                return "100%";
+            } else {
+                return "400";
             }
         },
     },

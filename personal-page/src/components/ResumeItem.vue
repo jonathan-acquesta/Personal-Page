@@ -7,7 +7,7 @@
         ></v-divider>
 
         <v-list-item
-            :key="index"
+            :key="index" :id="getID(history)"
         >
             <v-list-item-action>
             <v-img
@@ -19,8 +19,8 @@
             </v-list-item-action>
 
             
-            <v-list-item-content >
-            <div class="itemContent">  
+            <v-list-item-content  >
+            <div class="itemContent" >  
             <ButtonShowDetail :history="history"></ButtonShowDetail>
             <p class="titleRegister">{{ getTitle(history) }}</p>
             <p class="subTitleRegister">{{ getSubTitle(history) }}</p>
