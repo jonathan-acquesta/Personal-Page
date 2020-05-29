@@ -14,12 +14,13 @@ import thoughts from "./classes/thoughts.js";
 import technologies from "./classes/technologies.js";
 import tags from "./classes/tags.js";
 import categories from "./classes/categories.js";
+import historyMixins from "./mixins/historyMixins.js";
 
 
 Vue.config.productionTip = false;
 
 var app = new Vue({
-    mixins: [certifications, books, professionalExperiences, academicLife, courses, languageCourses, thoughts, technologies, tags, categories],
+    mixins: [certifications, books, professionalExperiences, academicLife, courses, languageCourses, thoughts, technologies, tags, categories, historyMixins],
     router,
     store,
     vuetify,
@@ -53,5 +54,7 @@ var app = new Vue({
         this.$store.state.histories = histories;
 
         this.mountYears(histories);
+        this.startTimeLineFilter();
+        this.startResumeFilter();
     },
 }).$mount("#app");

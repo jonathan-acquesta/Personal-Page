@@ -52,10 +52,10 @@
 </template>
 
 <script>
-import generalMixins from './../mixins/generalMixins.js'
+import historyMixins from './../mixins/historyMixins.js'
 
     export default {
-        mixins:[generalMixins],
+        mixins:[historyMixins],
         data() {
             return {
               showFilterMenu: false,
@@ -103,6 +103,8 @@ import generalMixins from './../mixins/generalMixins.js'
               else{
                 this.state.tagsActive = this.state.tagsActive.filter(x => x.id !== tag.id);
               }
+
+              this.updateQuickFilter();
             },
             getTotalItems(group)
             {
@@ -116,6 +118,7 @@ import generalMixins from './../mixins/generalMixins.js'
                 this.state.tagsActive = [];
                 this.showFilterMenu = false;
                 
+                this.updateQuickFilter();
             }
         },
     }

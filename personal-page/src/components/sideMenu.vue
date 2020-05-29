@@ -73,10 +73,10 @@
 </template>
 
 <script>
-    import generalMixins from './../mixins/generalMixins.js'
+    import historyMixins from './../mixins/historyMixins.js'
 
     export default {
-        mixins:[generalMixins],
+        mixins:[historyMixins],
         data() {
             return {
                 drawerRight: null,
@@ -109,11 +109,14 @@
 
                 });
 
+                this.updateQuickFilter();
                 this.scrollToTop();
             },
             pin(category)
             {
                 category.pinned = !category.pinned;
+
+                this.updateQuickFilter();
             },
             showAll(){
               let categories = Object.entries(this.state.categoryType);
@@ -124,6 +127,7 @@
 
                 });
 
+                this.updateQuickFilter();
                 this.scrollToTop();
             },
             pinAll(value)
@@ -133,6 +137,8 @@
                 {  
                     x[1].pinned = value;
                 });
+
+                this.updateQuickFilter();
             }
         },
     }

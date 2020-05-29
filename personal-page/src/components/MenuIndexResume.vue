@@ -25,10 +25,10 @@
     </v-sheet>
     
       <v-treeview class="tree"
-        :items="items"
+        :items="itemsTree"
         :search="search"
         :filter="filter"
-        :open="open"
+        :open="state.itemsResumeOpen"
         open-on-click
       >
       <template v-slot:label="{ item }" >
@@ -58,8 +58,6 @@ import historyMixins from './../mixins/historyMixins.js'
         mixins:[historyMixins],
         data() {
             return {
-                items: [ ],
-                open:[],
                 search: null,
             }
         },
@@ -67,15 +65,13 @@ import historyMixins from './../mixins/historyMixins.js'
       filter () {
         return (item, search, textKey) => item[textKey](item.object).toUpperCase().indexOf(search? search.toUpperCase(): search) > -1;
       },
+      itemsTree()
+      {
+          return this.state.itemsResume;
+      }
     },
     methods: {
-        getTitle(history)
-            {
-                return this.language.yearOf[this.culture] + " " + history.date.getFullYear() + " - " + history.title[this.culture];
-            },
-            getCategory(category){
-                return category.name[this.culture]
-            },
+       
         NavegateTo(item){
             if(item.children.length === 0)
             {
@@ -92,38 +88,7 @@ import historyMixins from './../mixins/historyMixins.js'
         },
     },
     mounted() {
-
-        let items = [];
-        let categories = Object.values(this.$store.state.categoryType);
-
-        categories.forEach(category => {
-            let histories = this.getHistotyByCategory(category);
-            
-            histories = histories.map(history => { return {
-              id: this.getID(history),
-              name: this.getTitle,
-              image: history.image,
-              color: category.color,
-              object: history,
-              children: []
-            }});
-
-            let item = {
-              id: category.id,
-              name: this.getCategory,
-              icon: category.icon,
-              color: category.color,
-              object: category,
-              children: histories};
-
-            this.open.push(category.id);
-
-            items.push(item);
-        });
-
-        this.items = items; 
-
-
+       
     },
     }
 </script>

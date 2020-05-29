@@ -21,10 +21,10 @@
     </v-sheet>
     
       <v-treeview class="tree"
-        :items="items"
+        :items="itemsTree"
         :search="search"
         :filter="filter"
-        :open="open"
+        :open="state.itemsTimeLineOpen"
         open-on-click
       >
       <template v-slot:label="{ item }">
@@ -53,8 +53,6 @@ import historyMixins from './../mixins/historyMixins.js'
         mixins:[historyMixins],
         data() {
             return {
-                items: [ ],
-                open:[],
                 search: null,
             }
         },
@@ -62,16 +60,13 @@ import historyMixins from './../mixins/historyMixins.js'
       filter () {
         return (item, search, textKey) => item[textKey](item.object).toUpperCase().indexOf(search? search.toUpperCase(): search) > -1;
       },
+      itemsTree()
+      {
+          return this.state.itemsTimeLine;
+      }
     },
     methods: {
-        getTitle(history)
-        {
-            return this.language.yearOf[this.culture] + " " + history.date.getFullYear() + " | " + this.state.months[this.state.culture][history.date.getMonth()] + " - " + history.title[this.culture];
-        },
-        getTitleYear(year)
-        {   
-            return this.language.yearOf[this.culture] + " " + year.year
-        },
+        
         NavegateTo(item){
             if(item.children.length === 0)
             {
@@ -88,37 +83,7 @@ import historyMixins from './../mixins/historyMixins.js'
         }
     },
     mounted() {
-
-        let items = [];
-        let years = this.state.years;
-
-        years.forEach(year => {
-            let histories = this.getHistory(year.year);
-            
-            histories = histories.map(history => { return {
-              id: this.getID(history),
-              name: this.getTitle,
-              object: history,
-              image: history.image,
-              color: history.category.color,
-              children: []
-            }});
-
-            let item = {
-              id: year.year,
-              name: this.getTitleYear,
-              object: year,
-              icon: "mdi-clock",
-              color:"pink",
-              children: histories};
-
-            this.open.push(year.year);
-
-            items.push(item);
-        });
-
-        this.items = items; 
-
+        
     },
     }
 </script>

@@ -45,6 +45,7 @@
             toggleItems(category)
             {
                 category.showItems = !category.showItems;
+                this.updateQuickFilter();
             },
             
         },

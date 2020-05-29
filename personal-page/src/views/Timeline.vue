@@ -55,7 +55,8 @@ export default {
     toggleVisibility(year)
     {
       year.show = !year.show;
-      
+
+      this.updateQuickFilter();
     },
     getButtonYearText(year)
     {
