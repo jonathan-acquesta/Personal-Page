@@ -8,7 +8,7 @@
               </template>
               <span>{{ getIconTitle() }}</span>
             </v-tooltip>
-            <v-icon v-else color="white" class="filter" size="24px">{{getIcon()}}</v-icon>
+            
 
 <v-navigation-drawer class="menu"
       v-model="showMenu"
@@ -83,6 +83,8 @@ import MenuIndexTimeLine from './../components/MenuIndexTimeLine.vue'
 <style scoped>
  .filter{
     float: left;
+    position: fixed;
+    z-index: 9999;
   }
 
   .menu{

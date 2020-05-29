@@ -12,9 +12,10 @@
     <v-list
           dense
           nav
+          style="z-index: 9999;"
           class="py-0"
         >
-          <v-list-item two-line :class="miniVariant && 'px-0'">
+          <v-list-item style="z-index: 9999;" two-line :class="miniVariant && 'px-0'">
             <v-list-item-avatar>
               <img src="./../assets/myFace.png">
             </v-list-item-avatar>
@@ -148,7 +149,7 @@
 
   .menu{
     width: 100%;
-    
+    z-index: 9999;
   }
   
 

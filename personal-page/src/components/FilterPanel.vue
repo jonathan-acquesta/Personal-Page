@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="FilterTagsFull">
             <v-tooltip left >
               <template v-slot:activator="{ on }">
                  <v-btn icon class="filter" v-on="on" >
@@ -136,7 +136,13 @@ import generalMixins from './../mixins/generalMixins.js'
 }
 
   .filter{
-    float: right;
+    float: right; 
+  }
+
+  .FilterTagsFull{
+    
+    z-index: 9990;
+    
   }
 
   .mainCard{

@@ -139,7 +139,7 @@ import historyMixins from './../mixins/historyMixins.js'
 
 .filter{
     float: right;
-    margin-top:-40px;
+    margin-top:-35px;
 }
 
 .divName{

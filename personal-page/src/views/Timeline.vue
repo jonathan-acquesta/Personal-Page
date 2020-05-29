@@ -5,9 +5,9 @@
     <div class="text-center"  v-for="(year,index) in getYear" :key="index">
       
 
-        <v-tooltip left >
+        <v-tooltip left  >
               <template v-slot:activator="{ on }">
-                <v-btn class="ma-2" outlined color="indigo" v-on="on"  @click="toggleVisibility(year)">{{year.year}}</v-btn>
+                <v-btn :class="getClassFirstYear(index)"  outlined color="indigo" v-on="on"  @click="toggleVisibility(year)">{{year.year}}</v-btn>
               </template>
               <span>{{ getButtonYearText(year) }}</span>
             </v-tooltip>
@@ -67,7 +67,18 @@ export default {
         {
           return this.language.showYear[this.culture];
         }
-    }
+    },
+    getClassFirstYear(index)
+      {
+        if (index === 0)
+        {
+          return "firstYear ma-2";
+        }
+        else
+        {
+          return "ma-2";
+        }
+      }
   },
 };
 </script>
@@ -76,5 +87,9 @@ export default {
 <style scoped>
 .timeLine{
   width: 100%;
+}
+
+.firstYear{
+  left: 18px;
 }
 </style>
