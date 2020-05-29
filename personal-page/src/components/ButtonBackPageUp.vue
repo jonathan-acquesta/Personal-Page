@@ -64,7 +64,7 @@
 .showDetailsUp
 {
     position: fixed;
-    margin-right: 49.2%;
+    margin-right: 49.5%;
     margin-bottom: 30px;
   
 }

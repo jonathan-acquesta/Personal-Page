@@ -1,19 +1,21 @@
 <template>
     <div>
-           <v-tooltip right >
+           <v-tooltip right v-if="!showMenu">
               <template v-slot:activator="{ on }">
-                 <v-btn icon class="filter" v-on="on" @click="toggleMenu()" >
+                 <v-btn icon class="filter" v-if="!showMenu" v-on="on" @click="toggleMenu()" >
                     <v-icon  size="24px">{{getIcon()}}</v-icon>
                 </v-btn>
               </template>
               <span>{{ getIconTitle() }}</span>
             </v-tooltip>
+            <v-icon v-else color="white" class="filter" size="24px">{{getIcon()}}</v-icon>
 
 <v-navigation-drawer class="menu"
       v-model="showMenu"
       app
       :width="getMenuLeftWidth()"
       clipped
+      temporary
       stateless
       :permanent="showMenu"
     >

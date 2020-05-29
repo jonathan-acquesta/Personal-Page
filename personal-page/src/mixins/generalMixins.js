@@ -51,13 +51,13 @@ const generalMixins = {
         },
         scrollMeTo(refName) {
             let element = document.getElementById(refName);
-            element.scrollIntoView();
+            element.scrollIntoView(true);
 
-            if (!this.isMobile()) {
-                window.scrollTo(0, window.scrollY - 60);
-            } else {
-                //window.scrollTo(0, window.scrollY - 20);
-            }
+            //if (!this.isMobile()) {
+            window.scrollTo(0, window.scrollY - 60);
+            //} else {
+            //window.scrollTo(0, window.scrollY - 20);
+            //}
 
         },
         getMenuWidth() {

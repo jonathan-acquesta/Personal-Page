@@ -19,7 +19,7 @@ const technologies = {
                     "en-US": "My personal website project",
                 },
                 image: require('@/assets/technologies/portfolio.jpg'),
-                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.vueJS],
+                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.vueJS, this.$store.state.tags.vuex, this.$store.state.tags.vuetity],
                 links: [{
                     description: { "pt-BR": "GitHub", "en-US": "GitHub" },
                     url: "https://github.com/jonathan-acquesta/Personal-Page",

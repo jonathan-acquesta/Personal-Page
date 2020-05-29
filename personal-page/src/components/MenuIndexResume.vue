@@ -1,13 +1,27 @@
 <template>
     <div>
     <v-sheet class="filterField pa-1 lighten-2">
-      <v-text-field
+        
+<v-text-field
+        class="search"
         v-model="search"
         :label="language.search[culture]"
         hide-details
         clearable
         clear-icon="mdi-close-circle-outline"
       ></v-text-field>
+          
+                <v-tooltip right >
+              <template v-slot:activator="{ on }">
+                 <v-btn icon class="filter" v-on="on" @click="close()" >
+                    <v-icon  size="24px">mdi-backburger</v-icon>
+                </v-btn>
+              </template>
+              <span>{{ this.language.closeQuickAccess[this.culture] }}</span>
+            </v-tooltip>
+            
+      
+      
     </v-sheet>
     
       <v-treeview class="tree"
@@ -68,10 +82,13 @@ import historyMixins from './../mixins/historyMixins.js'
                 this.scrollMeTo(item.id);
             }
 
-            if(this.isMobile())
-            {
+           
                 this.$emit("closeMenu");
-            }
+            
+        },
+        close()
+        {
+            this.$emit("closeMenu");
         }
     },
     mounted() {
@@ -127,5 +144,14 @@ import historyMixins from './../mixins/historyMixins.js'
     margin: 0px;
     padding-top: 10px;
     padding-left: 5px;
+}
+
+.filter{
+    float: right;
+    margin-top:-40px;
+}
+
+.search{
+    width: 90%;
 }
 </style>
