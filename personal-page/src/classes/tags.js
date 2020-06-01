@@ -103,6 +103,7 @@ const tags = {
             group.tags["feedback"] = { id: 51, name: { "pt-BR": "#Feeback", "en-US": "#Feeback" }, show: false, "group": group };
             group.tags["persuasion"] = { id: 52, name: { "pt-BR": "#Persuasão", "en-US": "#Persuasion" }, show: false, "group": group };
             group.tags["communication"] = { id: 53, name: { "pt-BR": "#Comunicação", "en-US": "#Communication" }, show: false, "group": group };
+            group.tags["empathy"] = { id: 53, name: { "pt-BR": "#Empatia", "en-US": "#Empathy" }, show: false, "group": group };
 
             Object.assign(tagsAll, group.tags);
         },
@@ -129,7 +130,7 @@ const tags = {
             group.tags["javascript"] = { id: 72, name: { "pt-BR": "#Javascript", "en-US": "#Javascript" }, show: false, "group": group };
             group.tags["vueJS"] = { id: 73, name: { "pt-BR": "#VueJS", "en-US": "#VueJS" }, show: false, "group": group };
             group.tags["vuex"] = { id: 73, name: { "pt-BR": "#Vuex", "en-US": "#Vuex" }, show: false, "group": group };
-            group.tags["vuetity"] = { id: 73, name: { "pt-BR": "#Vuetity", "en-US": "#Vuetity" }, show: false, "group": group };
+            group.tags["vuetify"] = { id: 73, name: { "pt-BR": "#Vuetify", "en-US": "#Vuetify" }, show: false, "group": group };
             group.tags["jQuery"] = { id: 74, name: { "pt-BR": "#jQuery", "en-US": "#jQuery" }, show: false, "group": group };
             group.tags["css"] = { id: 75, name: { "pt-BR": "#CSS", "en-US": "#CSS" }, show: false, "group": group };
             group.tags["html"] = { id: 76, name: { "pt-BR": "#HTML", "en-US": "#HTML" }, show: false, "group": group };
@@ -137,14 +138,14 @@ const tags = {
             group.tags["silverlight"] = { id: 78, name: { "pt-BR": "#Silverlight", "en-US": "#Silverlight" }, show: false, "group": group };
             group.tags["mvvm"] = { id: 79, name: { "pt-BR": "#MVVM", "en-US": "#MVVM" }, show: false, "group": group };
             group.tags["mvc"] = { id: 80, name: { "pt-BR": "#MVC", "en-US": "#MVC" }, show: false, "group": group };
-            group.tags["designPattern"] = { id: 81, name: { "pt-BR": "#PadrãoDeProjetos", "en-US": "#designPattern" }, show: false, "group": group };
+            group.tags["designPattern"] = { id: 81, name: { "pt-BR": "#PadrãoDeProjetos", "en-US": "#DesignPattern" }, show: false, "group": group };
             group.tags["DDD"] = { id: 82, name: { "pt-BR": "#DDD", "en-US": "#DDD" }, show: false, "group": group };
             group.tags["dataModeling"] = { id: 83, name: { "pt-BR": "#ModelagemDeDados", "en-US": "#DataModeling" }, show: false, "group": group };
             group.tags["uml"] = { id: 84, name: { "pt-BR": "#UML", "en-US": "#UML" }, show: false, "group": group };
             group.tags["azure"] = { id: 85, name: { "pt-BR": "#Azure", "en-US": "#Azure" }, show: false, "group": group };
             group.tags["computing"] = { id: 86, name: { "pt-BR": "#Computação", "en-US": "#Computing" }, show: false, "group": group };
             group.tags["refactoring"] = { id: 87, name: { "pt-BR": "#Refatoração", "en-US": "#Refactoring" }, show: false, "group": group };
-            group.tags["continuousDelivery"] = { id: 88, name: { "pt-BR": "#EntregaContínua", "en-US": "#continuousDelivery" }, show: false, "group": group };
+            group.tags["continuousDelivery"] = { id: 88, name: { "pt-BR": "#EntregaContínua", "en-US": "#ContinuousDelivery" }, show: false, "group": group };
 
 
             group.tags["excel"] = { id: 89, name: { "pt-BR": "#Excel", "en-US": "#Excel" }, show: false, "group": group };
@@ -184,6 +185,14 @@ const tags = {
             group.tags["italian"] = { id: 114, name: { "pt-BR": "#Italiano", "en-US": "#Italian" }, show: false, "group": group };
             group.tags["spanish"] = { id: 115, name: { "pt-BR": "#Espanhol", "en-US": "#Spanish" }, show: false, "group": group };
 
+            group.tags["basic"] = { id: 1001, name: { "pt-BR": "#Básico", "en-US": "#Basic" }, show: false, "group": group };
+            group.tags["preIntermediate"] = { id: 1002, name: { "pt-BR": "#PréIntermediário", "en-US": "#PreIntermediate" }, show: false, "group": group };
+            group.tags["intermediate"] = { id: 1003, name: { "pt-BR": "#Intermediário", "en-US": "#Intermediate" }, show: false, "group": group };
+            group.tags["upperIntermediate"] = { id: 1004, name: { "pt-BR": "#Intermediário Superior", "en-US": "#UpperIntermediate" }, show: false, "group": group };
+            group.tags["advanced"] = { id: 1005, name: { "pt-BR": "#Avançado", "en-US": "#Advanced" }, show: false, "group": group };
+            group.tags["fluent"] = { id: 1006, name: { "pt-BR": "#Fluente", "en-US": "#Fluent" }, show: false, "group": group };
+            group.tags["native"] = { id: 1007, name: { "pt-BR": "#Nativo", "en-US": "#Native" }, show: false, "group": group };
+
             Object.assign(tagsAll, group.tags);
         },
         mountOthers(tagsAll, group) {
@@ -191,7 +200,7 @@ const tags = {
             group.tags["fourthIndustrialRevolution"] = { id: 117, name: { "pt-BR": "#QuartaRevoluçãoIndustrial", "en-US": "#FourthIndustrialRevolution" }, show: false, "group": group };
             group.tags["artificialIntelligence"] = { id: 118, name: { "pt-BR": "#InteligênciaArtifícial", "en-US": "#ArtificialIntelligence" }, show: false, "group": group };
             group.tags["disruptiveInnovations"] = { id: 119, name: { "pt-BR": "#InovaçõesDisruptivas", "en-US": "#DisruptiveInnovations" }, show: false, "group": group };
-            group.tags["successCase"] = { id: 120, name: { "pt-BR": "#CasoDeSucesso", "en-US": "#successCase" }, show: false, "group": group };
+            group.tags["successCase"] = { id: 120, name: { "pt-BR": "#CasoDeSucesso", "en-US": "#SuccessCase" }, show: false, "group": group };
             group.tags["opportunity"] = { id: 121, name: { "pt-BR": "#Oportunidade", "en-US": "#Opportunity" }, show: false, "group": group };
             group.tags["greatChallenge"] = { id: 122, name: { "pt-BR": "#GrandeDesafío", "en-US": "#GreatChallenge" }, show: false, "group": group };
             group.tags["rewarding"] = { id: 123, name: { "pt-BR": "#Recompensador", "en-US": "#Rewarding" }, show: false, "group": group };

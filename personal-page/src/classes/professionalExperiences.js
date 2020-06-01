@@ -142,7 +142,7 @@ const professionalExperiences = {
                 },
                 subTitle: {
                     "pt-BR": "Projeto Intranet",
-                    "en-US": " Project",
+                    "en-US": "Intranet Project",
                 },
                 description: {
                     "pt-BR": "Após concluir o projeto do site comercial, iniciei um novo grande desafio nessa empresa, criei uma intranet para conectar os departamentos de Marketing, Infraestrutura, Helpdesk e Call Centers. Esse projeto foi realmente gratificante, porque tive a oportunidade de conhecer muitas pessoas de diferentes partes da empresa e entender o que elas realmente precisavam. Durante esse período, criei muitos softwares para dar suporte às operações do call center e um sistema para controlar a distribuição de almoço por código de barras.",
@@ -303,8 +303,8 @@ const professionalExperiences = {
                 date: new Date("2012-01-08"),
                 category: this.$store.state.categoryType.professionalExperience,
                 title: {
-                    "pt-BR": "CPM Braxis - SAT",
-                    "en-US": "CPM Braxis - SAT",
+                    "pt-BR": "Capgemini CPM Braxis",
+                    "en-US": "Capgemini CPM Braxis",
                 },
                 subTitle: {
                     "pt-BR": "Projeto SAT - Trabalho em Equipe",

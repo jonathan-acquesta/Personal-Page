@@ -24,7 +24,7 @@ const languageCourses = {
                     "en-US": "Unfortunately, I didn't have good English classes at school when I was a teenager, so, in the beginner of this year, I decided to start to study English, because I believe that it will be important for my long-term goals. In this moment, I completed one year in the basic level, and it was my first challenge with this language.",
                 },
                 image: require('@/assets/courses/culturaInglesa.jpg'),
-                tags: [this.$store.state.tags.english],
+                tags: [this.$store.state.tags.english, this.$store.state.tags.basic],
                 links: [{
                     description: { "pt-BR": "CulturaInglesa", "en-US": "CulturaInglesa" },
                     url: "https://www.culturainglesa.com.br/",
@@ -49,7 +49,7 @@ const languageCourses = {
                     "en-US": "In this moment, I completed the pre-intermediate english course, it was enough to start reading a lot of things that helped me to study about software development.",
                 },
                 image: require('@/assets/courses/culturaInglesa.jpg'),
-                tags: [this.$store.state.tags.english],
+                tags: [this.$store.state.tags.english, this.$store.state.tags.preIntermediate],
                 links: [{
                     description: { "pt-BR": "CulturaInglesa", "en-US": "CulturaInglesa" },
                     url: "https://www.culturainglesa.com.br/",
@@ -70,7 +70,7 @@ const languageCourses = {
                     "en-US": "English learning application",
                 },
                 image: require('@/assets/courses/duolingo.jpg'),
-                tags: [this.$store.state.tags.english],
+                tags: [this.$store.state.tags.english, this.$store.state.tags.basic],
                 links: [{
                     description: { "pt-BR": "Duolingo", "en-US": "Duolingo" },
                     url: "https://www.duolingo.com/",
@@ -95,7 +95,7 @@ const languageCourses = {
                     "en-US": "After I stopped the Cultura Inglesa course, I kept my focus on improve other skills and let speak English waiting, but after some years, I started to need to speak english, then, I decided to study at WiseUp, and tried again to become fluent. I did the best effort that I could for three semesters and I achieved to pass for all the school's levels, but I learned a lot of grammatic and I'm not confident enough to speak yet.",
                 },
                 image: require('@/assets/courses/wiseUp.jpg'),
-                tags: [this.$store.state.tags.english],
+                tags: [this.$store.state.tags.english, this.$store.state.tags.advanced],
                 links: [{
                         image: require('@/assets/certificates/wiseUp.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -128,7 +128,7 @@ const languageCourses = {
                     "en-US": "I had finished Wise Up course and I felt the necessity of continuous to improve my english skill set, so I decided another approach that I could be able to study online anywhere I want. The English Live tested me and put me as a upper intermediate level, but I decided to review all the levels and this was a wise decision, because I learned many things in the beginner levels.",
                 },
                 image: require('@/assets/courses/englishLive.jpg'),
-                tags: [this.$store.state.tags.english],
+                tags: [this.$store.state.tags.english, this.$store.state.tags.basic],
                 links: [{
                         image: require('@/assets/certificates/EFLevel01.jpg'),
                         description: { "pt-BR": "CertificadoNível01", "en-US": "CertificateLevel01" },
@@ -170,7 +170,7 @@ const languageCourses = {
                     "en-US": "In this time, I finished the six first levels of the school and this new approach has been continued a great way to review of many things that a I learned before and one good way to increase my english skill set.",
                 },
                 image: require('@/assets/courses/englishLive.jpg'),
-                tags: [this.$store.state.tags.english],
+                tags: [this.$store.state.tags.english, this.$store.state.tags.basic],
                 links: [{
                         image: require('@/assets/certificates/EFLevel04.jpg'),
                         description: { "pt-BR": "CertificadoNível04", "en-US": "CertificateLevel04" },
@@ -212,7 +212,7 @@ const languageCourses = {
                     "en-US": "I'm really happy with my current approach of how to learn english. I'm in progress with the intermediate level at English Live, which is level is composed of three parts and I've already finished two of them.",
                 },
                 image: require('@/assets/courses/englishLive.jpg'),
-                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.english],
+                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.english, this.$store.state.tags.intermediate],
                 links: [{
                         image: require('@/assets/certificates/EFLevel07.jpg'),
                         description: { "pt-BR": "CertificadoNível07", "en-US": "CertificateLevel07" },
@@ -248,7 +248,7 @@ const languageCourses = {
                     "en-US": "I want to learn Italian, so I started to study at Busuu to learn the basic, and I have finished the level A1 that showed me a lot of new words and grammatical rules.",
                 },
                 image: require('@/assets/courses/busuuItalian.jpg'),
-                tags: [this.$store.state.tags.italian],
+                tags: [this.$store.state.tags.italian, this.$store.state.tags.basic],
                 links: [{
                         image: require('@/assets/certificates/busuuItalianoA1.jpg'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
@@ -279,7 +279,7 @@ const languageCourses = {
                     "en-US": "Sometimes we need to prioritize things, due to that, I slowed down my italian learn to keep my focus in my english learn, but I continuous to take italian level A2 class once a week to achieve my goal.",
                 },
                 image: require('@/assets/courses/busuuItalian.jpg'),
-                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.italian],
+                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.italian, this.$store.state.tags.basic],
                 links: [{
                     description: { "pt-BR": "Busuu", "en-US": "Busuu" },
                     url: "https://www.busuu.com/",
@@ -304,7 +304,7 @@ const languageCourses = {
                     "en-US": "I had spanish class when I was at university, but it was ten years ago and now I want to retake this language and improve that to help me for new future challenges.",
                 },
                 image: require('@/assets/courses/busuuSpanish.jpg'),
-                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.spanish],
+                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.spanish, this.$store.state.tags.basic],
                 links: [{
                         image: require('@/assets/certificates/EFLevel07.jpg'),
                         description: { "pt-BR": "CertificadoNível07", "en-US": "CertificateLevel07" },

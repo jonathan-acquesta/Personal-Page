@@ -357,7 +357,7 @@ const books = {
                     "en-US": "What successful people know that the brightest machines will never know",
                 },
                 image: require('@/assets/books/osHumanosSubestimados.jpg'),
-                tags: [this.$store.state.tags.feedback]
+                tags: [this.$store.state.tags.empathy, this.$store.state.tags.teamwork]
             });
 
             histories.push({

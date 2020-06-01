@@ -107,20 +107,20 @@ const categories = {
                     showItems: true,
                     pinned: false,
                 },
-                /*
-                                managementKnowledge: {
-                                    id: 8,
-                                    color: "cyan",
-                                    name: {
-                                        "pt-BR": "Conhecimento em Gestão",
-                                        "en-US": "Management Knowledge"
-                                    },
-                                    icon: "mdi-account-group",
-                                    enable: true,
-                                    showResume: false,
-                                    showItems: true,
-                                    pinned: false,
-                                },*/
+
+                managementKnowledge: {
+                    id: 8,
+                    color: "cyan",
+                    name: {
+                        "pt-BR": "Conhecimento em Gestão",
+                        "en-US": "Management Knowledge"
+                    },
+                    icon: "mdi-account-group",
+                    enable: true,
+                    showResume: true,
+                    showItems: true,
+                    pinned: false,
+                },
 
 
                 /*

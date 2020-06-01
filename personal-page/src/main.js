@@ -11,16 +11,16 @@ import academicLife from "./classes/academicLife.js";
 import courses from "./classes/courses.js";
 import languageCourses from "./classes/languageCourses.js";
 import thoughts from "./classes/thoughts.js";
+import managementKnowledge from "./classes/managementKnowledge.js";
 import technologies from "./classes/technologies.js";
 import tags from "./classes/tags.js";
 import categories from "./classes/categories.js";
 import historyMixins from "./mixins/historyMixins.js";
 
-
 Vue.config.productionTip = false;
 
 var app = new Vue({
-    mixins: [certifications, books, professionalExperiences, academicLife, courses, languageCourses, thoughts, technologies, tags, categories, historyMixins],
+    mixins: [certifications, books, professionalExperiences, academicLife, courses, languageCourses, thoughts, managementKnowledge, technologies, tags, categories, historyMixins],
     router,
     store,
     vuetify,
@@ -48,6 +48,8 @@ var app = new Vue({
         this.mountBooks(histories);
         this.mountThoughts(histories);
         this.mountTechnologies(histories);
+        this.mountManagementKnowledge(histories);
+
 
         histories.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
 

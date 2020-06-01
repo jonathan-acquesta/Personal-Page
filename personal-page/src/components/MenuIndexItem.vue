@@ -102,7 +102,7 @@ import historyMixins from './../mixins/historyMixins.js'
 }
 
 .divTreeview{
-    height: 92vh;
+    height: 91vh;
     overflow:auto;
 }
 
