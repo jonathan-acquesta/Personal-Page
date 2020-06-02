@@ -8,7 +8,7 @@
       dense
     >
         <v-btn icon>
-          <v-icon  size="24px" @click="openSite('https://github.com/jonathan-acquesta/')">mdi-file-pdf</v-icon>
+          <v-icon  size="24px" @click="openSite('https://github.com/jonathan-acquesta/Personal-Page/raw/master/personal-page/public/Resume-convertido.pdf')">mdi-file-pdf</v-icon>
         </v-btn>
         <v-btn icon class="gitButton">
           <v-icon  size="24px" @click="openSite('https://www.linkedin.com/in/jonathan-caravaggio-acquesta-a26a4422/')">fab fa-linkedin</v-icon>
