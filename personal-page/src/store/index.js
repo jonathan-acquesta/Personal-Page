@@ -74,6 +74,7 @@ export default new Vuex.Store({
             ]
         },
         icons: [
+            { icon: 'mdi-file-pdf', url: 'https://github.com/jonathan-acquesta/Personal-Page/raw/master/personal-page/public/Resume-convertido.pdf' },
             { icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/in/jonathan-caravaggio-acquesta-a26a4422/' },
             { icon: 'fab fa-github', url: 'https://github.com/jonathan-acquesta' },
             { icon: 'fab fa-stack-overflow', url: 'https://stackoverflow.com/users/9547421/jonathan-caravaggio-acquesta' },
