@@ -91,7 +91,7 @@ const certifications = {
                     },
                     {
                         description: { "pt-BR": "Transcrição", "en-US": "Transcript" },
-                        url: "https://github.com/jonathan-acquesta/Personal-Page/blob/master/personal-page/public/microsoft_certified_professional_transcript.pdf",
+                        url: "https://github.com/jonathan-acquesta/Personal-Page/raw/master/personal-page/src/assets/microsoft_certified_professional_transcript.pdf",
                         type: "link"
                     }
                 ],
@@ -123,7 +123,7 @@ const certifications = {
                     },
                     {
                         description: { "pt-BR": "Transcrição", "en-US": "Transcript" },
-                        url: "https://github.com/jonathan-acquesta/Personal-Page/blob/master/personal-page/public/microsoft_certified_professional_transcript.pdf",
+                        url: "https://github.com/jonathan-acquesta/Personal-Page/raw/master/personal-page/src/assets/microsoft_certified_professional_transcript.pdf",
                         type: "link"
                     }
                 ],
