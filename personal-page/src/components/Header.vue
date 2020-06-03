@@ -7,22 +7,32 @@
       dark
       dense
     >
-        <v-btn icon>
-          <v-icon  size="24px" @click="openSite('https://github.com/jonathan-acquesta/Personal-Page/raw/master/personal-page/public/Resume-convertido.pdf')">mdi-file-pdf</v-icon>
-        </v-btn>
-        <v-btn icon class="gitButton">
-          <v-icon  size="24px" @click="openSite('https://www.linkedin.com/in/jonathan-caravaggio-acquesta-a26a4422/')">fab fa-linkedin</v-icon>
-        </v-btn>
-        <v-btn icon class="gitButton">
-          <v-icon  size="24px" @click="openSite('https://github.com/jonathan-acquesta/')">fab fa-github</v-icon>
-        </v-btn>
+    <v-tooltip bottom v-for="icon in this.$store.state.icons.filter(x => x.showHeader)"
+              :key="icon.icon" >
+            <template v-slot:activator="{ on }">
+            <v-btn 
+              v-on="on"
+              class="gitButton"
+              icon>
+              <v-icon size="24px" @click="openSite(icon.url)">{{ icon.icon }}</v-icon>
+            </v-btn>
+            </template>
+            <span>{{ icon.title[culture] }}</span>
+        </v-tooltip>
+
+       
     <v-toolbar-title v-if="!isMobile()" class="title">{{ getTitle() }}</v-toolbar-title>
     <v-toolbar-title v-else class="titleMobile">{{ getTitle() }}</v-toolbar-title>
     <v-spacer />
     <Language @closeLanguage="closeLanguage()" v-if="showLanguage" @mouseout="closeLanguage()"></Language>
-        <v-btn icon class="languageButton" >
+    <v-tooltip bottom>
+            <template v-slot:activator="{ on }">
+        <v-btn icon class="languageButton"  v-on="on" >
           <v-icon  size="24px" @click="toggleLanguage()">mdi-earth</v-icon>
         </v-btn>
+        </template>
+            <span>{{ language.changeLanguage[culture] }}</span>
+        </v-tooltip>
         <v-btn icon v-if="isMobile()">
           <v-icon  size="24px" @click="toggleMenu()">mdi-menu</v-icon>
         </v-btn>

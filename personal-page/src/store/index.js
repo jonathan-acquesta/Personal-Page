@@ -24,6 +24,7 @@ export default new Vuex.Store({
                 portuguese: { "pt-BR": "Português", "en-US": "Portuguese", "language": "pt-BR" },
                 english: { "pt-BR": "Inglês", "en-US": "English", "language": "en-US" },
             },
+            changeLanguage: { "pt-BR": "Mudar Idioma", "en-US": "Change Language" },
             showDetails: { "pt-BR": "Mostrar Detalhes", "en-US": "Show Details" },
             closeDetails: { "pt-BR": "Fechar Detalhes", "en-US": "Close Details" },
             from: { "pt-BR": "De", "en-US": "From" },
@@ -74,15 +75,15 @@ export default new Vuex.Store({
             ]
         },
         icons: [
-            { icon: 'mdi-file-pdf', url: 'https://github.com/jonathan-acquesta/Personal-Page/raw/master/personal-page/public/Resume-convertido.pdf' },
-            { icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/in/jonathan-caravaggio-acquesta-a26a4422/' },
-            { icon: 'fab fa-github', url: 'https://github.com/jonathan-acquesta' },
-            { icon: 'fab fa-stack-overflow', url: 'https://stackoverflow.com/users/9547421/jonathan-caravaggio-acquesta' },
-            { icon: 'fab fa-youtube', url: 'https://www.youtube.com/channel/UC9dky_d4FDcHUc13iwA19-w?view_as=subscriber' },
-            { icon: 'fab fa-medium', url: 'https://medium.com/@jcagames' },
-            { icon: 'fab fa-instagram', url: 'https://www.instagram.com/jonathan.acquesta/?hl=pt-br' },
-            { icon: 'fab fa-facebook', url: 'https://www.facebook.com/jonathan.acquesta' },
-            { icon: 'fab fa-twitter', url: 'https://twitter.com/JonathanCAcques' }
+            { showHeader: true, showFooter: true, title: { 'pt-BR':'Download do Currículo', 'en-US': 'Download Resume'}, icon: 'mdi-file-pdf', url: 'https://github.com/jonathan-acquesta/Personal-Page/raw/master/personal-page/public/Resume-convertido.pdf' },
+            { showHeader: true, showFooter: true, title: { 'pt-BR':'Linkedin', 'en-US': 'Linkedin'}, icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/in/jonathan-caravaggio-acquesta-a26a4422/' },
+            { showHeader: true, showFooter: true, title: { 'pt-BR':'GitHub', 'en-US': 'GitHub'}, icon: 'fab fa-github', url: 'https://github.com/jonathan-acquesta' },
+            { showHeader: false, showFooter: true, title: { 'pt-BR':'StackOverflow', 'en-US': 'StackOverflow'}, icon: 'fab fa-stack-overflow', url: 'https://stackoverflow.com/users/9547421/jonathan-caravaggio-acquesta' },
+            { showHeader: false, showFooter: true, title: { 'pt-BR':'YouTube', 'en-US': 'YouTube'}, icon: 'fab fa-youtube', url: 'https://www.youtube.com/channel/UC9dky_d4FDcHUc13iwA19-w?view_as=subscriber' },
+            { showHeader: false, showFooter: true, title: { 'pt-BR':'Medium', 'en-US': 'Medium'}, icon: 'fab fa-medium', url: 'https://medium.com/@jcagames' },
+            { showHeader: false, showFooter: true, title: { 'pt-BR':'Instagram', 'en-US': 'Instagram'}, icon: 'fab fa-instagram', url: 'https://www.instagram.com/jonathan.acquesta/?hl=pt-br' },
+            { showHeader: false, showFooter: true, title: { 'pt-BR':'Facebook', 'en-US': 'Facebook'}, icon: 'fab fa-facebook', url: 'https://www.facebook.com/jonathan.acquesta' },
+            { showHeader: false, showFooter: true, title: { 'pt-BR':'Twitter', 'en-US': 'Twitter'}, icon: 'fab fa-twitter', url: 'https://twitter.com/JonathanCAcques' }
         ],
         tagTypes: {
             softSkills: { "pt-BR": "Habilidades Interpessoais", "en-US": "Soft Skills" },

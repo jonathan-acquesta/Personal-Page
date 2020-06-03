@@ -197,7 +197,7 @@ const languageCourses = {
 
 
             histories.push({
-                date: new Date("2020-05-18"),
+                date: new Date("2020-06-03"),
                 category: this.$store.state.categoryType.languages,
                 title: {
                     "pt-BR": "EF English Live",
@@ -212,7 +212,7 @@ const languageCourses = {
                     "en-US": "I'm really happy with my current approach of how to learn english. I'm in progress with the intermediate level at English Live, which is level is composed of three parts and I've already finished two of them.",
                 },
                 image: require('@/assets/courses/englishLive.jpg'),
-                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.english, this.$store.state.tags.intermediate],
+                tags: [this.$store.state.tags.english, this.$store.state.tags.intermediate],
                 links: [{
                         image: require('@/assets/certificates/EFLevel07.jpg'),
                         description: { "pt-BR": "CertificadoNível07", "en-US": "CertificateLevel07" },
@@ -221,6 +221,11 @@ const languageCourses = {
                     {
                         image: require('@/assets/certificates/EFLevel08.jpg'),
                         description: { "pt-BR": "CertificadoNível08", "en-US": "CertificateLevel08" },
+                        type: "certificate"
+                    },
+                    {
+                        image: require('@/assets/certificates/EFLevel09.jpg'),
+                        description: { "pt-BR": "CertificadoNível09", "en-US": "CertificateLevel09" },
                         type: "certificate"
                     },
                     {
@@ -305,11 +310,30 @@ const languageCourses = {
                 },
                 image: require('@/assets/courses/busuuSpanish.jpg'),
                 tags: [this.$store.state.tags.inProgress, this.$store.state.tags.spanish, this.$store.state.tags.basic],
-                links: [{
-                        image: require('@/assets/certificates/EFLevel07.jpg'),
-                        description: { "pt-BR": "CertificadoNível07", "en-US": "CertificateLevel07" },
-                        type: "certificate"
-                    },
+                links: [
+                    {
+                        description: { "pt-BR": "Busuu", "en-US": "Busuu" },
+                        url: "https://www.busuu.com/",
+                        type: "link"
+                    }
+                ],
+                showDetail: false
+            })
+
+            histories.push({
+                date: new Date("2020-06-04"),
+                category: this.$store.state.categoryType.languages,
+                title: {
+                    "pt-BR": "EF English Live",
+                    "en-US": "EF English Live",
+                },
+                subTitle: {
+                    "pt-BR": "Curso Pós-Intermediário de Inglês CEFR Nível B2",
+                    "en-US": "Upper Intermediate CEFR Level B2 English Course",
+                },
+                image: require('@/assets/courses/englishLive.jpg'),
+                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.english, this.$store.state.tags.upperIntermediate],
+                links: [
                     {
                         description: { "pt-BR": "EFEnglishLive", "en-US": "EFEnglishLive" },
                         url: "https://englishlive.ef.com/pt-br/",
