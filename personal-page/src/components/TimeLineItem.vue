@@ -118,8 +118,7 @@
             }
         },
         computed: {
-            
-           
+
         },
         methods: {
             getPeriodDescription(period)
