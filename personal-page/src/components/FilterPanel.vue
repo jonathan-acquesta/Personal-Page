@@ -9,20 +9,10 @@
               <span>{{ getTitleFilter }}</span>
             </v-tooltip>
            
-        <!--<span v-if="state.showFilterMenu" :class="`filterTitle font-weight-bold`"
-                  v-text="' | ' + language.filterTags[culture]"></span>
-
-            <v-tooltip left v-if="state.showFilterMenu" >
-              <template v-slot:activator="{ on }">
-                 <v-btn icon class="clearTags" v-on="on" >
-                    <v-icon  size="24px" @click="showAllCategories()">mdi-clipboard-check-multiple</v-icon>
-                </v-btn>
-              </template>
-              <span>{{ language.allTags[culture] }}</span>
-            </v-tooltip>-->
         <br v-if="state.showFilterMenu">
         <br v-if="state.showFilterMenu">
         <FilterTags class="filterTags" v-if="state.showFilterMenu" />
+        <div class="tagArea"  v-if="state.showFilterMenu">
          <v-expansion-panels class="tagsGroups" v-model="panel" v-if="state.showFilterMenu" :accordion="true">
           <v-expansion-panel v-for="(group, index) in tagGroups" :key="index">
             <v-expansion-panel-header class="headerGroup"> 
@@ -43,6 +33,7 @@
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
+        </div>
     </div>
 </template>
 
@@ -189,4 +180,11 @@ import FilterTags from './FilterTags'
   top:0px;
 }
 
+.tagArea{
+  max-height: 270px;
+  overflow: auto;
+  border-style:double;
+    border-width: 1px;
+    border-color: #f3f3f3;
+}
 </style>

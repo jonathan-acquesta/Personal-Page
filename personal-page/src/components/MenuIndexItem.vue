@@ -76,14 +76,13 @@ import historyMixins from './../mixins/historyMixins.js'
     methods: {
        
         NavegateTo(item){
+            
             if(item.children.length === 0)
             {
                 this.scrollMeTo(item.id);
-            }
 
-           
                 this.$emit("closeMenu");
-            
+            }
         },
         close()
         {
