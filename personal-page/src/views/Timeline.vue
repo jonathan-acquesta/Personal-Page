@@ -71,7 +71,7 @@ export default {
     },
     getClassFirstYear(index)
       {
-        if (index === 0)
+        if (index === 0 && !this.state.showFilterMenu)
         {
           return "firstYear ma-2";
         }

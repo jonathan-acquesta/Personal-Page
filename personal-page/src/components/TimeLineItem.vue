@@ -7,7 +7,6 @@
       :left="$vuetify.breakpoint.smAndDown"
     >
      <v-timeline-item :id="getID(history)"
-        v-if="isEnableItem(history)"
         v-for="(history, i) in getHistories"
         :key="i"
         :dense="!$vuetify.breakpoint.smAndDown"
@@ -118,7 +117,6 @@
             }
         },
         computed: {
-
         },
         methods: {
             getPeriodDescription(period)

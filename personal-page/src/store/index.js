@@ -19,6 +19,8 @@ export default new Vuex.Store({
             upPage: { "pt-BR": "Voltar ao Topo", "en-US": "Back to the Top" },
             search: { "pt-BR": "Pesquisa", "en-US": "Search" },
             all: { "pt-BR": "Mostrar Todas as Categorias", "en-US": "Show All Categories" },
+            allTag: { "pt-BR": "#Todos", "en-US": "#All" },
+            justInProgressTag: { "pt-BR": "#ApenasEmProgresso", "en-US": "#JustInProgress" },
             allTags: { "pt-BR": "Mostrar Todas as Tags", "en-US": "Show All Tags" },
             languages: {
                 portuguese: { "pt-BR": "Português", "en-US": "Portuguese", "language": "pt-BR" },
@@ -95,6 +97,7 @@ export default new Vuex.Store({
         tagGroups: {},
         histories: [],
         years: [],
+        showFilterMenu: false,
         sideMenu: {
             timeLine: {
                 color: "black",

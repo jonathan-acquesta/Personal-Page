@@ -196,7 +196,7 @@ const tags = {
             Object.assign(tagsAll, group.tags);
         },
         mountOthers(tagsAll, group) {
-            group.tags["inProgress"] = { id: 116, name: { "pt-BR": "#EmProgresso", "en-US": "#InProgress" }, show: false, "group": group };
+            group.tags["inProgress"] = { id: 3000, name: { "pt-BR": "#EmProgresso", "en-US": "#InProgress" }, show: false, "group": group };
             group.tags["fourthIndustrialRevolution"] = { id: 117, name: { "pt-BR": "#QuartaRevoluçãoIndustrial", "en-US": "#FourthIndustrialRevolution" }, show: false, "group": group };
             group.tags["artificialIntelligence"] = { id: 118, name: { "pt-BR": "#InteligênciaArtifícial", "en-US": "#ArtificialIntelligence" }, show: false, "group": group };
             group.tags["disruptiveInnovations"] = { id: 119, name: { "pt-BR": "#InovaçõesDisruptivas", "en-US": "#DisruptiveInnovations" }, show: false, "group": group };

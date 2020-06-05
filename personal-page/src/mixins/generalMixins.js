@@ -24,7 +24,7 @@ const generalMixins = {
             return this.$store.state.categoryType;
         },
         getHistories() {
-            return this.histories;
+            return this.histories.filter(history => this.isEnableItem(history));
         },
     },
     methods: {

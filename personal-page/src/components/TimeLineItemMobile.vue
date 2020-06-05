@@ -1,8 +1,8 @@
 <template>
 <div class="timelineApp" >
-<div  v-if="isEnableItem(history)" :id="getID(history)"
-        v-for="(history, i) in getHistories"
-        :key="i">
+
+<div v-for="(history, i) in getHistories"
+        :key="i"  :id="getID(history)">
    
         <v-card  class="elevation-2 cardMobile">
           

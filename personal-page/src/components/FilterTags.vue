@@ -1,6 +1,22 @@
 <template>
-    <v-autocomplete
-                v-model="tagsToFilter"
+    <div>
+      <div class="tagArea">
+        <v-chip dark small color="black" class="tags" @click="activeAllTags()">
+                    {{ language.allTag[culture] }}
+        </v-chip>
+        <v-chip  dark small class="tags" @click="activeInProgressTag()">
+                    {{ language.justInProgressTag[culture] }}
+        </v-chip>
+        <span v-if="getActiveTags.length > 0" :class="`filterTitle font-weight-bold`"
+                  v-text="' | '"></span>
+        <v-chip small dark :color="tag.group.color" close class="tags" v-for="(tag, index) in getActiveTags" :key="index" @click:close="remove(tag)">
+                    {{ tag.name[culture] }}
+        </v-chip>
+
+      </div>
+    </div>
+    <!--<v-autocomplete
+                v-model="getActiveTags"
                 :items="Object.values(tags)"
                 filled
                 chips
@@ -34,36 +50,84 @@
                     </v-list-item-content>
                   </template>
                 </template>
-              </v-autocomplete>
+              </v-autocomplete>-->
 </template>
 
 <script>
-import generalMixins from './../mixins/generalMixins.js'
+import historyMixins from './../mixins/historyMixins.js'
 
     export default {
-        mixins:[generalMixins],
+        
+        mixins:[historyMixins],
         data() {
             return {
-                tagsToFilter: [],
-                name: 'Midnight Crew',
-                people: [
-                    { name: { "pt-BR": "#EnsinoMédio1", "en-US": "#HighSchool1" }, color: "red", "group": { "pt-BR": "Vida Acadêmica", "en-US": "Academic Life" } },
-                    { name: { "pt-BR": "#EnsinoMédio2", "en-US": "#HighSchool2" }, color: "red", "group": { "pt-BR": "Vida Acadêmica", "en-US": "Academic Life" } },
-                ],
+                tagsToFilter: [{'en-US': 'Teste'}],
             }
         },
+        computed: {
+          getActiveTags()
+          {
+            let tagsSelected = [];
+
+            Object.values(this.tagGroups).forEach(group => {
+                tagsSelected = tagsSelected.concat(Object.values(group.tags).filter(tag => tag.show));
+            });
+
+            return tagsSelected;
+          }
+        },
         methods: {
-            remove (item) {
-                 this.tagsToFilter = this.tagsToFilter.filter(x => { return x.name[this.culture] != item.name[this.culture]});
+            activeAllTags(){
+              Object.values(this.tagGroups).forEach(x => Object.values(x.tags).forEach(q => q.show = false));
+                this.state.tagsActive = [];
+                //this.state.showFilterMenu = false;
+                
+                this.updateQuickFilter();
             },
-            comparer(a, b)
-            {
-                return a[this.culture] === b[this.culture];
+            activeInProgressTag(){
+                let inProgressTag = undefined;
+                Object.values(this.tagGroups).forEach(x => Object.values(x.tags).forEach(tag => 
+                { 
+
+                  if(tag.id === 3000)
+                  {
+                    inProgressTag = tag;
+                    tag.show = true;
+                  }
+                  else
+                  {
+                    tag.show = false;
+                  }
+                }));
+
+                this.state.tagsActive = [inProgressTag];
+                //this.state.showFilterMenu = false;
+                
+                this.updateQuickFilter();
+            },
+            remove (tag) {
+                tag.show = false;
+               
+                this.state.tagsActive = this.state.tagsActive.filter(x => x.id !== tag.id);
+
+                this.updateQuickFilter();
             }
         },
     }
 </script>
 
 <style scoped>
+  .tagArea{
+    background-color: white;
+    min-height: 35px;
+    width: 100%;
+    border-style:double;
+    border-width: 1px;
+    border-color: #f3f3f3;
+  }
 
+  .tags{
+    margin: 4px;
+    cursor: pointer;
+  }
 </style>

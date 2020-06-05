@@ -9,19 +9,21 @@
               <span>{{ getTitleFilter }}</span>
             </v-tooltip>
            
-        <span v-if="showFilterMenu" :class="`filterTitle font-weight-bold`"
+        <!--<span v-if="state.showFilterMenu" :class="`filterTitle font-weight-bold`"
                   v-text="' | ' + language.filterTags[culture]"></span>
 
-            <v-tooltip left v-if="showFilterMenu" >
+            <v-tooltip left v-if="state.showFilterMenu" >
               <template v-slot:activator="{ on }">
                  <v-btn icon class="clearTags" v-on="on" >
                     <v-icon  size="24px" @click="showAllCategories()">mdi-clipboard-check-multiple</v-icon>
                 </v-btn>
               </template>
               <span>{{ language.allTags[culture] }}</span>
-            </v-tooltip>
-        <br v-if="showFilterMenu">
-         <v-expansion-panels v-model="panel" v-if="showFilterMenu" :accordion="true">
+            </v-tooltip>-->
+        <br v-if="state.showFilterMenu">
+        <br v-if="state.showFilterMenu">
+        <FilterTags class="filterTags" v-if="state.showFilterMenu" />
+         <v-expansion-panels class="tagsGroups" v-model="panel" v-if="state.showFilterMenu" :accordion="true">
           <v-expansion-panel v-for="(group, index) in tagGroups" :key="index">
             <v-expansion-panel-header class="headerGroup"> 
               <span :class="`tags font-weight-bold ${group.color}--text`"> {{group[culture]}}</span>
@@ -32,19 +34,12 @@
             </template>
             </v-expansion-panel-header>
             <v-expansion-panel-content>
-
-
-
-
               <div :class="{desactiveTag: !tag.show}" class="tagsDiv" v-for="(tag, index) in group.tags" :key="index">
                 <span @click="toggleTag(tag)"
                   :class="`tags font-weight-bold ${tag.group.color}--text`"
                   v-text="tag.name[culture]"></span>
                   
               </div>
-
-          
-
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
@@ -53,19 +48,20 @@
 
 <script>
 import historyMixins from './../mixins/historyMixins.js'
+import FilterTags from './FilterTags'
 
     export default {
         mixins:[historyMixins],
+        components:{FilterTags},
         data() {
             return {
-              showFilterMenu: false,
               panel: 0,
             }
         },
         computed: {
           getIconFilter()
           {
-            if(this.showFilterMenu)
+            if(this.state.showFilterMenu)
             {
               return "mdi-filter-menu-outline";
             }
@@ -76,7 +72,7 @@ import historyMixins from './../mixins/historyMixins.js'
           },
           getTitleFilter()
           {
-            if(this.showFilterMenu)
+            if(this.state.showFilterMenu)
             {
               return this.language.filterTagsClose[this.culture];
             }
@@ -91,7 +87,7 @@ import historyMixins from './../mixins/historyMixins.js'
         methods: {
             toggleFilterMenu()
             {
-              this.showFilterMenu = !this.showFilterMenu;
+              this.state.showFilterMenu = !this.state.showFilterMenu;
             },
             toggleTag(tag)
             {
@@ -116,7 +112,7 @@ import historyMixins from './../mixins/historyMixins.js'
             {
                 Object.values(this.tagGroups).forEach(x => Object.values(x.tags).forEach(q => q.show = false));
                 this.state.tagsActive = [];
-                this.showFilterMenu = false;
+                this.state.showFilterMenu = false;
                 
                 this.updateQuickFilter();
             }
@@ -136,6 +132,10 @@ import historyMixins from './../mixins/historyMixins.js'
   float: right;
   margin-top: -2px;
   margin-right: -3px;
+}
+
+.tagsGroups{
+  top:0px;
 }
 
   .filter{
@@ -183,6 +183,10 @@ import historyMixins from './../mixins/historyMixins.js'
 
 .headerGroup{
   text-align: left;
+}
+
+.filterTags{
+  top:0px;
 }
 
 </style>
