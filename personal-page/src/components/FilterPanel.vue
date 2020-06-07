@@ -1,39 +1,46 @@
 <template>
     <div class="FilterTagsFull" >
-            <v-tooltip left >
-              <template v-slot:activator="{ on }">
-                 <v-btn icon class="filter" v-on="on" >
-                    <v-icon  size="24px" @click="toggleFilterMenu()"> {{ getIconFilter }}</v-icon>
-                </v-btn>
-              </template>
-              <span>{{ getTitleFilter }}</span>
-            </v-tooltip>
-           
-        <br v-if="state.showFilterMenu">
-        <br v-if="state.showFilterMenu">
-        <FilterTags class="filterTags" v-if="state.showFilterMenu" />
-        <div class="tagArea"  v-if="state.showFilterMenu">
-         <v-expansion-panels class="tagsGroups" v-model="panel" v-if="state.showFilterMenu" :accordion="true">
-          <v-expansion-panel v-for="(group, index) in tagGroups" :key="index">
-            <v-expansion-panel-header class="headerGroup"> 
-              <span :class="`tags font-weight-bold ${group.color}--text`"> {{group[culture]}}</span>
-              <template v-slot:actions>
-              <span :class="`tags font-weight-bold ${group.color}--text`"> {{getTotalItems(group)}}</span>
 
-             
-            </template>
-            </v-expansion-panel-header>
-            <v-expansion-panel-content>
-              <div :class="{desactiveTag: !tag.show}" class="tagsDiv" v-for="(tag, index) in group.tags" :key="index">
+
+  <div class="titleTags">
+      
+      <v-item-group
+        class="text-center"
+        mandatory
+      >
+        <v-item
+          v-for="(group, index) in tagGroups" :key="index"
+          
+        >
+            <span @click="changeMenu(group)" :class="getTitleClass(group)"> {{group[culture]}}</span>
+        </v-item>
+      </v-item-group>
+    
+    </div>
+    <FilterTags class="filterTags" />
+    
+      <div 
+        v-for="(group, index) in tagGroups" :key="index"
+      >
+        <div class="tagsBody" v-if="onboarding === group.id">
+          
+          <div :class="{desactiveTag: tag.show}" class="tagsDiv" v-for="(tag, index) in group.tags" :key="index">
                 <span @click="toggleTag(tag)"
                   :class="`tags font-weight-bold ${tag.group.color}--text`"
                   v-text="tag.name[culture]"></span>
                   
               </div>
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
+         
         </div>
+      </div>
+
+
+    
+
+
+
+
+
     </div>
 </template>
 
@@ -47,6 +54,7 @@ import FilterTags from './FilterTags'
         data() {
             return {
               panel: 0,
+              onboarding: 0,
             }
         },
         computed: {
@@ -76,6 +84,16 @@ import FilterTags from './FilterTags'
 
         },
         methods: {
+            changeMenu(group){
+              if(this.onboarding == group.id)
+              {
+                this.onboarding = 0;
+              }
+              else
+              {
+                this.onboarding = group.id;
+              }
+            },
             toggleFilterMenu()
             {
               this.state.showFilterMenu = !this.state.showFilterMenu;
@@ -93,9 +111,14 @@ import FilterTags from './FilterTags'
 
               this.updateQuickFilter();
             },
-            getTotalItems(group)
+            getTitleClass(group)
             {
-                let result = "Total de " + Object.entries(group.tags).length + "#"; 
+                let result = `tagsTitle font-weight-bold ${group.color}--text`; 
+
+                if(this.onboarding === group.id)
+                {
+                  result = "tagsTitleSelected " + result;
+                }
 
                 return result
             },
@@ -112,6 +135,20 @@ import FilterTags from './FilterTags'
 </script>
 
 <style scoped>
+
+.tagsBody{
+  padding-left: 5px;
+  text-align: center;
+  border-style: double;
+  border-color: #f3f3f3;
+}
+
+.titleTags{
+  text-align: center;
+  width: 100%;
+  margin: 5px;
+}
+
 .filterTitle{
   color: rgb(100, 100, 100);
   font-size: large;
@@ -136,6 +173,7 @@ import FilterTags from './FilterTags'
   .FilterTagsFull{
     
     z-index: 9990;
+  
     
   }
 
@@ -145,7 +183,8 @@ import FilterTags from './FilterTags'
   }
 
   .desactiveTag{
-    filter: brightness(60%);
+    filter: brightness(120%);
+    opacity: 0.6;
   }
 
   .tagCard{
@@ -159,6 +198,27 @@ import FilterTags from './FilterTags'
   cursor: pointer;
 }
 
+.tagsTitle{
+  margin-right: 10px;
+  font-size: small;
+  
+  cursor: pointer;
+}
+
+.tagsTitle:hover{
+  filter: brightness(120%);
+  opacity: 0.6;
+}
+
+.tagsTitleSelected{
+  filter: brightness(120%);
+  opacity: 0.6;
+}
+
+.tags:hover{
+  filter: brightness(120%);
+}
+
 .totalTags{
   min-width: 100px;
   font-size: small;
@@ -166,6 +226,7 @@ import FilterTags from './FilterTags'
 
 .tagsDiv{
   display:inline-block;
+  text-align: center;
 }
 
 .tagGroups{

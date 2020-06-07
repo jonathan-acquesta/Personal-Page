@@ -7,14 +7,14 @@ const tags = {
     methods: {
         mountTagGroups() {
             let groups = {
-                management: { "pt-BR": "Gestão", "en-US": "Management", color: "cyan", tags: {} },
-                technicalSkill: { "pt-BR": "Habilidade Técnica", "en-US": "Technical Skill", color: "purple", tags: {} },
-                testSkill: { "pt-BR": "Habilidade de Teste", "en-US": "Test Skill", color: "green", tags: {} },
-                softSkill: { "pt-BR": "Competências", "en-US": "Soft Skill", color: "indigo", tags: {} },
-                languageSkill: { "pt-BR": "Habilidade Línguisticas", "en-US": "Language Skill", color: "pink", tags: {} },
-                academic: { "pt-BR": "Vida Acadêmica", "en-US": "Academic Life", color: "deep-purple", tags: {} },
-                postion: { "pt-BR": "Posição", "en-US": "Position", color: "red", tags: {} },
-                others: { "pt-BR": "Outras", "en-US": "Others", color: "blue", tags: {} },
+                management: { id: 1, "pt-BR": "Gestão", "en-US": "Management", color: "cyan", tags: {} },
+                technicalSkill: { id: 2, "pt-BR": "Habilidade Técnica", "en-US": "Technical Skill", color: "purple", tags: {} },
+                testSkill: { id: 3, "pt-BR": "Habilidade de Teste", "en-US": "Test Skill", color: "green", tags: {} },
+                softSkill: { id: 4, "pt-BR": "Competências", "en-US": "Soft Skill", color: "indigo", tags: {} },
+                languageSkill: { id: 5, "pt-BR": "Habilidade Línguisticas", "en-US": "Language Skill", color: "pink", tags: {} },
+                academic: { id: 6, "pt-BR": "Vida Acadêmica", "en-US": "Academic Life", color: "deep-purple", tags: {} },
+                postion: { id: 7, "pt-BR": "Posição", "en-US": "Position", color: "red", tags: {} },
+                others: { id: 8, "pt-BR": "Outras", "en-US": "Others", color: "blue", tags: {} },
             }
 
             return groups;

@@ -71,14 +71,14 @@ export default {
     },
     getClassFirstYear(index)
       {
-        if (index === 0 && !this.state.showFilterMenu)
+        /*if (index === 0 && !this.state.showFilterMenu)
         {
           return "firstYear ma-2";
         }
         else
         {
-          return "ma-2";
-        }
+        */  return "ma-2";
+        //}
       }
   },
 };
