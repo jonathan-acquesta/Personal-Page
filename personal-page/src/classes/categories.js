@@ -107,7 +107,7 @@ const categories = {
                     showItems: true,
                     pinned: false,
                 },
-
+/*
                 managementKnowledge: {
                     id: 8,
                     color: "cyan",
@@ -121,7 +121,7 @@ const categories = {
                     showItems: true,
                     pinned: false,
                 },
-
+*/
 
                 /*
                                 milestones: {

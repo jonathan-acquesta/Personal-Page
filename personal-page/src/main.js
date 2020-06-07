@@ -48,7 +48,7 @@ var app = new Vue({
         this.mountBooks(histories);
         this.mountThoughts(histories);
         this.mountTechnologies(histories);
-        this.mountManagementKnowledge(histories);
+        //this.mountManagementKnowledge(histories);
 
 
         histories.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
