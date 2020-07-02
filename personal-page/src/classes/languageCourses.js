@@ -284,7 +284,7 @@ const languageCourses = {
                     "en-US": "Sometimes we need to prioritize things, due to that, I slowed down my italian learn to keep my focus in my english learn, but I continuous to take italian level A2 class once a week to achieve my goal.",
                 },
                 image: require('@/assets/courses/busuuItalian.jpg'),
-                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.italian, this.$store.state.tags.basic],
+                tags: [this.$store.state.tags.stopped, this.$store.state.tags.italian, this.$store.state.tags.basic],
                 links: [{
                     description: { "pt-BR": "Busuu", "en-US": "Busuu" },
                     url: "https://www.busuu.com/",
@@ -309,7 +309,7 @@ const languageCourses = {
                     "en-US": "I had spanish class when I was at university, but it was ten years ago and now I want to retake this language and improve that to help me for new future challenges.",
                 },
                 image: require('@/assets/courses/busuuSpanish.jpg'),
-                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.spanish, this.$store.state.tags.basic],
+                tags: [this.$store.state.tags.stopped, this.$store.state.tags.spanish, this.$store.state.tags.basic],
                 links: [
                     {
                         description: { "pt-BR": "Busuu", "en-US": "Busuu" },
@@ -321,7 +321,7 @@ const languageCourses = {
             })
 
             histories.push({
-                date: new Date("2020-06-04"),
+                date: new Date("2020-07-29"),
                 category: this.$store.state.categoryType.languages,
                 title: {
                     "pt-BR": "EF English Live",

@@ -151,8 +151,8 @@ const academicLife = {
                     end: '2020'
                 },
                 title: {
-                    "pt-BR": "FATEC-SP - Centro Paula Souza",
-                    "en-US": "FATEC-SP - Centro Paula Souza",
+                    "pt-BR": "FATEC-SP - Centro Paula Souza - MBA",
+                    "en-US": "FATEC-SP - Centro Paula Souza - MBA",
                 },
                 subTitle: {
                     "pt-BR": "MBA Excelência em Gestão de Projetos e Processos Organizacionais",
@@ -185,7 +185,7 @@ const academicLife = {
             });
 
             histories.push({
-                date: new Date("2020-05-20"),
+                date: new Date("2020-07-29"),
                 category: this.$store.state.categoryType.academicLife,
                 title: {
                     "pt-BR": "FATEC-SP - Centro Paula Souza - MBA TCC",
@@ -195,6 +195,10 @@ const academicLife = {
                     "pt-BR": "Os benefícios do gerenciamento ágil de projetos com Management 3.0, Scrum, Extreme Programming e Kanban",
                     "en-US": "The benefits of agile project management with Management 3.0, Scrum, Extreme Programming and Kanban",
                 },
+                description: {
+                    "pt-BR": "Esse projeto sempre será especial para mim, foram necessários oito meses de pesquisas sobre o processo de desenvolvimento de sistema e os processos de gerenciamento ágil para identificar e verificar os benefícios dessas abordagens com quem está trabalhando e experimentando esses processos. Agora está concluído e será a base dos meus próximos passos.",
+                    "en-US": "This project will always be special to me, it took eight months of researches about while system development process and agile management processes to identity and verify the benefits of these approaches with who are working and experiencing these processes. Now it is concluded and it will be the base of my next steps.",
+                },
                 image: require('@/assets/academicLife/mba.jpg'),
                 tags: [],
                 links: [{
@@ -202,9 +206,10 @@ const academicLife = {
                     url: "https://posgraduacao.cps.sp.gov.br/lato-sensu/",
                     type: "link"
                 }],
-                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.mba, this.$store.state.tags.management30, this.$store.state.tags.scrum,
+                tags: [this.$store.state.tags.mba, this.$store.state.tags.management30, this.$store.state.tags.scrum,
                     this.$store.state.tags.extremeProgramming, this.$store.state.tags.kanban
-                ]
+                ],
+                showDetail: false
             });
         },
     },

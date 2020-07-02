@@ -813,7 +813,7 @@ const courses = {
                     "en-US": "Real World Vue.JS",
                 },
                 image: require('@/assets/courses/vueMastery02.jpg'),
-                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.vueJS],
+                tags: [this.$store.state.tags.stopped, this.$store.state.tags.vueJS],
                 links: [{
                     description: { "pt-BR": "VueMastery", "en-US": "VueMastery" },
                     url: "https://www.vuemastery.com/courses/real-world-vue-js/API-calls-with-Axios",
