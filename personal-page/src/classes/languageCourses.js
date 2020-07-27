@@ -340,6 +340,11 @@ const languageCourses = {
                         type: "certificate"
                     },
                     {
+                        image: require('@/assets/certificates/EFLevel11.jpg'),
+                        description: { "pt-BR": "CertificadoNível11", "en-US": "CertificateLevel11" },
+                        type: "certificate"
+                    },
+                    {
                         description: { "pt-BR": "EFEnglishLive", "en-US": "EFEnglishLive" },
                         url: "https://englishlive.ef.com/pt-br/",
                         type: "link"
