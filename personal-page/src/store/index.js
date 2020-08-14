@@ -8,7 +8,7 @@ export default new Vuex.Store({
         culture: 'en-US',
         common: {
             toolbarTitleMobile: { "pt-BR": "Jonathan C Acquesta", "en-US": "Jonathan C Acquesta" },
-            toolbarTitle: { "pt-BR": "Jonathan Caravaggio Acquesta - Agile Coach - PSM I", "en-US": "Jonathan Caravaggio Acquesta - Agile Coach - PSM I" },
+            toolbarTitle: { "pt-BR": "Jonathan Caravaggio Acquesta - Agile Master - PSM I", "en-US": "Jonathan Caravaggio Acquesta - Agile Master - PSM I" },
             applicationTitle: { "pt-BR": "Meu Currículo Vivo", "en-US": "My Live Resume" },
             portfolio: { "pt-BR": "Portfólio", "en-US": "Portfolio" },
             filter: { "pt-BR": "Filtros", "en-US": "Filter" },
