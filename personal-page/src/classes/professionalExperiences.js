@@ -640,7 +640,7 @@ const professionalExperiences = {
                     url: "http://www.unous.com.br/mindset/",
                     type: "link"
                 }],
-                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.itCoordinator, this.$store.state.tags.agileMaster, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                tags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileMaster, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
                     this.$store.state.tags.extremeProgramming,
                     this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
                     this.$store.state.tags.coaching, this.$store.state.tags.trainning,
@@ -653,7 +653,7 @@ const professionalExperiences = {
                     this.$store.state.tags.webServices, this.$store.state.tags.sql, this.$store.state.tags.entityframework6, this.$store.state.tags.entityframeworkNetCore, this.$store.state.tags.oracle, this.$store.state.tags.razor, this.$store.state.tags.javascript,
                     this.$store.state.tags.css, this.$store.state.tags.html, this.$store.state.tags.mvc
                 ],
-                mainTags: [this.$store.state.tags.inProgress, this.$store.state.tags.itCoordinator, this.$store.state.tags.agileMaster, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                mainTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileMaster, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
                     this.$store.state.tags.situationalLeadership, this.$store.state.tags.engagement,
                     this.$store.state.tags.coaching, this.$store.state.tags.trainning,
                     this.$store.state.tags.teamManagement, this.$store.state.tags.hireProcess, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
@@ -661,8 +661,45 @@ const professionalExperiences = {
                     this.$store.state.tags.vueJS, this.$store.state.tags.webAPI, this.$store.state.tags.dotNetCore,
                     this.$store.state.tags.DDD, this.$store.state.tags.designPattern, this.$store.state.tags.aspNetMVC, this.$store.state.tags.sql, this.$store.state.tags.oracle, this.$store.state.tags.mvc
                 ],
-                resumeTags: [this.$store.state.tags.inProgress, this.$store.state.tags.itCoordinator, this.$store.state.tags.agileMaster, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
+                resumeTags: [this.$store.state.tags.itCoordinator, this.$store.state.tags.agileMaster, this.$store.state.tags.scrum, this.$store.state.tags.kanban,
                     this.$store.state.tags.teamManagement, this.$store.state.tags.dotNetCore, this.$store.state.tags.vueJS
+                ],
+                showDetail: false
+            });
+
+
+
+            histories.push({
+                date: new Date("2020-09-01"),
+                category: this.$store.state.categoryType.professionalExperience,
+                title: {
+                    "pt-BR": "CBYK - Consultoria em Gestão Empresarial",
+                    "en-US": "CBYK - Consultoria em Gestão Empresarial",
+                },
+                subTitle: {
+                    "pt-BR": "Projeto CERC e RiHappy",
+                    "en-US": "CERC and RiHappy Projects",
+                },
+                description: {
+                    "pt-BR": "Analisar e guiar o processo de desenvolvimento de software baseado em metodologias ágeis;Exercer o coaching dos membros da equipe em relação a seus diferentes papéis;Orientar a equipe na resolução de conflitos;Orientar a equipe na tomada de decisões;Orientar e promover a auto organização da equipe;Garantir o aprendizado contínuo dos princípios do Agile;Orientar todos os membros de equipes em relação aos conceitos envolvidos no Agile;Dar feedback às equipes para a melhoria contínua do processo e do aprendizado",
+                    "en-US": "Analyze and guide the software development process based on agile methodologies; Coach the team members in relation to their different roles; Guide the team in conflict resolution; Guide the team in decision making; Guide and promote self-organization of the team; ensure continuous learning of Agile principles; guide all team members regarding the concepts involved in Agile; give feedback to teams for the continuous improvement of the process and learning.",
+                },
+                image: require('@/assets/professionalExperiences/cbyk.jpg'),
+                tags: [],
+                links: [{
+                    description: { "pt-BR": "CBYK", "en-US": "CBYK" },
+                    url: "http://www.cbyk.com.br/",
+                    type: "link"
+                }],
+                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.extremeProgramming,
+                    this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
+                    this.$store.state.tags.coaching, this.$store.state.tags.trainning,
+                    this.$store.state.tags.teamManagement, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
+                    this.$store.state.tags.greatChallenge
+                ],
+                resumeTags: [this.$store.state.tags.inProgress, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.extremeProgramming, this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement
                 ],
                 showDetail: false
             });

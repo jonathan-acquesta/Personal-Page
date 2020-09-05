@@ -55,6 +55,7 @@ const tags = {
             group.tags["seniorSystemAnalyst"] = { id: 11, name: { "pt-BR": "#AnalistaDeSistemasSenior", "en-US": "#SeniorSystemAnalyst" }, show: false, "group": group };
             group.tags["scrumMaster"] = { id: 12, name: { "pt-BR": "#ScrumMaster", "en-US": "#ScrumMaster" }, show: false, "group": group };
             group.tags["agileMaster"] = { id: 13, name: { "pt-BR": "#AgileMaster", "en-US": "#AgileMaster" }, show: false, "group": group };
+            group.tags["agileCoach"] = { id: 13, name: { "pt-BR": "#AgileCoach", "en-US": "#AgileCoach" }, show: false, "group": group };
             group.tags["itCoordinator"] = { id: 14, name: { "pt-BR": "#CoordenadorDeTI", "en-US": "#ITCoordinator" }, show: false, "group": group };
 
             Object.assign(tagsAll, group.tags);
