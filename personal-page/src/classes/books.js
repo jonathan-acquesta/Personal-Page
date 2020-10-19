@@ -8,6 +8,27 @@ const books = {
         mountBooks(histories) {
 
             histories.push({
+                date: new Date("2020-10-18"),
+                category: this.$store.state.categoryType.books,
+                author: "Paulo Caroli",
+                title: {
+                    "pt-BR": "Direto ao Ponto",
+                    "en-US": "Direct to the Point",
+                },
+                subTitle: {
+                    "pt-BR": "Criando produtos de forma enxuta",
+                    "en-US": "Creating products in a lean way",
+                },
+                description: {
+                    "pt-BR": "Direto ao ponto é uma ótima leitura para compreensão da combinação de Lean Inception e Design Thinking de uma forma estruturada para se construir MVPs capazes de falhar cedo e gerar aprendizado rápido em busca de oportunidades de negócio.",
+                    "en-US": "Straight to the point is a great read to understand the combination of Lean Inception and Design Thinking in a structured way to build MVPs capable of failing early and generating quick learning in search of business opportunities.",
+                },
+                image: require('@/assets/books/diretoAoPonto.jpg'),
+                tags: [this.$store.state.tags.leanInception, this.$store.state.tags.designThinking, this.$store.state.tags.mvp],
+                showDetail: false
+            });
+
+            histories.push({
                 date: new Date("2020-04-02"),
                 category: this.$store.state.categoryType.books,
                 author: "James Turner",
