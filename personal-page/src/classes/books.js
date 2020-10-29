@@ -8,6 +8,22 @@ const books = {
         mountBooks(histories) {
 
             histories.push({
+                date: new Date("2020-10-29"),
+                category: this.$store.state.categoryType.books,
+                author: "Paulo Caroli",
+                title: {
+                    "pt-BR": "Diagrama de Fluxo Cumulativo",
+                    "en-US": "Cumulative Flow Diagram",
+                },
+                subTitle: {
+                    "pt-BR": "Uma ferramenta valiosa para melhorar o fluxo de trabalho",
+                    "en-US": "A valuable tool for improving workflow",
+                },
+                image: require('@/assets/books/diagramaDeFluxoCumulativo.jpg'),
+                tags: [this.$store.state.tags.leanInception, this.$store.state.tags.designThinking, this.$store.state.tags.mvp],
+            });
+
+            histories.push({
                 date: new Date("2020-10-18"),
                 category: this.$store.state.categoryType.books,
                 author: "Paulo Caroli",
