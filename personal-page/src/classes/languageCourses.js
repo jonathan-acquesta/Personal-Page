@@ -321,7 +321,7 @@ const languageCourses = {
             })
 
             histories.push({
-                date: new Date("2020-07-29"),
+                date: new Date("2020-11-03"),
                 category: this.$store.state.categoryType.languages,
                 title: {
                     "pt-BR": "EF English Live",
@@ -332,7 +332,7 @@ const languageCourses = {
                     "en-US": "Upper Intermediate CEFR Level B2 English Course",
                 },
                 image: require('@/assets/courses/englishLive.jpg'),
-                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.english, this.$store.state.tags.upperIntermediate],
+                tags: [this.$store.state.tags.english, this.$store.state.tags.upperIntermediate],
                 links: [
                     {
                         image: require('@/assets/certificates/EFLevel10.jpg'),
@@ -344,6 +344,35 @@ const languageCourses = {
                         description: { "pt-BR": "CertificadoNível11", "en-US": "CertificateLevel11" },
                         type: "certificate"
                     },
+                    {
+                        image: require('@/assets/certificates/EFLevel12.jpg'),
+                        description: { "pt-BR": "CertificadoNível12", "en-US": "CertificateLevel12" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "EFEnglishLive", "en-US": "EFEnglishLive" },
+                        url: "https://englishlive.ef.com/pt-br/",
+                        type: "link"
+                    }
+                ],
+                
+            })
+
+
+            histories.push({
+                date: new Date("2020-11-20"),
+                category: this.$store.state.categoryType.languages,
+                title: {
+                    "pt-BR": "EF English Live",
+                    "en-US": "EF English Live",
+                },
+                subTitle: {
+                    "pt-BR": "Curso Avançadp de Inglês CEFR Nível C1",
+                    "en-US": "Advanced CEFR Level C1 English Course",
+                },
+                image: require('@/assets/courses/englishLive.jpg'),
+                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.english, this.$store.state.tags.upperIntermediate],
+                links: [
                     {
                         description: { "pt-BR": "EFEnglishLive", "en-US": "EFEnglishLive" },
                         url: "https://englishlive.ef.com/pt-br/",
