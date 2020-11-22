@@ -80,6 +80,9 @@ const tags = {
             group.tags["userStories"] = { id: 31, name: { "pt-BR": "#HistóriasDeUsuário", "en-US": "#UserStories" }, show: false, "group": group };
             group.tags["leanInception"] = { id: 32, name: { "pt-BR": "#LeanInception", "en-US": "#LeanInception" }, show: false, "group": group };
             group.tags["devOps"] = { id: 33, name: { "pt-BR": "#DevOps", "en-US": "#DevOps" }, show: false, "group": group };
+            group.tags["spotifyModel"] = { id: 33, name: { "pt-BR": "#ModeloSpotify", "en-US": "#SpotifyModel" }, show: false, "group": group };
+
+            
 
             Object.assign(tagsAll, group.tags);
         },

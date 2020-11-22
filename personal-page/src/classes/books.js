@@ -8,6 +8,22 @@ const books = {
         mountBooks(histories) {
 
             histories.push({
+                date: new Date("2020-11-22"),
+                category: this.$store.state.categoryType.books,
+                author: "Mary Provinciatto e Paulo Caroli",
+                title: {
+                    "pt-BR": "Sprint a Sprint",
+                    "en-US": "Sprint to Sprint",
+                },
+                subTitle: {
+                    "pt-BR": "Erros e acertos na transformação cultural de um time ágil",
+                    "en-US": "Mistakes and successes in the cultural transformation of an agile team",
+                },
+                image: require('@/assets/books/sprintASprint.jpg'),
+                tags: [this.$store.state.tags.kanban, this.$store.state.tags.scrum, this.$store.state.tags.spotifyModel, this.$store.state.tags.okr, this.$store.state.tags.devOps, this.$store.state.tags.leanInception, this.$store.state.tags.designThinking, this.$store.state.tags.mvp],
+            });
+
+            histories.push({
                 date: new Date("2020-10-29"),
                 category: this.$store.state.categoryType.books,
                 author: "Paulo Caroli",
