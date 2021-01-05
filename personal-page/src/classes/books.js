@@ -7,6 +7,23 @@ const books = {
     methods: {
         mountBooks(histories) {
 
+
+            histories.push({
+                date: new Date("2021-01-01"),
+                category: this.$store.state.categoryType.books,
+                author: "Fabricio Teixeira",
+                title: {
+                    "pt-BR": "UX Design",
+                    "en-US": "UX Design",
+                },
+                subTitle: {
+                    "pt-BR": "Introdução e boas práticas em UX Design",
+                    "en-US": "Introduction and good practices in UX Design",
+                },
+                image: require('@/assets/books/uxDesign.jpg'),
+                tags: [this.$store.state.tags.ux],
+            });
+
             histories.push({
                 date: new Date("2020-11-22"),
                 category: this.$store.state.categoryType.books,
