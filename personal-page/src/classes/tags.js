@@ -151,7 +151,10 @@ const tags = {
             group.tags["computing"] = { id: 86, name: { "pt-BR": "#Computação", "en-US": "#Computing" }, show: false, "group": group };
             group.tags["refactoring"] = { id: 87, name: { "pt-BR": "#Refatoração", "en-US": "#Refactoring" }, show: false, "group": group };
             group.tags["continuousDelivery"] = { id: 88, name: { "pt-BR": "#EntregaContínua", "en-US": "#ContinuousDelivery" }, show: false, "group": group };
-
+            group.tags["nodeJS"] = { id: 132, name: { "pt-BR": "#NodeJS", "en-US": "#NodeJS" }, show: false, "group": group };
+            group.tags["ReactNative"] = { id: 133, name: { "pt-BR": "#ReactNative", "en-US": "#ReactNative" }, show: false, "group": group };
+            group.tags["postgreSQL"] = { id: 134, name: { "pt-BR": "#PostgreSQL", "en-US": "#PostgreSQL" }, show: false, "group": group };
+            group.tags["php"] = { id: 135, name: { "pt-BR": "#php", "en-US": "#php" }, show: false, "group": group };
 
             group.tags["excel"] = { id: 89, name: { "pt-BR": "#Excel", "en-US": "#Excel" }, show: false, "group": group };
             group.tags["word"] = { id: 90, name: { "pt-BR": "#Word", "en-US": "#Word" }, show: false, "group": group };

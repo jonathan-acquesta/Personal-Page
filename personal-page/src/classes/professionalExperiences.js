@@ -677,15 +677,14 @@ const professionalExperiences = {
                     "en-US": "CBYK - Consultoria em Gestão Empresarial",
                 },
                 subTitle: {
-                    "pt-BR": "Projeto CERC e RiHappy",
-                    "en-US": "CERC and RiHappy Projects",
+                    "pt-BR": "Projetos",
+                    "en-US": "Projects",
                 },
                 description: {
                     "pt-BR": "Analisar e guiar o processo de desenvolvimento de software baseado em metodologias ágeis;Exercer o coaching dos membros da equipe em relação a seus diferentes papéis;Orientar a equipe na resolução de conflitos;Orientar a equipe na tomada de decisões;Orientar e promover a auto organização da equipe;Garantir o aprendizado contínuo dos princípios do Agile;Orientar todos os membros de equipes em relação aos conceitos envolvidos no Agile;Dar feedback às equipes para a melhoria contínua do processo e do aprendizado",
                     "en-US": "Analyze and guide the software development process based on agile methodologies; Coach the team members in relation to their different roles; Guide the team in conflict resolution; Guide the team in decision making; Guide and promote self-organization of the team; ensure continuous learning of Agile principles; guide all team members regarding the concepts involved in Agile; give feedback to teams for the continuous improvement of the process and learning.",
                 },
                 image: require('@/assets/professionalExperiences/cbyk.jpg'),
-                tags: [],
                 links: [{
                     description: { "pt-BR": "CBYK", "en-US": "CBYK" },
                     url: "http://www.cbyk.com.br/",
@@ -703,6 +702,212 @@ const professionalExperiences = {
                 ],
                 showDetail: false
             });
+
+
+
+
+            histories.push({
+                date: new Date("2020-12-05"),
+                category: this.$store.state.categoryType.professionalExperience,
+                title: {
+                    "pt-BR": "CBYK - Consultoria em Gestão Empresarial",
+                    "en-US": "CBYK - Consultoria em Gestão Empresarial",
+                },
+                subTitle: {
+                    "pt-BR": "Projeto Portal do Desenvolvedor para Arranjo de Pagamento do cliente CERC ",
+                    "en-US": "CERC Client Payment Arrangement Developer Portal Project",
+                },
+                description: {
+                    "pt-BR": "O meu primeiro desafio na CBYK foi o projeto da Portal do Desenvolvedor da CERC, nesse projeto eu fui responsável por organizar o processo de desenvolvimento, acompanhamento do projeto e visibilidade das demandas. Devido as características do projeto, a metodologia Kanban foi a que melhor se enquadrou e nos ajudou a atingir os objetivos citados anteriormente. Atualmente temos um Portal estável e apoiando todo o treinamento dos desenvolvedores de credenciadoras e financeiras que utilizam a CERC para registro de arranjo de pagamentos.",
+                    "en-US": "My first challenge at CBYK was the CERC Developer Portal project, in this project I was responsible for organizing the development process, project monitoring and visibility of demands. Due to the characteristics of the project, the Kanban methodology was the best fit and helped us to achieve the goals mentioned above. We currently have a stable Portal supporting all the training of acquirers and finance developers who use CERC for payment arrangement registration.",
+                },
+                image: require('@/assets/professionalExperiences/cbyk_cerc.png'),
+                links: [{
+                    description: { "pt-BR": "Portal do Desenvolvedor", "en-US": "Developer Portal" },
+                    url: "https://developer.cerc.inf.br/",
+                    type: "link"
+                }
+                    ,{
+                    description: { "pt-BR": "CBYK", "en-US": "CBYK" },
+                    url: "http://www.cbyk.com.br/",
+                    type: "link"
+                }],
+                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.extremeProgramming,
+                    this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
+                    this.$store.state.tags.coaching, this.$store.state.tags.trainning,
+                    this.$store.state.tags.teamManagement, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
+                    this.$store.state.tags.greatChallenge, this.$store.state.tags.vueJS, this.$store.state.tags.nodeJS, this.$store.state.tags.sql
+                ],
+                resumeTags: [this.$store.state.tags.inProgress, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.extremeProgramming, this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement
+                ],
+                showDetail: false
+            });
+
+            histories.push({
+                date: new Date("2021-05-22"),
+                category: this.$store.state.categoryType.professionalExperience,
+                title: {
+                    "pt-BR": "CBYK - Consultoria em Gestão Empresarial",
+                    "en-US": "CBYK - Consultoria em Gestão Empresarial",
+                },
+                subTitle: {
+                    "pt-BR": "Projeto Taxa de Embarque com Milhas Gol & Smiles ",
+                    "en-US": "Gol & Smiles Shipping Fee with Miles Project",
+                },
+                description: {
+                    "pt-BR": "O projeto de característica diferente em que trabalhamos com uma entrega única e para acompanhamento da evolução das estórias foi utilizado Kanban com o intuito de simplificar o alinhamento entre a equipe e stackholders em relação a conclusão do projeto.",
+                    "en-US": "The project with different characteristics in which we work with a single delivery and to monitor the evolution of the stories was used Kanban in order to simplify the alignment between the team and stackholders in relation to project completion.",
+                },
+                image: require('@/assets/professionalExperiences/cbyk_gol_smiles.png'),
+                links: [{
+                    description: { "pt-BR": "Anúncio Público", "en-US": "Public Announcement" },
+                    url: "https://www.linkedin.com/feed/update/urn:li:activity:6810993456853344256/",
+                    type: "link"
+                }
+                    ,{
+                        description: { "pt-BR": "Voe Gol", "en-US": "Voe Gol" },
+                        url: "https://www.voegol.com.br/pt",
+                        type: "link"
+                    }
+                        ,{
+                    description: { "pt-BR": "CBYK", "en-US": "CBYK" },
+                    url: "http://www.cbyk.com.br/",
+                    type: "link"
+                }],
+                tags: [this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.extremeProgramming,
+                    this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
+                    this.$store.state.tags.coaching, this.$store.state.tags.trainning,
+                    this.$store.state.tags.teamManagement, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
+                    this.$store.state.tags.greatChallenge, this.$store.state.tags.dotNetFramework
+                ],
+                resumeTags: [ this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.extremeProgramming, this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement
+                ],
+                showDetail: false
+            });
+
+            histories.push({
+                date: new Date("2021-04-25"),
+                category: this.$store.state.categoryType.professionalExperience,
+                title: {
+                    "pt-BR": "CBYK - Consultoria em Gestão Empresarial",
+                    "en-US": "CBYK - Consultoria em Gestão Empresarial",
+                },
+                subTitle: {
+                    "pt-BR": "Projeto CBF Academy multi-idioma do cliente CBF",
+                    "en-US": "CBF Academy Multi-Language Project",
+                },
+                description: {
+                    "pt-BR": "A minha participação no projeto foi na posição de Coach da equipe em relação a utilização de métodos ágeis para manter as demandas estruturadas e de fácil inspeção e adaptação de acordo com os cenários enfrentados durante o projeto.",
+                    "en-US": "My participation in the project was in the position of Team Coach regarding the use of agile methods to keep the demands structured and easy to inspect and adapt according to the scenarios faced during the project.",
+                },
+                image: require('@/assets/professionalExperiences/cbyk_cbf_academy.png'),
+                links: [{
+                        description: { "pt-BR": "Portal CBF Academy", "en-US": "CBF Academy Portal" },
+                        url: "https://www.cbf.com.br/cbfacademy/pt-br",
+                        type: "link"
+                    }
+                        ,{
+                    description: { "pt-BR": "CBYK", "en-US": "CBYK" },
+                    url: "http://www.cbyk.com.br/",
+                    type: "link"
+                }],
+                tags: [this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.extremeProgramming,
+                    this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
+                    this.$store.state.tags.coaching, this.$store.state.tags.trainning,
+                    this.$store.state.tags.teamManagement, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
+                    this.$store.state.tags.greatChallenge, this.$store.state.tags.vueJS, this.$store.state.tags.php 
+                ],
+                resumeTags: [ this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.extremeProgramming, this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement
+                ],
+                showDetail: false
+            });
+
+
+            histories.push({
+                date: new Date("2021-03-10"),
+                category: this.$store.state.categoryType.professionalExperience,
+                title: {
+                    "pt-BR": "CBYK - Consultoria em Gestão Empresarial",
+                    "en-US": "CBYK - Consultoria em Gestão Empresarial",
+                },
+                subTitle: {
+                    "pt-BR": "Projeto Portal Alloca do cliente Alloca ",
+                    "en-US": "Alloca Portal Project",
+                },
+                description: {
+                    "pt-BR": "Tive a oportunidade de apoiar com a estruturação das entregas do projeto e para isso decidimos migrar do Scrum para o Kanban e seguir controlando o WIP de acordo com a estrutura de equipe para concluir, estabilizar e disponibilizar o projeto ao mercado o quanto antes.",
+                    "en-US": "I had the opportunity to support the structuring of the project deliverables and for that we decided to migrate from Scrum to Kanban and continue controlling the WIP according to the team structure to complete, stabilize and make the project available to the market as soon as possible.",
+                },
+                image: require('@/assets/professionalExperiences/cbyk_alloca.png'),
+                links: [{
+                        description: { "pt-BR": "Portal Alloca", "en-US": "Alloca Portal" },
+                        url: "https://alloca.com.br/",
+                        type: "link"
+                    }
+                        ,{
+                    description: { "pt-BR": "CBYK", "en-US": "CBYK" },
+                    url: "http://www.cbyk.com.br/",
+                    type: "link"
+                }],
+                tags: [this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.extremeProgramming,
+                    this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
+                    this.$store.state.tags.coaching, this.$store.state.tags.trainning,
+                    this.$store.state.tags.teamManagement, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
+                    this.$store.state.tags.greatChallenge, this.$store.state.tags.vueJS, this.$store.state.tags.php 
+                ],
+                resumeTags: [ this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.extremeProgramming, this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement
+                ],
+                showDetail: false
+            });
+
+
+            histories.push({
+                date: new Date("2021-06-05"),
+                category: this.$store.state.categoryType.professionalExperience,
+                title: {
+                    "pt-BR": "CBYK - Consultoria em Gestão Empresarial",
+                    "en-US": "CBYK - Consultoria em Gestão Empresarial",
+                },
+                subTitle: {
+                    "pt-BR": "Projeto Nutrição de Safras do cliente Mosaic ",
+                    "en-US": "Mosaic Crop Nutrition Project",
+                },
+                description: {
+                    "pt-BR": "Esse projeto foi conduzindo através do processo de Lean Inception para mapeamento das personas, jornadas e funcionalidades e com base nas expectativas e prioridades dos stackholders foi estruturado o mapeamento de alguns MVPs. Para condução do projeto utilizamos o framework Scrum durante o desenvolvimento do MVP1 e o Kanban para acompanhamento de QA e estabilização. Hoje temos o aplicativo MVP1 já disponível nas lojas da Apple e Android e a Happiness Metric se manteve elevada durante todo o desenvolvimento.",
+                    "en-US": "This project was conducted through the Lean Inception process for mapping the personas, journeys and features and based on the expectations and priorities of the stackholders, the mapping of some MVPs was structured. To conduct the project we used the Scrum framework during the development of MVP1 and Kanban for monitoring QA and stabilization. Today we have the MVP1 app already available in Apple and Android stores and Happiness Metric has remained high throughout development.",
+                },
+                image: require('@/assets/professionalExperiences/cbyk_mosaic_ns.png'),
+                links: [{
+                    description: { "pt-BR": "Aplicativo Nutrição de Safras", "en-US": "Crop Nutrition App" },
+                    url: "https://play.google.com/store/apps/details?id=com.nutricaosafras",
+                    type: "link"
+                }
+                    ,{
+                    description: { "pt-BR": "CBYK", "en-US": "CBYK" },
+                    url: "http://www.cbyk.com.br/",
+                    type: "link"
+                }],
+                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.extremeProgramming,
+                    this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
+                    this.$store.state.tags.coaching, this.$store.state.tags.trainning,
+                    this.$store.state.tags.teamManagement, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
+                    this.$store.state.tags.greatChallenge, this.$store.state.tags.ReactNative, this.$store.state.tags.dotNetCore, this.$store.state.tags.postgreSQL
+                ],
+                resumeTags: [this.$store.state.tags.inProgress, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.extremeProgramming, this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement
+                ],
+                showDetail: false
+            });
+
 
 
         },

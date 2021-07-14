@@ -9,7 +9,7 @@ const books = {
 
 
             histories.push({
-                date: new Date("2021-01-01"),
+                date: new Date("2021-01-05"),
                 category: this.$store.state.categoryType.books,
                 author: "Fabricio Teixeira",
                 title: {
@@ -24,6 +24,7 @@ const books = {
                 tags: [this.$store.state.tags.ux],
             });
 
+            
             histories.push({
                 date: new Date("2020-11-22"),
                 category: this.$store.state.categoryType.books,
