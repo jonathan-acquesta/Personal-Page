@@ -31,6 +31,11 @@ const certifications = {
                         description: { "pt-BR": "Kanban University", "en-US": "Kanban University" },
                         url: "https://kanban.university/",
                         type: "link"
+                    },
+                    {
+                        description: { "pt-BR": "K21", "en-US": "K21 " },
+                        url: "https://k21.global/treinamentos/kanban-oficial-lku?id=2",
+                        type: "link"
                     }
                 ],
                 tags: [this.$store.state.tags.kanban],
