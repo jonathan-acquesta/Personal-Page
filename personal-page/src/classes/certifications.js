@@ -7,11 +7,43 @@ const certifications = {
     methods: {
         mountCertifications(histories) {
             histories.push({
+                date: new Date("2021-08-19"),
+                category: this.$store.state.categoryType.certifications,
+                title: {
+                    "pt-BR": "Kanban University - KMP I",
+                    "en-US": "Kanban University - KMP I",
+                },
+                subTitle: {
+                    "pt-BR": "Kanban System Design",
+                    "en-US": "Kanban System Design",
+                },
+                description: {
+                    "pt-BR": "Método Kanban é algo que está em minha vida a mais de uma década, mesmo assim decidi dar mais um passo em busca de aprimoramento. O treinamento realmente nós trás novas forma de ver o sistema e ideias para continuar de forma empírica aprimorando a gestão visual e facilitando a evolução das equipes.",
+                    "en-US": "Kanban Method is something that has been in my life for more than a decade, but I decided to go one step further in search of improvements. The training really brings us new ways of seeing the system and ideas to continue in an empirical way, improving visual management and facilitating the evolution of teams.",
+                },
+                image: require('@/assets/certifications/kanbanUniversity.png'),
+                links: [{
+                        image: require('@/assets/certificates/kmpI.png'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "Kanban University", "en-US": "Kanban University" },
+                        url: "https://kanban.university/",
+                        type: "link"
+                    }
+                ],
+                tags: [this.$store.state.tags.kanban],
+                showDetail: false
+            });
+
+
+            histories.push({
                 date: new Date("2019-02-02"),
                 category: this.$store.state.categoryType.certifications,
                 title: {
-                    "pt-BR": "Scrum.org - PSM 1",
-                    "en-US": "Scrum.org - PSM 1",
+                    "pt-BR": "Scrum.org - PSM I",
+                    "en-US": "Scrum.org - PSM I",
                 },
                 subTitle: {
                     "pt-BR": "Professional Scrum Master I",
