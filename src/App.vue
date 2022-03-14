@@ -13,7 +13,6 @@
 
    <Footer></Footer>
 
-
   </v-app>
 </template>
 
