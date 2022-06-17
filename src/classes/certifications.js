@@ -7,11 +7,86 @@ const certifications = {
     methods: {
         mountCertifications(histories) {
             histories.push({
+                date: new Date("2022-06-17"),
+                category: this.$store.state.categoryType.certifications,
+                title: {
+                    "pt-BR": "Kanban University - KMP",
+                    "en-US": "Kanban University - KMP",
+                },
+                subTitle: {
+                    "pt-BR": "Kanban Management Professinal",
+                    "en-US": "Kanban Management Professinal",
+                },
+                description: {
+                    "pt-BR": "Com as formações de KSD e KSI a Kanban University me aprovou como KMP, Kanban Management Professional.",
+                    "en-US": "With KSD and KSI training, Kanban University approved me as KMP, Kanban Management Professional.",
+                },
+                image: require('@/assets/certifications/kanbanUniversity.png'),
+                links: [{
+                        image: require('@/assets/certificates/kmp.png'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "Kanban University", "en-US": "Kanban University" },
+                        url: "https://kanban.university/",
+                        type: "link"
+                    },
+                    {
+                        description: { "pt-BR": "K21", "en-US": "K21 " },
+                        url: "https://k21.global/treinamentos/kanban-oficial-lku?id=2",
+                        type: "link"
+                    }
+                ],
+                tags: [this.$store.state.tags.kanban],
+                showDetail: false
+            });
+
+            
+            histories.push({
+                date: new Date("2022-06-14"),
+                category: this.$store.state.categoryType.certifications,
+                title: {
+                    "pt-BR": "Kanban University - KSI",
+                    "en-US": "Kanban University - KSI",
+                },
+                subTitle: {
+                    "pt-BR": "Kanban Systems Improvement",
+                    "en-US": "Kanban Systems Improvement",
+                },
+                description: {
+                    "pt-BR": "Seguindo com a minha trajetória de evolução com o método Kanban, fiz a formação focada em melhoria dos processos sendo um agente de mudança e ampliação da implementação em nível organizacional.",
+                    "en-US": "Continuing with my evolution trajectory with the Kanban method, I did the training focused on improving processes, being an agent of change and expansion of implementation at an organizational level.",
+                },
+                image: require('@/assets/certifications/kanbanUniversity.png'),
+                links: [{
+                        image: require('@/assets/certificates/ksi.png'),
+                        description: { "pt-BR": "Certificado", "en-US": "Certificate" },
+                        type: "certificate"
+                    },
+                    {
+                        description: { "pt-BR": "Kanban University", "en-US": "Kanban University" },
+                        url: "https://kanban.university/",
+                        type: "link"
+                    },
+                    {
+                        description: { "pt-BR": "K21", "en-US": "K21 " },
+                        url: "https://k21.global/treinamentos/kanban-oficial-lku?id=2",
+                        type: "link"
+                    }
+                ],
+                tags: [this.$store.state.tags.kanban],
+                showDetail: false
+            });
+
+
+
+            histories.push({
                 date: new Date("2021-08-19"),
                 category: this.$store.state.categoryType.certifications,
                 title: {
-                    "pt-BR": "Kanban University - KMP I",
-                    "en-US": "Kanban University - KMP I",
+                    "pt-BR": "Kanban University - KSD",
+                    "en-US": "Kanban University - KSD",
                 },
                 subTitle: {
                     "pt-BR": "Kanban System Design",
@@ -23,7 +98,7 @@ const certifications = {
                 },
                 image: require('@/assets/certifications/kanbanUniversity.png'),
                 links: [{
-                        image: require('@/assets/certificates/kmpI.png'),
+                        image: require('@/assets/certificates/ksd.png'),
                         description: { "pt-BR": "Certificado", "en-US": "Certificate" },
                         type: "certificate"
                     },

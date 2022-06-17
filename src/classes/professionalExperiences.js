@@ -895,19 +895,53 @@ const professionalExperiences = {
                     url: "http://www.cbyk.com.br/",
                     type: "link"
                 }],
-                tags: [this.$store.state.tags.inProgress, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                tags: [this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
                     this.$store.state.tags.extremeProgramming,
                     this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
                     this.$store.state.tags.coaching, this.$store.state.tags.trainning,
                     this.$store.state.tags.teamManagement, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
                     this.$store.state.tags.greatChallenge, this.$store.state.tags.ReactNative, this.$store.state.tags.dotNetCore, this.$store.state.tags.postgreSQL
                 ],
-                resumeTags: [this.$store.state.tags.inProgress, this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                resumeTags: [this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
                     this.$store.state.tags.extremeProgramming, this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement
                 ],
                 showDetail: false
             });
 
+
+            histories.push({
+                date: new Date("2022-03-05"),
+                category: this.$store.state.categoryType.professionalExperience,
+                title: {
+                    "pt-BR": "CBYK - Consultoria em Gestão Empresarial",
+                    "en-US": "CBYK - Consultoria em Gestão Empresarial",
+                },
+                subTitle: {
+                    "pt-BR": "Projeto Aplicativo de ar condicionado do cliente Electrolux",
+                    "en-US": "Electrolux Customer Air Conditioning Application Project",
+                },
+                description: {
+                    "pt-BR": "Tive o prazer de participar da gestão desse importante projeto de criação de um aplicativo para integração com os novos ares-condicionados da Electrolux, o projeto foi conduzido com a metodologia Scrum e evoluído através de muita parceria entre a CBYK e a Electrolux.",
+                    "en-US": "I had the pleasure of participating in the management of this important project to create an application to integrate with Electrolux's new air conditioners, the project was conducted with the Scrum methodology and evolved through a lot of partnership between CBYK and Electrolux.",
+                },
+                image: require('@/assets/professionalExperiences/cbyk_electrolux.jpg'),
+                links: [{
+                    description: { "pt-BR": "CBYK", "en-US": "CBYK" },
+                    url: "http://www.cbyk.com.br/",
+                    type: "link"
+                }],
+                tags: [this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.extremeProgramming,
+                    this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement,
+                    this.$store.state.tags.coaching, this.$store.state.tags.trainning,
+                    this.$store.state.tags.teamManagement, this.$store.state.tags.continuousEvolution, this.$store.state.tags.hardworking,
+                    this.$store.state.tags.greatChallenge, this.$store.state.tags.ReactNative, this.$store.state.tags.dotNetCore, this.$store.state.tags.postgreSQL
+                ],
+                resumeTags: [this.$store.state.tags.agileCoach, this.$store.state.tags.scrum, this.$store.state.tags.kanban, this.$store.state.tags.management30,
+                    this.$store.state.tags.extremeProgramming, this.$store.state.tags.situationalLeadership, this.$store.state.tags.leadership, this.$store.state.tags.engagement
+                ],
+                showDetail: false
+            });
 
 
         },
