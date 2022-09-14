@@ -360,7 +360,7 @@ const languageCourses = {
 
 
             histories.push({
-                date: new Date("2020-11-20"),
+                date: new Date("2022-09-14"),
                 category: this.$store.state.categoryType.languages,
                 title: {
                     "pt-BR": "EF English Live",
@@ -374,6 +374,10 @@ const languageCourses = {
                 tags: [this.$store.state.tags.inProgress, this.$store.state.tags.english, this.$store.state.tags.upperIntermediate],
                 links: [
                     {
+                        image: require('@/assets/certificates/EFLevel13.jpg'),
+                        description: { "pt-BR": "CertificadoNível13", "en-US": "CertificateLevel13" },
+                        type: "certificate"
+                    },{
                         description: { "pt-BR": "EFEnglishLive", "en-US": "EFEnglishLive" },
                         url: "https://englishlive.ef.com/pt-br/",
                         type: "link"
