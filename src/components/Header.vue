@@ -65,9 +65,8 @@ import Language from "./Language.vue";
             {
                 this.state.showMobileMenu = !this.state.showMobileMenu;
             },
-            async toggleLanguage()
+            toggleLanguage()
             {
-                await this.processUrl();
                 this.showLanguage = !this.showLanguage;
             },
             closeLanguage()

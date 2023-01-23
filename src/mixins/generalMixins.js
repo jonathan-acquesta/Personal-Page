@@ -1,5 +1,3 @@
-import axiosClient from 'axios'
-
 const generalMixins = {
     data() {
         return {
@@ -30,21 +28,6 @@ const generalMixins = {
         },
     },
     methods: {
-        async processUrl()
-        {
-            
-            let data = await axiosClient.get('https://1493-2804-388-e058-f551-39f2-80d7-a894-2f3f.sa.ngrok.io/FootballSchool/GetAll',{
-            headers: {
-                Accept: 'application/json',
-                'content-type': 'application/json',
-                'Access-Control-Allow-Origin': '*'
-              },
-              withCredentials: true}
-              );
-
-            debugger;
-            return data;
-        },
         openSite: function(url) {
             window.open(url, "_blank");
         },
