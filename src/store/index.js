@@ -77,7 +77,7 @@ export default new Vuex.Store({
             ]
         },
         icons: [
-            { showHeader: true, showFooter: true, title: { 'pt-BR':'Download do Currículo', 'en-US': 'Download Resume'}, icon: 'mdi-file-pdf', url: 'https://github.com/jonathan-acquesta/Personal-Page/raw/master/personal-page/src/assets/JonathanCaravaggioAcquesta_Resume2020.pdf' },
+            { showHeader: true, showFooter: true, title: { 'pt-BR':'Download do Currículo', 'en-US': 'Download Resume'}, icon: 'mdi-account-details', url: 'https://github.com/jonathan-acquesta/Personal-Page/raw/master/personal-page/src/assets/resumeJonathanCaravaggioAcquesta.pdf' },
             { showHeader: true, showFooter: true, title: { 'pt-BR':'Linkedin', 'en-US': 'Linkedin'}, icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/in/jonathan-caravaggio-acquesta-a26a4422/' },
             { showHeader: true, showFooter: true, title: { 'pt-BR':'GitHub', 'en-US': 'GitHub'}, icon: 'fab fa-github', url: 'https://github.com/jonathan-acquesta' },
             { showHeader: false, showFooter: true, title: { 'pt-BR':'StackOverflow', 'en-US': 'StackOverflow'}, icon: 'fab fa-stack-overflow', url: 'https://stackoverflow.com/users/9547421/jonathan-caravaggio-acquesta' },
